@@ -1,1 +1,1 @@
-# formatting_and_linting_with_prettier_and_eslint
+# my setting up prettier & eslint
