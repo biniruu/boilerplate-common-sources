@@ -1,1 +1,1 @@
-# my setting up prettier & eslint
+# Setting up prettier & eslint
