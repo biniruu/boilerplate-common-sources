@@ -45,7 +45,7 @@ module.exports = {
     env: {
       es6: true,
     },
-    'prettier/prettier': 'error',
+    'prettier/prettier': ['error', {singleQuote: true}],  // allow single quote and doesn't error anymore
     // 'vue/v-bind-style': ['warn', 'shorthand'],
     // 'vue/require-v-for-key': 'warn',
     'new-cap': 'error',
