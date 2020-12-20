@@ -12,9 +12,9 @@ module.exports = {
     // 'standard',
     // 'plugin:vue/strongly-recommended',
     'eslint:recommended',
-    // 'plugin:prettier/recommended',
+    'plugin:prettier/recommended',
     // 'prettier/vue',
-    'prettier',
+    'eslint-config-prettier',
   ],
   // required to lint *.vue files
   plugins: ['prettier'],
@@ -45,7 +45,7 @@ module.exports = {
     env: {
       es6: true,
     },
-    // 'prettier/prettier': 'warn',
+    'prettier/prettier': 'warn',
     // 'vue/v-bind-style': ['warn', 'shorthand'],
     // 'vue/require-v-for-key': 'warn',
     'new-cap': 'error',

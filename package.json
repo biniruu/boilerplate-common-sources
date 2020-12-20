@@ -1,0 +1,24 @@
+{
+  "name": "Setting-up-prettier-eslint",
+  "version": "1.0.0",
+  "description": "> *토이 프로젝트나 학습 시 사용하는 개인 설정.*",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biniruu/setting-up-prettier-eslint.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/biniruu/setting-up-prettier-eslint/issues"
+  },
+  "homepage": "https://github.com/biniruu/setting-up-prettier-eslint#readme",
+  "devDependencies": {
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0"
+  }
+}

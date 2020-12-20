@@ -19,6 +19,7 @@
 4. vs code 설정에서 옵션 변경(workspace)
    1. Editor: Format On Save => true
    2. Editor: Default Formatter => esbenp.prettier-vscode
+   Eslint > Format: Enable => true
 5. setting.json에 설정 코드 추가
 
 ```json
