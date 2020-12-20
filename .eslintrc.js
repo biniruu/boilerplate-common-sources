@@ -45,7 +45,7 @@ module.exports = {
     env: {
       es6: true,
     },
-    'prettier/prettier': 'warn',
+    'prettier/prettier': 'error',
     // 'vue/v-bind-style': ['warn', 'shorthand'],
     // 'vue/require-v-for-key': 'warn',
     'new-cap': 'error',
