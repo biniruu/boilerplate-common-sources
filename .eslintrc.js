@@ -7,7 +7,7 @@ module.exports = {
     //   jsx: true,
     // },
   },
-  parser: 'babel-eslint',
+  // parser: 'babel-eslint',
   // parser: '@typescript-eslint/parser',
   env: {
     browser: true,
