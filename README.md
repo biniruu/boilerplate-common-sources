@@ -10,7 +10,7 @@
    1. eslint
    1. eslint-config-prettier
    1. eslint-plugin-prettier
-   1. prettier-eslint // 설치해 본 적은 없지만 많이 쓰이는 것
+   1. prettier
 1. 프로젝트 root 폴더에 파일 복사
    1. .prettierrc
    1. .prettierignore
