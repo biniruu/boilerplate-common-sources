@@ -1,25 +1,28 @@
-// https://eslint.org/docs/user-guide/configuring
-
 module.exports = {
   root: true,
   parserOptions: {
-    parser: 'babel-eslint',
+    ecmaVersion: 6,
+    sourceType: 'module',
+    // ecmaFeatures: {
+    //   jsx: true,
+    // },
   },
+  parser: 'babel-eslint',
+  // parser: '@typescript-eslint/parser',
   env: {
+    browser: true,
     node: true,
     es6: true,
   },
+  plugins: ['prettier'],
   extends: [
     // 'standard',
     // 'plugin:vue/strongly-recommended',
     'eslint:recommended',
     'plugin:prettier/recommended',
     // 'prettier/vue',
-    'eslint-config-prettier', // prettier 설정이 eslint에 통합됨. .prettierrc는 필요 없음(?)
+    'eslint-config-prettier', // prettier 설정이 eslint에 통합됨
   ],
-  // required to lint *.vue files
-  plugins: ['prettier'],
-  // add your custom rules here
   rules: {
     // allow async-await
     'generator-star-spacing': 'off',
@@ -46,7 +49,7 @@ module.exports = {
     // env: {
     //   es6: true,
     // },
-    'prettier/prettier': ['error', {singleQuote: true, trailingComma: 'all'}], // allow single quote and doesn't error anymore
+    'prettier/prettier': ['error', {singleQuote: true, trailingComma: 'all'}],
     // 'vue/v-bind-style': ['warn', 'shorthand'],
     // 'vue/require-v-for-key': 'warn',
     'new-cap': 'error',
@@ -56,4 +59,7 @@ module.exports = {
     'no-duplicate-imports': 'error',
     'no-inner-declarations': 'off',
   },
+  // globals: {
+  //   $nuxt: true,
+  // },
 }
