@@ -1,0 +1,5 @@
+# 여기서는 .vscode/settings.json와 .gitignore를 추적하기 위해 주석 처리
+# 프로젝트에서는 주석을 제거하고 사용할 것.
+
+# ./vscode
+# .gitignore
