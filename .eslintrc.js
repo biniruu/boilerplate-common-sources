@@ -7,6 +7,7 @@ module.exports = {
   },
   env: {
     node: true,
+    es6: true,
   },
   extends: [
     // 'standard',
@@ -14,7 +15,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:prettier/recommended',
     // 'prettier/vue',
-    'eslint-config-prettier',  // prettier 설정이 eslint에 통합됨. .prettierrc는 필요 없음(?)
+    'eslint-config-prettier', // prettier 설정이 eslint에 통합됨. .prettierrc는 필요 없음(?)
   ],
   // required to lint *.vue files
   plugins: ['prettier'],
@@ -42,9 +43,9 @@ module.exports = {
         properties: 'never',
       },
     ],
-    env: {
-      es6: true,
-    },
+    // env: {
+    //   es6: true,
+    // },
     'prettier/prettier': ['error', {singleQuote: true, trailingComma: 'all'}], // allow single quote and doesn't error anymore
     // 'vue/v-bind-style': ['warn', 'shorthand'],
     // 'vue/require-v-for-key': 'warn',
