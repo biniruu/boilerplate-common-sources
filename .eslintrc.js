@@ -21,7 +21,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:prettier/recommended',
     // 'prettier/vue',
-    'eslint-config-prettier', // prettier 설정이 eslint에 통합됨
+    'eslint-config-prettier',
   ],
   rules: {
     // allow async-await
