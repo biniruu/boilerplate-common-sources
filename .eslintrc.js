@@ -7,7 +7,7 @@ module.exports = {
     //   jsx: true,
     // },
   },
-  // parser: 'babel-eslint',
+  parser: 'babel-eslint',
   // parser: '@typescript-eslint/parser',
   env: {
     browser: true,
@@ -20,7 +20,6 @@ module.exports = {
     // 'plugin:vue/strongly-recommended',
     'eslint:recommended',
     'plugin:prettier/recommended',
-    // 'prettier/vue',
     'eslint-config-prettier',
   ],
   rules: {
@@ -46,9 +45,6 @@ module.exports = {
         properties: 'never',
       },
     ],
-    // env: {
-    //   es6: true,
-    // },
     'prettier/prettier': ['error', {singleQuote: true, trailingComma: 'all'}],
     // 'vue/v-bind-style': ['warn', 'shorthand'],
     // 'vue/require-v-for-key': 'warn',

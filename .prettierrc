@@ -1,6 +1,8 @@
 {
+  "arrowParens": "avoid",
   "bracketSpacing": false,
   "htmlWhitespaceSensitivity": "ignore",
+  "jsxBracketSameLine": false,
   "printWidth": 80,
   "proseWrap": "preserve",
   "quoteProps": "as-needed",
@@ -8,8 +10,5 @@
   "singleQuote": true,
   "tabWidth": 2,
   "trailingComma": "all",
-  "useTabs": false,
-  "arrowParens": "avoid",
-  "jsxBracketSameLine": false
+  "useTabs": false
 }
-
