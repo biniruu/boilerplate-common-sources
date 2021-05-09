@@ -5,24 +5,37 @@
 ## vs code에 prettier & eslint 설정하기
 
 1. prettier, eslint extention 설치
-1. npm 설치
+2. npm 설치
    1. babel-eslint // 파서 옵션에 따라 설치하지 않아도 상관없음
-   1. eslint
-   1. eslint-config-prettier
-   1. eslint-plugin-prettier
-   1. prettier
-1. 프로젝트 root 폴더에 파일 복사
+   2. eslint
+   3. eslint-config-prettier
+   4. eslint-plugin-prettier
+   5. prettier
+3. 프로젝트 root 폴더에 파일 복사
    1. .prettierrc
-   1. .prettierignore
-   1. .eslintrc.js
-   1. .eslintignore
-1. vs code 설정에서 옵션 변경(workspace)
+   2. .prettierignore
+   3. .eslintrc.js
+   4. .eslintignore
+4. vs code 설정에서 옵션 변경(workspace)
 
    > 이 설정은 직접 설정하지 말고 .vscode/settings.json 파일을 그대로 복사해서 붙여넣기할 것
 
    ~~1. Editor: Format On Save => true~~  
    ~~1. Editor: Default Formatter => esbenp.prettier-vscode~~  
    ~~Eslint > Format: Enable => true~~
+
+
+## stylelint 설정하기
+
+1. stylelint extention 설치
+2. npm 설치
+   1. stylelint
+   2. stylelint-config-standard
+   3. stylelint-order
+   4. stylelint-scss
+3. 프로젝트 root 폴더에 파일 복사
+   1. .stylelintrc.js
+
 
 ## Vue.js 프로젝트일 때 추가 설정
 
