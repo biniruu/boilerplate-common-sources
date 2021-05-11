@@ -33,6 +33,8 @@ module.exports = {
     ],
     'declaration-bang-space-after': 'never',
     'declaration-bang-space-before': 'always',
+    // Next rule is recommanded because of semicolon rule conflict between prettier and stylelint
+    'declaration-block-trailing-semicolon': null,
     'declaration-colon-space-after': 'always',
     'declaration-colon-space-before': 'never',
     'declaration-empty-line-before': [
@@ -69,6 +71,7 @@ module.exports = {
     'media-feature-parentheses-space-inside': 'never',
     'media-query-list-comma-newline-after': 'never-multi-line',
     'media-query-list-comma-newline-before': 'never-multi-line',
+    'no-extra-semicolons': true,
     'number-leading-zero': 'always',
     'number-max-precision': 4,
     'number-no-trailing-zeros': true,
