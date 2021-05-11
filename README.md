@@ -8,9 +8,10 @@
 2. npm 설치
    1. babel-eslint // 파서 옵션에 따라 설치하지 않아도 상관없음
    2. eslint
-   3. eslint-config-prettier
-   4. eslint-plugin-prettier
-   5. prettier
+   3. eslint-loader
+   4. eslint-config-prettier
+   5. eslint-plugin-prettier
+   6. prettier
 3. 프로젝트 root 폴더에 파일 복사
    1. .prettierrc
    2. .prettierignore
