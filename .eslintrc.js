@@ -14,7 +14,11 @@ module.exports = {
     node: true,
     es6: true,
   },
-  plugins: ['prettier'],
+  // eslint-disable-next-line prettier/prettier
+  plugins: [
+    'prettier',
+    // 'vue',
+  ],
   extends: [
     // 'standard',
     // 'plugin:vue/strongly-recommended',
@@ -30,8 +34,9 @@ module.exports = {
     'comma-dangle': 'off',
     'space-before-function-paren': 'off',
     'no-console': 'off',
+    'no-unused-vars': 'warn',
     quotes: [
-      'error',
+      'warn',
       'single',
       {
         allowTemplateLiterals: true,
@@ -48,6 +53,7 @@ module.exports = {
     'prettier/prettier': ['error', {singleQuote: true, trailingComma: 'all'}],
     // 'vue/v-bind-style': ['warn', 'shorthand'],
     // 'vue/require-v-for-key': 'warn',
+    // 'vue/no-unused-components': 'warn',
     'new-cap': 'error',
     'prefer-rest-params': 'error',
     'no-new-object': 'error',
