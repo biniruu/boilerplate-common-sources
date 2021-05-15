@@ -50,7 +50,10 @@ module.exports = {
         properties: 'never',
       },
     ],
-    'prettier/prettier': ['error', {singleQuote: true, trailingComma: 'all'}],
+    'prettier/prettier': [
+      'warn',
+      {singleQuote: true, trailingComma: 'all', printWidth: 80},
+    ],
     // 'vue/v-bind-style': ['warn', 'shorthand'],
     // 'vue/require-v-for-key': 'warn',
     // 'vue/no-unused-components': 'warn',
