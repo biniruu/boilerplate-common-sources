@@ -12,6 +12,11 @@
    4. eslint-config-prettier
    5. eslint-plugin-prettier
    6. prettier
+
+   ```
+   $ yarn add -D babel-eslint eslint eslint-loader eslint-config-prettier eslint-plugin-prettier prettier
+   ```
+
 3. 프로젝트 root 폴더에 파일 복사
    1. .prettierrc
    2. .prettierignore
@@ -34,6 +39,11 @@
    2. stylelint-config-standard
    3. stylelint-order
    4. stylelint-scss
+
+   ```
+   $ yarn add -D stylelint stylelint-config-standard stylelint-order stylelint-scss
+   ```
+
 3. 프로젝트 root 폴더에 파일 복사
    1. .stylelintrc.js
 
@@ -42,4 +52,9 @@
 
 1. npm 설치
    1. eslint-plugin-vue
+
+   ```
+   $ yarn add -D eslint-plugin-vue
+   ```
+
 2. .eslintrc.js에서 주석 처리한 옵션과 연관된 extention을 설치하고 주석 해제

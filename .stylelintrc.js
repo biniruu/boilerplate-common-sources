@@ -33,8 +33,7 @@ module.exports = {
     ],
     'declaration-bang-space-after': 'never',
     'declaration-bang-space-before': 'always',
-    // Next rule is recommanded because of semicolon rule conflict between prettier and stylelint
-    'declaration-block-trailing-semicolon': null,
+    'declaration-block-trailing-semicolon': null, // This rule is recommanded because of conflict by semicolon rule between prettier and stylelint
     'declaration-colon-space-after': 'always',
     'declaration-colon-space-before': 'never',
     'declaration-empty-line-before': [
@@ -54,16 +53,16 @@ module.exports = {
     'selector-type-no-unknown': [
       true,
       {
-        ignore: ["custom-elements", "default-namespace"],
+        ignore: ['custom-elements', 'default-namespace'],
         // ignoreNamespaces: ["/regex/", /regex/, "string"],
         // ignoreTypes: ["/regex/", /regex/, "string"],
-      }
+      },
     ],
     'max-empty-lines': [
       1,
       {
-        ignore: ["comments"]
-      }
+        ignore: ['comments'],
+      },
     ],
     'media-feature-colon-space-after': 'always',
     'media-feature-colon-space-before': 'never',
