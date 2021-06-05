@@ -6,6 +6,7 @@
 
 1. prettier, eslint extention 설치
 2. npm 설치
+
    1. babel-eslint // 파서 옵션에 따라 설치하지 않아도 상관없음
    2. eslint
    3. eslint-loader
@@ -13,7 +14,7 @@
    5. eslint-plugin-prettier
    6. prettier
 
-   ```
+   ```bash
    $ yarn add -D babel-eslint eslint eslint-loader eslint-config-prettier eslint-plugin-prettier prettier
    ```
 
@@ -30,27 +31,28 @@
    ~~1. Editor: Default Formatter => esbenp.prettier-vscode~~  
    ~~Eslint > Format: Enable => true~~
 
-
 ## stylelint 설정하기
 
 1. stylelint extention 설치
 2. npm 설치
+
    1. stylelint
    2. stylelint-config-standard
-   3. stylelint-order
-   4. stylelint-scss
+   3. stylelint-config-prettier
+   4. stylelint-order
+   5. stylelint-scss
 
-   ```
-   $ yarn add -D stylelint stylelint-config-standard stylelint-order stylelint-scss
+   ```bash
+   $ yarn add -D stylelint stylelint-config-standard stylelint-config-prettier stylelint-order stylelint-scss
    ```
 
 3. 프로젝트 root 폴더에 파일 복사
    1. .stylelintrc.js
 
-
 ## Vue.js 프로젝트일 때 추가 설정
 
 1. npm 설치
+
    1. eslint-plugin-vue
 
    ```
