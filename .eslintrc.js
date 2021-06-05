@@ -22,6 +22,7 @@ module.exports = {
   extends: [
     // 'standard',
     // 'plugin:vue/strongly-recommended',
+    // 'plugin:nuxt/recommended',
     'eslint:recommended',
     'plugin:prettier/recommended',
     'eslint-config-prettier',
