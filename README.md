@@ -60,3 +60,12 @@
    ```
 
 2. .eslintrc.js에서 주석 처리한 옵션과 연관된 extention을 설치하고 주석 해제
+
+---
+
+## 린트 기본 설정
+
+```bash
+npm init -y
+yarn add -D babel-eslint eslint eslint-loader eslint-config-prettier eslint-plugin-prettier prettier stylelint stylelint-config-standard stylelint-config-prettier stylelint-order stylelint-scss
+```
