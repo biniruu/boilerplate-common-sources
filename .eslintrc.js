@@ -18,6 +18,7 @@ module.exports = {
   plugins: [
     'prettier',
     // 'vue',
+    // '@typescript-eslint',
   ],
   extends: [
     // 'standard',
@@ -25,6 +26,8 @@ module.exports = {
     // 'plugin:nuxt/recommended',
     'eslint:recommended',
     'plugin:prettier/recommended',
+    // 'plugin:@typescript-eslint/recommended' /* Typescript Lint 규칙 모음 */,
+    // "plugin:@typescript-eslint/recommended-requiring-type-checking",
     'eslint-config-prettier',
   ],
   rules: {
@@ -36,6 +39,8 @@ module.exports = {
     'space-before-function-paren': 'off',
     'no-console': 'off',
     'no-unused-vars': 'warn',
+    'no-extra-semi': 'error',
+    'space-in-brackets': 'always',
     quotes: [
       'warn',
       'single',
@@ -53,7 +58,7 @@ module.exports = {
     ],
     'prettier/prettier': [
       'warn',
-      {singleQuote: true, trailingComma: 'all', printWidth: 80},
+      { singleQuote: true, trailingComma: 'all', printWidth: 80 },
     ],
     // 'vue/v-bind-style': ['warn', 'shorthand'],
     // 'vue/require-v-for-key': 'warn',
@@ -64,6 +69,7 @@ module.exports = {
     'no-array-constructor': 'error',
     'no-duplicate-imports': 'error',
     'no-inner-declarations': 'off',
+    '@typescript-eslint/no-var-requires': true,
   },
   // globals: {
   //   $nuxt: true,

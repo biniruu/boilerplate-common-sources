@@ -33,7 +33,7 @@ module.exports = {
     ],
     'declaration-bang-space-after': 'never',
     'declaration-bang-space-before': 'always',
-    'declaration-block-trailing-semicolon': null, // This rule is recommanded because of conflict by semicolon rule between prettier and stylelint
+    'declaration-block-trailing-semicolon': null /* This rule is recommanded because of conflict by semicolon rule between prettier and stylelint */,
     'declaration-colon-space-after': 'always',
     'declaration-colon-space-before': 'never',
     'declaration-empty-line-before': [
