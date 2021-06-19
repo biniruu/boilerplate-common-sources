@@ -4,6 +4,7 @@ module.exports = {
     ecmaVersion: 6,
     parser: 'babel-eslint',
     // parser: '@typescript-eslint/parser',
+    // project: 'tsconfig.json', // @typescript-eslint/parser 를 활성화 하기 위해 꼭 필요
     sourceType: 'module',
     // ecmaFeatures: {
     //   jsx: true,
@@ -26,7 +27,7 @@ module.exports = {
     // 'plugin:nuxt/recommended',
     'eslint:recommended',
     'plugin:prettier/recommended',
-    // 'plugin:@typescript-eslint/recommended' /* Typescript Lint 규칙 모음 */,
+    // 'plugin:@typescript-eslint/recommended', // Typescript Lint 규칙 모음
     // "plugin:@typescript-eslint/recommended-requiring-type-checking",
     'eslint-config-prettier',
   ],
@@ -40,26 +41,14 @@ module.exports = {
     'no-console': 'off',
     'no-unused-vars': 'warn',
     'no-extra-semi': 'error',
-    'space-in-brackets': 'always',
-    quotes: [
-      'warn',
-      'single',
-      {
-        allowTemplateLiterals: true,
-      },
-    ],
+    'object-curly-spacing': ['warn', 'always'], // 중괄호 안에 간격 삽입
+    'array-bracket-spacing': ['warn', 'never'], // 대괄호 안에 간격 삽입
+    'computed-property-spacing': ['error', 'never', { enforceForClassMembers: false }], // class 안에서 정의한 멤버의 대괄호 안에 간격 삽입
+    quotes: ['warn', 'single', { allowTemplateLiterals: true }],
     'prefer-const': 'error',
     'no-var': 'error',
-    camelcase: [
-      'error',
-      {
-        properties: 'never',
-      },
-    ],
-    'prettier/prettier': [
-      'warn',
-      { singleQuote: true, trailingComma: 'all', printWidth: 80 },
-    ],
+    camelcase: ['error', { properties: 'never' }],
+    'prettier/prettier': ['warn', { singleQuote: true, trailingComma: 'all', printWidth: 120 }],
     // 'vue/v-bind-style': ['warn', 'shorthand'],
     // 'vue/require-v-for-key': 'warn',
     // 'vue/no-unused-components': 'warn',
@@ -69,7 +58,7 @@ module.exports = {
     'no-array-constructor': 'error',
     'no-duplicate-imports': 'error',
     'no-inner-declarations': 'off',
-    '@typescript-eslint/no-var-requires': true,
+    // '@typescript-eslint/no-var-requires': 'error', // typescript에서 var 변수 사용 시 에러 발생
   },
   // globals: {
   //   $nuxt: true,

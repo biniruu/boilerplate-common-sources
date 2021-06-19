@@ -4,8 +4,7 @@
   "description": "> *토이 프로젝트나 학습 시 사용하는 개인 설정.*",
   "main": ".eslintrc.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
