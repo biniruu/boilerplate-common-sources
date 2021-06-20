@@ -2,6 +2,7 @@ module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
   plugins: ['stylelint-scss', 'stylelint-order'],
   syntax: 'scss',
+  // ignoreFiles: ['./src/style.css'],
   rules: {
     'at-rule-empty-line-before': [
       'always',
@@ -70,6 +71,7 @@ module.exports = {
     'media-feature-parentheses-space-inside': 'never',
     'media-query-list-comma-newline-after': 'never-multi-line',
     'media-query-list-comma-newline-before': 'never-multi-line',
+    'no-descending-specificity': [true, { ignore: ['selectors-within-list'] }],
     'no-extra-semicolons': true,
     'number-leading-zero': 'always',
     'number-max-precision': 4,
@@ -97,7 +99,7 @@ module.exports = {
     'string-quotes': 'single',
     'unit-case': 'lower',
     'value-keyword-case': 'lower',
-    'value-list-comma-space-after': 'always',
+    'value-list-comma-space-after': 'always-single-line',
     'value-list-comma-space-before': 'never',
   },
 }
