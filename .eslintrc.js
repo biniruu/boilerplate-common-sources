@@ -15,7 +15,6 @@ module.exports = {
     node: true,
     es6: true,
   },
-  // eslint-disable-next-line prettier/prettier
   plugins: [
     'prettier',
     // 'vue',
@@ -43,12 +42,36 @@ module.exports = {
     'no-extra-semi': 'error',
     'object-curly-spacing': ['warn', 'always'], // 중괄호 안에 간격 삽입
     'array-bracket-spacing': ['warn', 'never'], // 대괄호 안에 간격 삽입
-    'computed-property-spacing': ['error', 'never', { enforceForClassMembers: false }], // class 안에서 정의한 멤버의 대괄호 안에 간격 삽입
-    quotes: ['warn', 'single', { allowTemplateLiterals: true }],
+    'computed-property-spacing': [
+      'error',
+      'never',
+      {
+        enforceForClassMembers: false,
+      },
+    ], // class 안에서 정의한 멤버의 대괄호 안에 간격 삽입
+    quotes: [
+      'warn',
+      'single',
+      {
+        allowTemplateLiterals: true,
+      },
+    ],
     'prefer-const': 'error',
     'no-var': 'error',
-    camelcase: ['error', { properties: 'never' }],
-    'prettier/prettier': ['warn', { singleQuote: true, trailingComma: 'all', printWidth: 120 }],
+    camelcase: [
+      'error',
+      {
+        properties: 'never',
+      },
+    ],
+    'prettier/prettier': [
+      'warn',
+      {
+        singleQuote: true,
+        trailingComma: 'all',
+        printWidth: 120,
+      },
+    ],
     // 'vue/v-bind-style': ['warn', 'shorthand'],
     // 'vue/require-v-for-key': 'warn',
     // 'vue/no-unused-components': 'warn',
