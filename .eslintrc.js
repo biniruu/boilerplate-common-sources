@@ -1,47 +1,47 @@
 module.exports = {
-  root: true,
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
+  extends: [
+    'eslint-config-prettier',
+    'eslint:recommended',
+    'plugin:prettier/recommended',
+    // 'plugin:nuxt/recommended',
+    // 'plugin:vue/strongly-recommended',
+    // 'plugin:@typescript-eslint/recommended', // Typescript Lint 규칙 모음
+    // "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    // 'standard',
+  ],
+  // globals: {
+  //   $nuxt: true,
+  // },
   parserOptions: {
+    // ecmaFeatures: {
+    //   jsx: true,
+    // },
     ecmaVersion: 6,
     parser: 'babel-eslint',
     // parser: '@typescript-eslint/parser',
     // project: 'tsconfig.json', // @typescript-eslint/parser 를 활성화 하기 위해 꼭 필요
     sourceType: 'module',
-    // ecmaFeatures: {
-    //   jsx: true,
-    // },
-  },
-  env: {
-    browser: true,
-    node: true,
-    es6: true,
   },
   plugins: [
     'prettier',
     // 'vue',
     // '@typescript-eslint',
   ],
-  extends: [
-    // 'standard',
-    // 'plugin:vue/strongly-recommended',
-    // 'plugin:nuxt/recommended',
-    'eslint:recommended',
-    'plugin:prettier/recommended',
-    // 'plugin:@typescript-eslint/recommended', // Typescript Lint 규칙 모음
-    // "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    'eslint-config-prettier',
-  ],
+  root: true,
   rules: {
-    // allow async-await
-    'generator-star-spacing': 'off',
-    // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'array-bracket-spacing': ['warn', 'never'], // 대괄호 안에 간격 삽입. always로 설정할 경우 prettier와 충돌 발생
+    camelcase: [
+      'error',
+      {
+        properties: 'never',
+      },
+    ],
     'comma-dangle': 'off',
-    'space-before-function-paren': 'off',
-    'no-console': 'off',
-    'no-unused-vars': 'warn',
-    'no-extra-semi': 'error',
-    'object-curly-spacing': ['warn', 'always'], // 중괄호 안에 간격 삽입
-    'array-bracket-spacing': ['warn', 'never'], // 대괄호 안에 간격 삽입
     'computed-property-spacing': [
       'error',
       'never',
@@ -49,21 +49,20 @@ module.exports = {
         enforceForClassMembers: false,
       },
     ], // class 안에서 정의한 멤버의 대괄호 안에 간격 삽입
-    quotes: [
-      'warn',
-      'single',
-      {
-        allowTemplateLiterals: true,
-      },
-    ],
-    'prefer-const': 'error',
+    'generator-star-spacing': 'off', // allow async-await
+    'new-cap': 'error',
+    'no-array-constructor': 'error',
+    'no-console': 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-duplicate-imports': 'error',
+    'no-extra-semi': 'error',
+    'no-inner-declarations': 'off',
+    'no-new-object': 'error',
+    'no-unused-vars': 'warn',
     'no-var': 'error',
-    camelcase: [
-      'error',
-      {
-        properties: 'never',
-      },
-    ],
+    'object-curly-spacing': ['warn', 'always'], // 중괄호 안에 간격 삽입
+    'prefer-const': 'error',
+    'prefer-rest-params': 'error',
     'prettier/prettier': [
       'warn',
       {
@@ -72,18 +71,11 @@ module.exports = {
         printWidth: 120,
       },
     ],
+    quotes: ['warn', 'single', { allowTemplateLiterals: true }],
+    'space-before-function-paren': 'off', // allow debugger during development
     // 'vue/v-bind-style': ['warn', 'shorthand'],
     // 'vue/require-v-for-key': 'warn',
     // 'vue/no-unused-components': 'warn',
-    'new-cap': 'error',
-    'prefer-rest-params': 'error',
-    'no-new-object': 'error',
-    'no-array-constructor': 'error',
-    'no-duplicate-imports': 'error',
-    'no-inner-declarations': 'off',
     // '@typescript-eslint/no-var-requires': 'error', // typescript에서 var 변수 사용 시 에러 발생
   },
-  // globals: {
-  //   $nuxt: true,
-  // },
 }
