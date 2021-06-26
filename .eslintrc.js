@@ -13,7 +13,7 @@ module.exports = {
     'plugin:prettier/recommended',
     // 'plugin:vue/strongly-recommended',
     // 'standard',
-    'tsconfig.json', // project: 'tsconfig.json'을 활성화 하기 위해 꼭 필요
+    // 'tsconfig.json', // project: 'tsconfig.json'을 활성화 하기 위해 꼭 필요
   ],
   // globals: {
   //   $nuxt: true,
@@ -25,7 +25,7 @@ module.exports = {
     ecmaVersion: 6,
     // parser: '@typescript-eslint/parser',
     parser: 'babel-eslint',
-    // project: 'tsconfig.json', // parser: @typescript-eslint/parser를 활성화 하기 위해 꼭 필요
+    // project: 'tsconfig.json', // parser: @typescript-eslint/parsergst를 활성화 하기 위해 꼭 필요
     sourceType: 'module',
   },
   plugins: [
