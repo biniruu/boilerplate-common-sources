@@ -7,11 +7,11 @@ module.exports = {
   extends: [
     'eslint-config-prettier',
     'eslint:recommended',
-    'plugin:prettier/recommended',
-    // 'plugin:nuxt/recommended',
-    // 'plugin:vue/strongly-recommended',
     // 'plugin:@typescript-eslint/recommended', // Typescript Lint 규칙 모음
     // "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    // 'plugin:nuxt/recommended',
+    'plugin:prettier/recommended',
+    // 'plugin:vue/strongly-recommended',
     // 'standard',
   ],
   // globals: {
@@ -22,18 +22,19 @@ module.exports = {
     //   jsx: true,
     // },
     ecmaVersion: 6,
-    parser: 'babel-eslint',
     // parser: '@typescript-eslint/parser',
+    parser: 'babel-eslint',
     // project: 'tsconfig.json', // @typescript-eslint/parser 를 활성화 하기 위해 꼭 필요
     sourceType: 'module',
   },
   plugins: [
+    // '@typescript-eslint',
     'prettier',
     // 'vue',
-    // '@typescript-eslint',
   ],
   root: true,
   rules: {
+    // '@typescript-eslint/no-var-requires': 'error', // typescript에서 var 변수 사용 시 에러 발생
     'array-bracket-spacing': ['warn', 'never'], // 대괄호 안에 간격 삽입. always로 설정할 경우 prettier와 충돌 발생
     camelcase: [
       'error',
@@ -76,6 +77,5 @@ module.exports = {
     // 'vue/v-bind-style': ['warn', 'shorthand'],
     // 'vue/require-v-for-key': 'warn',
     // 'vue/no-unused-components': 'warn',
-    // '@typescript-eslint/no-var-requires': 'error', // typescript에서 var 변수 사용 시 에러 발생
   },
 }
