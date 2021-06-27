@@ -71,12 +71,12 @@ module.exports = {
     'media-feature-parentheses-space-inside': 'never',
     'media-query-list-comma-newline-after': 'never-multi-line',
     'media-query-list-comma-newline-before': 'never-multi-line',
-    // 'no-descending-specificity': [
-    //   true,
-    //   {
-    //     ignore: ['selectors-within-list'],
-    //   },
-    // ], // 라이브러리를 사용하거나 다른 사람의 프로젝트를 이어 받을 때는 이 옵션을 사용하지 않도록 하자. 엄청 귀찮아짐.
+    'no-descending-specificity': [
+      true,
+      {
+        ignore: ['selectors-within-list'],
+      },
+    ], // 이 옵션을 비활성할 수 있는 방법이 없음
     'no-extra-semicolons': true,
     'number-leading-zero': 'always',
     'number-max-precision': 4,
@@ -92,7 +92,7 @@ module.exports = {
     'selector-attribute-brackets-space-inside': 'never',
     'selector-attribute-operator-space-after': 'never',
     'selector-attribute-operator-space-before': 'never',
-    'selector-attribute-quotes': 'never',
+    'selector-attribute-quotes': 'always', // 'never'로 하면 "Unclosed string (CssSyntaxError)" 에러 발생. 아마도 eslint의 rule과 충돌하는 듯.
     'selector-combinator-space-after': 'always',
     'selector-combinator-space-before': 'always',
     'selector-descendant-combinator-no-non-space': true,
