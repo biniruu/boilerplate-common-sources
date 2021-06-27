@@ -18,13 +18,13 @@ module.exports = {
   // globals: {
   //   $nuxt: true,
   // },
+  // parser: '@typescript-eslint/parser',
+  parser: 'babel-eslint',
   parserOptions: {
     // ecmaFeatures: {
     //   jsx: true,
     // },
     ecmaVersion: 6,
-    // parser: '@typescript-eslint/parser',
-    parser: 'babel-eslint',
     // project: 'tsconfig.json', // parser: @typescript-eslint/parsergst를 활성화 하기 위해 꼭 필요
     sourceType: 'module',
   },
