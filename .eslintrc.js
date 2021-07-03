@@ -33,6 +33,7 @@ module.exports = {
   plugins: [
     // '@typescript-eslint',
     'prettier',
+    // 'react-hooks',
     // 'vue',
   ],
   root: true,
@@ -75,7 +76,21 @@ module.exports = {
         printWidth: 120,
       },
     ],
-    quotes: ['warn', 'single', { allowTemplateLiterals: true }],
+    quotes: [
+      'warn',
+      'single',
+      {
+        allowTemplateLiterals: true,
+      },
+    ],
+    // 'react/prop-types': [
+    //   'warn',
+    //   {
+    //     // ignore: [], // optional array of props name to ignore during validation
+    //     // customValidators: [], // optional array of validators used for propTypes validation
+    //     skipUndeclared: true, // optional boolean to only error on components that have a propTypes block declared
+    //   },
+    // ],
     'space-before-function-paren': 'off', // allow debugger during development
     // 'vue/v-bind-style': ['warn', 'shorthand'],
     // 'vue/require-v-for-key': 'warn',

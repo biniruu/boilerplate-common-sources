@@ -76,7 +76,7 @@
    $ yarn add -D eslint-plugin-vue
    ```
 
-1. .eslintrc.js에서 주석 처리한 옵션과 연관된 extention을 설치하고 주석 해제
+1. .eslintrc.js에서 주석 처리한 vue 옵션 활성화
 
 ---
 
@@ -92,7 +92,7 @@
    $ yarn add -D typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
    ```
 
-1. .eslintrc.js에서 주석 처리한 옵션과 연관된 extention을 설치하고 주석 해제
+1. .eslintrc.js에서 주석 처리한 typescript 관련 옵션 활성화
 1. .prettierrc에 `"parser": "typescript"` 옵션을 추가한다.
 
 ---
@@ -109,7 +109,7 @@
    $ yarn add -D eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
    ```
 
-1. .eslintrc.js에서 주석 처리한 react 관련 옵션을 활성화
+1. .eslintrc.js에서 주석 처리한 react 관련 옵션 활성화
 
 ---
 
