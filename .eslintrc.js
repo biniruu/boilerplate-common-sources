@@ -7,13 +7,16 @@ module.exports = {
   extends: [
     'eslint-config-prettier',
     'eslint:recommended',
-    // 'plugin:@typescript-eslint/recommended', // Typescript Lint 규칙 모음
+    // 'plugin:@typescript-eslint/recommended', // 타입스크립트 추천 룰셋
     // 'plugin:@typescript-eslint/recommended-requiring-type-checking',
     // 'plugin:jsx-a11y/recommended', // react.js 프로젝트 시 필요
     // 'plugin:nuxt/recommended',
-    'plugin:prettier/recommended',
-    // 'plugin:react/recommended', // react.js 프로젝트 시 필요
+    'plugin:prettier/recommended', // eslint의 포매팅 기능을 prettier로 사용. 항상 마지막에 세팅 되어야? (eslint-plugin-prettier)
+    // 'plugin:react/recommended', // 리액트 추천 룰셋
     // 'plugin:vue/strongly-recommended',
+    'prettier',
+    // 'prettier/@typescript-eslint', // eslint의 typescript 포매팅 기능을 제거 (eslint-config-prettier)
+    // 'prettier/react',
     // 'standard',
     // 'tsconfig.json', // project: 'tsconfig.json'을 활성화 하기 위해 꼭 필요
   ],
@@ -24,11 +27,11 @@ module.exports = {
   parser: 'babel-eslint',
   parserOptions: {
     // ecmaFeatures: {
-    //   jsx: true,
+    //   jsx: true, // 리액트의 JSX 파싱을 위해서
     // },
     ecmaVersion: 6,
     // project: 'tsconfig.json', // parser: @typescript-eslint/parsergst를 활성화 하기 위해 꼭 필요
-    sourceType: 'module',
+    sourceType: 'module', // 모듈 시스템 사용 시
   },
   plugins: [
     // '@typescript-eslint',
@@ -96,4 +99,9 @@ module.exports = {
     // 'vue/require-v-for-key': 'warn',
     // 'vue/no-unused-components': 'warn',
   },
+  // settings: {
+  //   react: {
+  //     version: 'detect', // eslint-plugin-react가 자동 리액트버전탐지
+  //   },
+  // },
 }
