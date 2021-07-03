@@ -8,7 +8,7 @@ module.exports = {
     'eslint-config-prettier',
     'eslint:recommended',
     // 'plugin:@typescript-eslint/recommended', // Typescript Lint 규칙 모음
-    // "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    // 'plugin:@typescript-eslint/recommended-requiring-type-checking',
     // 'plugin:jsx-a11y/recommended', // react.js 프로젝트 시 필요
     // 'plugin:nuxt/recommended',
     'plugin:prettier/recommended',
