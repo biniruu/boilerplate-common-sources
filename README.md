@@ -72,7 +72,7 @@
 
    1. eslint-plugin-vue
 
-   ```
+   ```bash
    $ yarn add -D eslint-plugin-vue
    ```
 
@@ -88,11 +88,28 @@
    2. @typescript-eslint/eslint-plugin // Typescript 관련 린팅 규칙을 설정하는 플러그인
    3. @typescript-eslint/parser // Typescript 를 파싱하기 위해 사용
 
-   ```
+   ```bash
    $ yarn add -D typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
    ```
 
 1. .eslintrc.js에서 주석 처리한 옵션과 연관된 extention을 설치하고 주석 해제
+1. .prettierrc에 `"parser": "typescript"` 옵션을 추가한다.
+
+---
+
+## React.js 프로젝트일 때 추가 설정
+
+1. npm 설치
+
+   1. eslint-plugin-react
+   2. eslint-plugin-react-hooks
+   3. eslint-plugin-jsx-a11y
+
+   ```bash
+   $ yarn add -D eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
+   ```
+
+1. .eslintrc.js에서 주석 처리한 react 관련 옵션을 활성화
 
 ---
 

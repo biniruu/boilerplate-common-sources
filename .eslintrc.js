@@ -9,8 +9,10 @@ module.exports = {
     'eslint:recommended',
     // 'plugin:@typescript-eslint/recommended', // Typescript Lint 규칙 모음
     // "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    // 'plugin:jsx-a11y/recommended', // react.js 프로젝트 시 필요
     // 'plugin:nuxt/recommended',
     'plugin:prettier/recommended',
+    // 'plugin:react/recommended', // react.js 프로젝트 시 필요
     // 'plugin:vue/strongly-recommended',
     // 'standard',
     // 'tsconfig.json', // project: 'tsconfig.json'을 활성화 하기 위해 꼭 필요
