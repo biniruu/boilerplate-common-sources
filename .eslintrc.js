@@ -23,6 +23,7 @@ module.exports = {
   // globals: {
   //   $nuxt: true,
   // },
+  // ignorePatterns: ['.eslintrc.js'], // The file does not match your project config: eslintrc.js 에러 해결을 위해 필요
   // parser: '@typescript-eslint/parser',
   parser: 'babel-eslint',
   parserOptions: {
