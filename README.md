@@ -4,13 +4,10 @@
 
 ## vs code의 settings.json 설정
 
-./vscode/settings.json을 복사 + 붙여넣기 한다.  
-이 settings.json은 workspace 설정이라, 파일 자체를 옮기지 말고 아래 순서에 따라 프로젝트에서 파일을 생성한 후에 설정만 복사해서 옮기는 것을 추천한다.
+./vscode/settings.json을 폴더째 복사 + 붙여넣기 한다.  
 
-1.  `command + ,` 를 클릭하여 vs code 설정화면을 띄운다.
-2.  검색창에 `save`를 검색한 다음, Format on save를 활성화한다(workspace에서 할 것).
-3.  우측 상단에 있는 Open Settings 아이콘을 클릭하여 settings.json 파일을 연다.
-4.  이곳에 있는 settings.json 파일의 내용을 복사한 다음, 3번에서 생성한 settings.json 파일에 붙여넣는다.
+> 설정 중 `"editor.formatOnSave": true`가 없더라도 파일을 저장할 때 자동으로 lint 적용이 되기 때문에 현재는 삭제했음(2021년 7월 29일)
+
 
 ## vs code에 prettier & eslint 설정하기
 
