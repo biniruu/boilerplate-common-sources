@@ -2,13 +2,6 @@
 
 > _토이 프로젝트나 학습 시 사용하는 개인 설정_
 
-## vs code의 settings.json 설정
-
-./vscode/settings.json을 폴더째 복사 + 붙여넣기 한다.  
-
-> 설정 중 `"editor.formatOnSave": true`가 없더라도 파일을 저장할 때 자동으로 lint 적용이 되기 때문에 현재는 삭제했음(2021년 7월 29일)
-
-
 ## vs code에 prettier & eslint 설정하기
 
 > npm init 을 하지 않았다면 `npm init -y`를 먼저 실행할 것.
@@ -35,13 +28,17 @@
    3. .eslintrc.js
    4. .eslintignore
 
+## vs code의 settings.json 설정
+
 1. vs code 설정에서 옵션 변경(workspace)
 
-   > 이 설정은 직접 설정하지 말고 .vscode/settings.json 파일을 그대로 복사해서 붙여넣기할 것
+   > 이 설정은 직접 하지 말고 여기에 있는 .vscode/settings.json 파일을 폴더째 복사해서 붙여넣기 할 것.
 
    ~~1. Editor: Format On Save => true~~  
    ~~1. Editor: Default Formatter => esbenp.prettier-vscode~~  
    ~~Eslint > Format: Enable => true~~
+
+   > 설정 중 `"editor.formatOnSave": true`가 없더라도 파일을 저장할 때 자동으로 lint 적용이 되기 때문에 현재는 삭제했음(2021년 7월 29일)
 
 1. package.json > scripts 에 lint 명령어 추가 후 실행
 
