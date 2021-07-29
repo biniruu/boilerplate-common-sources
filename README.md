@@ -2,7 +2,19 @@
 
 > _토이 프로젝트나 학습 시 사용하는 개인 설정_
 
+## vs code의 settings.json 설정
+
+./vscode/settings.json을 복사 + 붙여넣기 한다.  
+이 settings.json은 workspace 설정이라, 파일 자체를 옮기지 말고 아래 순서에 따라 프로젝트에서 파일을 생성한 후에 설정만 복사해서 옮기는 것을 추천한다.
+
+1.  `command + ,` 를 클릭하여 vs code 설정화면을 띄운다.
+2.  검색창에 `save`를 검색한 다음, Format on save를 활성화한다(workspace에서 할 것).
+3.  우측 상단에 있는 Open Settings 아이콘을 클릭하여 settings.json 파일을 연다.
+4.  이곳에 있는 settings.json 파일의 내용을 복사한 다음, 3번에서 생성한 settings.json 파일에 붙여넣는다.
+
 ## vs code에 prettier & eslint 설정하기
+
+> npm init 을 하지 않았다면 `npm init -y`를 먼저 실행할 것.
 
 1. prettier, eslint extention 설치
 1. npm 설치
@@ -36,17 +48,19 @@
 
 1. package.json > scripts 에 lint 명령어 추가 후 실행
 
-   ```json
-   {
-     "scripts": {
-       "lint": "eslint ."
-     }
-   }
-   ```
+> 명령어를 추가하지 않고 `npx eslint .`만 실행해도 된다.
 
-   ```bash
-   $ npm run lint
-   ```
+```json
+{
+  "scripts": {
+    "lint": "eslint ."
+  }
+}
+```
+
+```bash
+$ npm run lint
+```
 
 ## stylelint 설정하기
 
@@ -114,6 +128,8 @@
 ---
 
 ## 린트 기본 설정
+
+> 아래 패키지는 프론트엔드 vue.js, react.js, typescript를 제외한 것.
 
 ```bash
 npm init -y
