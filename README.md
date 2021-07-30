@@ -121,6 +121,23 @@ $ npm run lint
 
 ---
 
+## jest를 사용할 때 추가 설정
+
+1. npm 설치
+
+   1. eslint-plugin-jest
+
+   ```bash
+   $ yarn add -D eslint-plugin-jest
+   ```
+
+1. .eslintrc.js에서 주석 처리한 jest 관련 옵션 활성화
+
+   - [Rules](https://www.npmjs.com/package/eslint-plugin-jest#user-content-rules)
+   - [Typescript Rules](https://www.npmjs.com/package/eslint-plugin-jest#user-content-typescript-rules)
+
+---
+
 ## 린트 기본 설정
 
 > 아래 패키지는 프론트엔드 vue.js, react.js, typescript를 제외한 것.

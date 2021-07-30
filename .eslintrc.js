@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    // 'jest/globals': true,
     node: true,
   },
   extends: [
@@ -9,6 +10,9 @@ module.exports = {
     'eslint:recommended',
     // 'plugin:@typescript-eslint/recommended', // 타입스크립트 추천 룰셋
     // 'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    // 'plugin:jest/all', // enable all rules instead of only some you can do
+    // 'plugin:jest/recommended', // exports a recommended configuration that enforces good testing practices
+    // 'plugin:jest/style', // exports a configuration named style
     // 'plugin:jsx-a11y/recommended', // react.js 프로젝트 시 필요
     // 'plugin:nuxt/recommended',
     'plugin:prettier/recommended', // eslint의 포매팅 기능을 prettier로 사용. 항상 마지막에 세팅 되어야? (eslint-plugin-prettier)
@@ -36,6 +40,7 @@ module.exports = {
   },
   plugins: [
     // '@typescript-eslint',
+    // 'jest',
     'prettier',
     // 'react-hooks',
     // 'vue',
@@ -59,6 +64,11 @@ module.exports = {
       },
     ], // class 안에서 정의한 멤버의 대괄호 안에 간격 삽입
     'generator-star-spacing': 'off', // allow async-await
+    // 'jest/no-disabled-tests': 'warn',
+    // 'jest/no-focused-tests': 'error',
+    // 'jest/no-identical-title': 'error',
+    // 'jest/prefer-to-have-length': 'warn',
+    // 'jest/valid-expect': 'error',
     'new-cap': 'error',
     'no-array-constructor': 'error',
     'no-console': 'off',
