@@ -6,5 +6,6 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslint.format.enable": true,
   "files.insertFinalNewline": true,
-  "workbench.editor.decorations.badges": true
+  "workbench.editor.decorations.badges": true,
+  "editor.formatOnSave": true
 }
