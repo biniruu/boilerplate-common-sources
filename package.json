@@ -1,7 +1,7 @@
 {
-  "name": "setting-up-prettier-eslint",
-  "version": "1.0.0",
-  "description": "> *토이 프로젝트나 학습 시 사용하는 개인 설정.*",
+  "name": "boilerplate-for-eslint-prettier-stylelint",
+  "version": "1.1.0",
+  "description": "> *프로젝트에 바로 사용할 수 있는 eslint-prettier-stylelint 설정.*",
   "main": ".eslintrc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
