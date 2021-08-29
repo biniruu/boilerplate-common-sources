@@ -1,4 +1,4 @@
-# Boilerplate for eslint-prettier-stylelint
+# eslint-prettier-stylelint boilerplate
 
 프로젝트에 바로 사용할 수 있는 eslint-prettier-stylelint 설정.
 
