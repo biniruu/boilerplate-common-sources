@@ -46,8 +46,6 @@
    ~~1. Editor: Default Formatter => esbenp.prettier-vscode~~  
    ~~Eslint > Format: Enable => true~~
 
-   > 설정 중 `"editor.formatOnSave": true`가 없더라도 파일을 저장할 때 자동으로 lint 적용이 되기 때문에 현재는 삭제했음(2021년 7월 29일)
-
 1. package.json > scripts 에 lint 명령어 추가 후 실행
 
 > 명령어를 추가하지 않고 `npx eslint .`만 실행해도 된다.
