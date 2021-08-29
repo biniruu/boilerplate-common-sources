@@ -1,6 +1,14 @@
-# Setting up prettier & eslint
+# Boilerplate for eslint-prettier-stylelint
 
-> _토이 프로젝트나 학습 시 사용하는 개인 설정_
+프로젝트에 바로 사용할 수 있는 eslint-prettier-stylelint 설정.
+
+다음 라이브러리 & 프레임워크를 사용하는 프로젝트에 바로 적용할 수 있다.
+
+- Jest
+- React.js
+- Typescript
+- Vanillascript
+- Vue.js
 
 ## vs code에 prettier & eslint 설정하기
 
