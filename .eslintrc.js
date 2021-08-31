@@ -7,6 +7,7 @@ module.exports = {
   },
   extends: [
     'eslint-config-prettier',
+    // 'plugin:mocha/recommended',
     'eslint:recommended',
     // 'plugin:@typescript-eslint/recommended', // 타입스크립트 추천 룰셋
     // 'plugin:@typescript-eslint/recommended-requiring-type-checking',
@@ -41,6 +42,7 @@ module.exports = {
   plugins: [
     // '@typescript-eslint',
     // 'jest',
+    // 'mocha',
     'prettier',
     // 'react-hooks',
     // 'vue',
@@ -71,6 +73,23 @@ module.exports = {
     // 'jest/prefer-expect-assertions': ['warn', { onlyFunctionsWithAsyncKeyword: true }],
     // 'jest/prefer-to-have-length': d'warn',
     // 'jest/valid-expect': 'error',
+    // eslint-plugin-mocha rules: https://github.com/lo1tuma/eslint-plugin-mocha/tree/f9540209dc153c26fb44fa5250af6034058db875/docs/rules#rules
+    // 'mocha/handle-done-callback': 'error',
+    // 'mocha/max-top-level-suites': 'error',
+    // 'mocha/no-async-describe': 'error',
+    // 'mocha/no-exclusive-tests': 'error',
+    // 'mocha/no-exports': 'error',
+    // 'mocha/no-global-tests': 'error',
+    // 'mocha/no-hooks-for-single-case': 'error',
+    // 'mocha/no-identical-title': 'error',
+    // 'mocha/no-mocha-arrows': 'error',
+    // 'mocha/no-nested-tests': 'error',
+    // 'mocha/no-pending-tests': 'error',
+    // 'mocha/no-return-and-callback': 'error',
+    // 'mocha/no-setup-in-describe': 'error',
+    // 'mocha/no-sibling-hooks': 'error',
+    // 'mocha/no-skipped-tests': 'error',
+    // 'mocha/no-top-level-hooks': 'error',
     'new-cap': 'error',
     'no-array-constructor': 'error',
     'no-console': 'off',
@@ -114,6 +133,10 @@ module.exports = {
     // 'vue/no-unused-components': 'warn',
   },
   // settings: {
+  //   'mocha/additionalCustomNames': [
+  //     { name: 'describeModule', type: 'suite', interfaces: ['BDD'] },
+  //     { name: 'testModule', type: 'testCase', interfaces: ['TDD'] },
+  //   ],
   //   react: {
   //     version: 'detect', // eslint-plugin-react가 자동 리액트버전탐지
   //   },
