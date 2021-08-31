@@ -158,7 +158,7 @@
 
    [Rules](https://github.com/lo1tuma/eslint-plugin-mocha/tree/f9540209dc153c26fb44fa5250af6034058db875/docs/rules#rules)
 
-   ***
+---
 
 ## 린트 기본 설정
 
