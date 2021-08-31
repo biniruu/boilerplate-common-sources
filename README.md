@@ -26,7 +26,7 @@
    7. prettier // 코드의 스타일을 잡아주는 포맷팅 기능
 
    ```bash
-   $ yarn add -D babel-eslint eslint eslint-loader eslint-config-prettier eslint-plugin-import eslint-plugin-prettier prettier
+   $ yarn add -D babel-eslint eslint eslint-config-prettier eslint-loader eslint-plugin-import eslint-plugin-prettier prettier
    ```
 
 1. 프로젝트 root 폴더에 파일 복사
@@ -48,19 +48,19 @@
 
 1. package.json > scripts 에 lint 명령어 추가 후 실행
 
-> 명령어를 추가하지 않고 `npx eslint .`만 실행해도 된다.
+   > 명령어를 추가하지 않고 `npx eslint .`만 실행해도 된다.
 
-```json
-{
-  "scripts": {
-    "lint": "eslint ."
-  }
-}
-```
+   ```json
+   {
+     "scripts": {
+       "lint": "eslint ."
+     }
+   }
+   ```
 
-```bash
-$ npm run lint
-```
+   ```bash
+   $ npm run lint
+   ```
 
 ## stylelint 설정하기
 
@@ -143,6 +143,22 @@ $ npm run lint
    - [Typescript Rules](https://www.npmjs.com/package/eslint-plugin-jest#user-content-typescript-rules)
 
 ---
+
+## mocha를 사용할 때 추가 설정
+
+1. npm 설치
+
+   1. eslint-plugin-mocha
+
+   ```bash
+   $ yarn add -D eslint-plugin-mocha
+   ```
+
+1. .eslintrc.js에서 주석 처리한 mocha 관련 옵션 활성화
+
+   [Rules](https://github.com/lo1tuma/eslint-plugin-mocha/tree/f9540209dc153c26fb44fa5250af6034058db875/docs/rules#rules)
+
+   ***
 
 ## 린트 기본 설정
 
