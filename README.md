@@ -132,6 +132,7 @@
 1. npm 설치
 
    1. eslint-plugin-jest
+   1. jest
 
    ```bash
    $ yarn add -D eslint-plugin-jest
@@ -149,9 +150,10 @@
 1. npm 설치
 
    1. eslint-plugin-mocha
+   1. mocha
 
    ```bash
-   $ yarn add -D eslint-plugin-mocha
+   $ yarn add -D eslint-plugin-mocha mocha
    ```
 
 1. .eslintrc.js에서 주석 처리한 mocha 관련 옵션 활성화
