@@ -2,28 +2,23 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    // jest: true,
-    // mocha: true,
     node: true,
   },
   extends: [
     'eslint-config-prettier',
+    // 'plugin:chai-friendly/recommended',
     // 'plugin:mocha/recommended',
     'eslint:recommended',
     // 'plugin:@typescript-eslint/recommended', // 타입스크립트 추천 룰셋
     // 'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    // 'plugin:jest/all', // enable all rules instead of only some you can do
-    // 'plugin:jest/recommended', // exports a recommended configuration that enforces good testing practices
-    // 'plugin:jest/style', // exports a configuration named style
+    // 'plugin:jest/recommended',
     // 'plugin:jsx-a11y/recommended', // react.js 프로젝트 시 필요
     // 'plugin:nuxt/recommended',
     'plugin:prettier/recommended', // eslint의 포매팅 기능을 prettier로 사용. 항상 마지막에 세팅 되어야? (eslint-plugin-prettier)
-    // 'plugin:react/recommended', // 리액트 추천 룰셋
+    // 'plugin:react/recommended',
     // 'plugin:vue/strongly-recommended',
-    'prettier',
     // 'prettier/@typescript-eslint', // eslint의 typescript 포매팅 기능을 제거 (eslint-config-prettier)
     // 'prettier/react',
-    // 'standard',
     // 'tsconfig.json', // project: 'tsconfig.json'을 활성화 하기 위해 꼭 필요
   ],
   // globals: {
@@ -41,12 +36,7 @@ module.exports = {
     sourceType: 'module', // 모듈 시스템 사용 시
   },
   plugins: [
-    // '@typescript-eslint',
-    // 'jest',
-    // 'mocha',
-    'prettier',
     // 'react-hooks',
-    // 'vue',
   ],
   root: true,
   rules: {
@@ -56,29 +46,6 @@ module.exports = {
     'comma-dangle': 'off',
     'computed-property-spacing': ['error', 'never', { enforceForClassMembers: false }],
     'generator-star-spacing': 'off', // allow async-await
-    // 'jest/no-disabled-tests': 'warn',
-    // 'jest/no-focused-tests': 'error',
-    // 'jest/no-hooks': ['error', { allow: ['afterEach', 'afterAll', 'beforeEach', 'beforeAll'] }],
-    // 'jest/no-identical-title': 'error',
-    // 'jest/prefer-expect-assertions': ['warn', { onlyFunctionsWithAsyncKeyword: true }],
-    // 'jest/prefer-to-have-length': d'warn',
-    // 'jest/valid-expect': 'error',
-    // 'mocha/handle-done-callback': 'error',
-    // 'mocha/max-top-level-suites': 'error',
-    // 'mocha/no-async-describe': 'error',
-    // 'mocha/no-exclusive-tests': 'error',
-    // 'mocha/no-exports': 'error',
-    // 'mocha/no-global-tests': 'error',
-    // 'mocha/no-hooks-for-single-case': 'error',
-    // 'mocha/no-identical-title': 'error',
-    // 'mocha/no-mocha-arrows': 'error',
-    // 'mocha/no-nested-tests': 'error',
-    // 'mocha/no-pending-tests': 'error',
-    // 'mocha/no-return-and-callback': 'error',
-    // 'mocha/no-setup-in-describe': 'error',
-    // 'mocha/no-sibling-hooks': 'error',
-    // 'mocha/no-skipped-tests': 'error',
-    // 'mocha/no-top-level-hooks': 'error',
     'new-cap': 'error',
     'no-array-constructor': 'error',
     'no-console': 'off',
@@ -108,10 +75,6 @@ module.exports = {
     // 'vue/no-unused-components': 'warn',
   },
   // settings: {
-  //   'mocha/additionalCustomNames': [
-  //     { name: 'describeModule', type: 'suite', interfaces: ['BDD'] },
-  //     { name: 'testModule', type: 'testCase', interfaces: ['TDD'] },
-  //   ],
   //   react: {
   //     version: 'detect', // eslint-plugin-react가 자동 리액트버전탐지
   //   },

@@ -18,12 +18,12 @@
 1. npm 설치
 
    1. babel-eslint // 파서 옵션에 따라 설치하지 않아도 상관없음
-   2. eslint // 코드의 문법을 검사하는 린팅과 코드의 스타일을 잡아주는 포맷팅 기능
-   3. eslint-config-prettier // prettier와 충돌을 일으키는 ESLint 규칙들을 비활성화 시키는 config
-   4. eslint-loader
-   5. eslint-plugin-import // ES2015+의 import/export 구문을 지원. Vue나 React 같은 프론트엔드 라이브러리를 사용할 때는 설치하지 않아도 괜찮다.
-   6. eslint-plugin-prettier // Prettier에서 인식하는 코드상의 포맷 오류를 ESLint 오류로 출
-   7. prettier // 코드의 스타일을 잡아주는 포맷팅 기능
+   1. eslint // 코드의 문법을 검사하는 린팅과 코드의 스타일을 잡아주는 포맷팅 기능
+   1. eslint-config-prettier // prettier와 충돌을 일으키는 ESLint 규칙들을 비활성화 시키는 config
+   1. eslint-loader
+   1. eslint-plugin-import // ES2015+의 import/export 구문을 지원. Vue나 React 같은 프론트엔드 라이브러리를 사용할 때는 설치하지 않아도 괜찮다.
+   1. eslint-plugin-prettier // Prettier에서 인식하는 코드상의 포맷 오류를 ESLint 오류로 출
+   1. prettier // 코드의 스타일을 잡아주는 포맷팅 기능
 
    ```bash
    $ yarn add -D babel-eslint eslint eslint-config-prettier eslint-loader eslint-plugin-import eslint-plugin-prettier prettier
@@ -32,9 +32,9 @@
 1. 프로젝트 root 폴더에 파일 복사
 
    1. .prettierrc
-   2. .prettierignore
-   3. .eslintrc.js
-   4. .eslintignore
+   1. .prettierignore
+   1. .eslintrc.js
+   1. .eslintignore
 
 ## vs code의 settings.json 설정
 
@@ -78,6 +78,7 @@
    ```
 
 1. 프로젝트 root 폴더에 파일 복사
+
    1. .stylelintrc.js
 
 ## Vue.js 프로젝트일 때 추가 설정
@@ -138,6 +139,16 @@
    $ yarn add -D eslint-plugin-jest
    ```
 
+1. package.json > scripts 에 test 명령어 추가 후 실행
+
+   ```json
+   {
+     "scripts": {
+       "test": "jest"
+     }
+   }
+   ```
+
 1. .eslintrc.js에서 주석 처리한 jest 관련 옵션 활성화
 
    - [Rules](https://www.npmjs.com/package/eslint-plugin-jest#user-content-rules)
@@ -149,24 +160,25 @@
 
 1. npm 설치
 
+   1. chai
+   1. eslint-plugin-chai-friendly
    1. eslint-plugin-mocha
    1. mocha
 
    ```bash
-   $ yarn add -D eslint-plugin-mocha mocha
+   $ yarn add -D chai eslint-plugin-chai-friendly eslint-plugin-mocha mocha
+   ```
+
+1. package.json > scripts 에 test 명령어 추가 후 실행
+
+   ```json
+   {
+     "scripts": {
+       "test": "mocha"
+     }
+   }
    ```
 
 1. .eslintrc.js에서 주석 처리한 mocha 관련 옵션 활성화
 
    [Rules](https://github.com/lo1tuma/eslint-plugin-mocha/tree/f9540209dc153c26fb44fa5250af6034058db875/docs/rules#rules)
-
----
-
-## 린트 기본 설정
-
-> 아래 패키지는 프론트엔드 vue.js, react.js, typescript를 제외한 것.
-
-```bash
-npm init -y
-yarn add -D babel-eslint eslint eslint-loader eslint-plugin-import eslint-config-prettier eslint-plugin-prettier prettier stylelint stylelint-config-standard stylelint-config-prettier stylelint-order stylelint-scss
-```
