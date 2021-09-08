@@ -26,6 +26,7 @@
    1. prettier // 코드의 스타일을 잡아주는 포맷팅 기능
 
    ```bash
+   $ npm init -y
    $ yarn add -D babel-eslint eslint eslint-config-prettier eslint-loader eslint-plugin-import eslint-plugin-prettier prettier
    ```
 
@@ -93,7 +94,18 @@
 
 1. .eslintrc.js에서 주석 처리한 vue 관련 옵션 활성화
 
----
+## Nuxt.js 프로젝트일 때 추가 설정
+
+1. npm 설치
+
+   1. eslint-plugin-vue
+   1. eslint-plugin-nuxt
+
+   ```bash
+   $ yarn add -D eslint-plugin-vue eslint-plugin-nuxt
+   ```
+
+1. .eslintrc.js에서 주석 처리한 vue, nuxt 관련 옵션 활성화
 
 ## Typescript 프로젝트일 때 추가 설정
 
@@ -110,8 +122,6 @@
 1. .eslintrc.js에서 주석 처리한 typescript 관련 옵션 활성화
 1. .prettierrc에 `"parser": "typescript"` 추가
 
----
-
 ## React.js 프로젝트일 때 추가 설정
 
 1. npm 설치
@@ -126,8 +136,6 @@
 
 1. .eslintrc.js에서 주석 처리한 react 관련 옵션 활성화
 
----
-
 ## jest를 사용할 때 추가 설정
 
 1. npm 설치
@@ -136,7 +144,15 @@
    1. jest
 
    ```bash
-   $ yarn add -D eslint-plugin-jest
+   $ yarn add -D eslint-plugin-jest jest
+   ```
+
+1. Vue.js, Nuxt.js에 사용할 때는 vue-jest를 추가할 것
+
+   1. vue-jest
+
+   ```bash
+   $ yarn add -D vue-jest
    ```
 
 1. package.json > scripts 에 test 명령어 추가 후 실행
@@ -153,8 +169,6 @@
 
    - [Rules](https://www.npmjs.com/package/eslint-plugin-jest#user-content-rules)
    - [Typescript Rules](https://www.npmjs.com/package/eslint-plugin-jest#user-content-typescript-rules)
-
----
 
 ## mocha를 사용할 때 추가 설정
 
