@@ -1,30 +1,30 @@
 module.exports = {
   env: { browser: true, es6: true, node: true },
   extends: [
+    'eslint:recommended',
     'eslint-config-prettier',
-    'eslint-config-sinon',
+    // 'eslint-config-sinon',
     // 'plugin:chai-friendly/recommended',
     // 'plugin:mocha/recommended',
-    'eslint:recommended',
-    // 'plugin:@typescript-eslint/recommended', // 타입스크립트 추천 룰셋
-    // 'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'plugin:import/recommended',
     // 'plugin:jest/recommended',
     // 'plugin:jsx-a11y/recommended', // react.js 프로젝트 시 필요
     // 'plugin:nuxt/recommended',
     'plugin:prettier/recommended', // eslint의 포매팅 기능을 prettier로 사용. 항상 마지막에 세팅 되어야? (eslint-plugin-prettier)
     // 'plugin:react/recommended',
     // 'plugin:vue/strongly-recommended',
-    // 'prettier/@typescript-eslint', // eslint의 typescript 포매팅 기능을 제거 (eslint-config-prettier)
+    // 'plugin:@typescript-eslint/recommended', // 타입스크립트 추천 룰셋
+    // 'plugin:@typescript-eslint/recommended-requiring-type-checking',
     // 'prettier/react',
+    // 'prettier/@typescript-eslint', // eslint의 typescript 포매팅 기능을 제거 (eslint-config-prettier)
     // 'tsconfig.json', // project: 'tsconfig.json'을 활성화 하기 위해 꼭 필요
   ],
-  // globals: {
-  //   $nuxt: true,
-  // },
+  // globals: { $nuxt: true },
   // ignorePatterns: ['.eslintrc.js'], // The file does not match your project config: eslintrc.js 에러 해결을 위해 필요
   // parser: '@typescript-eslint/parser',
-  parser: 'babel-eslint',
+  // parser: 'vue-eslint-parser',
   parserOptions: {
+    parser: 'babel-eslint',
     // ecmaFeatures: {
     //   jsx: true, // 리액트의 JSX 파싱을 위해서
     // },
@@ -33,7 +33,17 @@ module.exports = {
     sourceType: 'module', // 모듈 시스템 사용 시
   },
   plugins: [
+    // 'chai-friendly',
+    'import',
+    // 'jest',
+    // 'jsx-a11y',
+    // 'mocha',
+    // 'nuxt',
+    'prettier',
+    // 'react',
     // 'react-hooks',
+    // 'vue',
+    // '@typescript-eslint',
   ],
   root: true,
   rules: {
@@ -43,6 +53,7 @@ module.exports = {
     'comma-dangle': 'off',
     'computed-property-spacing': ['error', 'never', { enforceForClassMembers: false }],
     'generator-star-spacing': 'off', // allow async-await
+    'import/no-unresolved': ['error', { commonjs: true, amd: true }], // 프론트엔드 라이브러리를 사용할 때는 'off'로 둘 것을 권장
     'new-cap': 'error',
     'no-array-constructor': 'error',
     'no-console': 'off',
@@ -67,9 +78,10 @@ module.exports = {
     //   },
     // ],
     'space-before-function-paren': 'off', // allow debugger during development
-    // 'vue/v-bind-style': ['warn', 'shorthand'],
-    // 'vue/require-v-for-key': 'warn',
+    // 'vue/html-self-cloimport/no-unresolved: [2, { caseSensitive: true (default) | false }]es-per-line': ['error', { singleline: { max: 10 }, multiline: { max: 1, allowFirstLine: false } }],
     // 'vue/no-unused-components': 'warn',
+    // 'vue/require-v-for-key': 'warn',
+    // 'vue/v-bind-style': ['warn', 'shorthand'],
   },
   // settings: {
   //   react: {
