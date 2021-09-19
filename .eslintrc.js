@@ -64,10 +64,11 @@ module.exports = {
     'no-new-object': 'error',
     'no-unused-vars': 'warn',
     'no-var': 'error',
-    'object-curly-spacing': ['warn', 'always'], // 중괄호 안에 간격 삽입
+    // 중괄호 안에 간격 삽입. objectsInObjects: false 옵션은 사용할 수 없음. prettier의 bracketSpacing에 의해 덮어쓰기 되기 때문.
+    'object-curly-spacing': ['warn', 'always'],
     'prefer-const': 'error',
     'prefer-rest-params': 'error',
-    'prettier/prettier': ['warn', { bracketSpacing: true, printWidth: 120, singleQuote: true, trailingComma: 'all' }],
+    'prettier/prettier': 'warn',
     quotes: ['warn', 'single', { allowTemplateLiterals: true }],
     // 'react/prop-types': [
     //   'warn',
@@ -78,10 +79,7 @@ module.exports = {
     //   },
     // ],
     'space-before-function-paren': 'off', // allow debugger during development
-    // 'vue/html-self-closing': [
-    //   'warn',
-    //   { html: { void: 'always', normal: 'never', component: 'always' }, svg: 'always', math: 'always' },
-    // ],
+    // 'vue/html-self-closing': ['error', { html: { void: 'always', normal: 'never' } }],
     // 'vue/max-attributes-per-line': ['error', { singleline: { max: 10 }, multiline: { max: 1, allowFirstLine: false } }],
     // 'vue/no-unused-components': 'warn',
     // 'vue/require-v-for-key': 'warn',
