@@ -79,7 +79,7 @@ module.exports = {
     //   },
     // ],
     'space-before-function-paren': 'off', // allow debugger during development
-    // 'vue/html-self-closing': ['error', { html: { void: 'always', normal: 'never' } }],
+    'vue/html-self-closing': ['error', { html: { void: 'always', normal: 'never' } }],
     // 'vue/max-attributes-per-line': ['error', { singleline: { max: 10 }, multiline: { max: 1, allowFirstLine: false } }],
     // 'vue/no-unused-components': 'warn',
     // 'vue/require-v-for-key': 'warn',
