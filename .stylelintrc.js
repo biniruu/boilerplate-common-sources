@@ -22,7 +22,10 @@ module.exports = {
     'block-opening-brace-newline-after': ['always'],
     'color-hex-case': 'lower',
     'color-hex-length': 'short',
-    'comment-empty-line-before': ['always', { except: ['first-nested'] }],
+    'comment-empty-line-before': [
+      'always',
+      { except: ['first-nested'], ignore: ['after-comment', 'stylelint-commands'] },
+    ],
     'comment-whitespace-inside': 'always',
     'custom-property-empty-line-before': ['always', { except: ['after-custom-property', 'first-nested'] }],
     'declaration-bang-space-after': 'never',
