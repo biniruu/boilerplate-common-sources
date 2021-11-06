@@ -15,7 +15,6 @@ module.exports = {
     // 'plugin:vue/strongly-recommended',
     // 'plugin:@typescript-eslint/recommended', // 타입스크립트 추천 룰셋
     // 'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    // 'prettier/react',
     // 'prettier/@typescript-eslint', // eslint의 typescript 포매팅 기능을 제거 (eslint-config-prettier)
     // 'tsconfig.json', // project: 'tsconfig.json'을 활성화 하기 위해 꼭 필요
   ],
