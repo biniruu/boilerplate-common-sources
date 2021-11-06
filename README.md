@@ -17,20 +17,21 @@
 1. prettier, eslint extention 설치
 1. npm 설치
 
-   1. ~~babel-eslint~~ // 더 이상 업데이트 되지 않음. @babel.eslint-parser를 사용할 것
-   1. @babel/eslint-parser // babel-eslint
-   1. eslint // 코드의 문법을 검사하는 린팅과 코드의 스타일을 잡아주는 포맷팅 기능
-   1. eslint-config-prettier // prettier와 충돌을 일으키는 ESLint 규칙들을 비활성화 시키는 config
-   1. ~~eslint-loader~~ // deprecated 되었음. eslint-webpack-plugin를 사용할 것
-   1. eslint-plugin-import // ES2015+의 import/export 구문을 지원. Vue나 React 같은 프론트엔드 라이브러리를 사용할 때는 설치하지 않아도 괜찮다.
-   1. eslint-plugin-prettier // Prettier에서 인식하는 코드상의 포맷 오류를 ESLint 오류로 출
-   1. eslint-webpack-plugin
-   1. prettier // 코드의 스타일을 잡아주는 포맷팅 기능
+1. @babel/core // @babel/eslint-parser 설치를 위해 필요
+1. ~~babel-eslint~~ // 더 이상 업데이트 되지 않음. @babel/eslint-parser를 사용할 것
+1. @babel/eslint-parser // babel-eslint
+1. eslint // 코드의 문법을 검사하는 린팅과 코드의 스타일을 잡아주는 포맷팅 기능
+1. eslint-config-prettier // prettier와 충돌을 일으키는 ESLint 규칙들을 비활성화 시키는 config
+1. ~~eslint-loader~~ // deprecated 되었음. eslint-webpack-plugin를 사용할 것
+1. eslint-plugin-import // ES2015+의 import/export 구문을 지원. Vue나 React 같은 프론트엔드 라이브러리를 사용할 때는 설치하지 않아도 괜찮다.
+1. eslint-plugin-prettier // Prettier에서 인식하는 코드상의 포맷 오류를 ESLint 오류로 출
+1. eslint-webpack-plugin
+1. prettier // 코드의 스타일을 잡아주는 포맷팅 기능
 
-   ```bash
-   $ npm init -y
-   $ yarn add -D @babel/eslint-parser eslint eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-webpack-plugin prettier
-   ```
+```bash
+$ npm init -y
+$ yarn add -D @babel/core @babel/eslint-parser eslint eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-webpack-plugin prettier
+```
 
 1. 프로젝트 root 폴더에 파일 복사
 
@@ -92,9 +93,16 @@
 
    1. markdownlint
 
-   ```bash
+   ````bash
    $ yarn add -D markdownlint
-   ```
+   ```1. @babel/preset-react // "This experimental syntax requires enabling one of the following parser plugin(s): 'jsx, flow, typescript'" 에러 해결을 위해 필요[관련 글](https://ffan0811.medium.com/error-debugging-this-experimental-syntax-requires-enabling-one-of-the-following-parser-plugin-s-22946599a0a4)
+   1. eslint-plugin-react
+   1. eslint-plugin-react-hooks
+   1. eslint-plugin-jsx-a11y
+
+   ```bash
+   $ yarn add -D @babel/preset-react eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
+   ````
 
 1. 프로젝트 root 폴더에 파일 복사
 
@@ -132,8 +140,8 @@
 1. npm 설치
 
    1. typescript
-   2. @typescript-eslint/eslint-plugin // Typescript 관련 린팅 규칙을 설정하는 플러그인
-   3. @typescript-eslint/parser // Typescript 를 파싱하기 위해 사용
+   1. @typescript-eslint/eslint-plugin // Typescript 관련 린팅 규칙을 설정하는 플러그인
+   1. @typescript-eslint/parser // Typescript 를 파싱하기 위해 사용
 
    ```bash
    $ yarn add -D typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
@@ -146,12 +154,13 @@
 
 1. npm 설치
 
+   1. @babel/preset-react
    1. eslint-plugin-react
-   2. eslint-plugin-react-hooks
-   3. eslint-plugin-jsx-a11y
+   1. eslint-plugin-react-hooks
+   1. eslint-plugin-jsx-a11y
 
    ```bash
-   $ yarn add -D eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
+   $ yarn add -D @babel/preset-react eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
    ```
 
 1. .eslintrc.js에서 주석 처리한 react 관련 옵션 활성화

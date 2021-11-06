@@ -22,13 +22,13 @@ module.exports = {
   // ignorePatterns: ['.eslintrc.js'], // The file does not match your project config: eslintrc.js 에러 해결을 위해 필요
   // parser: '@typescript-eslint/parser',
   // parser: 'vue-eslint-parser',
+  parser: '@babel/eslint-parser',
   parserOptions: {
-    parser: 'babel-eslint',
-    // ecmaFeatures: {
-    //   jsx: true, // 리액트의 JSX 파싱을 위해서
-    // },
-    ecmaVersion: 6,
+    // babelOptions: { presets: ['@babel/preset-react'] }, // "This experimental syntax requires enabling one of the following parser plugin(s): 'jsx, flow, typescript'" 에러 해결을 위해 필요
+    // ecmaFeatures: { jsx: true }, // JSX 파싱을 위해 필요
+    ecmaVersion: 'latest',
     // project: 'tsconfig.json', // parser: @typescript-eslint/parsergst를 활성화 하기 위해 꼭 필요
+    requireConfigFile: false, // "no babel config file detected for ..." 에러 해결을 위해 필요
     sourceType: 'module', // 모듈 시스템 사용 시
   },
   plugins: [
