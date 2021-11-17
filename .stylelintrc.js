@@ -43,14 +43,7 @@ module.exports = {
     'function-parentheses-space-inside': 'never',
     'function-url-quotes': 'always',
     'function-whitespace-after': 'always',
-    'selector-type-no-unknown': [
-      true,
-      {
-        ignore: ['custom-elements', 'default-namespace'],
-        // ignoreNamespaces: ["/regex/", /regex/, "string"],
-        // ignoreTypes: ["/regex/", /regex/, "string"],
-      },
-    ],
+    'length-zero-no-unit': 'never',
     'max-empty-lines': [1, { ignore: ['comments'] }],
     'media-feature-colon-space-after': 'always',
     'media-feature-colon-space-before': 'never',
@@ -79,6 +72,14 @@ module.exports = {
     'selector-pseudo-element-case': 'lower',
     'selector-pseudo-element-no-unknown': [true, { ignorePseudoElements: ['v-deep'] }],
     'selector-type-case': 'lower',
+    'selector-type-no-unknown': [
+      true,
+      {
+        ignore: ['custom-elements', 'default-namespace'],
+        // ignoreNamespaces: ["/regex/", /regex/, "string"],
+        // ignoreTypes: ["/regex/", /regex/, "string"],
+      },
+    ],
     'selector-list-comma-newline-after': 'always-multi-line',
     'string-quotes': 'single',
     'unit-case': 'lower',
