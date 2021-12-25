@@ -1,6 +1,7 @@
 module.exports = {
   env: { browser: true, es6: true, node: true },
   extends: [
+    // 'next/core-web-vitals', // next.js 프로젝트 시 필요
     'eslint:recommended',
     'eslint-config-prettier',
     // 'eslint-config-sinon',

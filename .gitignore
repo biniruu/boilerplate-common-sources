@@ -1,5 +1,6 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,visualstudiocode,yarn,git,node,react,vuejs,nuxtjs
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,visualstudiocode,yarn,git,node,react,vuejs,nuxtjs
+
+# Created by https://www.toptal.com/developers/gitignore/api/git,node,yarn,vuejs,react,macos,nuxtjs,windows,visualstudiocode,nextjs
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,yarn,vuejs,react,macos,nuxtjs,windows,visualstudiocode,nextjs
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -44,6 +45,10 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+### NextJS ###
+# Next build dir
+.next/
 
 ### Node ###
 # Logs
@@ -165,13 +170,17 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+### Node Patch ###
+# Serverless Webpack directories
+.webpack/
+
+# Optional stylelint cache
+.stylelintcache
+
+# SvelteKit build / generate output
+.svelte-kit
+
 ### Nuxtjs ###
-# dependencies
-node_modules
-
-# logs
-npm-debug.log
-
 # Nuxt build
 
 # Nuxt generate
@@ -181,6 +190,7 @@ npm-debug.log
 **/*.backup.*
 **/*.back.*
 
+node_modules
 
 *.sublime*
 
@@ -204,10 +214,14 @@ sketch
 .history
 .ionide
 
+# Support for Project snippet scope
+!.vscode/*.code-snippets
+
 ### Vuejs ###
 # Recommended template: Node.gitignore
 
 dist/
+npm-debug.log
 yarn-error.log
 
 ### Windows ###
@@ -252,4 +266,4 @@ $RECYCLE.BIN/
 # and uncomment the following lines
 # .pnp.*
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,windows,visualstudiocode,yarn,git,node,react,vuejs,nuxtjs
+# End of https://www.toptal.com/developers/gitignore/api/git,node,yarn,vuejs,react,macos,nuxtjs,windows,visualstudiocode,nextjs

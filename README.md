@@ -9,6 +9,7 @@
 - Typescript
 - Vanillascript
 - Vue.js
+- Next.js
 
 ## vs code에 prettier & eslint 설정하기
 
@@ -227,3 +228,7 @@ $ yarn add -D @babel/core @babel/eslint-parser eslint eslint-config-prettier esl
 1. .eslintrc.js에서 주석 처리한 mocha 관련 옵션 활성화
 
    [Rules](https://github.com/lo1tuma/eslint-plugin-mocha/tree/f9540209dc153c26fb44fa5250af6034058db875/docs/rules#rules)
+
+## Next.js를 사용할 때 추가 설정
+
+> `create-next-app` 으로 앱을 설치했을 때 기본으로 설치되는 패키지는 제외하였음.
