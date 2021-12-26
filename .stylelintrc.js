@@ -43,7 +43,7 @@ module.exports = {
     'function-parentheses-space-inside': 'never',
     'function-url-quotes': 'always',
     'function-whitespace-after': 'always',
-    'length-zero-no-unit': 'never',
+    'length-zero-no-unit': true,
     'max-empty-lines': [1, { ignore: ['comments'] }],
     'media-feature-colon-space-after': 'always',
     'media-feature-colon-space-before': 'never',
