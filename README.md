@@ -232,3 +232,5 @@ $ yarn add -D @babel/core @babel/eslint-parser eslint eslint-config-prettier esl
 ## Next.js를 사용할 때 추가 설정
 
 > `create-next-app` 으로 앱을 설치했을 때 기본으로 설치되는 패키지는 제외하였음.
+
+1. next.config.js 설치
