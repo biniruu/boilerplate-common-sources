@@ -8,5 +8,6 @@
   "eslint.workingDirectories": ["."],
   "files.insertFinalNewline": true,
   "workbench.editor.decorations.badges": true,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "css.customData": ["./.vscode/css_custom_data.json"]
 }
