@@ -1,7 +1,6 @@
 module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
   plugins: ['stylelint-scss', 'stylelint-order'],
-  syntax: 'scss',
   // ignoreFiles: ['./src/style.css'],
   rules: {
     'at-rule-empty-line-before': [
@@ -14,7 +13,7 @@ module.exports = {
     ],
     'at-rule-name-case': 'lower',
     'at-rule-name-space-after': 'always-single-line',
-    'at-rule-no-unknown': null, // stylelint-scss 를 설치했을 경우 활성화 권장
+    'at-rule-no-unknown': true, // stylelint-scss 를 설치했을 경우 활성화 권장
     'at-rule-semicolon-newline-after': 'always',
     'at-rule-semicolon-space-before': 'never',
     'block-closing-brace-empty-line-before': 'never',
