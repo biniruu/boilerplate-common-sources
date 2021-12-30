@@ -12,6 +12,7 @@ module.exports = {
     // 'plugin:jsx-a11y/recommended', // react.js 프로젝트 시 필요
     // 'plugin:nuxt/recommended',
     'plugin:prettier/recommended', // eslint의 포매팅 기능을 prettier로 사용. 항상 마지막에 세팅 되어야? (eslint-plugin-prettier)
+    'plugin:react/jsx-runtime', // react v17 이상 또는 jsx를 사용하지 않는 프로젝트에서 react/react-in-jsx-scope 에러가 발생하지 않게 해 줌
     // 'plugin:react/recommended',
     // 'plugin:vue/strongly-recommended',
     // 'plugin:@typescript-eslint/recommended', // 타입스크립트 추천 룰셋
