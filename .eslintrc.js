@@ -71,6 +71,8 @@ module.exports = {
     'prefer-rest-params': 'error',
     'prettier/prettier': 'warn',
     quotes: ['warn', 'single', { allowTemplateLiterals: true }],
+    // 'react/jsx-uses-react': 'error',
+    // 'react/jsx-uses-vars': 'error',
     // 'react/prop-types': [
     //   'warn',
     //   {
