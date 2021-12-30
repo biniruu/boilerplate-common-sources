@@ -4,10 +4,20 @@
     "source.fixAll.stylelint": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // jsx 또는 js에서 emmet을 사용하는 옵션
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "postcss": "css"
+  },
+  // postcss 문법을 사용하기 위한 옵션
+  "emmet.syntaxProfiles": {
+    "postcss": "css"
+  },
   "eslint.format.enable": true,
   "eslint.workingDirectories": ["."],
   "files.insertFinalNewline": true,
   "workbench.editor.decorations.badges": true,
   "editor.formatOnSave": true,
+  // at-rule 등 css 관련 규칙을 사용자화 하여 이용하는 데 필요한 설정 파일을 연결하는 옵션
   "css.customData": ["./.vscode/css_custom_data.json"]
 }
