@@ -4,6 +4,7 @@
     "source.fixAll.stylelint": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
   // jsx 또는 js에서 emmet을 사용하는 옵션
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",

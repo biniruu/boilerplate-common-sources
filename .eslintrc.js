@@ -71,9 +71,10 @@ module.exports = {
     'prefer-rest-params': 'error',
     'prettier/prettier': 'warn',
     quotes: ['warn', 'single', { allowTemplateLiterals: true }],
-    // 'react/react-in-jsx-scope': 'off', // If you are not using JSX, or if you are setting React as a global variable
+    // 'react/jsx-curly-spacing': ['warn', { when: 'always', children: true, objectLiterals: 'never' }], // prettier와 충돌하여 사용할 수 없음
     // 'react/jsx-uses-react': 'error',
     // 'react/jsx-uses-vars': 'error',
+    // 'react/react-in-jsx-scope': 'off', // If you are not using JSX, or if you are setting React as a global variable
     // 'react/prop-types': [
     //   'warn',
     //   {
@@ -82,6 +83,7 @@ module.exports = {
     //     skipUndeclared: true, // optional boolean to only error on components that have a propTypes block declared
     //   },
     // ],
+    // 'react/self-closing-comp': ['warn', { component: true, html: false }], // true로 설정하면 태그 안에 아무런 내용이 없을 때 닫는 태그를 없애고 self closing 태그로 바꿈
     'space-before-function-paren': 'off', // allow debugger during development
     // 'vue/html-self-closing': ['error', { html: { void: 'always', normal: 'never' } }],
     // 'vue/max-attributes-per-line': ['error', { singleline: { max: 10 }, multiline: { max: 1, allowFirstLine: false } }],
