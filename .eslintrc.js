@@ -12,7 +12,7 @@ module.exports = {
     // 'plugin:jsx-a11y/recommended', // react.js 프로젝트 시 필요
     // 'plugin:nuxt/recommended',
     'plugin:prettier/recommended', // eslint의 포매팅 기능을 prettier로 사용. 항상 마지막에 세팅 되어야? (eslint-plugin-prettier)
-    'plugin:react/jsx-runtime', // If you are using the new JSX transform from React 17, you should enable this
+    // 'plugin:react/jsx-runtime', // If you are using the new JSX transform from React 17, you should enable this
     // 'plugin:react/recommended',
     // 'plugin:vue/strongly-recommended',
     // 'plugin:@typescript-eslint/recommended', // 타입스크립트 추천 룰셋
@@ -91,6 +91,11 @@ module.exports = {
     // 'vue/v-bind-style': ['warn', 'shorthand'],
   },
   // settings: {
+  //   'import/resolver': {
+  //     node: {
+  //       extensions: ['.js', '.jsx'], // react 사용 시 활성화 필요. jsx를 import할 때 import/no-unresolved 에러가 발생하지 않도록 함
+  //     },
+  //   },
   //   react: {
   //     version: 'detect', // eslint-plugin-react가 자동 리액트버전탐지
   //   },
