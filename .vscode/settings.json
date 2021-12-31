@@ -18,6 +18,11 @@
   "eslint.workingDirectories": ["."],
   "files.insertFinalNewline": true,
   "workbench.editor.decorations.badges": true,
+  // 상단 바 색상 변경
+  // "workbench.colorCustomizations": {
+  //   "titleBar.activeBackground": "#F54133",
+  //   "titleBar.inactiveBackground": "#F54133"
+  // },
   "editor.formatOnSave": true,
   // at-rule 등 css 관련 규칙을 사용자화 하여 이용하는 데 필요한 설정 파일을 연결하는 옵션
   "css.customData": ["./.vscode/css_custom_data.json"]
