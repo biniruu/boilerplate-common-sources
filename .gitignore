@@ -1,6 +1,8 @@
+# Created by https://www.toptal.com/developers/gitignore/api/git,node,yarn,vuejs,react,macos,nextjs,nuxtjs,windows,visualstudiocode,dotenv
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,yarn,vuejs,react,macos,nextjs,nuxtjs,windows,visualstudiocode,dotenv
 
-# Created by https://www.toptal.com/developers/gitignore/api/git,node,yarn,vuejs,react,macos,nuxtjs,windows,visualstudiocode,nextjs
-# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,yarn,vuejs,react,macos,nuxtjs,windows,visualstudiocode,nextjs
+### dotenv ###
+.env
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -123,7 +125,6 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
 .env.test
 .env.production
 
@@ -199,11 +200,11 @@ thumb
 sketch
 
 ### VisualStudioCode ###
-# .vscode/*
-# !.vscode/settings.json
-# !.vscode/tasks.json
-# !.vscode/launch.json
-# !.vscode/extensions.json
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 *.code-workspace
 
 # Local History for Visual Studio Code
@@ -266,4 +267,4 @@ $RECYCLE.BIN/
 # and uncomment the following lines
 # .pnp.*
 
-# End of https://www.toptal.com/developers/gitignore/api/git,node,yarn,vuejs,react,macos,nuxtjs,windows,visualstudiocode,nextjs
+# End of https://www.toptal.com/developers/gitignore/api/git,node,yarn,vuejs,react,macos,nextjs,nuxtjs,windows,visualstudiocode,dotenv
