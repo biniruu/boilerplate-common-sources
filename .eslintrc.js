@@ -55,6 +55,22 @@ module.exports = {
     'computed-property-spacing': ['error', 'never', { enforceForClassMembers: false }],
     'generator-star-spacing': 'off', // allow async-await
     'import/no-unresolved': ['error', { commonjs: true, amd: true }], // 프론트엔드 라이브러리를 사용할 때는 'off'로 둘 것을 권장
+    // 'jsx-a11y/no-noninteractive-element-interactions': [
+    //   'warn',
+    //   {
+    //     handlers: ['onClick', 'onMouseDown', 'onMouseUp', 'onKeyPress', 'onKeyDown', 'onKeyUp'],
+    //   },
+    // ], // (웹 접근성 문제로)상호작용하지 않는 태그(li, div 등)에 onClick 등과 같은 이벤트를 연결할 때 필요
+    // 'jsx-a11y/no-noninteractive-element-to-interactive-role': [
+    //   'warn',
+    //   {
+    //     ul: ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
+    //     ol: ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
+    //     li: ['button', 'menuitem', 'option', 'row', 'tab', 'treeitem'],
+    //     table: ['grid'],
+    //     td: ['gridcell'],
+    //   },
+    // ], // (웹 접근성 문제로)상호작용하지 않는 태그에 onClick 등과 같은 이벤트를 연결하고 해당 태그의 사용 목적을 role 속성으로 명시할 때 필요
     'new-cap': 'error',
     'no-array-constructor': 'error',
     'no-console': 'off',
