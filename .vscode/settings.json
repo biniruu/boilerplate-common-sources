@@ -1,4 +1,17 @@
 {
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.autoClosingBrackets": "always",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "breadcrumbs.enabled": true,
   // at-rule 등 css 관련 규칙을 사용자화 하여 이용하는 데 필요한 설정 파일을 연결하는 옵션
   "css.customData": ["./.vscode/css_custom_data.json"],
@@ -19,6 +32,7 @@
   // 저장할 때마다 포맷을 자동으로 교정
   "editor.formatOnSave": true,
   "editor.hover.delay": 600,
+  "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": true,
   "editor.minimap.showSlider": "always",
   "editor.multiCursorModifier": "ctrlCmd",
@@ -29,21 +43,20 @@
     "comments": "#fff"
   },
   "editor.unfoldOnClickAfterEndOfLine": true,
-  // jsx 또는 js에서 emmet을 사용하는 옵션
   "emmet.includeLanguages": {
+    // jsx 또는 js에서 emmet을 사용하는 옵션
     "javascript": "javascriptreact",
     "postcss": "css"
   },
-  "editor.inlineSuggest.enabled": true,
   "emmet.preferences": {
     "css.color.short": true
   },
-  "emmet.triggerExpansionOnTab": true,
   "emmet.showSuggestionsAsSnippets": true,
-  // postcss 문법을 사용하기 위한 옵션
   "emmet.syntaxProfiles": {
+    // postcss 문법을 사용하기 위한 옵션
     "postcss": "css"
   },
+  "emmet.triggerExpansionOnTab": true,
   "eslint.format.enable": true,
   // .eslintrc 파일 위치
   "eslint.workingDirectories": ["."],
@@ -58,8 +71,8 @@
   // },
   "files.insertFinalNewline": true,
   "problems.autoReveal": false,
-  // stylelint로 유효성을 검증할 언어만 선택
   "stylelint.validate": [
+    // stylelint로 유효성을 검증할 언어만 선택
     "css",
     "html",
     "less",
@@ -80,11 +93,11 @@
     "xml",
     "xsl"
   ],
+  "terminal.integrated.defaultProfile.linux": "/bin/zsh",
+  "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.fontFamily": "D2Coding, Menlo, Monaco, 'Courier New', monospace",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.lineHeight": 1.4,
-  "terminal.integrated.defaultProfile.linux": "/bin/zsh",
-  "terminal.integrated.defaultProfile.osx": "zsh",
   // typescript를 사용하지 않는 프로젝트에서 typescript 관련 오류가 발생할 때 활성화
   // "typescript.validate.enable": false,
   "workbench.colorCustomizations": {
@@ -105,21 +118,5 @@
     "terminal.ansiWhite": "#c7c7c7",
     "terminal.ansiYellow": "#f3f89d"
   },
-  // "workbench.editorAssociations": {
-  //   "git-rebase-todo": "default"
-  // },
-  "workbench.editor.decorations.colors": false,
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.autoClosingBrackets": "always",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "workbench.editor.decorations.colors": false
 }
