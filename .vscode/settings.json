@@ -9,6 +9,10 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -23,6 +27,7 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
+    "source.fixAll.markdownlint": true,
     "source.fixAll.stylelint": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",

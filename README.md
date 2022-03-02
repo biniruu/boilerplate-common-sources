@@ -96,7 +96,8 @@ $ yarn add -D @babel/core @babel/eslint-parser eslint eslint-config-prettier esl
 
    ````bash
    $ yarn add -D markdownlint
-   ```1. @babel/preset-react // "This experimental syntax requires enabling one of the following parser plugin(s): 'jsx, flow, typescript'" 에러 해결을 위해 필요[관련 글](https://ffan0811.medium.com/error-debugging-this-experimental-syntax-requires-enabling-one-of-the-following-parser-plugin-s-22946599a0a4)
+   ```
+   1. @babel/preset-react // "This experimental syntax requires enabling one of the following parser plugin(s): 'jsx, flow, typescript'" 에러 해결을 위해 필요[관련 글](https://ffan0811.medium.com/error-debugging-this-experimental-syntax-requires-enabling-one-of-the-following-parser-plugin-s-22946599a0a4)
    1. eslint-plugin-react
    1. eslint-plugin-react-hooks
    1. eslint-plugin-jsx-a11y
