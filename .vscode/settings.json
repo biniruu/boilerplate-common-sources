@@ -121,6 +121,9 @@
     "terminal.ansiRed": "#ff6d67",
     "terminal.ansiWhite": "#c7c7c7",
     "terminal.ansiYellow": "#f3f89d"
+    // "titleBar.activeBackground": "#ff0000",
+    // "titleBar.inactiveBackground": "#009be3",
+    // "statusBar.background": "#924ff7"
   },
   "workbench.editor.decorations.colors": false
 }
