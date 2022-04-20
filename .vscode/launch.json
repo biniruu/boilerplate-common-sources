@@ -9,9 +9,7 @@
       "request": "launch",
       "name": "client: chrome",
       "url": "http://localhost:8080",
-      "webRoot": "${workspaceFolder}",
-      "runtimeExecutable": "nodemon",
-      "restart": true
+      "webRoot": "${workspaceFolder}"
     },
     {
       "type": "pwa-node",
