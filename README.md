@@ -1,5 +1,9 @@
 # boilerplates-for-linters
 
+```
+😳 이곳은 현재 수리 중
+```
+
 프로젝트에 바로 사용할 수 있는 eslint-prettier-stylelint-markdownlint 설정.
 
 다음 라이브러리 & 프레임워크를 사용하는 프로젝트에 바로 적용할 수 있다.
@@ -45,11 +49,9 @@ $ yarn add -D @babel/core @babel/eslint-parser eslint eslint-config-prettier esl
 
 1. vs code 설정에서 옵션 변경(workspace)
 
-   > 이 설정은 직접 하지 말고 여기에 있는 .vscode/settings.json 파일을 폴더째 복사해서 붙여넣기 할 것.
-
-   ~~1. Editor: Format On Save => true~~  
-   ~~1. Editor: Default Formatter => esbenp.prettier-vscode~~  
-   ~~Eslint > Format: Enable => true~~
+   1. Editor: Format On Save => true
+   1. Editor: Default Formatter => esbenp.prettier-vscode  
+      Eslint > Format: Enable => true
 
 1. package.json > scripts 에 lint 명령어 추가 후 실행
 
