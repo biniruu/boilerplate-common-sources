@@ -131,6 +131,7 @@
   "problems.autoReveal": false,
   "python.jediEnabled": false,
   "pythonPreview.codeFooterDocs.fontSize": 13,
+  "quokka.automaticRestart": true,
   "stylelint.validate": [
     // stylelint로 유효성을 검증할 언어만 선택
     "css",
@@ -152,7 +153,6 @@
     "xml",
     "xsl"
   ],
-  "svg.preview.mode": "svg",
   "terminal.integrated.defaultProfile.linux": "/bin/zsh",
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.fontFamily": "D2Coding, Menlo, Monaco, 'Courier New', monospace",
