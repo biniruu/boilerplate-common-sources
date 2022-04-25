@@ -17,15 +17,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "breadcrumbs.enabled": true,
-  // 📦 Code Spell Checker
-  "cSpell.userWords": ["stylelint"],
-  // at-rule 등 css 관련 규칙을 사용자화 하여 이용하는 데 필요한 설정 파일을 연결하는 옵션
-  "css.customData": ["./.vscode/css_custom_data.json"],
-  // sass 등과 같은 css 전처리기에서 사용하는 at rule을 css 파일에서 사용했을 때 at-rule-no-unknown 경고가 발생하지 않도록 함
-  // stylelint가 발생시키는 에러 처리는 해당 at rule을 .stylelintrc에서 'at-rule-no-unknown'에 ignoreAtRules 옵션으로 추가해야 함
-  "css.lint.unknownAtRules": "ignore",
-  // css에서 값이 0일 때 '0px'이나 '0em'처럼 단위를 붙이면 경고 발생
-  "css.lint.zeroUnits": "warning",
+  "cSpell.userWords": ["stylelint"], // 📦 Code Spell Checker
+  "css.customData": ["./.vscode/css_custom_data.json"], // at-rule 등 css 관련 규칙을 사용자화 하여 이용하는 데 필요한 설정 파일을 연결하는 옵션
+  "css.lint.unknownAtRules": "ignore", // sass 등과 같은 css 전처리기에서 사용하는 at rule을 css 파일에서 사용했을 때 at-rule-no-unknown 경고가 발생하지 않도록 함. stylelint가 발생시키는 에러 처리는 해당 at rule을 .stylelintrc에서 'at-rule-no-unknown'에 ignoreAtRules 옵션으로 추가할 것
+  "css.lint.zeroUnits": "warning", // css에서 값이 0일 때 '0px'이나 '0em'처럼 단위를 붙이면 경고 발생
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
@@ -36,8 +31,7 @@
   "editor.definitionLinkOpensInPeek": true,
   "editor.fontFamily": "D2Coding, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 16,
-  // 저장할 때마다 포맷을 자동으로 교정
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": true, // 저장할 때마다 포맷을 자동으로 교정
   "editor.hover.delay": 600,
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": true,
@@ -86,8 +80,7 @@
   },
   "editor.unfoldOnClickAfterEndOfLine": true,
   "emmet.includeLanguages": {
-    // jsx 또는 js에서 emmet을 사용하는 옵션
-    "javascript": "javascriptreact",
+    "javascript": "javascriptreact", // jsx 또는 js에서 emmet을 사용하는 옵션
     "postcss": "css"
   },
   "emmet.preferences": {
@@ -95,16 +88,14 @@
   },
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.syntaxProfiles": {
-    // postcss 문법을 사용하기 위한 옵션
-    "postcss": "css"
+    "postcss": "css" // postcss 문법을 사용하기 위한 옵션
   },
   "emmet.triggerExpansionOnTab": true,
+  "eslint.alwaysShowStatus": true,
   "eslint.format.enable": true,
-  // .eslintrc 파일 위치
-  "eslint.workingDirectories": ["."],
+  "eslint.workingDirectories": ["."], // .eslintrc 파일 위치
   "explorer.autoReveal": false,
-  // 하위 폴더가 하나밖에 없을 때 폴더 정렬이 일렬로 나오지 않고 일반적인 방식으로 계층화 되도록 함
-  "explorer.compactFolders": false,
+  "explorer.compactFolders": false, // 하위 폴더가 하나밖에 없을 때 폴더 정렬이 일렬로 나오지 않고 일반적인 방식으로 계층화 되도록 함
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   // "files.exclude": {
@@ -133,7 +124,6 @@
   "pythonPreview.codeFooterDocs.fontSize": 13,
   "quokka.automaticRestart": true,
   "stylelint.validate": [
-    // stylelint로 유효성을 검증할 언어만 선택
     "css",
     "html",
     "less",
@@ -152,14 +142,13 @@
     "vue-postcss",
     "xml",
     "xsl"
-  ],
+  ], // stylelint로 유효성을 검증할 언어만 선택
   "terminal.integrated.defaultProfile.linux": "/bin/zsh",
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.fontFamily": "D2Coding, Menlo, Monaco, 'Courier New', monospace",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.lineHeight": 1.4,
-  // typescript를 사용하지 않는 프로젝트에서 typescript 관련 오류가 발생할 때 활성화
-  // "typescript.validate.enable": false,
+  // "typescript.validate.enable": false, // typescript를 사용하지 않는 프로젝트에서 typescript 관련 오류가 발생할 때 활성화
   "todo-tree.tree.showScanModeButton": false,
   "todohighlight.isEnable": true,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -184,8 +173,7 @@
   "workbench.colorTheme": "Dracula Soft",
   "workbench.editor.decorations.colors": false,
   "workbench.editorAssociations": {
-    // git rebase -i 실행할 때 띄우는 ui 화면
-    "git-rebase-todo": "gitlens.rebase"
+    "git-rebase-todo": "gitlens.rebase" // git rebase -i 실행할 때 띄우는 ui 화면
   },
   "workbench.iconTheme": "material-icon-theme"
 }
