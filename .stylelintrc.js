@@ -2,6 +2,12 @@ module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
   plugins: ['stylelint-scss', 'stylelint-order'],
   // ignoreFiles: ['./src/style.css'],
+  // overrides: [
+  //   {
+  //     files: ['**/*.{jsx,tsx,ts}'],
+  //     customSyntax: '@stylelint/postcss-css-in-js',
+  //   }, // CssSyntaxError 해결을 위해 필요
+  // ],
   rules: {
     'at-rule-empty-line-before': [
       'always',
@@ -29,8 +35,7 @@ module.exports = {
     'custom-property-empty-line-before': ['always', { except: ['after-custom-property', 'first-nested'] }],
     'declaration-bang-space-after': 'never',
     'declaration-bang-space-before': 'always',
-    // This rule is recommanded because of conflict by semicolon rule between prettier and stylelint
-    'declaration-block-trailing-semicolon': null,
+    'declaration-block-trailing-semicolon': null, // This rule is recommanded because of conflict by semicolon rule between prettier and stylelint
     'declaration-colon-space-after': 'always',
     'declaration-colon-space-before': 'never',
     'declaration-empty-line-before': ['always', { except: ['after-declaration', 'first-nested'] }],
