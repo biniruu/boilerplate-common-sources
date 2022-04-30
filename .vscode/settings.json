@@ -98,10 +98,9 @@
   "explorer.compactFolders": false, // 하위 폴더가 하나밖에 없을 때 폴더 정렬이 일렬로 나오지 않고 일반적인 방식으로 계층화 되도록 함
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  // "files.exclude": {
-  //   "**/.git": false,
-  //   "node_modules/": true
-  // },
+  "files.exclude": {
+    "**/.git": false
+  }, // 사이드바에서 파일/폴더 감추기
   "files.insertFinalNewline": true,
   "git.fetchOnPull": true,
   "git.showPushSuccessNotification": true,
