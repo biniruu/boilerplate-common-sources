@@ -46,7 +46,7 @@ module.exports = {
     // 'vue',
     // '@typescript-eslint',
   ],
-  root: true,
+  root: true, // 해당 설정 파일이 root 임을 명시하는 옵션. true라면 상위 설정 파일 찾기를 여기서 멈춘다.
   rules: {
     // '@typescript-eslint/no-explicit-any': ['warn', { ignoreRestArgs: true }],
     // '@typescript-eslint/no-unused-vars': ['warn'],

@@ -2,12 +2,12 @@ module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
   plugins: ['stylelint-scss', 'stylelint-order'],
   // ignoreFiles: ['./src/style.css'],
-  // overrides: [
-  //   {
-  //     files: ['**/*.{jsx,tsx,ts}'],
-  //     customSyntax: '@stylelint/postcss-css-in-js',
-  //   }, // CssSyntaxError 해결을 위해 필요
-  // ],
+  overrides: [
+    {
+      files: ['**/*.{jsx,tsx,ts}'],
+      customSyntax: '@stylelint/postcss-css-in-js',
+    }, // typescript 환경에서 발생하는 CssSyntaxError 해결을 위해 필요
+  ],
   rules: {
     'at-rule-empty-line-before': [
       'always',

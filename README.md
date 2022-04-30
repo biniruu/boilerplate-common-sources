@@ -1,239 +1,196 @@
-# boilerplates-for-linters
+# Common sources for bolierplate
+
+보일러플레이트를 만드는 데 필요한 기본적인 설정 저장소예요.  
+린트, 패키지, 설정 등을 골라 설치할 수 있어요.
+
+> 제가 설정이나 패키지를 다 알지 못해요🥺 불필요한 것이 섞였거나 더 좋은 것이 있을 수도 있어요.
+
+> 오랫동안 업데이트가 되지 않았으면 여기 있는 대로 설정했을 때 문제가 발생할 수 있어요.  
+> 물론 최근 업데이트 일자와 상관없이 문제가 발생할 수도 있어요🫠
+
+<br>
+
+## 패키지 설명 📄
+
+각 패키지가 어느 곳에 쓰이는지 알아보세요.
+
+- [@babel/core](https://www.npmjs.com/package/@babel/core) : @babel/eslint-parser 설치를 위해 필요
+- [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser) : babel-eslint
+- [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env) : Babel의 지원 스펙을 지정
+- [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react) : "This experimental syntax requires enabling one of the following parser plugin(s): 'jsx, flow, typescript'" 에러 해결을 위해 필요 ([관련 글 보기](https://ffan0811.medium.com/error-debugging-this-experimental-syntax-requires-enabling-one-of-the-following-parser-plugin-s-22946599a0a4))
+- [@craco/craco](https://www.npmjs.com/package/@craco/craco) : CRA로 리액트를 설치했을 때 webpack 설정 지원
+- [@stylelint/postcss-css-in-js](https://www.npmjs.com/package/@stylelint/postcss-css-in-js) : typescript 환경에서 stylelint를 사용할 때 발생하는 _CssSyntaxError_ 해결을 위해 필요
+- [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) : typescript 관련 린팅 규칙 제공
+- [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser) : typescript를 위한 eslint 파서
+- [babel-jest](https://www.npmjs.com/package/babel-jest) : JS/JSX 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
+- [chai](https://www.npmjs.com/package/chai)
+- [eslint](https://www.npmjs.com/package/eslint) : 코드의 문법을 검사하는 린팅과 코드의 스타일을 잡아주는 포맷팅 기능
+- [eslint-config-next](https://www.npmjs.com/package/eslint-config-next)
+- [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier) : prettier와 충돌을 일으키는 eslint 규칙 비활성화
+- [eslint-config-sinon](https://www.npmjs.com/package/eslint-config-sinon)
+- [eslint-import-resolver-typescript](https://www.npmjs.com/package/eslint-import-resolver-typescript) : tsconfig에서 path alias 사용을 위해 필요
+- [eslint-plugin-chai-friendly](https://www.npmjs.com/package/eslint-plugin-chai-friendly)
+- [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) : es2015+ import/export 구문 지원
+- [eslint-plugin-jest](eslint-plugin-jest) : jest 관련 규칙 제공
+- [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) : jsx 내에서 웹 접근성 규칙 관련 피드백 제공
+- [eslint-plugin-mocha](https://www.npmjs.com/package/eslint-plugin-mocha)
+- [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier) : prettier에서 인식하는 코드상의 포맷 오류를 eslint 오류로 출력
+- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) : react 규칙 관련 피드백 제공
+- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) : react hooks 규칙 관련 피드백 제공
+- [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)
+- [eslint-plugin-nuxt](https://www.npmjs.com/package/eslint-plugin-nuxt)
+- [eslint-webpack-plugin](https://www.npmjs.com/package/eslint-webpack-plugin)
+- [jest](https://www.npmjs.com/package/jest) : test runner
+- [jest-serializer-vue](https://www.npmjs.com/package/jest-serializer-vue) : 저장된 Jest Snapshot을 VueJS에 맞게 개선
+- [mocha](https://www.npmjs.com/package/mocha)
+- [postcss-syntax](https://www.npmjs.com/package/postcss-syntax) : typescript 환경에서 stylelint를 사용할 때 발생하는 _CssSyntaxError_ 해결을 위해 필요
+- [prettier](https://www.npmjs.com/package/prettier) : 코드의 스타일을 잡아주는 포맷팅 기능
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom) : 라우터 지원
+- [sass](https://www.npmjs.com/package/sass)
+- [sass-loader](https://www.npmjs.com/package/sass-loader)
+- [sinon](https://www.npmjs.com/package/sinon)
+- [stylelint](https://www.npmjs.com/package/stylelint)
+- [stylelint-config-prettier](https://www.npmjs.com/package/stylelint-config-prettier)
+- [stylelint-config-standard](https://www.npmjs.com/package/stylelint-config-standard)
+- [stylelint-order](https://www.npmjs.com/package/stylelint-order)
+- [stylelint-scss](https://www.npmjs.com/package/stylelint-scss)
+- [ts-jest](https://www.npmjs.com/package/ts-jest) : typescript 환경에서 jest를 사용할 때 필요
+- [typescript](https://www.npmjs.com/package/typescript)
+- [vue-jest](https://www.npmjs.com/package/vue-jest) : Vue 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
+- [@vue/server-test-utils](https://www.npmjs.com/package/@vue/server-test-utils) : Vue.js 환경에서 단위 테스트를 하기 위한 공식(Official) 라이브러리
+- [@vue/test-utils](https://www.npmjs.com/package/@vue/test-utils) : Vue.js 환경에서 단위 테스트를 하기 위한 공식 라이브러리.
 
 ```
-😳 이곳은 현재 수리 중
+❌ deprecate 되었어요.
+
+- babel-eslint : @babel/eslint-parser로 대체
+- dart-sass : sass로 대체
+- eslint-loader : eslint-webpack-plugin으로 대체
+- node-sass : dart-sass로 대체
 ```
 
-프로젝트에 바로 사용할 수 있는 eslint-prettier-stylelint-markdownlint 설정.
+<br>
 
-다음 라이브러리 & 프레임워크를 사용하는 프로젝트에 바로 적용할 수 있다.
+## 기본 패키지 설치 📦
 
-- Jest
-- React.js
-- Typescript
-- Vanillascript
-- Vue.js
-- Next.js
-
-## vs code에 prettier & eslint 설정하기
-
-> npm init 을 하지 않았다면 `npm init -y`를 먼저 실행할 것.
-
-1. prettier, eslint extention 설치
-1. npm 설치
-
-1. @babel/core // @babel/eslint-parser 설치를 위해 필요
-1. ~~babel-eslint~~ // 더 이상 업데이트 되지 않음. @babel/eslint-parser를 사용할 것
-1. @babel/eslint-parser // babel-eslint
-1. eslint // 코드의 문법을 검사하는 린팅과 코드의 스타일을 잡아주는 포맷팅 기능
-1. eslint-config-prettier // prettier와 충돌을 일으키는 ESLint 규칙들을 비활성화 시키는 config
-1. ~~eslint-loader~~ // deprecated 되었음. eslint-webpack-plugin를 사용할 것
-1. eslint-plugin-import // ES2015+의 import/export 구문을 지원. Vue나 React 같은 프론트엔드 라이브러리를 사용할 때는 설치하지 않아도 괜찮다.
-1. eslint-plugin-prettier // Prettier에서 인식하는 코드상의 포맷 오류를 ESLint 오류로 출
-1. eslint-webpack-plugin
-1. prettier // 코드의 스타일을 잡아주는 포맷팅 기능
+프론트엔드 라이브러리를 사용하지 않을 때 설치하는 기본 패키지예요.  
+특정 환경에서는 적절한 패키지로 대체하여 설치해 주세요.
 
 ```bash
-$ npm init -y
+## Eslint & Perttier
+
 $ yarn add -D @babel/core @babel/eslint-parser eslint eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-webpack-plugin prettier
+
+## Jest
+
+$ yarn add -D eslint-plugin-jest jest
+
+## Markdonwlint
+
+$ yarn add -D markdownlint
+
+## Mocha
+
+$ yarn add -D chai eslint-config-sinon eslint-plugin-chai-friendly eslint-plugin-mocha mocha sinon
+
+## Nuxt.js
+
+$ yarn add -D eslint-plugin-vue eslint-plugin-nuxt
+
+## Sass loader
+
+$ yarn add -D sass sass-loader
+
+## Stylelint
+
+$ yarn add -D stylelint stylelint-config-prettier stylelint-config-standard stylelint-order stylelint-scss
+
+## Typescript
+
+$ yarn add -D @stylelint/postcss-css-in-js @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript postcss-syntax typescript
+
+## Vue.js
+
+$ yarn add -D eslint-plugin-vue
 ```
 
-1. 프로젝트 root 폴더에 파일 복사
+<br>
 
-   1. .prettierrc
-   1. .prettierignore
-   1. .eslintrc.js
-   1. .eslintignore
+## 설정 파일 💾
 
-## vs code의 settings.json 설정
+제 취향이 듬뿍 담긴 파일이니 각자 취향에 맞춰 수정 후 사용하세요👻
 
-1. vs code 설정에서 옵션 변경(workspace)
+### Eslint
 
-   1. Editor: Format On Save => true
-   1. Editor: Default Formatter => esbenp.prettier-vscode  
-      Eslint > Format: Enable => true
+- `.eslintignore`
+- `.eslintrc.js`
 
-1. package.json > scripts 에 lint 명령어 추가 후 실행
+### Git
 
-   > 명령어를 추가하지 않고 `npx eslint .`만 실행해도 된다.
+- `.gitignore`
 
-   ```json
-   {
-     "scripts": {
-       "lint": "eslint ."
-     }
-   }
-   ```
+### Github
 
-   ```bash
-   $ npm run lint
-   ```
+- `.github`
 
-## stylelint 설정하기
+### Jest
 
-1. stylelint extention 설치
-1. npm 설치
+- `jest.config.ts`
 
-   1. stylelint
-   2. stylelint-config-prettier
-   3. stylelint-config-standard
-   4. stylelint-order
-   5. stylelint-scss
+### Markdownlint
 
-   ```bash
-   $ yarn add -D stylelint stylelint-config-prettier stylelint-config-standard stylelint-order stylelint-scss
-   ```
+- `.markdownlint.json`
 
-1. 프로젝트 root 폴더에 파일 복사
+### Perttier
 
-   1. .stylelintrc.js
-   1. .stylelintignore
+- `.prettierignore`
+- `.prettierrc`
 
-## markdownlint 설정하기
+### Stylelint
 
-1. markdownlint extention 설치
-1. npm 설치
+- `.stylelintignore`
+- `.stylelintrc.js`
 
-   1. markdownlint
+### Typescript
 
-   ````bash
-   $ yarn add -D markdownlint
-   ```
-   1. @babel/preset-react // "This experimental syntax requires enabling one of the following parser plugin(s): 'jsx, flow, typescript'" 에러 해결을 위해 필요[관련 글](https://ffan0811.medium.com/error-debugging-this-experimental-syntax-requires-enabling-one-of-the-following-parser-plugin-s-22946599a0a4)
-   1. eslint-plugin-react
-   1. eslint-plugin-react-hooks
-   1. eslint-plugin-jsx-a11y
+- `tsconfig.json`
 
-   ```bash
-   $ yarn add -D @babel/preset-react eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
-   ````
+<br>
 
-1. 프로젝트 root 폴더에 파일 복사
+## 필수 vs code 설정 🔧
 
-   1. .markdownlint.json
+settings에서 아래 설정을 변경해주세요.
 
-## Vue.js 프로젝트일 때 추가 설정
+- Editor: Default Formatter => `esbenp.prettier-vscode`
+- Eslint > Format: Enable => `true`
 
-1. npm 설치
+<br>
 
-   1. eslint-plugin-vue
+## 필수 vs code 익스텐션 🧩
 
-   ```bash
-   $ yarn add -D eslint-plugin-vue
-   ```
+위 패키지를 제대로 사용하기 위해 꼭 필요한 익스텐션이에요.  
+_괄호 안에 있는 익스텐션 ID로 검색하면 편리하게 찾을 수 있어요._
 
-1. .eslintrc.js에서 주석 처리한 vue 관련 옵션 활성화
+- `ESLint` (dbaeumer.vscode-eslint)
+- `markdownlint` (DavidAnson.vscode-markdownlint)
+- `Prettier - Code formatter` (esbenp.prettier-vscode)
+- `Stylelint` (stylelint.vscode-stylelint)
 
-## Nuxt.js 프로젝트일 때 추가 설정
+<br>
 
-> `create-nuxt-app` 으로 앱을 설치했을 때 기본으로 설치되는 패키지는 제외하였음.
+## 추천 vs code 익스텐션 🚀
 
-1. npm 설치
+필수는 아니지만, 편의성을 높여주는 익스텐션이에요.
 
-   1. eslint-plugin-vue
-   1. eslint-plugin-nuxt
+- `JavaScript and TypeScript Nightly` (ms-vscode.vscode-typescript-next)
+- `Jest` (Orta.vscode-jest)
+- `Sass` (syler.sass-indented)
+- `Stylelint Disable Snippets` (hedinne.stylelint-disable-snippets)
 
-   ```bash
-   $ yarn add -D eslint-plugin-vue eslint-plugin-nuxt
-   ```
+<br>
 
-1. .eslintrc.js에서 주석 처리한 vue, nuxt 관련 옵션 활성화
+## 각 환경별 보일러플레이트 저장소 ⭐️
 
-## Typescript 프로젝트일 때 추가 설정
-
-1. npm 설치
-
-   1. typescript
-   1. @typescript-eslint/eslint-plugin // Typescript 관련 린팅 규칙을 설정하는 플러그인
-   1. @typescript-eslint/parser // Typescript 를 파싱하기 위해 사용
-
-   ```bash
-   $ yarn add -D typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
-   ```
-
-1. .eslintrc.js에서 주석 처리한 typescript 관련 옵션 활성화
-1. .prettierrc에 `"parser": "typescript"` 추가
-
-## React.js 프로젝트일 때 추가 설정
-
-1. npm 설치
-
-   1. @babel/preset-react
-   1. eslint-plugin-react
-   1. eslint-plugin-react-hooks
-   1. eslint-plugin-jsx-a11y
-
-   ```bash
-   $ yarn add -D @babel/preset-react eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
-   ```
-
-1. .eslintrc.js에서 주석 처리한 react 관련 옵션 활성화
-
-## jest를 사용할 때 추가 설정
-
-1. npm 설치
-
-   1. eslint-plugin-jest
-   1. jest
-
-   ```bash
-   $ yarn add -D eslint-plugin-jest jest
-   ```
-
-1. Vue.js, Nuxt.js에 사용할 때는 vue-jest를 추가할 것
-
-   1. vue-jest
-
-   ```bash
-   $ yarn add -D vue-jest
-   ```
-
-1. package.json > scripts 에 test 명령어 추가 후 실행
-
-   ```json
-   {
-     "scripts": {
-       "test": "jest"
-     }
-   }
-   ```
-
-1. .eslintrc.js에서 주석 처리한 jest 관련 옵션 활성화
-
-   - [Rules](https://www.npmjs.com/package/eslint-plugin-jest#user-content-rules)
-   - [Typescript Rules](https://www.npmjs.com/package/eslint-plugin-jest#user-content-typescript-rules)
-
-## mocha를 사용할 때 추가 설정
-
-1. npm 설치
-
-   1. chai
-   1. eslint-config-sinon
-   1. eslint-plugin-chai-friendly
-   1. eslint-plugin-mocha
-   1. mocha
-   1. sinon
-
-   ```bash
-   $ yarn add -D chai eslint-config-sinon eslint-plugin-chai-friendly eslint-plugin-mocha mocha sinon
-   ```
-
-1. package.json > scripts 에 test 명령어 추가 후 실행
-
-   ```json
-   {
-     "scripts": {
-       "test": "mocha"
-     }
-   }
-   ```
-
-1. .eslintrc.js에서 주석 처리한 mocha 관련 옵션 활성화
-
-   [Rules](https://github.com/lo1tuma/eslint-plugin-mocha/tree/f9540209dc153c26fb44fa5250af6034058db875/docs/rules#rules)
-
-## Next.js를 사용할 때 추가 설정
-
-> `create-next-app` 으로 앱을 설치했을 때 기본으로 설치되는 패키지는 제외하였음.
-
-1. next.config.js 설치
+- [JavaScript with Typescript boilerplate](https://github.com/biniruu/boilerplate-javascript-with-typescript)
+- [Next.js with Typescript boilerplate](https://github.com/biniruu/boilerplate-next-with-typescript)
+- [React.js with Typescript boilerplate](https://github.com/biniruu/boilerplate-react-with-typescript)

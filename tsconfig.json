@@ -75,7 +75,8 @@
   "include": [
     // "next-env.d.ts", // next.js 프로젝트 시 필요
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "./jest.config.js"
   ],
   "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
   // "extends": "" // 상위 경로에 있는 tsconfig.json의 설정을 이 파일에서 설정만 옵션만 갱신하여 사용

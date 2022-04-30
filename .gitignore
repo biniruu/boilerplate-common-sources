@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/git,node,yarn,vuejs,react,macos,nextjs,nuxtjs,windows,visualstudiocode,dotenv
-# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,yarn,vuejs,react,macos,nextjs,nuxtjs,windows,visualstudiocode,dotenv
+# Created by https://www.toptal.com/developers/gitignore/api/git,node,yarn,vuejs,nuxtjs,react,nextjs,macos,windows,visualstudiocode,dotenv
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,yarn,vuejs,nuxtjs,react,nextjs,macos,windows,visualstudiocode,dotenv
 
 ### dotenv ###
 .env
@@ -47,6 +47,10 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+### macOS Patch ###
+# iCloud generated files
+*.icloud
 
 ### NextJS ###
 # Next build dir
@@ -109,6 +113,9 @@ web_modules/
 # Optional eslint cache
 .eslintcache
 
+# Optional stylelint cache
+.stylelintcache
+
 # Microbundle cache
 .rpt2_cache/
 .rts2_cache_cjs/
@@ -124,9 +131,11 @@ web_modules/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
-.env.test
-.env.production
+# dotenv environment variable files
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -148,6 +157,12 @@ dist
 
 # vuepress build output
 .vuepress/dist
+
+# vuepress v2.x temp and cache directory
+.temp
+
+# Docusaurus cache and generated files
+.docusaurus
 
 # Serverless directories
 .serverless/
@@ -176,7 +191,6 @@ dist
 .webpack/
 
 # Optional stylelint cache
-.stylelintcache
 
 # SvelteKit build / generate output
 .svelte-kit
@@ -201,14 +215,18 @@ sketch
 
 ### VisualStudioCode ###
 .vscode/*
+!.vscode/css_custom_data.json
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-*.code-workspace
+!.vscode/*.code-snippets
 
 # Local History for Visual Studio Code
 .history/
+
+# Built Visual Studio Code Extensions
+*.vsix
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
@@ -216,7 +234,10 @@ sketch
 .ionide
 
 # Support for Project snippet scope
-!.vscode/*.code-snippets
+.vscode/*.code-snippets
+
+# Ignore code-workspaces
+*.code-workspace
 
 ### Vuejs ###
 # Recommended template: Node.gitignore
@@ -252,10 +273,11 @@ $RECYCLE.BIN/
 *.lnk
 
 ### yarn ###
-# https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored
+# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
 
 .yarn/*
 !.yarn/releases
+!.yarn/patches
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
@@ -267,4 +289,4 @@ $RECYCLE.BIN/
 # and uncomment the following lines
 # .pnp.*
 
-# End of https://www.toptal.com/developers/gitignore/api/git,node,yarn,vuejs,react,macos,nextjs,nuxtjs,windows,visualstudiocode,dotenv
+# End of https://www.toptal.com/developers/gitignore/api/git,node,yarn,vuejs,nuxtjs,react,nextjs,macos,windows,visualstudiocode,dotenv
