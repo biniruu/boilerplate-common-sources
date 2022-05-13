@@ -1,6 +1,6 @@
-# Common sources for bolierplate
+# Starter Kit for Settings
 
-보일러플레이트를 만드는 데 필요한 기본적인 설정 저장소예요.  
+프로젝트를 시작할 때 필요한 기본적인 설정 저장소예요.  
 린트, 패키지, 설정 등을 골라 설치할 수 있어요.
 
 > 제가 설정이나 패키지를 다 알지 못해요🥺 불필요한 것이 섞였거나 더 좋은 것이 있을 수도 있어요.
@@ -189,8 +189,8 @@ _괄호 안에 있는 익스텐션 ID로 검색하면 편리하게 찾을 수 �
 
 <br>
 
-## 각 환경별 보일러플레이트 저장소 ⭐️
+## 각 환경별 스타터 저장소 ⭐️
 
-- [JavaScript with Typescript boilerplate](https://github.com/biniruu/boilerplate-javascript-with-typescript)
-- [Next.js with Typescript boilerplate](https://github.com/biniruu/boilerplate-next-with-typescript)
-- [React.js with Typescript boilerplate](https://github.com/biniruu/boilerplate-react-with-typescript)
+- [JavaScript with Typescript Starter](https://github.com/biniruu/starter-for-javascript-with-typescript)
+- [Next.js with Typescript Starter](https://github.com/biniruu/starter-for-next-with-typescript)
+- [React.js with Typescript Starter](https://github.com/biniruu/starter-for-react-with-typescript)
