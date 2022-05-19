@@ -1,0 +1,8 @@
+{
+  "presets": ["@babel/preset-react"], // Parsing error: This experimental syntax requires enabling one of the following parser plugin(s): "jsx", "flow", "typescript". 에러 해결을 위해 필요 (typescript를 이용하지 않는 react 프로젝트일 때)
+  "env": {
+    "test": {
+      "plugins": ["@babel/plugin-transform-modules-commonjs", "@babel/plugin-transform-runtime"] // jest로 테스트할 때 import 부분에서 SyntaxError: Cannot use import statement outside a module 에러가 발생하는 문제를 해결
+    }
+  }
+}

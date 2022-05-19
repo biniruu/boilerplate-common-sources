@@ -94,7 +94,7 @@ export default {
   // notifyMode: "failure-change",
 
   // A preset that is used as a base for Jest's configuration
-  preset: 'jest', // typescript 환경에서는 'ts-jest'로 설정
+  preset: undefined, // react 환경에서는 'jest'로, react-typescript 환경에서는 'ts-jest'로 설정
 
   // Run tests from one or more projects
   // projects: undefined,

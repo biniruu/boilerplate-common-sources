@@ -17,7 +17,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "breadcrumbs.enabled": true,
-  "cSpell.userWords": ["stylelint"], // 📦 Code Spell Checker
+  "color-highlight.markRuler": false, // minimap에서 color-highlight가 나오지 않도록 설정
   "css.customData": ["./.vscode/css_custom_data.json"], // at-rule 등 css 관련 규칙을 사용자화 하여 이용하는 데 필요한 설정 파일을 연결하는 옵션
   "css.lint.unknownAtRules": "ignore", // sass 등과 같은 css 전처리기에서 사용하는 at rule을 css 파일에서 사용했을 때 at-rule-no-unknown 경고가 발생하지 않도록 함. stylelint가 발생시키는 에러 처리는 해당 at rule을 .stylelintrc에서 'at-rule-no-unknown'에 ignoreAtRules 옵션으로 추가할 것
   "css.lint.zeroUnits": "warning", // css에서 값이 0일 때 '0px'이나 '0em'처럼 단위를 붙이면 경고 발생
@@ -34,6 +34,7 @@
   "editor.formatOnSave": true, // 저장할 때마다 포맷을 자동으로 교정
   "editor.hover.delay": 600,
   "editor.inlineSuggest.enabled": true,
+  "editor.linkedEditing": true,
   "editor.minimap.enabled": true,
   "editor.minimap.showSlider": "always",
   "editor.multiCursorModifier": "ctrlCmd",
@@ -93,11 +94,11 @@
   "emmet.triggerExpansionOnTab": true,
   "eslint.alwaysShowStatus": true,
   "eslint.format.enable": true,
-  "eslint.workingDirectories": ["."], // .eslintrc 파일 위치
+  "eslint.workingDirectories": [{ "mode": "auto" }], // .eslintrc 파일 위치
   "explorer.autoReveal": false,
   "explorer.compactFolders": false, // 하위 폴더가 하나밖에 없을 때 폴더 정렬이 일렬로 나오지 않고 일반적인 방식으로 계층화 되도록 함
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false, // 파일 삭제 전 확인 모달 띄우기
+  "explorer.confirmDragAndDrop": false, // 파일 드래그 & 드롭 전 확인 모달 띄우기
   "files.exclude": {
     "**/.git": false
   }, // 사이드바에서 파일/폴더 감추기
@@ -114,11 +115,22 @@
   },
   "githubNotificationsBell.oauthToken": "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",
   "gitlens.gitCommands.search.showResultsInSideBar": true,
+  "jest.autoRun": {
+    "watch": true
+  },
+  "jest.showCoverageOnLoad": true,
+  "jest.testExplorer": {
+    "enabled": true,
+    "showClassicStatus": true,
+    "showInlineError": true
+  },
+  "jestTestExplorer.flattenExplorer": true,
   "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
   "liveServer.settings.ChromeDebuggingAttachment": true,
   "liveServer.settings.donotShowInfoMsg": true,
   "html-css-class-completion.enableEmmetSupport": true,
   "problems.autoReveal": false,
+  "projectManager.git.baseFolders": ["/Users/biniruu/Projects", "/Users/biniruu/Learning"],
   "python.jediEnabled": false,
   "pythonPreview.codeFooterDocs.fontSize": 13,
   "quokka.automaticRestart": true,
@@ -147,9 +159,10 @@
   "terminal.integrated.fontFamily": "D2Coding, Menlo, Monaco, 'Courier New', monospace",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.lineHeight": 1.4,
-  // "typescript.validate.enable": false, // typescript를 사용하지 않는 프로젝트에서 typescript 관련 오류가 발생할 때 활성화
+  "testExplorer.useNativeTesting": true,
   "todo-tree.tree.showScanModeButton": false,
   "todohighlight.isEnable": true,
+  // "typescript.validate.enable": false, // typescript를 사용하지 않는 프로젝트에서 typescript 관련 오류가 발생할 때 활성화
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "workbench.colorCustomizations": {
     "terminal.ansiBlack": "#000000",
@@ -174,5 +187,6 @@
   "workbench.editorAssociations": {
     "git-rebase-todo": "gitlens.rebase" // git rebase -i 실행할 때 띄우는 ui 화면
   },
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "cSpell.words": ["craco"]
 }

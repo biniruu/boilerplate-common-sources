@@ -16,10 +16,15 @@
 
 - [@babel/core](https://www.npmjs.com/package/@babel/core) : @babel/eslint-parser 설치를 위해 필요
 - [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser) : babel-eslint
+- [@babel/plugin-transform-modules-commonjs](https://www.npmjs.com/package/@babel/plugin-transform-modules-commonjs) : es2015 모듈을 commonJS로 변환
+- [@babel/plugin-transform-runtime](https://www.npmjs.com/package/@babel/plugin-transform-runtime) : 전역 스코프를 오염시키지 않는 polyfill 지원
 - [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env) : Babel의 지원 스펙을 지정
 - [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react) : "This experimental syntax requires enabling one of the following parser plugin(s): 'jsx, flow, typescript'" 에러 해결을 위해 필요 ([관련 글 보기](https://ffan0811.medium.com/error-debugging-this-experimental-syntax-requires-enabling-one-of-the-following-parser-plugin-s-22946599a0a4))
 - [@craco/craco](https://www.npmjs.com/package/@craco/craco) : CRA로 리액트를 설치했을 때 webpack 설정 지원
 - [@stylelint/postcss-css-in-js](https://www.npmjs.com/package/@stylelint/postcss-css-in-js) : typescript 환경에서 stylelint를 사용할 때 발생하는 _CssSyntaxError_ 해결을 위해 필요
+- [@types/jest](https://www.npmjs.com/package/@types/jest) : jest의 타입 정의와 hint 제공
+- [@types/lodash-es](https://www.npmjs.com/package/@types/lodash-es) : lodash 타입 정의 제공
+- [@types/react-test-renderer](https://www.npmjs.com/package/@types/react-test-renderer) : react-test-renderer 타입 정의 제공
 - [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) : typescript 관련 린팅 규칙 제공
 - [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser) : typescript를 위한 eslint 파서
 - [babel-jest](https://www.npmjs.com/package/babel-jest) : JS/JSX 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
@@ -42,10 +47,12 @@
 - [eslint-webpack-plugin](https://www.npmjs.com/package/eslint-webpack-plugin)
 - [jest](https://www.npmjs.com/package/jest) : test runner
 - [jest-serializer-vue](https://www.npmjs.com/package/jest-serializer-vue) : 저장된 Jest Snapshot을 VueJS에 맞게 개선
+- [lodash-es](https://www.npmjs.com/package/lodash-es) : 필요한 lodash 함수만 골라 사용하고, 사용하지 않은 함수는 tree shaking할 수 있는 lodash 패키지
 - [mocha](https://www.npmjs.com/package/mocha)
 - [postcss-syntax](https://www.npmjs.com/package/postcss-syntax) : typescript 환경에서 stylelint를 사용할 때 발생하는 _CssSyntaxError_ 해결을 위해 필요
 - [prettier](https://www.npmjs.com/package/prettier) : 코드의 스타일을 잡아주는 포맷팅 기능
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom) : 라우터 지원
+- [react-test-renderer](https://www.npmjs.com/package/react-test-renderer) : 테스트 시 reactDOM의 스냅샷 생성
 - [sass](https://www.npmjs.com/package/sass)
 - [sass-loader](https://www.npmjs.com/package/sass-loader)
 - [sinon](https://www.npmjs.com/package/sinon)
@@ -73,19 +80,27 @@
 
 ## 기본 패키지 설치 📦
 
-프론트엔드 라이브러리를 사용하지 않을 때 설치하는 기본 패키지예요.  
-특정 환경에서는 적절한 패키지로 대체하여 설치해 주세요.
+개발 환경에 따라 적절한 패키지를 설치해 주세요.
 
 ```bash
-## Eslint & Perttier
+## Babel
 
-$ yarn add -D @babel/core @babel/eslint-parser eslint eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-webpack-plugin prettier
+$ yarn add -D @babel/core
+
+## Eslint & Prettier
+
+$ yarn add -D @babel/eslint-parser eslint eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-webpack-plugin prettier
 
 ## Jest
 
-$ yarn add -D eslint-plugin-jest jest
+$ yarn add -D @babel/plugin-transform-modules-commonjs @babel/plugin-transform-runtime @types/jest eslint-plugin-jest jest
 
-## Markdonwlint
+## Lodash
+
+$ yarn add lodash-es
+$ yarn add -D @types/lodash-es
+
+## Markdownlint
 
 $ yarn add -D markdownlint
 
@@ -97,17 +112,21 @@ $ yarn add -D chai eslint-config-sinon eslint-plugin-chai-friendly eslint-plugin
 
 $ yarn add -D eslint-plugin-vue eslint-plugin-nuxt
 
+## React
+
+$ yarn add -D @types/react-test-renderer
+
 ## Sass loader
 
 $ yarn add -D sass sass-loader
 
 ## Stylelint
 
-$ yarn add -D stylelint stylelint-config-prettier stylelint-config-standard stylelint-order stylelint-scss
+$ yarn add -D @stylelint/postcss-css-in-js postcss-syntax stylelint stylelint-config-prettier stylelint-config-standard stylelint-order stylelint-scss
 
 ## Typescript
 
-$ yarn add -D @stylelint/postcss-css-in-js @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript postcss-syntax typescript
+$ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript typescript
 
 ## Vue.js
 
@@ -141,7 +160,7 @@ $ yarn add -D eslint-plugin-vue
 
 - `.markdownlint.json`
 
-### Perttier
+### Prettier
 
 - `.prettierignore`
 - `.prettierrc`

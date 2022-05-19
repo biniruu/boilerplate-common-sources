@@ -4,11 +4,12 @@ module.exports = {
   // ignoreFiles: ['./src/style.css'],
   overrides: [
     {
-      files: ['**/*.{jsx,tsx,ts}'],
+      files: ['**/*.{html,jsx,svg,tsx,ts}'],
       customSyntax: '@stylelint/postcss-css-in-js',
-    }, // typescript 환경에서 발생하는 CssSyntaxError 해결을 위해 필요
+    }, // CssSyntaxError 해결
   ],
   rules: {
+    'alpha-value-notation': 'number', // rgba()에서 opacity를 % 대신 숫자로 표현
     'at-rule-empty-line-before': [
       'always',
       {
@@ -25,6 +26,7 @@ module.exports = {
     'block-closing-brace-empty-line-before': 'never',
     'block-closing-brace-newline-before': ['always'],
     'block-opening-brace-newline-after': ['always'],
+    'color-function-notation': 'modern', // grb() 같은 컬러 함수를 modern 방식으로 표현 (legacy 방식이 더 편할 수도 있음)
     'color-hex-case': 'lower',
     'color-hex-length': 'short',
     'comment-empty-line-before': [
