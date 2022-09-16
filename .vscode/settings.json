@@ -119,6 +119,7 @@
     "watch": true
   },
   "jest.showCoverageOnLoad": true,
+  "jest.showTerminalOnLaunch": false, // jest 익스텐션을 실행했을 때 자동으로 콘솔 창을 띄우지 않기
   "jest.testExplorer": {
     "enabled": true,
     "showClassicStatus": true,
