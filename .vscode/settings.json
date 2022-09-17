@@ -188,6 +188,5 @@
   "workbench.editorAssociations": {
     "git-rebase-todo": "gitlens.rebase" // git rebase -i 실행할 때 띄우는 ui 화면
   },
-  "workbench.iconTheme": "material-icon-theme",
-  "cSpell.words": ["craco"]
+  "workbench.iconTheme": "material-icon-theme"
 }
