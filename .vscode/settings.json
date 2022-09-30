@@ -103,6 +103,7 @@
     "**/.git": false
   }, // 사이드바에서 파일/폴더 감추기
   "files.insertFinalNewline": true,
+  "git.autofetch": true, // 일정 시간마다 default 브랜치를 자동으로 fetch 하기
   "git.fetchOnPull": true,
   "git.showPushSuccessNotification": true,
   "githubPullRequests.fileListLayout": "tree",
