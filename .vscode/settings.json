@@ -16,6 +16,8 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "bookmarks.saveBookmarksInProject": true,
+  "bookmarks.keepBookmarksOnLineDelete": true,
   "breadcrumbs.enabled": true,
   "color-highlight.markRuler": false, // minimap에서 color-highlight가 나오지 않도록 설정
   "css.customData": ["./.vscode/css_custom_data.json"], // at-rule 등 css 관련 규칙을 사용자화 하여 이용하는 데 필요한 설정 파일을 연결하는 옵션
