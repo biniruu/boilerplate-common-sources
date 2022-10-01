@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/git,node,yarn,vuejs,nuxtjs,react,nextjs,macos,windows,visualstudiocode,dotenv
-# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,yarn,vuejs,nuxtjs,react,nextjs,macos,windows,visualstudiocode,dotenv
+# Created by https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,windows,visualstudiocode,dotenv
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,yarn,macos,windows,visualstudiocode,dotenv
 
 ### dotenv ###
 .env
@@ -51,10 +51,6 @@ Temporary Items
 ### macOS Patch ###
 # iCloud generated files
 *.icloud
-
-### NextJS ###
-# Next build dir
-.next/
 
 ### Node ###
 # Logs
@@ -195,32 +191,13 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
-### Nuxtjs ###
-# Nuxt build
-
-# Nuxt generate
-
-### react ###
-.DS_*
-**/*.backup.*
-**/*.back.*
-
-node_modules
-
-*.sublime*
-
-psd
-thumb
-sketch
-
 ### VisualStudioCode ###
 .vscode/*
-!.vscode/css_custom_data.json
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
+# !.vscode/*.code-snippets
 
 # Local History for Visual Studio Code
 .history/
@@ -238,13 +215,6 @@ sketch
 
 # Ignore code-workspaces
 *.code-workspace
-
-### Vuejs ###
-# Recommended template: Node.gitignore
-
-dist/
-npm-debug.log
-yarn-error.log
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -289,4 +259,4 @@ $RECYCLE.BIN/
 # and uncomment the following lines
 # .pnp.*
 
-# End of https://www.toptal.com/developers/gitignore/api/git,node,yarn,vuejs,nuxtjs,react,nextjs,macos,windows,visualstudiocode,dotenv
+# End of https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,windows,visualstudiocode,dotenv

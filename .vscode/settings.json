@@ -133,7 +133,10 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "html-css-class-completion.enableEmmetSupport": true,
   "problems.autoReveal": false,
-  "projectManager.git.baseFolders": ["/Users/biniruu/Projects", "/Users/biniruu/Learning"],
+  "projectManager.git.baseFolders": [
+    "/Users/biniruu/Projects",
+    "/Users/biniruu/Learning"
+  ],
   "python.jediEnabled": false,
   "pythonPreview.codeFooterDocs.fontSize": 13,
   "quokka.automaticRestart": true,
