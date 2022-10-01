@@ -17,7 +17,7 @@
 ## TypeScript 설치 👨🏻‍💻
 
 ```bash
-$ yarn add -D typescript
+yarn add -D typescript
 ```
 
 <br>
@@ -27,28 +27,28 @@ $ yarn add -D typescript
 ```bash
 ## Eslint & Prettier
 
-$ yarn add -D eslint eslint-config-prettier eslint-plugin-prettier eslint-webpack-plugin prettier
+yarn add -D eslint eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-webpack-plugin prettier
 
 ## Jest
 
-$ yarn add -D @types/jest eslint-plugin-jest jest ts-jest
+yarn add -D @types/jest eslint-plugin-jest jest ts-jest
 
 ## Lodash
 
-$ yarn add lodash-es
-$ yarn add -D @types/lodash-es
+yarn add lodash-es
+yarn add -D @types/lodash-es
 
 ## Sass loader
 
-$ yarn add -D sass sass-loader
+yarn add -D sass sass-loader
 
 ## Stylelint
 
-$ yarn add -D @stylelint/postcss-css-in-js postcss-syntax stylelint stylelint-config-prettier stylelint-config-standard stylelint-order stylelint-scss
+yarn add -D @stylelint/postcss-css-in-js postcss-syntax stylelint stylelint-config-prettier stylelint-config-standard stylelint-order stylelint-scss
 
 ## Typescript
 
-$ yarn add -D @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript
+yarn add -D @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript
 ```
 
 <br>
