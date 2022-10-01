@@ -11,7 +11,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'prettier/@typescript-eslint', // eslint의 typescript 포매팅 기능을 제거 (eslint-config-prettier)
   ],
-  // ignorePatterns: ['.eslintrc.js'], // The file does not match your project config: eslintrc.js 에러 해결을 위해 필요
+  ignorePatterns: ['.eslintrc.js', 'jest.config.js'], // The file does not match your project config: eslintrc.js 에러 해결을 위해 필요. typescript를 사용할 때 패키지 설정 파일의 확장자를 .ts 대신 .js로 사용할 경우 이곳에 패키지 설정파일명을 등록하면 에러가 사라진다
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',

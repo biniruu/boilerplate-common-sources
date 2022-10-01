@@ -1,7 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unsafe-return */
-/* eslint-disable @typescript-eslint/no-explicit-any */
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
   theme: {
     extend: {
@@ -12,7 +10,7 @@ export default {
         red: '#e33920',
         yellow: '#dfb230',
       },
-      backgroundColor: (theme: (arg0: string) => any) => ({
+      backgroundColor: theme => ({
         ...theme('colors'),
       }),
     },

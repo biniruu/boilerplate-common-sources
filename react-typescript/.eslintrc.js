@@ -13,7 +13,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended', // 타입스크립트 추천 룰셋
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
-  ignorePatterns: ['.eslintrc.js'],
+  ignorePatterns: ['.eslintrc.js', 'tailwind.config.js', 'postcss.config.js', 'jest.config.js'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: { jsx: true }, // JSX 파싱을 위해 필요
