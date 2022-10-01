@@ -48,41 +48,45 @@ CRA로 리액트 설치 후 아래 설정을 삭제해주세요.
 ```bash
 ## Eslint & Prettier
 
-$ yarn add -D eslint-config-prettier eslint-plugin-prettier prettier
+yarn add -D eslint-config-prettier eslint-plugin-prettier prettier
 
 ## Jest
 
-$ yarn add -D @types/jest eslint-plugin-jest ts-jest
+yarn add -D @types/jest eslint-plugin-jest ts-jest
 
 ## Lodash
 
-$ yarn add lodash-es
-$ yarn add -D @types/lodash-es
+yarn add lodash-es
+yarn add -D @types/lodash-es
 
 ## PostCSS
 
-$ yarn add -D postcss-cli postcss-url
+yarn add -D postcss-cli postcss-url
 
 ## React
 
-$ yarn add react-router-dom
-$ yarn add -D @types/react-test-renderer react-test-renderer
+yarn add react-router-dom
+yarn add -D @types/react-test-renderer react-test-renderer
+
+## Recoil
+
+yarn add recoil
 
 ## Sass loader
 
-$ yarn add -D sass sass-loader
+yarn add -D sass sass-loader
 
 ## Stylelint
 
-$ yarn add -D @stylelint/postcss-css-in-js postcss-syntax stylelint stylelint-config-prettier stylelint-config-standard stylelint-order stylelint-scss
+yarn add -D @stylelint/postcss-css-in-js postcss-syntax stylelint stylelint-config-prettier stylelint-config-standard stylelint-order stylelint-scss
 
 ## Tailwind css
 
-$ yarn add -D prettier-plugin-tailwindcss tailwindcss
+yarn add -D prettier-plugin-tailwindcss tailwindcss
 
 ## TypeScript
 
-$ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
+yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
 ```
@@ -155,6 +159,7 @@ $ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 - [prettier](https://www.npmjs.com/package/prettier) : 코드의 스타일을 잡아주는 포맷팅 기능
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom) : 라우터 지원
 - [react-test-renderer](https://www.npmjs.com/package/react-test-renderer) : 테스트 시 reactDOM의 스냅샷 생성
+- [recoil](https://www.npmjs.com/package/recoil) : react 전역 상태 관리
 - [stylelint](https://www.npmjs.com/package/stylelint)
 - [stylelint-config-prettier](https://www.npmjs.com/package/stylelint-config-prettier)
 - [stylelint-config-standard](https://www.npmjs.com/package/stylelint-config-standard)
@@ -183,7 +188,7 @@ $ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 
 제 취향이 듬뿍 담긴 파일이니 각자 취향에 맞춰 수정 후 사용하세요.👻
 
-### Eslint & Perttier
+### Eslint & Prettier
 
 - `.eslintignore`
 - `.eslintrc.js`
