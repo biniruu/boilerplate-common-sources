@@ -1,21 +1,17 @@
 ---
 name: Issue
 about: Feature Requests
-title: ''
+title: ""
 labels: enhancement
-assignees: ''
+assignees: ""
 ---
 
-## 개요 ⚡️
+## 개요 📝
 
-<br />
-
-## 할일 💻
+## 할일 ✅
 
 - [ ]
 
-<br />
-
-## 테스트 ✅
+## 테스트 🧪
 
 - [ ]

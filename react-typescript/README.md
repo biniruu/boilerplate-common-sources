@@ -155,6 +155,7 @@ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) : react hooks 규칙 관련 피드백 제공
 - [eslint-webpack-plugin](https://www.npmjs.com/package/eslint-webpack-plugin)
 - [lodash-es](https://www.npmjs.com/package/lodash-es) : 필요한 lodash 함수만 골라 사용하고, 사용하지 않은 함수는 tree shaking할 수 있는 lodash 패키지
+- [postcss-scss](https://www.npmjs.com/package/postcss-scss) : postcss가 scss를 css로 파싱할 수 있는 기능 제공
 - [postcss-syntax](https://www.npmjs.com/package/postcss-syntax) : typescript 환경에서 stylelint를 사용할 때 발생하는 _CssSyntaxError_ 해결을 위해 필요
 - [prettier](https://www.npmjs.com/package/prettier) : 코드의 스타일을 잡아주는 포맷팅 기능
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom) : 라우터 지원
