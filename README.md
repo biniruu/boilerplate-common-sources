@@ -1,19 +1,18 @@
+# Starter kit for client side development environment
+
 ```
-⚒️ 공사 중 안내
+📢 공사 중 안내
 
 별도로 나눴던 레포지토리를 통합하고 있습니다.
 다소 안 맞는 내용이 있으니 주의해주세요.
 ```
 
-# Starter Kit for Settings
-
 프로젝트를 시작할 때 필요한 기본적인 설정 저장소예요.  
-린트, 패키지, 설정 등을 골라 설치할 수 있어요.
+린터, 패키지, 설정 등을 골라 설치할 수 있어요.
 
 > 제가 설정이나 패키지를 다 알지 못해요🥺 불필요한 것이 섞였거나 더 좋은 것이 있을 수도 있어요.
 
-> 오랫동안 업데이트가 되지 않았으면 여기 있는 대로 설정했을 때 문제가 발생할 수 있어요.  
-> 물론 최근 업데이트 일자와 상관없이 문제가 발생할 수도 있어요🫠
+> 오랫동안 업데이트가 되지 않았으면 여기 있는 대로 설정했을 때 문제가 발생할 수 있어요. 물론 최근 업데이트 일자와 상관없이 문제가 발생할 수도 있어요🫠
 
 <br>
 
@@ -31,12 +30,14 @@
 - [@stylelint/postcss-css-in-js](https://www.npmjs.com/package/@stylelint/postcss-css-in-js) : typescript 환경에서 stylelint를 사용할 때 발생하는 _CssSyntaxError_ 해결을 위해 필요
 - [@types/jest](https://www.npmjs.com/package/@types/jest) : jest의 타입 정의와 hint 제공
 - [@types/lodash-es](https://www.npmjs.com/package/@types/lodash-es) : lodash 타입 정의 제공
+- [@types/postcss-preset-env](https://www.npmjs.com/package/@types/postcss-preset-env) : typescript 환경에서 postcss-preset-env를 사용할 때 필요한 타입 정의
 - [@types/react-test-renderer](https://www.npmjs.com/package/@types/react-test-renderer) : react-test-renderer 타입 정의 제공
-- [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) : typescript 관련 린팅 규칙 제공
+- [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) : typescript 관련 lint 규칙 제공
 - [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser) : typescript를 위한 eslint 파서
+- [autoprefixer](https://www.npmjs.com/package/autoprefixer) : cross browser에 필요한 css 속성 prefix를 자동으로 생성
 - [babel-jest](https://www.npmjs.com/package/babel-jest) : JS/JSX 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
 - [chai](https://www.npmjs.com/package/chai)
-- [eslint](https://www.npmjs.com/package/eslint) : 코드의 문법을 검사하는 린팅과 코드의 스타일을 잡아주는 포맷팅 기능
+- [eslint](https://www.npmjs.com/package/eslint)
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next)
 - [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier) : prettier와 충돌을 일으키는 eslint 규칙 비활성화
 - [eslint-config-sinon](https://www.npmjs.com/package/eslint-config-sinon)
@@ -52,22 +53,27 @@
 - [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)
 - [eslint-plugin-nuxt](https://www.npmjs.com/package/eslint-plugin-nuxt)
 - [eslint-webpack-plugin](https://www.npmjs.com/package/eslint-webpack-plugin)
-- [jest](https://www.npmjs.com/package/jest) : test runner
+- [jest](https://www.npmjs.com/package/jest)
 - [jest-serializer-vue](https://www.npmjs.com/package/jest-serializer-vue) : 저장된 Jest Snapshot을 VueJS에 맞게 개선
 - [lodash-es](https://www.npmjs.com/package/lodash-es) : 필요한 lodash 함수만 골라 사용하고, 사용하지 않은 함수는 tree shaking할 수 있는 lodash 패키지
 - [mocha](https://www.npmjs.com/package/mocha)
-- [postcss-syntax](https://www.npmjs.com/package/postcss-syntax) : typescript 환경에서 stylelint를 사용할 때 발생하는 _CssSyntaxError_ 해결을 위해 필요
-- [prettier](https://www.npmjs.com/package/prettier) : 코드의 스타일을 잡아주는 포맷팅 기능
+- [postcss](https://www.npmjs.com/package/postcss)
+- [postcss-loader](https://www.npmjs.com/package/postcss-loader) : webpack에서 postcss를 실행
+- [postcss-nesting](https://www.npmjs.com/package/postcss-nesting) : nested한 코드를 css 문법에 맞게 변환
+- [postcss-preset-env](https://www.npmjs.com/package/postcss-preset-env) : 주요 postcss 플러그인을 모은 plugin pack. ([설치 플러그인 목록 확인](https://www.libtrends.info/npm-compare/autoprefixer-vs-postcss-nested-vs-postcss-nesting-vs-postcss-preset-env-vs-precss))
+- [postcss-syntax](https://www.npmjs.com/package/postcss-syntax) : 파일 확장자나 소스에 따라 postcss가 적용할 플러그인을 자동으로 선택하게 해주는 플러그인
+- [postcss-scss](https://www.npmjs.com/package/postcss-scss) : scss를 css와 함께 변환
+- [prettier](https://www.npmjs.com/package/prettier)
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom) : 라우터 지원
 - [react-test-renderer](https://www.npmjs.com/package/react-test-renderer) : 테스트 시 reactDOM의 스냅샷 생성
 - [sass](https://www.npmjs.com/package/sass)
-- [sass-loader](https://www.npmjs.com/package/sass-loader)
+- [sass-loader](https://www.npmjs.com/package/sass-loader) : webpack에서 scss를 실행
 - [sinon](https://www.npmjs.com/package/sinon)
 - [stylelint](https://www.npmjs.com/package/stylelint)
 - [stylelint-config-prettier](https://www.npmjs.com/package/stylelint-config-prettier)
 - [stylelint-config-standard](https://www.npmjs.com/package/stylelint-config-standard)
-- [stylelint-order](https://www.npmjs.com/package/stylelint-order)
-- [stylelint-scss](https://www.npmjs.com/package/stylelint-scss)
+- [stylelint-order](https://www.npmjs.com/package/stylelint-order) : .stylelintrc.js에서 설정한 order대로 코드가 작성되었는지 파악
+- [stylelint-scss](https://www.npmjs.com/package/stylelint-scss) : scss 문법을 올바로 사용했는지 파악
 - [ts-jest](https://www.npmjs.com/package/ts-jest) : typescript 환경에서 jest를 사용할 때 필요
 - [typescript](https://www.npmjs.com/package/typescript)
 - [vue-jest](https://www.npmjs.com/package/vue-jest) : Vue 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
@@ -92,52 +98,62 @@
 ```bash
 ## Babel
 
-$ yarn add -D @babel/core
+yarn add -D @babel/core
 
 ## Eslint & Prettier
 
-$ yarn add -D @babel/eslint-parser eslint eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-webpack-plugin prettier
+yarn add -D @babel/eslint-parser eslint eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-webpack-plugin prettier
 
 ## Jest
 
-$ yarn add -D @babel/plugin-transform-modules-commonjs @babel/plugin-transform-runtime @types/jest eslint-plugin-jest jest
+yarn add -D @babel/plugin-transform-modules-commonjs @babel/plugin-transform-runtime @types/jest eslint-plugin-jest jest
 
 ## Lodash
 
-$ yarn add lodash-es
-$ yarn add -D @types/lodash-es
+yarn add lodash-es
+yarn add -D @types/lodash-es
 
 ## Markdownlint
 
-$ yarn add -D markdownlint
+yarn add -D markdownlint
 
 ## Mocha
 
-$ yarn add -D chai eslint-config-sinon eslint-plugin-chai-friendly eslint-plugin-mocha mocha sinon
+yarn add -D chai eslint-config-sinon eslint-plugin-chai-friendly eslint-plugin-mocha mocha sinon
 
 ## Nuxt.js
 
-$ yarn add -D eslint-plugin-vue eslint-plugin-nuxt
+yarn add -D eslint-plugin-vue eslint-plugin-nuxt
+
+## PostCSS
+
+yarn add -D @types/postcss-preset-env postcss postcss-scss postcss-loader postcss-nesting postcss-preset-env postcss-syntax
+
+❗️ Create React App으로 개발 환경을 설정했을 때는 postcss-preset-env만 설치해도 웬만한 기능은 다 사용할 수 있어요
 
 ## React
 
-$ yarn add -D @types/react-test-renderer
+yarn add -D @types/react-test-renderer
 
 ## Sass loader
 
-$ yarn add -D sass sass-loader
+yarn add -D sass sass-loader
 
 ## Stylelint
 
-$ yarn add -D @stylelint/postcss-css-in-js postcss-syntax stylelint stylelint-config-prettier stylelint-config-standard stylelint-order stylelint-scss
+yarn add -D @stylelint/postcss-css-in-js postcss-syntax stylelint stylelint-config-prettier stylelint-config-standard stylelint-order stylelint-scss
+
+## Tailwind CSS
+
+yarn add -D tailwindcss
 
 ## Typescript
 
-$ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript typescript
+yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript typescript
 
 ## Vue.js
 
-$ yarn add -D eslint-plugin-vue
+yarn add -D eslint-plugin-vue
 ```
 
 <br>
@@ -149,7 +165,8 @@ $ yarn add -D eslint-plugin-vue
 ### Eslint
 
 - `.eslintignore`
-- `.eslintrc.js`
+
+`.eslintrc.js`는 각 개발 환경별로 다르게 설정되어 있어요
 
 ### Git
 
@@ -161,11 +178,15 @@ $ yarn add -D eslint-plugin-vue
 
 ### Jest
 
-- `jest.config.ts`
+- `jest.config.js`
 
 ### Markdownlint
 
 - `.markdownlint.json`
+
+### PostCSS
+
+- `postcss.config.js`
 
 ### Prettier
 
@@ -176,6 +197,10 @@ $ yarn add -D eslint-plugin-vue
 
 - `.stylelintignore`
 - `.stylelintrc.js`
+
+### Tailwind CSS
+
+- `tailwind.config.js`
 
 ### Typescript
 
@@ -212,11 +237,3 @@ _괄호 안에 있는 익스텐션 ID로 검색하면 편리하게 찾을 수 �
 - `Jest` (Orta.vscode-jest)
 - `Sass` (syler.sass-indented)
 - `Stylelint Disable Snippets` (hedinne.stylelint-disable-snippets)
-
-<br>
-
-## 각 환경별 스타터 저장소 ⭐️
-
-- [JavaScript with Typescript Starter](https://github.com/biniruu/starter-for-javascript-with-typescript)
-- [Next.js with Typescript Starter](https://github.com/biniruu/starter-for-next-with-typescript)
-- [React.js with Typescript Starter](https://github.com/biniruu/starter-for-react-with-typescript)

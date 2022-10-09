@@ -72,6 +72,7 @@ module.exports = {
     'selector-combinator-space-after': 'always',
     'selector-combinator-space-before': 'always',
     'selector-descendant-combinator-no-non-space': true,
+    'selector-nested-pattern': '^&', // nested 문법을 사용할 때는 꼭 '&'를 붙여야 함
     'selector-pseudo-class-case': 'lower',
     'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['export'] }],
     'selector-pseudo-class-parentheses-space-inside': 'never',
