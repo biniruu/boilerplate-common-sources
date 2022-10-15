@@ -41,7 +41,7 @@ module.exports = {
     'declaration-block-trailing-semicolon': null, // This rule is recommanded because of conflict by semicolon rule between prettier and stylelint
     'declaration-colon-space-after': 'always',
     'declaration-colon-space-before': 'never',
-    'declaration-empty-line-before': ['always', { except: ['after-declaration', 'first-nested'] }],
+    'declaration-empty-line-before': ['always', { except: ['after-comment', 'after-declaration', 'first-nested'] }],
     'font-family-name-quotes': 'always-where-recommended',
     'function-comma-space-after': 'always',
     'function-max-empty-lines': 0,
