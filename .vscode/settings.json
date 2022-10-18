@@ -166,5 +166,26 @@
   "workbench.editorAssociations": {
     "git-rebase-todo": "gitlens.rebase" // git rebase -i 실행할 때 띄우는 ui 화면
   },
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "cSpell.words": [
+    "Anson",
+    "blockless",
+    "Craco",
+    "dbaeumer",
+    "esbenp",
+    "estree",
+    "gridcell",
+    "hedinne",
+    "jsxdev",
+    "listbox",
+    "nocheck",
+    "noninteractive",
+    "Orta",
+    "radiogroup",
+    "syler",
+    "tablist",
+    "tailwindcss",
+    "treegrid",
+    "treeitem"
+  ]
 }

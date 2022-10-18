@@ -4,46 +4,72 @@ module.exports = {
     'eslint:recommended',
     'eslint-config-prettier',
     'plugin:import/recommended',
-    'plugin:jest/recommended',
     'plugin:jsx-a11y/recommended', // 웹 접근성 관련 jsx 규칙
     'plugin:prettier/recommended',
     'plugin:react/jsx-runtime', // If you are using the new JSX transform from React 17, you should enable this
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:@typescript-eslint/recommended', // 타입스크립트 추천 룰셋
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
-  ignorePatterns: ['.eslintrc.js', 'tailwind.config.js', 'postcss.config.js', 'jest.config.js'],
-  parser: '@typescript-eslint/parser',
+  overrides: [
+    {
+      extends: [
+        'plugin:@typescript-eslint/recommended', // 타입스크립트 추천 룰셋
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+      ],
+      files: ['*.ts', '*.tsx'],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        project: 'tsconfig.json', // parser: @typescript-eslint/parser를 활성화 하기 위해 꼭 필요
+      },
+      plugins: ['@typescript-eslint'],
+      rules: {
+        '@typescript-eslint/ban-ts-comment': [
+          'error',
+          {
+            'ts-expect-error': 'allow-with-description',
+            'ts-ignore': 'allow-with-description',
+            'ts-nocheck': 'allow-with-description',
+            'ts-check': 'allow-with-description',
+          },
+        ], // 설명을 추가하는 조건으로 @ts-expect-error, @ts-ignore, @ts-nocheck, @ts-check 주석을 허용
+        '@typescript-eslint/no-explicit-any': ['error', { ignoreRestArgs: true }],
+        '@typescript-eslint/no-floating-promises': 'warn',
+        '@typescript-eslint/no-unsafe-argument': 'warn',
+        '@typescript-eslint/no-unsafe-assignment': 'error', // any 타입 사용 시 알림을 띄움
+        '@typescript-eslint/no-unsafe-call': 'warn',
+        '@typescript-eslint/no-unsafe-member-access': 'warn',
+        '@typescript-eslint/no-unused-vars': 'error', // typescript는 트랜스파일 시 사용하지 않는 변수가 있으면 error를 발생시키기 때문에 warn으로 지정해봐야 의미 없다.
+        '@typescript-eslint/no-var-requires': 'error',
+        '@typescript-eslint/restrict-plus-operands': 'warn',
+        '@typescript-eslint/restrict-template-expressions': 'warn',
+      },
+    },
+    {
+      extends: ['plugin:jest/recommended'],
+      files: ['*.spec.js', '*.spec.ts', '*.test.js', '*.test.ts'],
+      plugins: ['jest'],
+    },
+  ],
+  parser: '@babel/eslint-parser',
   parserOptions: {
+    babelOptions: {
+      presets: ['@babel/preset-react'],
+    },
     ecmaFeatures: { jsx: true }, // JSX 파싱을 위해 필요
     ecmaVersion: 'latest',
-    project: 'tsconfig.json', // parser: @typescript-eslint/parser를 활성화 하기 위해 꼭 필요
     requireConfigFile: false, // "no babel config file detected for ..." 에러 해결을 위해 필요
     sourceType: 'module', // 모듈 시스템 사용 시 필요
   },
-  plugins: ['import', 'jest', 'jsx-a11y', 'prettier', 'react', 'react-hooks', '@typescript-eslint'],
+  plugins: [
+    //
+    'import',
+    'jsx-a11y',
+    'prettier',
+    'react',
+    'react-hooks',
+  ],
   root: true, // 해당 설정 파일이 root 임을 명시하는 옵션. true라면 상위 설정 파일 찾기를 여기서 멈춘다.
   rules: {
-    '@typescript-eslint/ban-ts-comment': [
-      'error',
-      {
-        'ts-expect-error': 'allow-with-description',
-        'ts-ignore': 'allow-with-description',
-        'ts-nocheck': 'allow-with-description',
-        'ts-check': 'allow-with-description',
-      },
-    ], // 설명을 추가하는 조건으로 @ts-expect-error, @ts-ignore, @ts-nocheck, @ts-check 주석을 허용
-    '@typescript-eslint/no-explicit-any': ['error', { ignoreRestArgs: true }],
-    '@typescript-eslint/no-floating-promises': 'warn',
-    '@typescript-eslint/no-unsafe-argument': 'warn',
-    '@typescript-eslint/no-unsafe-assignment': 'error', // any 타입 사용 시 알림을 띄움
-    '@typescript-eslint/no-unsafe-call': 'warn',
-    '@typescript-eslint/no-unsafe-member-access': 'warn',
-    '@typescript-eslint/no-unused-vars': 'error', // typescript는 트랜스파일 시 사용하지 않는 변수가 있으면 error를 발생시키기 때문에 warn으로 지정해봐야 의미 없다.
-    '@typescript-eslint/no-var-requires': 'error',
-    '@typescript-eslint/restrict-plus-operands': 'warn',
-    '@typescript-eslint/restrict-template-expressions': 'warn',
     'array-bracket-spacing': ['warn', 'never'],
     camelcase: ['error', { properties: 'never' }],
     'comma-dangle': 'off',
@@ -104,7 +130,7 @@ module.exports = {
       // },
     ],
     quotes: ['warn', 'single', { allowTemplateLiterals: true }],
-    // 'react/destructuring-assignment': 'warn', // state, prop 등에 구조분해 할당 적용
+    'react/destructuring-assignment': 'warn', // state, prop 등에 구조분해 할당 적용
     'react/jsx-curly-brace-presence': 'warn', // jsx 내 불필요한 중괄호 금지
     // 'react/jsx-curly-spacing': ['warn', { when: 'always', children: true, objectLiterals: 'never' }], // prettier와 충돌하여 사용할 수 없음
     'react/jsx-key': 'warn', // 반복문으로 생성하는 요소에 key 강제
@@ -137,7 +163,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', 'ts', 'tsx'], // react 사용 시 활성화 필요. jsx를 import할 때 import/no-unresolved 에러가 발생하지 않도록 함
+        extensions: ['.js', '.jsx', '.ts', '.tsx'], // react 사용 시 활성화 필요. jsx를 import할 때 import/no-unresolved 에러가 발생하지 않도록 함
       },
     },
     react: {

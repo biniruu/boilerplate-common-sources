@@ -34,6 +34,9 @@
 - [@types/react-test-renderer](https://www.npmjs.com/package/@types/react-test-renderer) : react-test-renderer 타입 정의 제공
 - [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) : typescript 관련 lint 규칙 제공
 - [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser) : typescript를 위한 eslint 파서
+- [@typescript-eslint/types](https://www.npmjs.com/package/@typescript-eslint/types) : TypeScript-ESTree Types
+- [@typescript-eslint/typescript-estree](https://www.npmjs.com/package/@typescript-eslint/typescript-estree) : TypeScript ESTree
+- [@typescript-eslint/utils](https://www.npmjs.com/package/@typescript-eslint/utils) : typescript에서 eslint를 사용할 때 유용한 도구
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer) : cross browser에 필요한 css 속성 prefix를 자동으로 생성
 - [babel-jest](https://www.npmjs.com/package/babel-jest) : JS/JSX 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
 - [chai](https://www.npmjs.com/package/chai)
@@ -42,6 +45,7 @@
 - [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier) : prettier와 충돌을 일으키는 eslint 규칙 비활성화
 - [eslint-config-sinon](https://www.npmjs.com/package/eslint-config-sinon)
 - [eslint-import-resolver-typescript](https://www.npmjs.com/package/eslint-import-resolver-typescript) : tsconfig에서 path alias 사용을 위해 필요
+- [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) : jsx 엘리먼트에서 웹 접근성 준수 여부 확인
 - [eslint-plugin-chai-friendly](https://www.npmjs.com/package/eslint-plugin-chai-friendly)
 - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) : es2015+ import/export 구문 지원
 - [eslint-plugin-jest](eslint-plugin-jest) : jest 관련 규칙 제공
@@ -58,6 +62,7 @@
 - [lodash-es](https://www.npmjs.com/package/lodash-es) : 필요한 lodash 함수만 골라 사용하고, 사용하지 않은 함수는 tree shaking할 수 있는 lodash 패키지
 - [mocha](https://www.npmjs.com/package/mocha)
 - [postcss](https://www.npmjs.com/package/postcss)
+- [postcss-html](https://www.npmjs.com/package/postcss-html) : html을 파싱할 때 필요한 postcss 문법
 - [postcss-loader](https://www.npmjs.com/package/postcss-loader) : webpack에서 postcss를 실행
 - [postcss-nesting](https://www.npmjs.com/package/postcss-nesting) : nested한 코드를 css 문법에 맞게 변환
 - [postcss-preset-env](https://www.npmjs.com/package/postcss-preset-env) : 주요 postcss 플러그인을 모은 plugin pack. ([설치 플러그인 목록 확인](https://www.libtrends.info/npm-compare/autoprefixer-vs-postcss-nested-vs-postcss-nesting-vs-postcss-preset-env-vs-precss))
@@ -70,8 +75,9 @@
 - [sass-loader](https://www.npmjs.com/package/sass-loader) : webpack에서 scss를 실행
 - [sinon](https://www.npmjs.com/package/sinon)
 - [stylelint](https://www.npmjs.com/package/stylelint)
-- [stylelint-config-prettier](https://www.npmjs.com/package/stylelint-config-prettier)
-- [stylelint-config-standard](https://www.npmjs.com/package/stylelint-config-standard)
+- [stylelint-config-prettier](https://www.npmjs.com/package/stylelint-config-prettier) : prettier 관련 stylelint rules 확장
+- [stylelint-config-standard](https://www.npmjs.com/package/stylelint-config-standard) : stylelint rules 확장
+- [stylelint-config-standard-scss](https://www.npmjs.com/package/stylelint-config-standard-scss) : scss 관련 stylelint rules 확장
 - [stylelint-order](https://www.npmjs.com/package/stylelint-order) : .stylelintrc.js에서 설정한 order대로 코드가 작성되었는지 파악
 - [stylelint-scss](https://www.npmjs.com/package/stylelint-scss) : scss 문법을 올바로 사용했는지 파악
 - [ts-jest](https://www.npmjs.com/package/ts-jest) : typescript 환경에서 jest를 사용할 때 필요
@@ -102,7 +108,7 @@ yarn add -D @babel/core
 
 ## Eslint & Prettier
 
-yarn add -D @babel/eslint-parser eslint eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-webpack-plugin prettier
+yarn add -D @babel/eslint-parser eslint eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-webpack-plugin prettier
 
 ## Jest
 
@@ -123,11 +129,11 @@ yarn add -D chai eslint-config-sinon eslint-plugin-chai-friendly eslint-plugin-m
 
 ## Nuxt.js
 
-yarn add -D eslint-plugin-vue eslint-plugin-nuxt
+yarn add -D eslint-plugin-nuxt
 
 ## PostCSS
 
-yarn add -D @types/postcss-preset-env postcss postcss-scss postcss-loader postcss-nesting postcss-preset-env postcss-syntax
+yarn add -D @stylelint/postcss-css-in-js @types/postcss-preset-env postcss postcss-html postcss-scss postcss-syntax postcss-loader postcss-nesting postcss-preset-env postcss-syntax
 
 ❗️ Create React App으로 개발 환경을 설정했을 때는 postcss-preset-env만 설치해도 웬만한 기능은 다 사용할 수 있어요
 
@@ -135,13 +141,13 @@ yarn add -D @types/postcss-preset-env postcss postcss-scss postcss-loader postcs
 
 yarn add -D @types/react-test-renderer
 
-## Sass loader
+## Scss
 
-yarn add -D sass sass-loader
+yarn add -D sass sass-loader stylelint-config-standard-scss stylelint-scss
 
 ## Stylelint
 
-yarn add -D @stylelint/postcss-css-in-js postcss-syntax stylelint stylelint-config-prettier stylelint-config-standard stylelint-order stylelint-scss
+yarn add -D stylelint stylelint-config-prettier stylelint-config-standard stylelint-order
 
 ## Tailwind CSS
 
@@ -149,7 +155,9 @@ yarn add -D tailwindcss
 
 ## Typescript
 
-yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript typescript
+yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser @typescript-eslint/types @typescript-eslint/typescript-estree
+ @typescript-eslint/utils
+ eslint-import-resolver-typescript typescript
 
 ## Vue.js
 
@@ -162,11 +170,15 @@ yarn add -D eslint-plugin-vue
 
 제 취향이 듬뿍 담긴 파일이니 각자 취향에 맞춰 수정 후 사용하세요👻
 
+### Craco
+
+- `craco.config.js`
+
 ### Eslint
 
 - `.eslintignore`
 
-`.eslintrc.js`는 각 개발 환경별로 다르게 설정되어 있어요
+`.eslintrc.js`는 각 개발 환경별로 다르게 설정되었을 수 있어요
 
 ### Git
 

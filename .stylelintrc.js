@@ -1,13 +1,19 @@
 module.exports = {
-  customSyntax: 'postcss-html', // postcss를 사용하는 환경에서 stylelint(CssSyntaxError) 에러 발생 방지
   extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
   plugins: ['stylelint-scss', 'stylelint-order'],
-  // ignoreFiles: ['./src/style.css'],
   overrides: [
     {
-      files: ['**/*.{html,jsx,svg,tsx,ts}'],
-      customSyntax: '@stylelint/postcss-css-in-js',
-    }, // CssSyntaxError 해결
+      files: ['**/*.{html,jsx,svg,tsx}'],
+      customSyntax: 'postcss-html', // postcss를 사용하는 환경에서 stylelint(CssSyntaxError) 에러 발생 방지
+      // customSyntax: '@stylelint/postcss-css-in-js',
+    },
+    {
+      extends: ['stylelint-config-standard-scss'],
+      files: ['**/*.scss'],
+      rules: {
+        'scss/at-rule-no-unknown': [true, { ignoreAtRules: ['tailwind'] }], // scss 기본 문법 이외에 다른 @ 문법 사용 시 에러 발생
+      },
+    },
   ],
   rules: {
     'alpha-value-notation': 'number', // rgba()에서 opacity를 % 대신 숫자로 표현
@@ -21,7 +27,7 @@ module.exports = {
     ],
     'at-rule-name-case': 'lower',
     'at-rule-name-space-after': 'always-single-line',
-    'at-rule-no-unknown': true, // stylelint-scss 를 설치했을 경우 활성화 권장
+    'at-rule-no-unknown': [true, { ignoreAtRules: ['tailwind'] }], // css 기본 문법 이외에 다른 @ 문법 사용 시 에러 발생
     'at-rule-semicolon-newline-after': 'always',
     'at-rule-semicolon-space-before': 'never',
     'block-closing-brace-empty-line-before': 'never',
