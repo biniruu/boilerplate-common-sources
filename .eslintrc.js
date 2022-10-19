@@ -1,18 +1,19 @@
 module.exports = {
   env: { browser: true, es6: true, node: true },
   extends: [
-    'eslint:recommended',
     'eslint-config-prettier',
+    'eslint:recommended',
     'plugin:import/recommended',
     'plugin:jsx-a11y/recommended', // 웹 접근성 관련 jsx 규칙
     'plugin:prettier/recommended',
+    'plugin:react-hooks/recommended',
     'plugin:react/jsx-runtime', // If you are using the new JSX transform from React 17, you should enable this
     'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
   ],
   overrides: [
     {
       extends: [
+        'plugin:import/typescript',
         'plugin:@typescript-eslint/recommended', // 타입스크립트 추천 룰셋
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
       ],
@@ -60,14 +61,7 @@ module.exports = {
     requireConfigFile: false, // "no babel config file detected for ..." 에러 해결을 위해 필요
     sourceType: 'module', // 모듈 시스템 사용 시 필요
   },
-  plugins: [
-    //
-    'import',
-    'jsx-a11y',
-    'prettier',
-    'react',
-    'react-hooks',
-  ],
+  plugins: ['import', 'jsx-a11y', 'prettier', 'react', 'react-hooks'],
   root: true, // 해당 설정 파일이 root 임을 명시하는 옵션. true라면 상위 설정 파일 찾기를 여기서 멈춘다.
   rules: {
     'array-bracket-spacing': ['warn', 'never'],
