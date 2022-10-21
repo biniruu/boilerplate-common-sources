@@ -39,7 +39,7 @@ module.exports = {
         '@typescript-eslint/no-unsafe-assignment': 'error', // any 타입 사용 시 알림을 띄움
         '@typescript-eslint/no-unsafe-call': 'warn',
         '@typescript-eslint/no-unsafe-member-access': 'warn',
-        '@typescript-eslint/no-unused-vars': 'error', // typescript는 트랜스파일 시 사용하지 않는 변수가 있으면 error를 발생시키기 때문에 warn으로 지정해봐야 의미 없다.
+        '@typescript-eslint/no-unused-vars': 'warn',
         '@typescript-eslint/no-var-requires': 'error',
         '@typescript-eslint/restrict-plus-operands': 'warn',
         '@typescript-eslint/restrict-template-expressions': 'warn',
@@ -102,13 +102,13 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
     'no-duplicate-imports': 'error',
     'no-extra-semi': 'error',
-    'no-inner-declarations': 'off',
+    'no-inner-declarations': 'warn', // nested block에서 변수나 함수 선언 금지
     'no-multiple-empty-lines': 'warn', // 여러 줄 공백 금지
     'no-nested-ternary': 'warn', // 중첩 삼항 연산자 금지
     'no-new-object': 'error',
-    'no-undef': 'off', // 함수 시그니처 작성 허용
+    'no-undef': 'off', // 전역 변수는 /* global ... */ 주석에 명시해야 사용 가능
     'no-underscore-dangle': 'off', // 변수명 앞에 언더바를 붙일 수 있도록 허용 (e.g. _foo)
-    'no-unused-vars': 'off', // 사용하지 않는 변수 금지. @typescript-eslint/no-unused-vars와 중복되는 기능이라 off로 설정
+    'no-unused-vars': 'warn', // 사용하지 않는 변수 금지
     'no-var': 'error',
     'object-curly-spacing': ['warn', 'always'], // 중괄호 안에 간격 삽입. objectsInObjects: false 옵션은 사용할 수 없음. prettier의 bracketSpacing에 의해 덮어쓰기 되기 때문
     'prefer-const': 'error',
