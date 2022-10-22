@@ -102,7 +102,7 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
     'no-duplicate-imports': 'error',
     'no-extra-semi': 'error',
-    'no-inner-declarations': 'warn', // nested block에서 변수나 함수 선언 금지
+    'no-inner-declarations': 'warn', // nested block에서 변수 또는 함수 선언 금지
     'no-multiple-empty-lines': 'warn', // 여러 줄 공백 금지
     'no-nested-ternary': 'warn', // 중첩 삼항 연산자 금지
     'no-new-object': 'error',

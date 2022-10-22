@@ -5,6 +5,7 @@
   "author": "biniruu",
   "license": "MIT",
   "type": "module",
+  "private": "true",
   "scripts": {
     "sync-package-version": "npx syncyarnlock -ks",
     "update-packages": "yarn upgrade --latest && yarn sync-package-version"

@@ -65,7 +65,7 @@
   "explorer.autoReveal": false,
   "explorer.compactFolders": false, // 하위 폴더가 하나밖에 없을 때 폴더 정렬이 일렬로 나오지 않고 일반적인 방식으로 계층화 되도록 함
   "explorer.confirmDelete": false, // 파일 삭제 전 확인 모달 띄우기
-  "explorer.confirmDragAndDrop": false, // 파일 드래그 & 드롭 전 확인 모달 띄우기,
+  "explorer.confirmDragAndDrop": false, // 파일 드래그 & 드롭 전 확인 모달 띄우기
   "files.associations": {
     "*.css": "postcss"
   },
@@ -102,7 +102,10 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "npm.keybindingsChangedWarningShown": true,
   "problems.autoReveal": false,
-  "projectManager.git.baseFolders": ["/Users/biniruu/Projects", "/Users/biniruu/Learning"],
+  "projectManager.git.baseFolders": [
+    "/Users/biniruu/Projects",
+    "/Users/biniruu/Learning"
+  ],
   "python.jediEnabled": false,
   "pythonPreview.codeFooterDocs.fontSize": 13,
   "quokka.automaticRestart": true,
@@ -177,6 +180,7 @@
     "gridcell",
     "hedinne",
     "jsxdev",
+    "lcov",
     "listbox",
     "nocheck",
     "noninteractive",
@@ -186,6 +190,7 @@
     "tablist",
     "tailwindcss",
     "treegrid",
-    "treeitem"
+    "treeitem",
+    "unmocked"
   ]
 }

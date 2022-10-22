@@ -4,6 +4,7 @@
   "description": "typescript starter",
   "author": "biniruu",
   "license": "MIT",
+  "private": "true",
   "scripts": {
     "sync-package-version": "npx syncyarnlock -ks",
     "update-packages": "yarn upgrade --latest && yarn sync-package-version",
