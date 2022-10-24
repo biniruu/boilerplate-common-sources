@@ -72,13 +72,13 @@ yarn add -D @types/react-test-renderer react-test-renderer
 
 yarn add recoil
 
-## Sass loader
+## Sass
 
-yarn add -D sass sass-loader
+yarn add -D sass sass-loader stylelint-config-standard-scss stylelint-scss
 
 ## Stylelint
 
-yarn add -D @stylelint/postcss-css-in-js postcss-syntax stylelint stylelint-config-prettier stylelint-config-standard stylelint-order stylelint-scss
+yarn add -D @stylelint/postcss-css-in-js postcss-syntax stylelint stylelint-config-prettier stylelint-config-standard stylelint-order
 
 ## Tailwind css
 
@@ -162,8 +162,9 @@ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 - [react-test-renderer](https://www.npmjs.com/package/react-test-renderer) : 테스트 시 reactDOM의 스냅샷 생성
 - [recoil](https://www.npmjs.com/package/recoil) : react 전역 상태 관리
 - [stylelint](https://www.npmjs.com/package/stylelint)
-- [stylelint-config-prettier](https://www.npmjs.com/package/stylelint-config-prettier)
+- [stylelint-config-prettier](https://www.npmjs.com/package/stylelint-config-prettier) : stylelint와 prettier끼리 충돌하는 상황에서 prettier 규칙을 따르도록 강제함으로써 에러 발생을 회피
 - [stylelint-config-standard](https://www.npmjs.com/package/stylelint-config-standard)
+- [stylelint-config-standard-scss](https://www.npmjs.com/package/stylelint-config-standard-scss) : stylelint-config-standard와 stylelint-config-recommended-scss 규칙을 stylelint와 공유한다
 - [stylelint-order](https://www.npmjs.com/package/stylelint-order)
 - [stylelint-scss](https://www.npmjs.com/package/stylelint-scss)
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss)

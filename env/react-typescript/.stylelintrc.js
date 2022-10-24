@@ -1,18 +1,11 @@
 module.exports = {
-  extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
+  extends: ['stylelint-config-standard', 'stylelint-config-standard-scss', 'stylelint-config-prettier'], // stylelint-config-prettier는 항상 마지막에 추가할 것. 이전 확장 규칙을 덮어쓰기 함으로써 prettier와 stylelint끼리 충돌하는 상황을 무마할 수 있다
   plugins: ['stylelint-scss', 'stylelint-order'],
   overrides: [
     {
       files: ['**/*.{html,jsx,svg,tsx}'],
       customSyntax: 'postcss-html', // postcss를 사용하는 환경에서 stylelint(CssSyntaxError) 에러 발생 방지
       // customSyntax: '@stylelint/postcss-css-in-js',
-    },
-    {
-      extends: ['stylelint-config-standard-scss'],
-      files: ['**/*.scss'],
-      rules: {
-        'scss/at-rule-no-unknown': [true, { ignoreAtRules: ['tailwind'] }], // scss 기본 문법 이외에 다른 @ 문법 사용 시 에러 발생
-      },
     },
   ],
   rules: {
@@ -72,6 +65,7 @@ module.exports = {
     'order/properties-alphabetical-order': true,
     'property-case': 'lower',
     'rule-empty-line-before': ['always-multi-line', { except: ['after-single-line-comment', 'first-nested'] }],
+    'scss/at-rule-no-unknown': [true, { ignoreAtRules: ['tailwind'] }], // scss 기본 문법 이외에 다른 @ 문법 사용 시 에러 발생
     'selector-attribute-brackets-space-inside': 'never',
     'selector-attribute-operator-space-after': 'never',
     'selector-attribute-operator-space-before': 'never',
