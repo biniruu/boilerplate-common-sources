@@ -102,10 +102,7 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "npm.keybindingsChangedWarningShown": true,
   "problems.autoReveal": false,
-  "projectManager.git.baseFolders": [
-    "/Users/biniruu/Projects",
-    "/Users/biniruu/Learning"
-  ],
+  "projectManager.git.baseFolders": ["/Users/biniruu/Projects", "/Users/biniruu/Learning"],
   "python.jediEnabled": false,
   "pythonPreview.codeFooterDocs.fontSize": 13,
   "quokka.automaticRestart": true,
@@ -172,11 +169,13 @@
   "workbench.iconTheme": "material-icon-theme",
   "cSpell.words": [
     "Anson",
+    "biniruu",
     "blockless",
     "Craco",
     "dbaeumer",
     "esbenp",
     "estree",
+    "flexbugs",
     "gridcell",
     "hedinne",
     "jsxdev",
@@ -187,10 +186,12 @@
     "Orta",
     "radiogroup",
     "syler",
+    "syncyarnlock",
     "tablist",
     "tailwindcss",
     "treegrid",
     "treeitem",
+    "typeahead",
     "unmocked"
   ]
 }
