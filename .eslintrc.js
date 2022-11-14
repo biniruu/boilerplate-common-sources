@@ -6,6 +6,9 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:jsx-a11y/recommended', // 웹 접근성 관련 jsx 규칙
     'plugin:prettier/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:react/jsx-runtime', // If you are using the new JSX transform from React 17, you should enable this
+    'plugin:react/recommended',
   ],
   overrides: [
     {
@@ -32,11 +35,11 @@ module.exports = {
         ], // 설명을 추가하는 조건으로 @ts-expect-error, @ts-ignore, @ts-nocheck, @ts-check 주석을 허용
         '@typescript-eslint/no-explicit-any': ['error', { ignoreRestArgs: true }],
         '@typescript-eslint/no-floating-promises': 'warn',
-        '@typescript-eslint/no-unsafe-argument': 'warn',
+        '@typescript-eslint/no-unsafe-argument': 'error',
         '@typescript-eslint/no-unsafe-assignment': 'error', // any 타입 사용 시 알림을 띄움
-        '@typescript-eslint/no-unsafe-call': 'warn',
-        '@typescript-eslint/no-unsafe-member-access': 'warn',
-        '@typescript-eslint/no-unused-vars': 'warn',
+        '@typescript-eslint/no-unsafe-call': 'error',
+        '@typescript-eslint/no-unsafe-member-access': 'error',
+        '@typescript-eslint/no-unused-vars': 'error',
         '@typescript-eslint/no-var-requires': 'error',
         '@typescript-eslint/restrict-plus-operands': 'warn',
         '@typescript-eslint/restrict-template-expressions': 'warn',
@@ -121,6 +124,44 @@ module.exports = {
       // },
     ],
     quotes: ['warn', 'single', { allowTemplateLiterals: true }],
+    'react/destructuring-assignment': 'warn', // state, prop 등에 구조분해 할당 적용
+    'react/jsx-curly-brace-presence': 'warn', // jsx 내 불필요한 중괄호 금지
+    // 'react/jsx-curly-spacing': ['warn', { when: 'always', children: true, objectLiterals: 'never' }], // prettier와 충돌하여 사용할 수 없음
+    'react/jsx-key': 'warn', // 반복문으로 생성하는 요소에 key 강제
+    'react/jsx-no-useless-fragment': 'warn', // 불필요한 fragment 금지
+    'react/jsx-pascal-case': 'warn', // 컴포넌트 이름은 PascalCase로
+    'react/jsx-no-bind': [
+      'error',
+      {
+        allowArrowFunctions: true,
+        allowFunctions: true,
+      },
+    ], // 함수를 props로 넘길 수 있도록 허용
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
+    'react/no-direct-mutation-state': 'warn', // state 직접 수정 금지
+    'react/no-unescaped-entities': 'warn', // jsx 안에서 escape 되지 않은 entity 코드를 사용했을 때 경고 발생
+    'react/no-unused-state': 'warn', // 사용되지 않는 state
+    'react/prop-types': 'off', // typescript를 사용하면 필요없는 옵션
+    'react/self-closing-comp': ['warn', { component: true, html: false }],
+    'react/static-property-placement': ['error', 'static public field'], // defaultProps를 클래스 내부에 정의하도록 허용
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': [
+      'warn',
+      // {
+      //   additionHooks: '(useRecoilCallback|useRecoilTransaction_UNSTABLE)', // recoil 사용 시 필요
+      // },
+    ],
     'space-before-function-paren': 'off', // allow debugger during development
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['*.js', '*.jsx', '*.ts', '*.tsx'], // react 사용 시 활성화 필요. jsx를 import할 때 import/no-unresolved 에러가 발생하지 않도록 함
+      },
+    },
+    react: {
+      version: 'detect', // eslint-plugin-react가 자동 리액트버전탐지
+    },
   },
 }
