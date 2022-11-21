@@ -128,7 +128,7 @@ module.exports = {
     'react/destructuring-assignment': 'warn', // state, prop 등에 구조분해 할당 적용
     'react/jsx-curly-brace-presence': 'warn', // jsx 내 불필요한 중괄호 금지
     // 'react/jsx-curly-spacing': ['warn', { when: 'always', children: true, objectLiterals: 'never' }], // prettier와 충돌하여 사용할 수 없음
-    'react/jsx-key': 'warn', // 반복문으로 생성하는 요소에 key 강제
+    'react/jsx-key': 'error', // 반복문으로 생성하는 요소에 key 강제
     'react/jsx-no-useless-fragment': 'warn', // 불필요한 fragment 금지
     'react/jsx-pascal-case': 'warn', // 컴포넌트 이름은 PascalCase로
     'react/jsx-no-bind': [
@@ -144,7 +144,7 @@ module.exports = {
     'react/no-unescaped-entities': 'warn', // jsx 안에서 escape 되지 않은 entity 코드를 사용했을 때 경고 발생
     'react/no-unused-state': 'warn', // 사용되지 않는 state
     'react/prop-types': 'off', // typescript를 사용하면 필요없는 옵션
-    'react/self-closing-comp': ['warn', { component: true, html: false }],
+    'react/self-closing-comp': ['warn', { component: true, html: false }], // jsx 태그 안에 하위 태그가 없을 경우 self-closing 태그로 변환
     'react/static-property-placement': ['error', 'static public field'], // defaultProps를 클래스 내부에 정의하도록 허용
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': [

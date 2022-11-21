@@ -155,9 +155,7 @@ yarn add -D tailwindcss
 
 ## Typescript
 
-yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser @typescript-eslint/types @typescript-eslint/typescript-estree
- @typescript-eslint/utils
- eslint-import-resolver-typescript typescript
+yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser @typescript-eslint/types @typescript-eslint/typescript-estree @typescript-eslint/utils eslint-import-resolver-typescript typescript
 
 ## Vue.js
 
