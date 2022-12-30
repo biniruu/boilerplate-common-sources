@@ -61,11 +61,11 @@ yarn add -D @types/lodash-es
 
 ## PostCSS
 
-yarn add -D postcss-cli postcss-url
+yarn add -D @types/postcss-preset-env postcss-cli postcss-url
 
 ## React
 
-yarn add react-router-dom
+yarn add @craco/craco react-router-dom
 yarn add -D @types/react-test-renderer react-test-renderer
 
 ## Recoil
@@ -139,6 +139,7 @@ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 
 위에서 설치한 패키지가 무엇인지 알아보세요.
 
+- [@craco/craco](https://www.npmjs.com/package/@craco/craco) : CRA 앱에서 webpack 설정 기능 제공
 - [@stylelint/postcss-css-in-js](https://www.npmjs.com/package/@stylelint/postcss-css-in-js) : typescript 환경에서 stylelint를 사용할 때 발생하는 _CssSyntaxError_ 해결을 위해 필요
 - [@types/jest](https://www.npmjs.com/package/@types/jest) : jest의 타입 정의와 hint 제공
 - [@types/lodash-es](https://www.npmjs.com/package/@types/lodash-es) : lodash 타입 정의 제공
@@ -179,7 +180,6 @@ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 🙌 여기서는 사용하지 않지만, 유용한 패키지예요.
 
-- @craco/craco : CRA로 리액트를 설치했을 때 webpack 설정 지원
 - cra-bundle-analyzer : eject하지 않고 webpack-bundle-analyzer와 동일한 기능 사용 가능
 - eslint-import-resolver-typescript : tsconfig에서 path alias 사용을 위해 필요. CRA로 리액트를 설치했다면 craco와 함께 사용할 것
 ```
