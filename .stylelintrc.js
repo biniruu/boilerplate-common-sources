@@ -4,7 +4,7 @@ module.exports = {
   overrides: [
     {
       files: ['**/*.{html,jsx,svg,tsx}'],
-      customSyntax: 'postcss-syntax', // postcss를 사용하는 환경에서 stylelint(CssSyntaxError) 에러 발생 방지
+      customSyntax: 'postcss-syntax', // 이 옵션을 올바로 설정해야 stylelint(CssSyntaxError) 에러가 발생하지 않는다
     },
   ],
   rules: {
