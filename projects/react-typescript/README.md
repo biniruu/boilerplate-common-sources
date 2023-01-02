@@ -18,7 +18,7 @@ create react app으로 react.js 설치 후 react 프로젝트에 필요한 기�
 ## React.js 설치 👨🏻‍💻
 
 ```bash
-## Create react app with typescript
+# Create react app with typescript
 
 $ yarn create react-app <my-app-name> --template typescript
 ```
@@ -46,45 +46,49 @@ CRA로 리액트 설치 후 아래 설정을 삭제해주세요.
 ## 패키지 설치 📦
 
 ```bash
-## Eslint & Prettier
+# Eslint & Prettier
 
 yarn add -D eslint-config-prettier eslint-plugin-prettier prettier
 
-## Jest
+# Env
+
+yarn add env-cmd
+
+# Jest
 
 yarn add -D @types/jest eslint-plugin-jest ts-jest
 
-## Lodash
+# Lodash
 
 yarn add lodash-es
 yarn add -D @types/lodash-es
 
-## PostCSS
+# PostCSS
 
 yarn add -D @types/postcss-preset-env postcss-cli postcss-url
 
-## React
+# React
 
 yarn add @craco/craco react-router-dom
 yarn add -D @types/react-test-renderer react-test-renderer
 
-## Recoil
+# Recoil
 
 yarn add recoil
 
-## Sass
+# Sass
 
 yarn add -D sass sass-loader stylelint-config-standard-scss stylelint-scss
 
-## Stylelint
+# Stylelint
 
 yarn add -D @stylelint/postcss-css-in-js postcss-syntax stylelint stylelint-config-prettier stylelint-config-standard stylelint-order
 
-## Tailwind css
+# Tailwind css
 
 yarn add -D prettier-plugin-tailwindcss tailwindcss
 
-## TypeScript
+# TypeScript
 
 yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
@@ -155,6 +159,7 @@ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) : react 규칙 관련 피드백 제공
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) : react hooks 규칙 관련 피드백 제공
 - [eslint-webpack-plugin](https://www.npmjs.com/package/eslint-webpack-plugin)
+- [env-cmd](https://www.npmjs.com/package/env-cmd) : command에서 노드 환경 변수 사용을 지원
 - [lodash-es](https://www.npmjs.com/package/lodash-es) : 필요한 lodash 함수만 골라 사용하고, 사용하지 않은 함수는 tree shaking할 수 있는 lodash 패키지
 - [postcss-scss](https://www.npmjs.com/package/postcss-scss) : postcss가 scss를 css로 파싱할 수 있는 기능 제공
 - [postcss-syntax](https://www.npmjs.com/package/postcss-syntax) : typescript 환경에서 stylelint를 사용할 때 발생하는 _CssSyntaxError_ 해결을 위해 필요
