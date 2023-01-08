@@ -67,7 +67,7 @@
     // "inlineSources": true,                       /* Emit the source alongside the sourcemaps within a single file; requires '--inlineSourceMap' or '--sourceMap' to be set. */
 
     /* Experimental Options */
-    "experimentalDecorators": false, // 20220426 현재 stage 2 단계에 있는 기능. Enables experimental support for ES7 decorators.
+    "experimentalDecorators": true, // decorator를 사용하려면 활성화 필요. Enables experimental support for ES7 decorators.
     // "emitDecoratorMetadata": true,               /* Enables experimental support for emitting type metadata for decorators. */
 
     /* Advanced Options */
