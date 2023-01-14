@@ -5,7 +5,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:import/recommended',
     'plugin:jsx-a11y/recommended', // 웹 접근성 관련 jsx 규칙
-    'plugin:prettier/recommended',
+    'plugin:prettier/recommended', // eslint-config-prettier의  추천 설정
     'plugin:react-hooks/recommended',
     'plugin:react/jsx-runtime', // If you are using the new JSX transform from React 17, you should enable this
     'plugin:react/recommended',
@@ -62,7 +62,7 @@ module.exports = {
     requireConfigFile: false, // "no babel config file detected for ..." 에러 해결을 위해 필요
     sourceType: 'module', // 모듈 시스템 사용 시 필요
   },
-  plugins: ['import', 'jsx-a11y', 'prettier', 'react', 'react-hooks'],
+  plugins: ['import', 'jsx-a11y', 'react', 'react-hooks', 'prettier'], // prettier는 항상 마지막에 추가. eslint와 prettier 설정이 겹칠 경우 prettier 규칙으로 eslint 규칙을 덮어쓰기 위함
   root: true, // 해당 설정 파일이 root 임을 명시하는 옵션. true라면 상위 설정 파일 찾기를 여기서 멈춘다.
   rules: {
     'array-bracket-spacing': ['warn', 'never'],
