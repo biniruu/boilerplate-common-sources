@@ -70,12 +70,12 @@ module.exports = {
   plugins: ['import', 'jsx-a11y', 'react', 'react-hooks', 'prettier'], // prettier는 항상 마지막에 추가. eslint와 prettier 설정이 겹칠 경우 prettier 규칙으로 eslint 규칙을 덮어쓰기 위함
   root: true, // 해당 설정 파일이 root 임을 명시하는 옵션. true라면 상위 설정 파일 찾기를 여기서 멈춘다.
   rules: {
-    'array-bracket-spacing': ['warn', 'never'], // 대괄호([]) 안에 간격 허용 여부. 기본값  'never'
+    'array-bracket-spacing': 'warn', // 대괄호 안에서 간격 허용 여부. 기본값 'never'
     camelcase: ['error', { properties: 'never' }], // 카멜 케이스 작명 방식 강제. 기본값 { properties: 'always', ignoreDestructuring: false, ignoreImports: false, ignoreGlobals: false }
-    'comma-dangle': 'always-multiline', // trailing commas 사용 여부. 기본값 'never'
+    'comma-dangle': ['warn', 'always-multiline'], // trailing commas 사용 여부. 기본값 'never'
     'computed-property-spacing': ['warn', 'never', { enforceForClassMembers: false }], // 계산된 인자(obj[property]) 표시 시 괄호 안에 띄어쓰기 허용 여부. 기본값 'never'
-    eqeqeq: ['error', 'always'], // 일치 연산자(===) 사용 강제. 동등 연산자(==) 사용 금지. 기본값 'always'
-    'generator-star-spacing': ['warn', 'start'], // 제네레이터 함수에서 별표의 위치를 강제. 기본값 'end'
+    eqeqeq: 'error', // 일치 연산자(===) 사용 강제. 동등 연산자(==) 사용 금지. 기본값 'always'
+    'generator-star-spacing': ['warn', 'after'], // 제네레이터 함수에서 별표의 위치를 강제. 기본값 'before'
     'import/no-unresolved': 'off', // import한 파일/모듈이 unresolved 되는 일이 없도록 방지
     'jsx-a11y/label-has-associated-control': [
       'warn',
@@ -105,7 +105,7 @@ module.exports = {
     'new-cap': 'error', // 'new' 연산자로 인스턴스 생성 시 constructor 함수명의 첫 글자를 대문자로 강제. 기본값 { newIsCap: true, capIsNew: true, properties: true }
     'no-array-constructor': 'error', // Array() 생성자에 배열 리터럴 생성법을 사용해서 배열 생성 금지
     'no-console': ['warn', { allow: ['warn', 'error'] }], // 콘솔 사용 금지
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn', // debugger 사용 금지
+    'no-debugger': process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging' ? 'error' : 'warn', // debugger 사용 금지
     'no-duplicate-imports': 'error', // 동일한 모듈에서 import를 여러 번 할 때 import문을 한 번만 사용하도록 강제. e.g. import { apple, banana } from 'fruits'
     'no-extra-semi': 'error', // 불필요한 세미콜론 사용 금지
     'no-inner-declarations': 'warn', // nested block에서 변수 또는 함수 선언 금지. 기본값 'functions'
@@ -129,7 +129,7 @@ module.exports = {
       //   usePrettierrc: false, // vscode-prettier 익스텐션이 .prettierrc를 읽기 때문에 이 옵션을 true로 설정해도 소용없음
       // },
     ],
-    quotes: ['warn', 'double', { allowTemplateLiterals: true }], // 따옴표를 작은따옴표, 큰따옴표, 백틱 중 한 가지만 사용하도록 강제. 기본값 'double'
+    quotes: ['warn', 'single', { allowTemplateLiterals: true }], // 따옴표를 작은따옴표, 큰따옴표, 백틱 중 한 가지만 사용하도록 강제. 기본값 'double'
     'react/destructuring-assignment': 'warn', // state, prop 등에 구조분해 할당 적용
     'react/jsx-curly-brace-presence': 'warn', // jsx 내 불필요한 중괄호 금지
     // 'react/jsx-curly-spacing': ['warn', { when: 'always', children: true, objectLiterals: 'never' }], // prettier와 충돌하여 사용할 수 없음
@@ -146,7 +146,7 @@ module.exports = {
     'react/jsx-uses-react': 'error', // react를 import한 후 JSX 사용 강제. 'react/recommended' 설정 시 활성화. 'no-unused-vars'가 활성화 된 경우 효과 발생
     'react/jsx-uses-vars': 'error', // JSX를 import한 후 해당 JSX 사용 강제. 'no-unused-vars'가 활성화 된 경우 효과 발생
     'react/no-direct-mutation-state': 'error', // state 직접 수정 금지. 'react/recommended' 설정 시 활성화
-    'react/no-unescaped-entities': 'warn', // JSX 안에서 escape 되지 않은 entity 코드 사용 금지. 'react/recommended' 설정 시 활성화.
+    'react/no-unescaped-entities': 'error', // JSX 안에서 escape 되지 않은 entity 코드 사용 금지. 'react/recommended' 설정 시 활성화.
     'react/no-unused-state': 'warn', // 사용하지 않는 state가 있을 시 경고 발생
     'react/prop-types': 'off', // prop의 type을 정의하도록 강제. 'react/recommended' 설정 시 활성화. typescript를 사용하면 필요없는 옵션
     'react/react-in-jsx-scope': 'off', // component에서 React를 import하지 않을 경우 오류 발생. 'react/recommended' 설정 시 활성화
@@ -159,7 +159,7 @@ module.exports = {
       //   additionHooks: '(useRecoilCallback|useRecoilTransaction_UNSTABLE)', // recoil 사용 시 필요
       // },
     ], // useEffect 안에서 사용하는 함수나 변수를 dependency로 등록하지 않았을 때 경고 발생
-    'space-before-function-paren': 'never', // 함수 선언 시 함수명과 괄호 사이에 간격 추가를 강제. 기본값 'always'
+    'space-before-function-paren': ['warn', 'never'], // 함수 선언 시 함수명과 괄호 사이에 간격 추가를 강제. 기본값 'always'
   },
   settings: {
     'import/resolver': {
