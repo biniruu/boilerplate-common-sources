@@ -32,7 +32,7 @@ module.exports = {
     'function-url-quotes': 'always', // url() 안에 따옴표 사용 여부
     'length-zero-no-unit': true, // 값이 0일 때 단위 사용 금지 여부
     'no-descending-specificity': [true, { ignore: ['selectors-within-list'] }], // 명시도가 높은 선택자를 낮은 선택자보다 먼저 쓸 수 없음 (이 옵션을 비활성할 수 있는 방법이 없음)
-    'number-max-precision': 8, // 소수점 자릿수 설정
+    'number-max-precision': 10, // 소수점 자릿수 설정
     'number-no-trailing-zeros': true, // 소수점 이하를 0으로 끝낼 수 없음
     'order/properties-alphabetical-order': true, // 속성을 알파벳 순으로 정렬할지 여부
     'rule-empty-line-before': ['always-multi-line', { except: ['after-single-line-comment', 'first-nested'] }], // rule 앞에 한 줄 여백 강제 여부
