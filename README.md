@@ -27,7 +27,6 @@
 - [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env) : Babel의 지원 스펙을 지정
 - [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react) : "This experimental syntax requires enabling one of the following parser plugin(s): 'jsx, flow, typescript'" 에러 해결을 위해 필요 ([관련 글 보기](https://ffan0811.medium.com/error-debugging-this-experimental-syntax-requires-enabling-one-of-the-following-parser-plugin-s-22946599a0a4))
 - [@craco/craco](https://www.npmjs.com/package/@craco/craco) : CRA로 리액트를 설치했을 때 webpack 설정 지원
-- [@stylelint/postcss-css-in-js](https://www.npmjs.com/package/@stylelint/postcss-css-in-js) : postcss를 활용한 css-in-js에서 발생하는 오류 피드백
 - [@types/jest](https://www.npmjs.com/package/@types/jest) : jest의 타입 정의와 hint 제공
 - [@types/lodash-es](https://www.npmjs.com/package/@types/lodash-es) : lodash 타입 제공
 - [@types/postcss-preset-env](https://www.npmjs.com/package/@types/postcss-preset-env) : typescript 환경에서 postcss-preset-env를 사용할 때 필요한 타입 정의
@@ -92,6 +91,7 @@
 ```
 ❌ deprecate 되었어요.
 
+- @stylelint/postcss-css-in-js
 - babel-eslint : @babel/eslint-parser로 대체
 - dart-sass : sass로 대체
 - eslint-loader : eslint-webpack-plugin으로 대체
@@ -138,7 +138,7 @@ yarn add -D eslint-plugin-nuxt
 
 # PostCSS
 
-yarn add -D @stylelint/postcss-css-in-js postcss postcss-html postcss-jsx postcss-loader postcss-nesting postcss-preset-env postcss-scss postcss-syntax
+yarn add -D postcss postcss-html postcss-jsx postcss-loader postcss-nesting postcss-preset-env postcss-scss postcss-syntax
 
 # Scss
 
