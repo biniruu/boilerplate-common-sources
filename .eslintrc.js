@@ -114,7 +114,7 @@ module.exports = {
     'no-new-object': 'warn', // new Object로 객체 생성 금지
     'no-undef': 'error', // 정의하지 않은 전역 변수는 /* global ... */ 주석에 명시해야 사용 가능하도록 강제
     'no-underscore-dangle': 'error', // 식별자 뒤에 언더스코어를 붙이지 못하도록 강제. 기본값 { allowAfterThis: false, allowAfterSuper: false, allowAfterThisConstructor: false, enforceInMethodNames: false, enforceInClassFields: false, allowInArrayDestructuring: true, allowInObjectDestructuring: true, allowFunctionParams: true }
-    'no-unused-vars': 'error', // 사용하지 않는 변수 금지
+    'no-unused-vars': ['error', { args: 'after-used' }], // 사용하지 않는 변수 금지
     'no-var': 'error', // var 로 변수 선언 금지
     'object-curly-spacing': ['warn', 'always'], // 중괄호 안에 간격 삽입. objectsInObjects: false 옵션은 사용할 수 없음. prettier의 bracketSpacing에 의해 덮어쓰기 되기 때문. 기본값 'never'
     'prefer-const': 'error', // 재할당이 이루어지지 않는 변수에 let을 사용했을 경우 const로 변경하도록 강제
