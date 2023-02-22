@@ -76,32 +76,6 @@ module.exports = {
     'computed-property-spacing': ['warn', 'never', { enforceForClassMembers: false }], // 계산된 인자(obj[property]) 표시 시 괄호 안에 띄어쓰기 허용 여부. 기본값 'never'
     eqeqeq: 'error', // 일치 연산자(===) 사용 강제. 동등 연산자(==) 사용 금지. 기본값 'always'
     'generator-star-spacing': ['warn', 'after'], // 제네레이터 함수에서 별표의 위치를 강제. 기본값 'before'
-    'import/no-unresolved': 'off', // import한 파일/모듈이 unresolved 되는 일이 없도록 방지
-    'jsx-a11y/label-has-associated-control': [
-      'warn',
-      {
-        labelComponents: ['label'],
-        labelAttributes: ['htmlFor'],
-        controlComponents: ['Input'],
-        depth: 1,
-      },
-    ], // 기본 html 태그가 아닌 custom component에서 웹 접근성 관련 에러 발생 방지
-    'jsx-a11y/no-noninteractive-element-interactions': [
-      'warn',
-      {
-        handlers: ['onClick', 'onMouseDown', 'onMouseUp', 'onKeyPress', 'onKeyDown', 'onKeyUp'],
-      },
-    ], // (웹 접근성 문제로)상호작용하지 않는 태그(li, div 등)에 onClick 등과 같은 이벤트를 연결할 때 필요
-    'jsx-a11y/no-noninteractive-element-to-interactive-role': [
-      'warn',
-      {
-        ul: ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
-        ol: ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
-        li: ['button', 'menuitem', 'option', 'row', 'tab', 'treeitem'],
-        table: ['grid'],
-        td: ['gridcell'],
-      },
-    ], // (웹 접근성 문제로)상호작용하지 않는 태그에 onClick 등과 같은 이벤트를 연결하고 해당 태그의 사용 목적을 role 속성으로 명시할 때 필요
     'new-cap': 'error', // 'new' 연산자로 인스턴스 생성 시 constructor 함수명의 첫 글자를 대문자로 강제. 기본값 { newIsCap: true, capIsNew: true, properties: true }
     'no-array-constructor': 'error', // Array() 생성자에 배열 리터럴 생성법을 사용해서 배열 생성 금지
     'no-console': ['warn', { allow: ['warn', 'error'] }], // 콘솔 사용 금지
@@ -131,6 +105,51 @@ module.exports = {
       // },
     ],
     quotes: ['warn', 'single', { allowTemplateLiterals: true }], // 따옴표를 작은따옴표, 큰따옴표, 백틱 중 한 가지만 사용하도록 강제. 기본값 'double'
+    // 'sort-imports': ['warn', { ignoreCase: true, memberSyntaxSortOrder: ['single', 'all', 'multiple', 'none'] }], // import 정렬. 기본값 { allowSeparatedGroups: false, ignoreCase: false, ignoreDeclarationSort: false, ignoreMemberSort: false, memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'] }
+    'space-before-function-paren': ['warn', 'never'], // 함수 선언 시 함수명과 괄호 사이에 간격 추가를 강제. 기본값 'always'
+    /**
+     * eslint-plugin-import rules start
+     */
+    'import/no-unresolved': 'off', // import한 파일/모듈이 unresolved 되는 일이 없도록 방지
+    'import/order': [
+      'warn',
+      {
+        alphabetize: { caseInsensitive: true, order: 'asc', orderImportKind: 'asc' },
+        'newlines-between': 'always-and-inside-groups',
+        warnOnUnassignedImports: true,
+      },
+    ], // import 순서 정렬. vscode 설정에서 source.organizeImports를 true로 설정하면 정렬과 동시에 사용하지 않는 import까지 삭제할 수 있다. 기본값 { alphabetize: { caseInsensitive: 'false', order: 'ignore', orderImportKind: 'ignore' }, distinctGroup: true, groups: ['builtin', 'external', 'parent', 'sibling', 'index'], newlines-between: 'ignore', pathGroups: [{ patternOptions: { nocomment: true }}], pathGroupsExcludedImportTypes: ['builtin', 'external', 'object'], warnOnUnassignedImports: false }
+    /**
+     * eslint-plugin-jsx-a11y rules start
+     */
+    'jsx-a11y/label-has-associated-control': [
+      'warn',
+      {
+        labelComponents: ['label'],
+        labelAttributes: ['htmlFor'],
+        controlComponents: ['Input'],
+        depth: 1,
+      },
+    ], // 기본 html 태그가 아닌 custom component에서 웹 접근성 관련 에러 발생 방지
+    'jsx-a11y/no-noninteractive-element-interactions': [
+      'warn',
+      {
+        handlers: ['onClick', 'onMouseDown', 'onMouseUp', 'onKeyPress', 'onKeyDown', 'onKeyUp'],
+      },
+    ], // (웹 접근성 문제로)상호작용하지 않는 태그(li, div 등)에 onClick 등과 같은 이벤트를 연결할 때 필요
+    'jsx-a11y/no-noninteractive-element-to-interactive-role': [
+      'warn',
+      {
+        ul: ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
+        ol: ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
+        li: ['button', 'menuitem', 'option', 'row', 'tab', 'treeitem'],
+        table: ['grid'],
+        td: ['gridcell'],
+      },
+    ], // (웹 접근성 문제로)상호작용하지 않는 태그에 onClick 등과 같은 이벤트를 연결하고 해당 태그의 사용 목적을 role 속성으로 명시할 때 필요
+    /**
+     * eslint-plugin-react rules start
+     */
     'react/destructuring-assignment': 'warn', // state, prop 등에 구조분해 할당 적용
     'react/jsx-curly-brace-presence': 'warn', // jsx 내 불필요한 중괄호 금지
     // 'react/jsx-curly-spacing': ['warn', { when: 'always', children: true, objectLiterals: 'never' }], // prettier와 충돌하여 사용할 수 없음
@@ -160,7 +179,6 @@ module.exports = {
       //   additionHooks: '(useRecoilCallback|useRecoilTransaction_UNSTABLE)', // recoil 사용 시 필요
       // },
     ], // useEffect 안에서 사용하는 함수나 변수를 dependency로 등록하지 않았을 때 경고 발생
-    'space-before-function-paren': ['warn', 'never'], // 함수 선언 시 함수명과 괄호 사이에 간격 추가를 강제. 기본값 'always'
   },
   settings: {
     'import/resolver': {
