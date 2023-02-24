@@ -109,6 +109,7 @@ module.exports = {
     'space-before-function-paren': ['warn', 'never'], // 함수 선언 시 함수명과 괄호 사이에 간격 추가를 강제. 기본값 'always'
     /**
      * eslint-plugin-import rules start
+     * https://github.com/import-js/eslint-plugin-import#rules
      */
     'import/no-unresolved': 'off', // import한 파일/모듈이 unresolved 되는 일이 없도록 방지
     'import/order': [
@@ -121,6 +122,7 @@ module.exports = {
     ], // import 순서 정렬. vscode 설정에서 source.organizeImports를 true로 설정하면 정렬과 동시에 사용하지 않는 import까지 삭제할 수 있다. 기본값 { alphabetize: { caseInsensitive: 'false', order: 'ignore', orderImportKind: 'ignore' }, distinctGroup: true, groups: ['builtin', 'external', 'parent', 'sibling', 'index'], newlines-between: 'ignore', pathGroups: [{ patternOptions: { nocomment: true }}], pathGroupsExcludedImportTypes: ['builtin', 'external', 'object'], warnOnUnassignedImports: false }
     /**
      * eslint-plugin-jsx-a11y rules start
+     * https://github.com/jsx-eslint/eslint-plugin-jsx-a11y#supported-rules
      */
     'jsx-a11y/label-has-associated-control': [
       'warn',
