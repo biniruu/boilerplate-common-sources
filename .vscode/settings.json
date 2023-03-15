@@ -23,7 +23,9 @@
   "color-highlight.markRuler": false, // minimap에서 color-highlight 활성화
   "css.customData": ["./css_custom_data.json"], // at-rule 등 css 관련 규칙을 사용자화 하여 이용하는 데 필요한 설정 파일을 연결하는 옵션
   "css.lint.unknownAtRules": "ignore", // sass 등과 같은 css 전처리기에서 사용하는 at rule을 css 파일에서 사용했을 때 at-rule-no-unknown 경고가 발생하지 않도록 함. stylelint가 발생시키는 에러 처리는 해당 at rule을 .stylelintrc에서 'at-rule-no-unknown'에 ignoreAtRules 옵션으로 추가할 것
-  "css.lint.zeroUnits": "warning", // css에서 값이 0일 때 '0px'이나 '0em'처럼 단위를 붙이면 경고 발생
+  "css.lint.zeroUnits": "warning",
+  "docwriter.progress.trackClasses": true,
+  "docwriter.progress.trackTypes": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
