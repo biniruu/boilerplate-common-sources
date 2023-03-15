@@ -153,7 +153,7 @@ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 - [eslint](https://www.npmjs.com/package/eslint) : 코드의 문법을 검사하는 린팅과 코드의 스타일을 잡아주는 포맷팅 기능
 - [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier) : prettier와 충돌이 발생하는 rule을 비활성화
 - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) : es2015+ import/export 구문 지원 및 규칙 제공
-- [eslint-plugin-jest](eslint-plugin-jest) : jest 관련 규칙 제공
+- [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest) : jest 관련 규칙 제공
 - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) : jsx 내에서 웹 접근성 규칙 관련 피드백 제공
 - [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier) : prettier 규칙을 eslint에 추가하여, prettier에서 인식하는 코드상의 포맷 오류를 eslint 오류로 출력
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) : react 규칙 관련 피드백 제공
