@@ -104,6 +104,7 @@
   "liveServer.settings.ChromeDebuggingAttachment": true,
   "liveServer.settings.donotShowInfoMsg": true,
   "npm.keybindingsChangedWarningShown": true,
+  "git.mergeEditor": true, // conflict 시 diff 화면 스타일을 3-way merge로 표시
   "problems.autoReveal": false,
   "projectManager.git.baseFolders": ["/Users/biniruu/Projects", "/Users/biniruu/Learning"],
   "python.jediEnabled": false,
