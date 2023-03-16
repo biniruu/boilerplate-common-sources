@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/biniruu/setting-up-prettier-eslint/issues"
   },
-  "homepage": "https://github.com/biniruu/setting-up-prettier-eslint#readme"
+  "homepage": "https://github.com/biniruu/setting-up-prettier-eslint#readme",
+  "devDependencies": {
+    "jsdoc": "^4.0.2"
+  }
 }
