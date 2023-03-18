@@ -1,6 +1,6 @@
 # Starter kit for client side development environment
 
-```
+```text
 📢 공사 중 안내
 
 별도로 나눴던 레포지토리를 모노레포로 통합하고 있습니다.
@@ -10,8 +10,7 @@
 프로젝트를 시작할 때 필요한 기본적인 설정 저장소예요.  
 린터, 패키지, 설정 등을 골라 설치할 수 있어요.
 
-> 제가 설정이나 패키지를 다 알지 못해요🥺 불필요한 것이 섞였거나 더 좋은 것이 있을 수도 있어요.
-
+> 제가 설정이나 패키지를 다 알지 못해요🥺 불필요한 것이 섞였거나 더 좋은 것이 있을 수도 있어요.  
 > 오랫동안 업데이트가 되지 않았으면 여기 있는 대로 설정했을 때 문제가 발생할 수 있어요. 물론 최근 업데이트 일자와 상관없이 문제가 발생할 수도 있어요🫠
 
 <br>
@@ -88,7 +87,7 @@
 - [@vue/server-test-utils](https://www.npmjs.com/package/@vue/server-test-utils) : Vue.js 환경에서 단위 테스트를 하기 위한 공식(Official) 라이브러리
 - [@vue/test-utils](https://www.npmjs.com/package/@vue/test-utils) : Vue.js 환경에서 단위 테스트를 하기 위한 공식 라이브러리.
 
-```
+```text
 ❌ deprecate 되었어요.
 
 - @stylelint/postcss-css-in-js
@@ -243,7 +242,11 @@ yarn add -D typescript
 
 - `tailwind.config.js`
 
+<!-- markdownlint-disable MD024 -->
+
 ### Typescript
+
+<!-- markdownlint-enable MD024 -->
 
 - `tsconfig.json`
 
@@ -263,10 +266,35 @@ settings에서 아래 설정을 변경해주세요.
 위 패키지를 제대로 사용하기 위해 꼭 필요한 익스텐션이에요.  
 _괄호 안에 있는 익스텐션 ID로 검색하면 편리하게 찾을 수 있어요._
 
+- `Abracadabra, refactor this!` (nicoespeon.abracadabra)
+- `Auto Close Tag` (formulahendry.auto-close-tag)
+- `Auto Import` (steoates.autoimport)
+- `Auto Rename Tag` (formulahendry.auto-rename-tag)
+- `CSS Peek` (pranaygp.vscode-css-peek)
+- `ES7+ React/Redux/React-Native snippets` (dsznajder.es7-react-js-snippets)
 - `ESLint` (dbaeumer.vscode-eslint)
-- `markdownlint` (DavidAnson.vscode-markdownlint)
+- `Git Graph` (mhutchie.git-graph)
+- `Git History` (donjayamanne.githistory)
+- `GitHub Pull Requests and Issues` (GitHub.vscode-pull-request-github)
+- `GitLens — Git supercharged` (eamodio.gitlens)
+- `HTML CSS Support` (ecmel.vscode-html-css)
+- `Import Cost` (wix.vscode-import-cost)
+- `IntelliCode` (VisualStudioExptTeam.vscodeintellicode)
+- `IntelliCode API Usage Examples` (VisualStudioExptTeam.intellicode-api-usage-examples)
+- `IntelliSense for CSS class names in HTML` (Zignd.html-css-class-completion)
+- `JavaScript (ES6) code snippets` (xabikos.JavaScriptSnippets)
+- `Jest` (Orta.vscode-jest)
+- `Jira and Bitbucket (Atlassian Labs)` (atlassian.atlascode)
+- `Live Share` (ms-vsliveshare.vsliveshare)
+- `npm Intellisense` (christian-kohler.npm-intellisense)
+- `Path Intellisense` (christian-kohler.path-intellisense)
 - `Prettier - Code formatter` (esbenp.prettier-vscode)
 - `Stylelint` (stylelint.vscode-stylelint)
+- `Tailwind CSS IntelliSense` (bradlc.vscode-tailwindcss)
+- `Vetur` (octref.vetur)
+- `Vue 3 Snippets` (hollowtree.vue-snippets)
+- `Vue Language Features (Volar)` (Vue.volar)
+- `Vue VSCode Snippets` (sdras.vue-vscode-snippets)
 
 <br>
 
@@ -274,7 +302,38 @@ _괄호 안에 있는 익스텐션 ID로 검색하면 편리하게 찾을 수 �
 
 필수는 아니지만, 편의성을 높여주는 익스텐션이에요.
 
+- `Bookmarks` (alefragnani.Bookmarks)
+- `Code Spell Checker` (streetsidesoftware.code-spell-checker)
+- `Color Highlight` (naumovs.color-highlight)
+- `Error Lens` (usernamehw.errorlens)
 - `JavaScript and TypeScript Nightly` (ms-vscode.vscode-typescript-next)
-- `Jest` (Orta.vscode-jest)
-- `Sass` (syler.sass-indented)
+- `JavaScript Debugger (Nightly)` (ms-vscode.js-debug-nightly)
+- `Jest Snippets` (andys8.jest-snippets)
+- `Markdown All in One` (yzhang.markdown-all-in-one)
+- `Markdown Preview Enhanced` (shd101wyy.markdown-preview-enhanced)
+- `markdownlint` (DavidAnson.vscode-markdownlint)
+- `Material Icon Theme` (PKief.material-icon-theme)
+- `Polacode` (pnp.polacode)
+- `Project Manager` (alefragnani.project-manager)
+- `px to rem & rpx & vw (cssrem)` (cipchk.cssrem)
+- `React Jest Snippets` (jalisimo.react-jest-vscode-snippets)
+- `React Testing Library Cheatsheet` (willnemo.rtlcheatsheet)
+- `SFTP` (Natizyskunk.sftp)
 - `Stylelint Disable Snippets` (hedinne.stylelint-disable-snippets)
+- `TabOut` (albert.TabOut)
+- `Todo Highlight` (wayou.vscode-todo-highlight)
+- `Todo Tree` (Gruntfuggly.todo-tree)
+- `Turbo Console Log` (ChakrounAnas.turbo-console-log)
+- `WakaTime` (WakaTime.vscode-wakatime)
+
+<br>
+
+## gitignore 설정
+
+이곳에 올린 .gitignore는 [Toptal](https://www.toptal.com/developers/gitignore) 이라는 사이트에서 생성한 파일이에요.  
+맨 위에 있는 `# Edit at ...` 부분 링크를 클릭한 후에 원하는 기술 스택을 변경하여 사용하세요.
+
+```text
+vs code를 사용할 때는 ### VisualStudioCode ### 항목을 수정한 후에 사용하세요.
+팀 프로젝트 폴더에 개인 설정 파일이 올라갈 수 있어요.
+```
