@@ -22,7 +22,7 @@
 ```text
 projects
   ⊢ react-typescript
-  ∟ typescript
+  ∟ vanillajs-typescript
 ```
 
 <br>
