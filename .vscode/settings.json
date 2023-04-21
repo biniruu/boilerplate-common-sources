@@ -17,6 +17,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "autoimport.useSemiColon": false, // auto import 기능으로 import한 모듈에 세미콜론 삽입
+  "aws.codeWhisperer.shareCodeWhispererContentWithAWS": false,
+  "aws.telemetry": false,
   "bookmarks.saveBookmarksInProject": true,
   "bookmarks.keepBookmarksOnLineDelete": true,
   "breadcrumbs.enabled": true,
@@ -239,6 +241,7 @@
     "typeahead",
     "unmocked",
     "usernamehw",
+    "vanillajs",
     "Vetur",
     "vscodeintellicode",
     "Waka",
@@ -248,7 +251,5 @@
     "xabikos",
     "yzhang",
     "Zignd"
-  ],
-  "aws.telemetry": false,
-  "aws.codeWhisperer.shareCodeWhispererContentWithAWS": false
+  ]
 }
