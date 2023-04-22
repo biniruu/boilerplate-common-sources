@@ -92,7 +92,7 @@ yarn add -D prettier-plugin-tailwindcss tailwindcss
 yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
-```
+```text
 💁🏻‍♀️ 아래 패키지는 CRA template typescript에 포함돼 있어서 별도로 설치하지 않아도 돼요.
 
 - @babel/core
@@ -129,7 +129,7 @@ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 - typescript
 ```
 
-```
+```text
 💁🏻 typescript를 사용한다면 아래 패키지는 필요하지 않아요.
 
 - @babel/eslint-parser : babel-eslint
@@ -175,13 +175,13 @@ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss)
 - [ts-jest](https://www.npmjs.com/package/ts-jest) : typescript 환경에서 jest를 사용할 때 필요
 
-```
+```text
 ❌ deprecate 되었어요.
 
 - eslint-loader : eslint-webpack-plugin으로 대체
 ```
 
-```
+```text
 🙌 여기서는 사용하지 않지만, 유용한 패키지예요.
 
 - cra-bundle-analyzer : eject하지 않고 webpack-bundle-analyzer와 동일한 기능 사용 가능
