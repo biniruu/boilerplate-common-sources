@@ -9,7 +9,7 @@ module.exports = {
   semi: false, // 코드 마지막에 세미콜론을 붙일지 여부
   singleQuote: true, // 따옴표 사용 시 작은따옴표로 통일 여부
   tabWidth: 2,
-  trailingComma: 'es5',
+  trailingComma: 'all',
   useTabs: false, // 간격을 추가할 때 공백문자 대신 탭 사용 여부
   vueIndentScriptAndStyle: true,
 }
