@@ -5,6 +5,13 @@
 
 module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-config-standard-scss', 'stylelint-config-prettier'], // stylelint-config-prettier는 항상 마지막에 추가할 것. 이전 확장 규칙을 덮어쓰기 함으로써 prettier와 stylelint끼리 충돌하는 상황을 무마할 수 있다
+  // overrides: [
+  //   {
+  //     customSyntax: 'postcss-html', // postcss를 사용하는 환경에서 stylelint(CssSyntaxError) 에러 발생 방지
+  //     // customSyntax: '@stylelint/postcss-css-in-js',
+  //     files: ['**/*.{html,jsx,svg,tsx}'],
+  //   },
+  // ],
   plugins: ['stylelint-scss', 'stylelint-order'],
   rules: {
     'alpha-value-notation': 'number', // rgb()에서 opacity 표현 형식을 %나 숫자 중에서 선택
