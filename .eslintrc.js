@@ -145,7 +145,7 @@ module.exports = {
     'prefer-const': 'error',
     'prefer-rest-params': 'error',
     quotes: ['warn', 'single', { allowTemplateLiterals: true }],
-    'sort-imports': ['warn', { ignoreCase: true, memberSyntaxSortOrder: ['single', 'all', 'multiple', 'none'] }],
+    'sort-imports': ['warn', { allowSeparatedGroups: true, ignoreCase: true }],
     'space-before-function-paren': ['warn', 'never'],
     /**
      * eslint-config-prettier
