@@ -1,13 +1,15 @@
 # Starter kit for client side development environment
 
-프로젝트를 시작할 때 필요한 기본적인 설정 저장소예요.  
-패키지, 설정 파일 등을 프로젝트에 맞게 골라 설치할 수 있어요.
+프로젝트를 시작할 때 필요한 기본적인 설정 저장소예요. 패키지, 설정 파일 등을 프로젝트에 맞게 골라 설치할 수 있어요.
+
+> 이곳은 yarn workspaces로 제작한 monorepo 환경이에요. 따라서 대부분의 설정 파일이 최상위 폴더에만 있어요.  
+> 각 프로젝트별로 자세한 설정 방법을 확인하려면 [projects](https://github.com/biniruu/starter-kit-frontend/tree/main/projects/) 폴더로 이동하거나, [Creating a project](https://github.com/biniruu/starter-kit-frontend#creating-a-project)에 있는 프로젝트를 클릭하세요.
 
 <br>
 
 ## 🎬Creating a project
 
-다음 프로젝트를 시작할 때 이 스타터를 사용하면 시간을 절약할 수 있어요.
+다음 프로젝트를 시작할 때 이 스타터를 사용하면 시간을 절약할 수 있어요. (프로젝트를 클릭하면 해당 프로젝트 폴더로 이동해요.)
 
 - [Next.js with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/projects/next-typescript#nextjs-with-typescript-starter)
 - [React.js with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/projects/react-typescript#reactjs-with-typescript-starter)
@@ -20,11 +22,9 @@
 
 이곳에는 다음 설정 파일이 포함되어 있어요.
 
-`.babelrc` `.eslintignore` `.eslintrc.js` `.github/ISSUE_TEMPLATE.md` `.github/PULL_REQUEST_TEMPLATE.md` `.gitignore` `.markdownlint.json` `.prettierignore` `.prettierrc.js` `jest.config.js` `next.config.js` `postcss.config.js` `.stylelintignore` `.stylelintrc.js` `tailwind.config.js` `tsconfig.js`
-
 > 모든 설정 파일은 프로젝트 환경에 맞춰 수정해야 해요.
 
-각 프로젝트별 설정 방법은 [projects](https://github.com/biniruu/starter-kit-frontend/tree/main/projects/) 폴더의 하위 폴더에서 확인할 수 있어요.
+`.babelrc` `.eslintignore` `.eslintrc.js` `.github/ISSUE_TEMPLATE.md` `.github/PULL_REQUEST_TEMPLATE.md` `.gitignore` `.markdownlint.json` `.prettierignore` `.prettierrc.js` `jest.config.js` `next.config.js` `postcss.config.js` `.stylelintignore` `.stylelintrc.js` `tailwind.config.js` `tsconfig.js`
 
 <br>
 
@@ -207,13 +207,9 @@ settings에서 아래 설정을 변경해주세요.
 
 ## ❗️About .gitignore configurations
 
-이곳에 올린 .gitignore는 [Toptal](https://www.toptal.com/developers/gitignore) 이라는 사이트에서 생성한 파일이에요.  
-맨 위에 있는 `# Edit at ...` 부분 링크를 클릭한 후에 원하는 기술 스택을 변경하여 사용하세요.
+이곳에 올린 .gitignore는 [Toptal](https://www.toptal.com/developers/gitignore) 이라는 사이트에서 생성한 파일이에요. 맨 위에 있는 `# Edit at ...` 부분 링크를 클릭한 후에 원하는 기술 스택을 변경하여 사용하세요.
 
-```text
-vs code를 사용할 때는 ### VisualStudioCode ### 항목을 수정한 후에 사용하세요.
-팀 프로젝트 폴더에 개인 설정 파일이 올라갈 수 있어요.
-```
+> vs code를 사용할 때는 ### VisualStudioCode ### 항목을 수정한 다음에 사용하세요. 팀 프로젝트 폴더에 개인 설정 파일이 올라갈 수 있어요.
 
 <br>
 
