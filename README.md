@@ -1,35 +1,28 @@
 # Starter kit for client side development environment
 
-```text
-📢 공사 중 안내
-
-별도로 나눴던 레포지토리를 모노레포로 통합하고 있습니다.
-다소 안 맞는 내용이 있으니 주의해주세요.
-```
-
 프로젝트를 시작할 때 필요한 기본적인 설정 저장소예요.  
-린터, 패키지, 설정 등을 골라 설치할 수 있어요.
-
-> 제가 설정이나 패키지를 다 알지 못해요🥺 불필요한 것이 섞였거나 더 좋은 것이 있을 수도 있어요.  
-> 오랫동안 업데이트가 되지 않았으면 여기 있는 대로 설정했을 때 문제가 발생할 수 있어요. 물론 최근 업데이트 일자와 상관없이 문제가 발생할 수도 있어요🫠
+패키지, 설정 파일 등을 프로젝트에 맞게 골라 설치할 수 있어요.
 
 <br>
 
-## 개발 환경별 설정 파일 위치
+## 🎬Creating a project
 
-각 개발 환경에 맞춰 설정할 수 있도록 설정 파일을 기술 스택별로 구분해두었어요.
+다음 프로젝트를 시작할 때 이 스타터를 사용하면 시간을 절약할 수 있어요.
 
-```text
-projects
-  ⊢ react-typescript
-  ∟ vanillajs-typescript
-```
+- [Next.js with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/projects/next-typescript#nextjs-with-typescript-starter)
+- [React.js with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/projects/react-typescript#reactjs-with-typescript-starter)
+- [Vanilla JS with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/projects/vanillajs-typescript#vanillajs-with-typescript-starter)
+- [Vanilla JS](https://github.com/biniruu/starter-kit-frontend/tree/main/projects/vanillajs#vanillajs-with-typescript-starter)
+
+각 프로젝트별 환경설정 또는 추가 설정은 [projects](https://github.com/biniruu/starter-kit-frontend/tree/main/projects/) 폴더의 하위 폴더에서 확인할 수 있어요.
+
+> 모든 설정 파일은 프로젝트 환경에 맞춰 수정해야 해요.
 
 <br>
 
-## 패키지 설명 📄
+## 📄Detailing packages
 
-각 패키지가 어느 곳에 쓰이는지 알아보세요.
+이곳에 설치된 패키지가 각각 어떤 기능을 하는지 알아보세요.
 
 - [@babel/core](https://www.npmjs.com/package/@babel/core) : @babel/eslint-parser 설치를 위해 필요
 - [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser) : babel-eslint
@@ -51,11 +44,13 @@ projects
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer) : cross browser에 필요한 css 속성 prefix를 자동으로 생성
 - [babel-jest](https://www.npmjs.com/package/babel-jest) : JS/JSX 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
 - [chai](https://www.npmjs.com/package/chai)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+- [dotenv-expand](https://www.npmjs.com/package/dotenv-expand) : dotenv 변수 확장
 - [eslint](https://www.npmjs.com/package/eslint)
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next)
 - [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier) : prettier와 충돌을 일으키는 eslint 규칙 비활성화
 - [eslint-config-sinon](https://www.npmjs.com/package/eslint-config-sinon)
-- [eslint-import-resolver-typescript](https://www.npmjs.com/package/eslint-import-resolver-typescript) : tsconfig에서 path alias 사용을 위해 필요
+- [eslint-import-resolver-typescript](https://www.npmjs.com/package/eslint-import-resolver-typescript) : tsconfig에서 path alias 사용을 위해 필요. CRA로 리액트를 설치했다면 craco와 함께 사용할 것
 - [eslint-plugin-chai-friendly](https://www.npmjs.com/package/eslint-plugin-chai-friendly)
 - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) : es2015+ import/export 구문 지원 및 규칙 제공
 - [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest) : jest 관련 규칙 제공
@@ -67,16 +62,19 @@ projects
 - [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)
 - [eslint-plugin-nuxt](https://www.npmjs.com/package/eslint-plugin-nuxt)
 - [eslint-webpack-plugin](https://www.npmjs.com/package/eslint-webpack-plugin)
-- [jest](https://www.npmjs.com/package/jest)
+- [jest](https://www.npmjs.com/package/jest) : 단위 테스트 도구
+- [jest-resolve](https://www.npmjs.com/package/jest-resolve)
 - [jest-serializer-vue](https://www.npmjs.com/package/jest-serializer-vue) : 저장된 Jest Snapshot을 VueJS에 맞게 개선
 - [lodash](https://www.npmjs.com/package/lodash) : javascript 유틸리티 라이브러리
 - [lodash-es](https://www.npmjs.com/package/lodash-es) : 필요한 lodash 함수만 골라 사용하고, 사용하지 않은 함수는 tree shaking할 수 있는 lodash 패키지
 - [mocha](https://www.npmjs.com/package/mocha)
 - [postcss](https://www.npmjs.com/package/postcss)
+- [postcss-flexbugs-fixes](https://www.npmjs.com/package/postcss-flexbugs-fixes) : 잘못 사용한 CSS 문법 교정. 아마도 동작은 하지만 표준 문법에 맞지 않는 것을 교정해주는 듯
 - [postcss-html](https://www.npmjs.com/package/postcss-html) : html을 파싱할 때 필요한 postcss 문법
 - [postcss-jsx](https://www.npmjs.com/package/postcss-jsx) : postcss의 css-in-js 실행을 위해 필요
 - [postcss-loader](https://www.npmjs.com/package/postcss-loader) : webpack에서 postcss를 실행
 - [postcss-nesting](https://www.npmjs.com/package/postcss-nesting) : nesting 문법 코드를 pure css 문법에 맞게 변환
+- [postcss-normalize](https://www.npmjs.com/package/postcss-normalize) : browserslist 설정에 적합한 normalize css 생성
 - [postcss-preset-env](https://www.npmjs.com/package/postcss-preset-env) : 주요 postcss 플러그인을 모은 plugin pack ([설치 플러그인 목록 확인](https://www.libtrends.info/npm-compare/autoprefixer-vs-postcss-nested-vs-postcss-nesting-vs-postcss-preset-env-vs-precss))
 - [postcss-syntax](https://www.npmjs.com/package/postcss-syntax) : 파일 확장자나 소스에 따라 postcss가 적용할 플러그인을 자동으로 선택
 - [postcss-scss](https://www.npmjs.com/package/postcss-scss) : scss를 css로 트랜스파일
@@ -86,6 +84,7 @@ projects
 - [sass](https://www.npmjs.com/package/sass)
 - [sass-loader](https://www.npmjs.com/package/sass-loader) : webpack에서 scss를 실행
 - [sinon](https://www.npmjs.com/package/sinon)
+- [source-map-loader](https://www.npmjs.com/package/source-map-loader) : 빌드 파일의 소스 맵 제공
 - [styled-components](https://www.npmjs.com/package/styled-components)
 - [stylelint](https://www.npmjs.com/package/stylelint)
 - [stylelint-config-prettier](https://www.npmjs.com/package/stylelint-config-prettier) : prettier 관련 stylelint rules 확장
@@ -93,6 +92,7 @@ projects
 - [stylelint-config-standard-scss](https://www.npmjs.com/package/stylelint-config-standard-scss) : scss 관련 stylelint rules 확장
 - [stylelint-order](https://www.npmjs.com/package/stylelint-order) : .stylelintrc.js에서 설정한 order대로 코드가 작성되었는지 파악
 - [stylelint-scss](https://www.npmjs.com/package/stylelint-scss) : scss 문법 오류 피드백
+- [style-loader](https://www.npmjs.com/package/style-loader) : DOM에 style 주입
 - [ts-jest](https://www.npmjs.com/package/ts-jest) : typescript 환경에서 jest를 사용할 때 필요
 - [typescript](https://www.npmjs.com/package/typescript)
 - [vue-jest](https://www.npmjs.com/package/vue-jest) : Vue 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
@@ -111,30 +111,109 @@ projects
 
 <br>
 
-## 기본 패키지 설치 📦
+## 👍🏻Recommended packages
 
-개발 환경에 따라 적절한 패키지를 설치하세요.  
-타입스크립트로 개발할 때는 Javascript 목록에 있는 패키치를 설치한 후 추가로 Typescript 목록에 있는 패키지를 설치하면 됩니다.
+여기서는 사용하지 않지만, 유용한 패키지예요.
 
-### Javascript
+- [webpack-bundle-analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) : 빌드된 파일 용량을 시각적으로 구성
+- [cra-bundle-analyzer](https://www.npmjs.com/package/cra-bundle-analyzer) : eject하지 않고 webpack-bundle-analyzer와 동일한 기능 사용 가능
+
+<br>
+
+## 📌Required options in VS Code
+
+settings에서 아래 설정을 변경해주세요.
+
+- Editor: Default Formatter => `esbenp.prettier-vscode`
+- Eslint > Format: Enable => `true`
+
+<br>
+
+## 🧩Required extensions in VS Code
+
+위 패키지를 제대로 사용하기 위해 꼭 필요한 익스텐션이에요.
+
+- `ESLint` (dbaeumer.vscode-eslint)
+- `Prettier - Code formatter` (esbenp.prettier-vscode)
+- `Stylelint` (stylelint.vscode-stylelint)
+
+<br>
+
+## 🚀Recommanded options in VS Code
+
+편의성을 높여주는 익스텐션이에요.
+
+- `Abracadabra, refactor this!` (nicoespeon.abracadabra)
+- `Auto Close Tag` (formulahendry.auto-close-tag)
+- `Auto Import` (steoates.autoimport)
+- `Auto Rename Tag` (formulahendry.auto-rename-tag)
+- `AWS Toolkit` (amazonwebservices.aws-toolkit-vscode)
+- `Bookmarks` (alefragnani.Bookmarks)
+- `Code Spell Checker` (streetsidesoftware.code-spell-checker)
+- `Color Highlight` (naumovs.color-highlight)
+- `CSS Peek` (pranaygp.vscode-css-peek)
+- `Error Lens` (usernamehw.errorlens)
+- `ES7+ React/Redux/React-Native snippets` (dsznajder.es7-react-js-snippets)
+- `Git Graph` (mhutchie.git-graph)
+- `Git History` (donjayamanne.githistory)
+- `Git History Diff` (huizhou.githd)
+- `GitHub Pull Requests and Issues` (GitHub.vscode-pull-request-github)
+- `GitLens — Git supercharged` (eamodio.gitlens)
+- `HTML CSS Support` (ecmel.vscode-html-css)
+- `Import Cost` (wix.vscode-import-cost)
+- `IntelliCode` (VisualStudioExptTeam.vscodeintellicode)
+- `IntelliCode API Usage Examples` (VisualStudioExptTeam.intellicode-api-usage-examples)
+- `IntelliSense for CSS class names in HTML` (Zignd.html-css-class-completion)
+- `JavaScript (ES6) code snippets` (xabikos.JavaScriptSnippets)
+- `JavaScript and TypeScript Nightly` (ms-vscode.vscode-typescript-next)
+- `JavaScript Debugger (Nightly)` (ms-vscode.js-debug-nightly)
+- `Jest` (Orta.vscode-jest)
+- `Jest Snippets` (andys8.jest-snippets)
+- `Jira and Bitbucket (Atlassian Labs)` (atlassian.atlascode)
+- `Live Share` (ms-vsliveshare.vsliveshare)
+- `Markdown All in One` (yzhang.markdown-all-in-one)
+- `Markdown Preview Enhanced` (shd101wyy.markdown-preview-enhanced)
+- `markdownlint` (DavidAnson.vscode-markdownlint)
+- `Material Icon Theme` (PKief.material-icon-theme)
+- `npm Intellisense` (christian-kohler.npm-intellisense)
+- `Path Intellisense` (christian-kohler.path-intellisense)
+- `Polacode` (pnp.polacode)
+- `Project Manager` (alefragnani.project-manager)
+- `px to rem & rpx & vw (cssrem)` (cipchk.cssrem)
+- `React Jest Snippets` (jalisimo.react-jest-vscode-snippets)
+- `React Testing Library Cheatsheet` (willnemo.rtlcheatsheet)
+- `SFTP` (Natizyskunk.sftp)
+- `Stylelint Disable Snippets` (hedinne.stylelint-disable-snippets)
+- `Tailwind CSS IntelliSense` (bradlc.vscode-tailwindcss)
+- `TabOut` (albert.TabOut)
+- `Todo Highlight` (wayou.vscode-todo-highlight)
+- `Todo Tree` (Gruntfuggly.todo-tree)
+- `Turbo Console Log` (ChakrounAnas.turbo-console-log)
+- `Vetur` (octref.vetur)
+- `Vue 3 Snippets` (hollowtree.vue-snippets)
+- `Vue Language Features (Volar)` (Vue.volar)
+- `Vue VSCode Snippets` (sdras.vue-vscode-snippets)
+- `WakaTime` (WakaTime.vscode-wakatime)
+
+<br>
+
+## ❗️About .gitignore configurations
+
+이곳에 올린 .gitignore는 [Toptal](https://www.toptal.com/developers/gitignore) 이라는 사이트에서 생성한 파일이에요.  
+맨 위에 있는 `# Edit at ...` 부분 링크를 클릭한 후에 원하는 기술 스택을 변경하여 사용하세요.
+
+```text
+vs code를 사용할 때는 ### VisualStudioCode ### 항목을 수정한 후에 사용하세요.
+팀 프로젝트 폴더에 개인 설정 파일이 올라갈 수 있어요.
+```
+
+<br>
+
+## 📦Installing packages
+
+개발 환경에 따라 적절한 패키지를 설치하세요.
 
 ```bash
-# Babel
-
-yarn add -D @babel/core
-
-# Eslint & Prettier
-
-yarn add -D @babel/eslint-parser eslint eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-webpack-plugin prettier
-
-# Jest
-
-yarn add -D @babel/plugin-transform-modules-commonjs @babel/plugin-transform-runtime eslint-plugin-jest jest
-
-# Lodash
-
-yarn add lodash lodash-es
-
 # Markdownlint
 
 yarn add -D markdownlint
@@ -147,205 +226,7 @@ yarn add -D chai eslint-config-sinon eslint-plugin-chai-friendly eslint-plugin-m
 
 yarn add -D eslint-plugin-nuxt
 
-# PostCSS
-
-yarn add -D postcss postcss-html postcss-jsx postcss-loader postcss-nesting postcss-preset-env postcss-scss postcss-syntax
-
-# Scss
-
-yarn add -D sass sass-loader stylelint-config-standard-scss stylelint-scss
-
-# styled-components
-
-yarn add styled-components
-
-# Stylelint
-
-yarn add -D stylelint stylelint-config-prettier stylelint-config-standard stylelint-order
-
-# Tailwind CSS
-
-yarn add -D tailwindcss
-
 # Vue.js
 
 yarn add -D eslint-plugin-vue
-```
-
-### Typescript
-
-```bash
-# Eslint & Prettier
-
-yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser @typescript-eslint/types @typescript-eslint/typescript-estree @typescript-eslint/utils eslint-import-resolver-typescript
-
-# Jest
-
-yarn add -D @types/jest ts-jest
-
-# Lodash
-
-yarn add -D @types/lodash-es
-
-# PostCSS
-
-yarn add -D @types/postcss-preset-env
-
-# React
-
-yarn add -D @types/react-test-renderer
-
-# Styled-components
-
-yarn add -D @types/styled-components
-
-# Typescript
-
-yarn add -D typescript
-```
-
-<br>
-
-## 설정 파일 💾
-
-제 취향이 듬뿍 담긴 파일이니 각자 취향에 맞춰 수정 후 사용하세요👻
-
-### Craco
-
-- `craco.config.js`
-
-### Eslint
-
-- `.eslintignore`
-
-`.eslintrc.js`는 각 개발 환경별로 다르게 설정되었을 수 있어요
-
-### Git
-
-- `.gitignore`
-
-### Github
-
-- `.github`
-
-### Jest
-
-- `jest.config.js`
-
-### Markdownlint
-
-- `.markdownlint.json`
-
-### PostCSS
-
-- `postcss.config.js`
-
-### Prettier
-
-- `.prettierignore`
-- `.prettierrc`
-
-### Stylelint
-
-- `.stylelintignore`
-- `.stylelintrc.js`
-
-### Tailwind CSS
-
-- `tailwind.config.js`
-
-<!-- markdownlint-disable MD024 -->
-
-### Typescript
-
-<!-- markdownlint-enable MD024 -->
-
-- `tsconfig.json`
-
-<br>
-
-## 필수 vs code 설정 🔧
-
-settings에서 아래 설정을 변경해주세요.
-
-- Editor: Default Formatter => `esbenp.prettier-vscode`
-- Eslint > Format: Enable => `true`
-
-<br>
-
-## 필수 vs code 익스텐션 🧩
-
-위 패키지를 제대로 사용하기 위해 꼭 필요한 익스텐션이에요.  
-_괄호 안에 있는 익스텐션 ID로 검색하면 편리하게 찾을 수 있어요._
-
-- `Abracadabra, refactor this!` (nicoespeon.abracadabra)
-- `Auto Close Tag` (formulahendry.auto-close-tag)
-- `Auto Import` (steoates.autoimport)
-- `Auto Rename Tag` (formulahendry.auto-rename-tag)
-- `CSS Peek` (pranaygp.vscode-css-peek)
-- `ES7+ React/Redux/React-Native snippets` (dsznajder.es7-react-js-snippets)
-- `ESLint` (dbaeumer.vscode-eslint)
-- `Git Graph` (mhutchie.git-graph)
-- `Git History` (donjayamanne.githistory)
-- `GitHub Pull Requests and Issues` (GitHub.vscode-pull-request-github)
-- `GitLens — Git supercharged` (eamodio.gitlens)
-- `HTML CSS Support` (ecmel.vscode-html-css)
-- `Import Cost` (wix.vscode-import-cost)
-- `IntelliCode` (VisualStudioExptTeam.vscodeintellicode)
-- `IntelliCode API Usage Examples` (VisualStudioExptTeam.intellicode-api-usage-examples)
-- `IntelliSense for CSS class names in HTML` (Zignd.html-css-class-completion)
-- `JavaScript (ES6) code snippets` (xabikos.JavaScriptSnippets)
-- `Jest` (Orta.vscode-jest)
-- `Jira and Bitbucket (Atlassian Labs)` (atlassian.atlascode)
-- `Live Share` (ms-vsliveshare.vsliveshare)
-- `npm Intellisense` (christian-kohler.npm-intellisense)
-- `Path Intellisense` (christian-kohler.path-intellisense)
-- `Prettier - Code formatter` (esbenp.prettier-vscode)
-- `Stylelint` (stylelint.vscode-stylelint)
-- `Tailwind CSS IntelliSense` (bradlc.vscode-tailwindcss)
-- `Vetur` (octref.vetur)
-- `Vue 3 Snippets` (hollowtree.vue-snippets)
-- `Vue Language Features (Volar)` (Vue.volar)
-- `Vue VSCode Snippets` (sdras.vue-vscode-snippets)
-
-<br>
-
-## 추천 vs code 익스텐션 🚀
-
-필수는 아니지만, 편의성을 높여주는 익스텐션이에요.
-
-- `Bookmarks` (alefragnani.Bookmarks)
-- `Code Spell Checker` (streetsidesoftware.code-spell-checker)
-- `Color Highlight` (naumovs.color-highlight)
-- `Error Lens` (usernamehw.errorlens)
-- `JavaScript and TypeScript Nightly` (ms-vscode.vscode-typescript-next)
-- `JavaScript Debugger (Nightly)` (ms-vscode.js-debug-nightly)
-- `Jest Snippets` (andys8.jest-snippets)
-- `Markdown All in One` (yzhang.markdown-all-in-one)
-- `Markdown Preview Enhanced` (shd101wyy.markdown-preview-enhanced)
-- `markdownlint` (DavidAnson.vscode-markdownlint)
-- `Material Icon Theme` (PKief.material-icon-theme)
-- `Polacode` (pnp.polacode)
-- `Project Manager` (alefragnani.project-manager)
-- `px to rem & rpx & vw (cssrem)` (cipchk.cssrem)
-- `React Jest Snippets` (jalisimo.react-jest-vscode-snippets)
-- `React Testing Library Cheatsheet` (willnemo.rtlcheatsheet)
-- `SFTP` (Natizyskunk.sftp)
-- `Stylelint Disable Snippets` (hedinne.stylelint-disable-snippets)
-- `TabOut` (albert.TabOut)
-- `Todo Highlight` (wayou.vscode-todo-highlight)
-- `Todo Tree` (Gruntfuggly.todo-tree)
-- `Turbo Console Log` (ChakrounAnas.turbo-console-log)
-- `WakaTime` (WakaTime.vscode-wakatime)
-
-<br>
-
-## gitignore 설정
-
-이곳에 올린 .gitignore는 [Toptal](https://www.toptal.com/developers/gitignore) 이라는 사이트에서 생성한 파일이에요.  
-맨 위에 있는 `# Edit at ...` 부분 링크를 클릭한 후에 원하는 기술 스택을 변경하여 사용하세요.
-
-```text
-vs code를 사용할 때는 ### VisualStudioCode ### 항목을 수정한 후에 사용하세요.
-팀 프로젝트 폴더에 개인 설정 파일이 올라갈 수 있어요.
 ```
