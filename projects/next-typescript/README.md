@@ -39,7 +39,7 @@ Create Next App으로 넥스트 설치 후 아래 설정을 삭제해주세요. 
 ```bash
 # Eslint & Prettier
 
-yarn add -D @typescript-eslint/eslint-plugin
+yarn add -D @typescript-eslint/eslint-plugin eslint-config-next
 
 # Dotenv
 
@@ -60,11 +60,7 @@ yarn add -D @types/postcss-preset-env postcss-cli postcss-flexbugs-fixes postcss
 
 # Next
 
-yarn add -D @types/react-test-renderer eslint-config-next react-test-renderer
-
-# React
-
-yarn add -D @types/react-test-renderer
+yarn add -D @types/react-test-renderer react-test-renderer
 
 # Recoil
 

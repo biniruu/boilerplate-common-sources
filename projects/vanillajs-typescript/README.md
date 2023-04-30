@@ -24,7 +24,7 @@ yarn add -D @types/lodash-es
 
 # PostCSS
 
-yarn add -D postcss postcss-html postcss-jsx postcss-loader postcss-nesting postcss-preset-env postcss-scss postcss-syntax
+yarn add -D postcss postcss-html postcss-jsx postcss-loader postcss-nesting postcss-preset-env postcss-scss postcss-syntax postcss-url
 
 # SASS (SCSS)
 

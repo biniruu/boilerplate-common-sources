@@ -2,9 +2,7 @@
 
 프로젝트를 시작할 때 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요. 패키지, 설정 파일 등을 프로젝트에 맞게 골라 설치할 수 있어요. 각 프로젝트별로 자세한 설정 방법을 확인하려면 [projects](https://github.com/biniruu/starter-kit-frontend/tree/main/projects/) 폴더로 이동하거나, [Creating a project](https://github.com/biniruu/starter-kit-frontend#creating-a-project)에 있는 프로젝트를 클릭하세요.
 
-```text
-⚠️ 이곳은 Yarn Workspaces로 제작한 Monorepo 환경이에요. 따라서 대부분의 설정 파일은 최상위 폴더에 있어요.
-```
+> 이곳은 Yarn Workspaces로 제작한 Monorepo 환경이에요. 대부분의 설정 파일은 최상위 폴더에 있어요.
 
 <br>
 
@@ -23,11 +21,17 @@
 
 이곳에는 다음 설정 파일이 포함되어 있어요.
 
-```text
-모든 설정 파일은 프로젝트 환경에 맞춰 수정해야 해요.
-```
+> 모든 설정 파일은 프로젝트 환경에 맞춰 수정해야 해요.
 
 `.babelrc` `.eslintignore` `.eslintrc.js` `.github/ISSUE_TEMPLATE.md` `.github/PULL_REQUEST_TEMPLATE.md` `.gitignore` `.markdownlint.json` `.prettierignore` `.prettierrc.js` `jest.config.js` `next.config.js` `postcss.config.js` `.stylelintignore` `.stylelintrc.js` `tailwind.config.js` `tsconfig.js`
+
+<br>
+
+### `.gitignore`를 사용할 때 주의하세요
+
+이곳에 올린 `.gitignore`는 [Toptal](https://www.toptal.com/developers/gitignore) 이라는 사이트에서 생성한 파일이에요. 맨 위에 있는 `# Edit at ...` 부분 링크를 클릭한 후에 원하는 기술 스택을 변경하여 사용하세요.
+
+> ⚠️ vs code를 사용할 때는 ### VisualStudioCode ### 항목을 수정한 다음에 사용하세요. 팀 프로젝트 폴더에 개인 설정 파일이 올라갈 수 있어요.
 
 <br>
 
@@ -80,7 +84,7 @@
 - [lodash-es](https://www.npmjs.com/package/lodash-es) : 필요한 lodash 함수만 골라 사용하고, 사용하지 않은 함수는 tree shaking할 수 있는 lodash 패키지
 - [mocha](https://www.npmjs.com/package/mocha)
 - [postcss](https://www.npmjs.com/package/postcss)
-- [postcss-flexbugs-fixes](https://www.npmjs.com/package/postcss-flexbugs-fixes) : 잘못 사용한 CSS 문법 교정. 아마도 동작은 하지만 표준 문법에 맞지 않는 것을 교정해주는 듯
+- [postcss-flexbugs-fixes](https://www.npmjs.com/package/postcss-flexbugs-fixes) : 잘못 사용한 CSS 문법 교정. 아마도 동작은 하지만 표준 문법에 맞지 않는 것만 교정해주는 듯
 - [postcss-html](https://www.npmjs.com/package/postcss-html) : html을 파싱할 때 필요한 postcss 문법
 - [postcss-jsx](https://www.npmjs.com/package/postcss-jsx) : postcss의 css-in-js 실행을 위해 필요
 - [postcss-loader](https://www.npmjs.com/package/postcss-loader) : webpack에서 postcss를 실행
@@ -205,14 +209,6 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 - `Vue Language Features (Volar)` (Vue.volar)
 - `Vue VSCode Snippets` (sdras.vue-vscode-snippets)
 - `WakaTime` (WakaTime.vscode-wakatime)
-
-<br>
-
-## ❗️About .gitignore configurations
-
-이곳에 올린 .gitignore는 [Toptal](https://www.toptal.com/developers/gitignore) 이라는 사이트에서 생성한 파일이에요. 맨 위에 있는 `# Edit at ...` 부분 링크를 클릭한 후에 원하는 기술 스택을 변경하여 사용하세요.
-
-> vs code를 사용할 때는 ### VisualStudioCode ### 항목을 수정한 다음에 사용하세요. 팀 프로젝트 폴더에 개인 설정 파일이 올라갈 수 있어요.
 
 <br>
 
