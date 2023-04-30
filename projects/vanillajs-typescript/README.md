@@ -1,15 +1,12 @@
 # Vanilla JS with TypeScript Starter
 
-타입스크립트 프로젝트를 시작할 때 필요한 스타터예요.
-
-개인 프로젝트용으로 만들었기 때문에 각 설정 파일은 개인 취향에 맞췄어요.  
-저와 취향이 다른 사람에게는 맞지 않을 수도 있어요😇
-
-패키지는 필요한 것만 골라서 설치하세요.
+TypeScript 프로젝트를 시작할 때 도움이 되는 스타터예요.
 
 <br>
 
 ## 📥Installing packages
+
+이곳에 있는 명령어를 사용해 패키지를 설치하세요.
 
 ```bash
 # Eslint & Prettier
@@ -67,4 +64,4 @@ yarn add -D source-map-loader style-loader
 
 이곳에서 더 많은 설정과 패키지를 찾아보세요.
 
-[Starter Kit for Settings](https://github.com/biniruu/starter-kit-for-settings)
+[Starter kit for client side development environment](https://github.com/biniruu/starter-kit-frontend)

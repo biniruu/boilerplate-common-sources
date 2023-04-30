@@ -2,13 +2,7 @@
 
 > ⚠️ 이 문서는 아직 부정확하기 때문에 지속적으로 수정하고 있어요.
 
-Next.js + TypeScript 프로젝트를 시작할 때 필요한 스타터예요.  
-create next app으로 Next.js 설치 후, 프로젝트에 필요한 기본적인 패키지를 정리했어요.
-
-개인 프로젝트용으로 만들었기 때문에 각 설정 파일은 제 취향에 맞췄어요.  
-저와 취향이 다른 사람에게는 맞지 않을 수도 있어요😇
-
-패키지는 필요한 것만 골라서 설치하세요.
+Next.js + TypeScript 프로젝트를 시작할 때 도움이 되는 스타터예요. Create Next App을 사용해 Next.js 프로젝트를 설치한 다음, 필요한 패키지를 추가해서 사용할 수 있어요.
 
 <br>
 
@@ -17,20 +11,16 @@ create next app으로 Next.js 설치 후, 프로젝트에 필요한 기본적인
 이곳에 있는 설정은 create next app으로 프로젝트를 설치할 때 선택해야 하는 모든 옵션에 yes를 선택했을 경우를 기준으로 작성했어요.
 
 ```bash
-# Create next app with typescript
-
-$ yarn create next-app <my-app-name> --typescript
+yarn create next-app <my-app-name> --typescript
 ```
 
-이미 만든 폴더에 설치한다면 `yarn create next-app . --typescript`를 입력하면 돼요.
-초기 설정과 관련된 사항은 [NEXT.JS 공식 문서](https://nextjs.org/docs/api-reference/create-next-app)를 참고하세요.
+이미 만든 폴더에 설치한다면 `yarn create next-app . --typescript`를 입력하면 돼요. 초기 설정과 관련된 사항은 [NEXT.JS 공식 문서](https://nextjs.org/docs/api-reference/create-next-app)를 참고하세요.
 
 <br>
 
 ## ✏️Editing package.json
 
-create next app으로 넥스트 설치 후 아래 설정을 삭제해주세요.
-이 설정은 `.eslintrc.js`로 옮겨두었어요.
+Create Next App으로 넥스트 설치 후 아래 설정을 삭제해주세요. 이 설정은 `.eslintrc.js`로 옮겨두었어요.
 
 ```json
 {
@@ -43,6 +33,8 @@ create next app으로 넥스트 설치 후 아래 설정을 삭제해주세요.
 <br>
 
 ## 📥Installing packages
+
+이곳에 있는 명령어를 사용해 패키지를 설치하세요.
 
 ```bash
 # Eslint & Prettier
@@ -131,4 +123,4 @@ yarn add -D prettier-plugin-tailwindcss
 
 이곳에서 더 많은 설정과 패키지를 찾아보세요.
 
-[Starter Kit for Settings](https://github.com/biniruu/starter-kit-frontend)
+[Starter kit for client side development environment](https://github.com/biniruu/starter-kit-frontend)

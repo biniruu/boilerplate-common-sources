@@ -1,32 +1,22 @@
 # React.js with TypeScript Starter
 
-react + typescript 프로젝트를 시작할 때 필요한 스타터예요.  
-create react app으로 react.js 설치 후 react 프로젝트에 필요한 기본적인 패키지를 추가했어요.
-
-개인 프로젝트용으로 만들었기 때문에 각 설정 파일은 제 취향에 맞췄어요.  
-저와 취향이 다른 사람에게는 맞지 않을 수도 있어요😇
-
-패키지는 필요한 것만 골라서 설치하세요.
+React.js + TypeScript 프로젝트를 시작할 때 도움이 되는 스타터예요. Create React App을 사용해 React.js 프로젝트를 설치한 다음, 필요한 패키지를 추가해서 사용할 수 있어요.
 
 <br>
 
 ## 🎬Creating React.js project
 
 ```bash
-# Create react app with typescript
-
-$ yarn create react-app <my-app-name> --template typescript
+yarn create react-app <my-app-name> --template typescript
 ```
 
-이미 만든 폴더에 설치한다면 `yarn create react-app ./ --template typescript`를 입력하면 돼요.  
-초기 설정과 관련된 사항은 [Create React App 공식 문서](https://create-react-app.dev/docs/adding-typescript/#installation)를 참고하세요.
+이미 만든 폴더에 설치한다면 `yarn create react-app ./ --template typescript`를 입력하면 돼요. 초기 설정과 관련된 사항은 [Create React App 공식 문서](https://create-react-app.dev/docs/adding-typescript/#installation)를 참고하세요.
 
 <br>
 
 ## ✏️Editing package.json
 
-CRA로 react 설치 후 아래 설정을 삭제해주세요.
-이 설정은 `.eslintrc.js`로 옮겨두었어요.
+create react app으로 react 설치한 다음 아래 설정을 삭제해주세요. 이 설정은 `.eslintrc.js`로 옮겨두었어요.
 
 ```json
 {
@@ -39,6 +29,8 @@ CRA로 react 설치 후 아래 설정을 삭제해주세요.
 <br>
 
 ## 📥Installing packages
+
+이곳에 있는 명령어를 사용해 패키지를 설치하세요.
 
 ```bash
 # Eslint & Prettier
@@ -90,7 +82,7 @@ yarn add -D prettier-plugin-tailwindcss tailwindcss
 ```
 
 ```text
-💁🏻‍♀️ 아래 패키지는 CRA template typescript에 포함돼 있어서 별도로 설치하지 않아도 돼요.
+💁🏻‍♀️ 아래 패키지는 create react app에 포함돼 있어서 별도로 설치하지 않아도 돼요.
 
 - @babel/core
 - @types/jest
@@ -146,4 +138,4 @@ yarn add -D prettier-plugin-tailwindcss tailwindcss
 
 이곳에서 더 많은 설정과 패키지를 찾아보세요.
 
-[Starter Kit for Settings](https://github.com/biniruu/starter-kit-frontend)
+[Starter kit for client side development environment](https://github.com/biniruu/starter-kit-frontend)

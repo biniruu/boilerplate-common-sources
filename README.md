@@ -1,9 +1,10 @@
 # Starter kit for client side development environment
 
-프로젝트를 시작할 때 필요한 기본적인 설정 저장소예요. 패키지, 설정 파일 등을 프로젝트에 맞게 골라 설치할 수 있어요.
+프로젝트를 시작할 때 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요. 패키지, 설정 파일 등을 프로젝트에 맞게 골라 설치할 수 있어요. 각 프로젝트별로 자세한 설정 방법을 확인하려면 [projects](https://github.com/biniruu/starter-kit-frontend/tree/main/projects/) 폴더로 이동하거나, [Creating a project](https://github.com/biniruu/starter-kit-frontend#creating-a-project)에 있는 프로젝트를 클릭하세요.
 
-> 이곳은 yarn workspaces로 제작한 monorepo 환경이에요. 따라서 대부분의 설정 파일이 최상위 폴더에만 있어요.  
-> 각 프로젝트별로 자세한 설정 방법을 확인하려면 [projects](https://github.com/biniruu/starter-kit-frontend/tree/main/projects/) 폴더로 이동하거나, [Creating a project](https://github.com/biniruu/starter-kit-frontend#creating-a-project)에 있는 프로젝트를 클릭하세요.
+```text
+⚠️ 이곳은 Yarn Workspaces로 제작한 Monorepo 환경이에요. 따라서 대부분의 설정 파일은 최상위 폴더에 있어요.
+```
 
 <br>
 
@@ -22,7 +23,9 @@
 
 이곳에는 다음 설정 파일이 포함되어 있어요.
 
-> 모든 설정 파일은 프로젝트 환경에 맞춰 수정해야 해요.
+```text
+모든 설정 파일은 프로젝트 환경에 맞춰 수정해야 해요.
+```
 
 `.babelrc` `.eslintignore` `.eslintrc.js` `.github/ISSUE_TEMPLATE.md` `.github/PULL_REQUEST_TEMPLATE.md` `.gitignore` `.markdownlint.json` `.prettierignore` `.prettierrc.js` `jest.config.js` `next.config.js` `postcss.config.js` `.stylelintignore` `.stylelintrc.js` `tailwind.config.js` `tsconfig.js`
 
@@ -130,7 +133,7 @@
 
 ## 📌Required options in VS Code
 
-settings에서 아래 설정을 변경해주세요.
+VS Code의 설정에서 아래 옵션을 변경해주세요.
 
 - Editor: Default Formatter => `esbenp.prettier-vscode`
 - Eslint > Format: Enable => `true`
@@ -139,7 +142,7 @@ settings에서 아래 설정을 변경해주세요.
 
 ## 🧩Required extensions in VS Code
 
-위 패키지를 제대로 사용하기 위해 꼭 필요한 익스텐션이에요.
+lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익스텐션이에요.
 
 - `ESLint` (dbaeumer.vscode-eslint)
 - `Prettier - Code formatter` (esbenp.prettier-vscode)
