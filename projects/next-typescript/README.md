@@ -18,9 +18,9 @@ yarn create next-app <my-app-name> --typescript
 
 <br>
 
-## ✏️Editing package.json
+## ✏️Modifying package.json
 
-Create Next App으로 넥스트 설치 후 아래 설정을 삭제해주세요. 이 설정은 `.eslintrc.js`로 옮겨두었어요.
+Create Next App으로 넥스트 설치 후 아래 설정을 삭제해주세요. 이 설정은 `.eslintrc.js`에 있어요.
 
 ```json
 {
@@ -29,6 +29,16 @@ Create Next App으로 넥스트 설치 후 아래 설정을 삭제해주세요. 
   }
 }
 ```
+
+<br>
+
+## 🛒Getting configuration files
+
+이곳은 Yarn Workspaces로 제작한 Monorepo 환경이기 때문에 대부분의 설정 파일이 최상위 폴더에 있어요. 만일 최상위 폴더에 있는 설정 파일과 동일한 파일이 이곳에도 있을 경우에는 (필요하다면) 두 파일을 조합해서 사용하세요.
+
+<br>
+
+[설정 파일 가지러 가기](https://github.com/biniruu/starter-kit-frontend)
 
 <br>
 
