@@ -1,5 +1,4 @@
 /**
- *
  * syntaxes
  * https://github.com/postcss/postcss#syntaxes
  *
