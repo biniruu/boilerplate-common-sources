@@ -14,13 +14,21 @@
 - [Vanilla JS with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/projects/vanillajs-typescript#vanillajs-with-typescript-starter)
 - [Vanilla JS](https://github.com/biniruu/starter-kit-frontend/tree/main/projects/vanillajs#vanillajs-with-typescript-starter)
 
-각 프로젝트별 환경설정 또는 추가 설정은 [projects](https://github.com/biniruu/starter-kit-frontend/tree/main/projects/) 폴더의 하위 폴더에서 확인할 수 있어요.
+<br>
+
+## 📦What is in this starter
+
+이곳에는 다음 설정 파일이 포함되어 있어요.
+
+`.babelrc` `.eslintignore` `.eslintrc.js` `.github/ISSUE_TEMPLATE.md` `.github/PULL_REQUEST_TEMPLATE.md` `.gitignore` `.markdownlint.json` `.prettierignore` `.prettierrc.js` `jest.config.js` `next.config.js` `postcss.config.js` `.stylelintignore` `.stylelintrc.js` `tailwind.config.js` `tsconfig.js`
 
 > 모든 설정 파일은 프로젝트 환경에 맞춰 수정해야 해요.
 
+각 프로젝트별 설정 방법은 [projects](https://github.com/biniruu/starter-kit-frontend/tree/main/projects/) 폴더의 하위 폴더에서 확인할 수 있어요.
+
 <br>
 
-## 📄Detailing packages
+## 📋Detailing packages
 
 이곳에 설치된 패키지가 각각 어떤 기능을 하는지 알아보세요.
 
@@ -139,7 +147,7 @@ settings에서 아래 설정을 변경해주세요.
 
 <br>
 
-## 🚀Recommanded options in VS Code
+## 🚀Recommanded extensions in VS Code
 
 편의성을 높여주는 익스텐션이에요.
 
@@ -209,9 +217,9 @@ vs code를 사용할 때는 ### VisualStudioCode ### 항목을 수정한 후에 
 
 <br>
 
-## 📦Installing packages
+## 📥Installing packages
 
-개발 환경에 따라 적절한 패키지를 설치하세요.
+이 스타터에 없는 프로젝트 또는 잘 사용하지 않는 도구를 사용할 때 참고해주세요.
 
 ```bash
 # Markdownlint
