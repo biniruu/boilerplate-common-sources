@@ -14,7 +14,6 @@
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {
-    "@stylelint/postcss-css-in-js": "^0.38.0",
     "@types/jest": "^29.1.1",
     "@types/lodash-es": "^4.17.6",
     "@types/node": "^18.7.23",
