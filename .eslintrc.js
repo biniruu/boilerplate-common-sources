@@ -25,7 +25,10 @@ module.exports = {
       files: ['*.ts', '*.tsx'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
-        project: 'tsconfig.json', // parser: @typescript-eslint/parser를 활성화 하기 위해 꼭 필요
+        project: [
+          './tsconfig.json', // parser: @typescript-eslint/parser를 활성화 하기 위해 꼭 필요
+          // './next.config.js', // next 프로젝트 시 필요
+        ],
       },
       plugins: ['@typescript-eslint'],
       rules: {
