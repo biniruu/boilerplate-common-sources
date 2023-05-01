@@ -113,7 +113,7 @@ module.exports = {
      * no-new-object: new Object로 객체 생성 금지
      * no-undef: 정의하지 않은 전역 변수는 /✱ global ... ✱/ 주석에 명시해야 사용 가능하도록 강제
      * no-underscore-dangle: 식별자 뒤에 언더스코어를 붙이지 못하도록 강제. default: { allowAfterThis: false, allowAfterSuper: false, allowAfterThisConstructor: false, enforceInMethodNames: false, enforceInClassFields: false, allowInArrayDestructuring: true, allowInObjectDestructuring: true, allowFunctionParams: true }
-     * no-unused-vars: 사용하지 않는 변수 금지
+     * no-unused-vars: 사용하지 않는 변수 금지. @typescript-eslint/no-unused-vars 와 중복. default: { vars: 'all', args: 'after-used', ignoreRestSiblings: false }
      * no-useless-escape: 불필요한 escape 문자 사용 금지. extends에 eslint:recommended를 설정했을 때 동작한다
      * no-var: var 로 변수 선언 금지
      * object-curly-spacing: 중괄호 안에 간격 삽입. objectsInObjects: false 옵션은 사용할 수 없음. prettier의 bracketSpacing에 의해 덮어쓰기 되기 때문. default: 'never'
