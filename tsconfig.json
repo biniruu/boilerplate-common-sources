@@ -47,7 +47,9 @@
     /* Module Resolution Options */
     "moduleResolution": "node", // Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6).
     // "baseUrl": "./",                             /* Base directory to resolve non-absolute module names. */
-    // "paths": {},                                 /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+    // "paths": {
+    //   "@/*": ["./src/*"]
+    // }, // A series of entries which re-map imports to lookup locations relative to the 'baseUrl'.
     // "rootDirs": [],                              /* List of root folders whose combined content represents the structure of the project at runtime. */
     "typeRoots": [
       "node_modules/@types"
@@ -75,12 +77,18 @@
     "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file.
 
     /* Additional Personal Options */
+    // "plugins": [
+    //   {
+    //     "name": "next" // next 프로젝트 시 사용
+    //   }
+    // ],
     "resolveJsonModule": true
   },
   "include": [
-    // "next-env.d.ts", // next.js 프로젝트 시 필요
+    // "next-env.d.ts", // next 프로젝트 시 필요
     "**/*.ts",
     "**/*.tsx"
+    // ".next/types/**/*.ts" // next + typescript 프로젝트 시 필요
   ],
   "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
   // "extends": "" // 상속 받으려는 tsconfig 파일 경로 입력
