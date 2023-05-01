@@ -66,7 +66,7 @@ yarn add -D @types/lodash-es
 
 # PostCSS
 
-yarn add -D @types/postcss-preset-env postcss-cli postcss-flexbugs-fixes postcss-normalize postcss-preset-env postcss-syntax postcss-url
+yarn add -D @types/postcss-preset-env postcss-cli postcss-flexbugs-fixes postcss-html postcss-normalize postcss-preset-env postcss-syntax postcss-url
 
 # Next
 
@@ -87,7 +87,7 @@ yarn add -D @types/styled-components
 
 # Stylelint
 
-yarn add -D postcss-syntax stylelint stylelint-config-prettier stylelint-config-standard stylelint-order
+yarn add -D stylelint stylelint-config-prettier stylelint-config-standard stylelint-order
 
 # Tailwind css
 
