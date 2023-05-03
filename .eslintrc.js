@@ -43,10 +43,11 @@ module.exports = {
          * @typescript-eslint/no-unsafe-assignment: any 타입 사용 시 알림을 띄움
          * @typescript-eslint/no-unsafe-call
          * @typescript-eslint/no-unsafe-member-access
-         * @typescript-eslint/no-unused-vars
+         * @typescript-eslint/no-unused-vars: no-unused-vars와 동일. no-unused-vars를 비활성화 한 후에 사용할 것
          * @typescript-eslint/no-var-requires
          * @typescript-eslint/restrict-plus-operands
          * @typescript-eslint/restrict-template-expressions
+         * @typescript-eslint/space-before-function-paren: *공식 문서에서는 사용하지 말 것을 적극 권고한다* space-before-function-paren과 동일. space-before-function-paren을 비활성화 한 후에 사용할 것
          */
         '@typescript-eslint/ban-ts-comment': [
           'error',
@@ -67,6 +68,10 @@ module.exports = {
         '@typescript-eslint/no-var-requires': 'error',
         '@typescript-eslint/restrict-plus-operands': 'warn',
         '@typescript-eslint/restrict-template-expressions': 'warn',
+        '@typescript-eslint/space-before-function-paren': [
+          'warn',
+          { anonymous: 'always', named: 'never', asyncArrow: 'always' },
+        ],
         /**
          * eslint-config-prettier
          * {@link https://github.com/prettier/eslint-plugin-prettier#installation}
@@ -113,7 +118,7 @@ module.exports = {
      * no-new-object: new Object로 객체 생성 금지
      * no-undef: 정의하지 않은 전역 변수는 /✱ global ... ✱/ 주석에 명시해야 사용 가능하도록 강제
      * no-underscore-dangle: 식별자 뒤에 언더스코어를 붙이지 못하도록 강제. default: { allowAfterThis: false, allowAfterSuper: false, allowAfterThisConstructor: false, enforceInMethodNames: false, enforceInClassFields: false, allowInArrayDestructuring: true, allowInObjectDestructuring: true, allowFunctionParams: true }
-     * no-unused-vars: 사용하지 않는 변수 금지. @typescript-eslint/no-unused-vars 와 중복. default: { vars: 'all', args: 'after-used', ignoreRestSiblings: false }
+     * no-unused-vars: 사용하지 않는 변수 금지. default: { vars: 'all', args: 'after-used', ignoreRestSiblings: false }
      * no-useless-escape: 불필요한 escape 문자 사용 금지. extends에 eslint:recommended를 설정했을 때 동작한다
      * no-var: var 로 변수 선언 금지
      * object-curly-spacing: 중괄호 안에 간격 삽입. objectsInObjects: false 옵션은 사용할 수 없음. prettier의 bracketSpacing에 의해 덮어쓰기 되기 때문. default: 'never'
@@ -121,7 +126,7 @@ module.exports = {
      * prefer-rest-params: 함수의 parameter에서 arguments 객체 대신 rest parameter를 사용하도록 강제. e.g. function (...args) {}
      * quotes: 따옴표를 작은따옴표, 큰따옴표, 백틱 중 한 가지만 사용하도록 강제. default: 'double'
      * sort-imports: import 정렬. default: { allowSeparatedGroups: false, ignoreCase: false, ignoreDeclarationSort: false, ignoreMemberSort: false, memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'] }
-     * space-before-function-paren: 함수 선언 시 함수명과 괄호 사이에 간격 추가를 강제. default: 'always'
+     * space-before-function-paren: 함수 선언 시 함수명과 괄호 사이에 간격 추가를 강제. default: 'always' or { anonymous: 'always', named: 'always', asyncArrow: 'always' }
      */
     'array-bracket-spacing': 'warn',
     camelcase: ['error', { properties: 'never' }],
@@ -149,7 +154,7 @@ module.exports = {
     'prefer-rest-params': 'error',
     quotes: ['warn', 'single', { allowTemplateLiterals: true }],
     'sort-imports': ['warn', { allowSeparatedGroups: true, ignoreCase: true }],
-    'space-before-function-paren': ['warn', 'never'],
+    'space-before-function-paren': ['warn', { anonymous: 'always', named: 'never', asyncArrow: 'always' }],
     /**
      * eslint-config-prettier
      * {@link https://github.com/prettier/eslint-plugin-prettier#installation}
