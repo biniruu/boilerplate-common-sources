@@ -91,7 +91,7 @@
     "vue": false,
     "yaml": false
   },
-  "githubNotificationsBell.oauthToken": "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",
+  "githubNotificationsBell.oauthToken": "${env:GITHUB_NOTIFICATIONS_BELL}",
   "gitlens.gitCommands.search.showResultsInSideBar": true,
   "html-css-class-completion.enableEmmetSupport": true,
   "jest.autoRun": {
