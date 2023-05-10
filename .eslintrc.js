@@ -1,6 +1,6 @@
 /**
- * eslint 공식 문서
- * https://eslint.org/docs/latest/
+ * Eslint Documentation
+ * {@link https://eslint.org/docs/latest/}
  */
 
 module.exports = {
@@ -33,7 +33,7 @@ module.exports = {
       plugins: ['@typescript-eslint'],
       rules: {
         /**
-         * typescript-eslint rules
+         * Typescript-eslint supported rules
          * {@link https://typescript-eslint.io/rules/}
          *
          * @typescript-eslint/ban-ts-comment: 설명을 추가하는 조건으로 @ts-expect-error, @ts-ignore, @ts-nocheck, @ts-check 주석을 허용
@@ -73,7 +73,7 @@ module.exports = {
           { anonymous: 'always', named: 'never', asyncArrow: 'always' },
         ],
         /**
-         * eslint-config-prettier
+         * Eslint-config-prettier
          * {@link https://github.com/prettier/eslint-plugin-prettier#installation}
          * {@link https://github.com/prettier/eslint-plugin-prettier#options}
          */
@@ -100,33 +100,36 @@ module.exports = {
   root: true, // 해당 설정 파일이 root 임을 명시하는 옵션. true라면 상위 설정 파일 찾기를 여기서 멈춘다.
   rules: {
     /**
-     * array-bracket-spacing: 대괄호 안에서 간격 허용 여부. default: 'never'
-     * camelcase: 카멜 케이스 작명 방식 강제. default: { properties: 'always', ignoreDestructuring: false, ignoreImports: false, ignoreGlobals: false }
-     * comma-dangle: trailing commas 사용 여부. default: 'never'
-     * computed-property-spacing: 계산된 인자(obj[property]) 표시 시 괄호 안에 띄어쓰기 허용 여부. default: 'never'
-     * eqeqeq: 일치 연산자(===) 사용 강제. 동등 연산자(==) 사용 금지. default: 'always'
-     * generator-star-spacing: 제네레이터 함수에서 별표의 위치를 강제. default: 'before'
-     * new-cap: 'new' 연산자로 인스턴스 생성 시 constructor 함수명의 첫 글자를 대문자로 강제. default: { newIsCap: true, capIsNew: true, properties: true }
+     * Eslint rules reference
+     * {@link https://eslint.org/docs/latest/rules}
+     *
+     * array-bracket-spacing: 대괄호 안에서 간격 허용 여부
+     * camelcase: 카멜 케이스 작명 방식 강제
+     * comma-dangle: trailing commas 사용 여부
+     * computed-property-spacing: 계산된 인자(obj[property]) 표시 시 괄호 안에 띄어쓰기 허용 여부
+     * eqeqeq: 일치 연산자(===) 사용 강제. 동등 연산자(==) 사용 금지
+     * generator-star-spacing: 제네레이터 함수에서 별표의 위치를 강제
+     * new-cap: 'new' 연산자로 인스턴스 생성 시 constructor 함수명의 첫 글자를 대문자로 강제
      * no-array-constructor: Array() 생성자에 배열 리터럴 생성법을 사용해서 배열 생성 금지
      * no-console: 콘솔 사용 금지
      * no-debugger: debugger 사용 금지
      * no-duplicate-imports: 동일한 모듈에서 import를 여러 번 할 때 import문을 한 번만 사용하도록 강제. e.g. import { apple, banana } from 'fruits'
      * no-extra-semi: 불필요한 세미콜론 사용 금지
-     * no-inner-declarations: nested block에서 변수 또는 함수 선언 금지. default: 'functions'
-     * no-multiple-empty-lines: 여러 줄 공백 금지. default: { max: 2 }
+     * no-inner-declarations: nested block에서 변수 또는 함수 선언 금지
+     * no-multiple-empty-lines: 여러 줄 공백 금지
      * no-nested-ternary: 중첩 삼항 연산자 금지
      * no-new-object: new Object로 객체 생성 금지
      * no-undef: 정의하지 않은 전역 변수는 /✱ global ... ✱/ 주석에 명시해야 사용 가능하도록 강제
-     * no-underscore-dangle: 식별자 뒤에 언더스코어를 붙이지 못하도록 강제. default: { allowAfterThis: false, allowAfterSuper: false, allowAfterThisConstructor: false, enforceInMethodNames: false, enforceInClassFields: false, allowInArrayDestructuring: true, allowInObjectDestructuring: true, allowFunctionParams: true }
-     * no-unused-vars: 사용하지 않는 변수 금지. default: { vars: 'all', args: 'after-used', ignoreRestSiblings: false }
+     * no-underscore-dangle: 식별자 뒤에 언더스코어를 붙이지 못하도록 강제
+     * no-unused-vars: 사용하지 않는 변수 금지
      * no-useless-escape: 불필요한 escape 문자 사용 금지. extends에 eslint:recommended를 설정했을 때 동작한다
-     * no-var: var 로 변수 선언 금지
-     * object-curly-spacing: 중괄호 안에 간격 삽입. objectsInObjects: false 옵션은 사용할 수 없음. prettier의 bracketSpacing에 의해 덮어쓰기 되기 때문. default: 'never'
+     * no-var: var로 변수 선언 금지
+     * object-curly-spacing: 중괄호 안에 간격 삽입. objectsInObjects: false 옵션은 사용할 수 없음. prettier의 bracketSpacing에 의해 덮어쓰기 되기 때문
      * prefer-const: 재할당이 이루어지지 않는 변수에 let을 사용했을 경우 const로 변경하도록 강제
      * prefer-rest-params: 함수의 parameter에서 arguments 객체 대신 rest parameter를 사용하도록 강제. e.g. function (...args) {}
-     * quotes: 따옴표를 작은따옴표, 큰따옴표, 백틱 중 한 가지만 사용하도록 강제. default: 'double'
-     * sort-imports: import 정렬. default: { allowSeparatedGroups: false, ignoreCase: false, ignoreDeclarationSort: false, ignoreMemberSort: false, memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'] }
-     * space-before-function-paren: 함수 선언 시 함수명과 괄호 사이에 간격 추가를 강제. default: 'always' or { anonymous: 'always', named: 'always', asyncArrow: 'always' }
+     * quotes: 따옴표를 작은따옴표, 큰따옴표, 백틱 중 한 가지만 사용하도록 강제
+     * sort-imports: import 정렬
+     * space-before-function-paren: 함수 선언 시 함수명과 괄호 사이에 간격 추가를 강제
      */
     'array-bracket-spacing': 'warn',
     camelcase: ['error', { properties: 'never' }],
@@ -137,7 +140,7 @@ module.exports = {
     'new-cap': 'error',
     'no-array-constructor': 'error',
     'no-console': ['warn', { allow: ['warn', 'error'] }],
-    'no-debugger': process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging' ? 'error' : 'warn',
+    'no-debugger': process.env.NODE_ENV === 'development' ? 'warn' : 'error',
     'no-duplicate-imports': 'error',
     'no-extra-semi': 'error',
     'no-inner-declarations': 'warn',
@@ -156,7 +159,7 @@ module.exports = {
     'sort-imports': ['warn', { allowSeparatedGroups: true, ignoreCase: true }],
     'space-before-function-paren': ['warn', { anonymous: 'always', named: 'never', asyncArrow: 'always' }],
     /**
-     * eslint-config-prettier
+     * Eslint-config-prettier
      * {@link https://github.com/prettier/eslint-plugin-prettier#installation}
      *
      * [The first option]{@link https://prettier.io/docs/en/options.html}
@@ -177,11 +180,11 @@ module.exports = {
       // },
     ],
     /**
-     * eslint-plugin-import rules
+     * Eslint-plugin-import rules
      * {@link https://github.com/import-js/eslint-plugin-import#rules}
      *
      * import/no-unresolved: import한 파일/모듈이 unresolved 되는 일이 없도록 방지
-     * import/order: import 순서 정렬. vscode 설정에서 source.organizeImports를 true로 설정하면 정렬과 동시에 사용하지 않는 import까지 삭제할 수 있다. default: { alphabetize: { caseInsensitive: 'false', order: 'ignore', orderImportKind: 'ignore' }, distinctGroup: true, groups: ['builtin', 'external', 'parent', 'sibling', 'index'], newlines-between: 'ignore', pathGroups: [{ patternOptions: { nocomment: true }}], pathGroupsExcludedImportTypes: ['builtin', 'external', 'object'], warnOnUnassignedImports: false }
+     * import/order: import 순서 정렬. vscode 설정에서 source.organizeImports를 true로 설정하면 정렬과 동시에 사용하지 않는 import까지 삭제할 수 있다
      */
     'import/no-unresolved': 'off',
     'import/order': [
@@ -193,7 +196,7 @@ module.exports = {
       },
     ],
     /**
-     * eslint-plugin-jsx-a11y rules start
+     * Eslint-plugin-jsx-a11y rules start
      * {@link https://github.com/jsx-eslint/eslint-plugin-jsx-a11y#supported-rules}
      *
      * jsx-a11y/label-has-associated-control: 기본 html 태그가 아닌 custom component에서 웹 접근성 관련 에러 발생 방지
@@ -226,16 +229,16 @@ module.exports = {
       },
     ],
     /**
-     * eslint-plugin-react rules
+     * Eslint-plugin-react rules
      * {@link https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules}
      *
      * react/destructuring-assignment: state, prop 등에 구조분해 할당 적용
      * react/jsx-curly-brace-presence: jsx 내 불필요한 중괄호 금지
      * react/jsx-curly-spacing
-     * react/jsx-key: 반복문으로 생성하는 요소에 key 속성 강제. 'react/recommended' 설정 시 활성화. default: { checkFragmentShorthand: false, checkKeyMustBeforeSpread: false, warnOnDuplicates: false }
+     * react/jsx-key: 반복문으로 생성하는 요소에 key 속성 강제. 'react/recommended' 설정 시 활성화
      * react/jsx-no-useless-fragment: 불필요한 fragment 금지
-     * react/jsx-pascal-case: 컴포넌트 이름을 PascalCase로 강제. default: ['off', { allowAllCaps: false, allowLeadingUnderscore: false, allowNamespace: false }]
-     * react/jsx-no-bind: JSX에서 .bind() 또는 화살표 함수 사용 금지. default: { ignoreDOMComponents: false, ignoreRefs: false, allowArrowFunctions: false, allowFunctions: false, allowBind: false }
+     * react/jsx-pascal-case: 컴포넌트 이름을 PascalCase로 강제
+     * react/jsx-no-bind: JSX에서 .bind() 또는 화살표 함수 사용 금지
      * react/jsx-uses-react: react를 import한 후 JSX 사용 강제. 'react/recommended' 설정 시 활성화. 'no-unused-vars'가 활성화 된 경우 효과 발생
      * react/jsx-uses-vars: JSX를 import한 후 해당 JSX 사용 강제. 'no-unused-vars'가 활성화 된 경우 효과 발생
      * react/no-direct-mutation-state: state 직접 수정 금지. 'react/recommended' 설정 시 활성화
@@ -274,7 +277,7 @@ module.exports = {
   },
   settings: {
     /**
-     * eslint-plugin-import
+     * Eslint-plugin-import
      * {@link https://github.com/import-js/eslint-plugin-import#resolvers}
      *
      * ['import/resolver'].node.extensions: react 사용 시 활성화 필요. jsx를 import할 때 import/no-unresolved 에러가 발생하지 않도록 함
@@ -285,7 +288,7 @@ module.exports = {
       },
     },
     /**
-     * eslint-plugin-react
+     * Eslint-plugin-react
      * {@link https://github.com/jsx-eslint/eslint-plugin-react#configuration-new-eslintconfigjs}
      *
      * react.version: eslint-plugin-react가 자동 리액트버전탐지
