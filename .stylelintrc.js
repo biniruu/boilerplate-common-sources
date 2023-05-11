@@ -1,6 +1,6 @@
 /**
- * 공식 문서
- * https://stylelint.io/user-guide/rules
+ * Stylelint documentation
+ * {@link https://stylelint.io}
  */
 
 module.exports = {
@@ -15,6 +15,9 @@ module.exports = {
   plugins: ['stylelint-scss', 'stylelint-order'],
   rules: {
     /**
+     * Rules
+     * {@link https://stylelint.io/user-guide/rules}
+     *
      * alpha-value-notation: rgb()에서 opacity 표현 형식을 %나 숫자 중에서 선택
      * at-rule-empty-line-before: at rule 전에 한 줄 여백 강제 여부
      * at-rule-no-unknown: css 기본 문법 이외에 다른 @ 문법 사용 시 에러 발생
@@ -82,20 +85,23 @@ module.exports = {
     ],
     'value-keyword-case': 'lower',
     /**
-     * SCSS rules
-     * Before enabling SCSS rules, you'll need to disable any conflicting CSS rules. Here's how to do it.
+     * stylelint-scss rules
+     * {@link https://github.com/stylelint-scss/stylelint-scss#list-of-rules}
+     *
+     * Before enabling SCSS rules, you'll need to disable any conflicting CSS rules.
+     * Here's how to do it.
      *
      * "at-rule-no-unknown": null,
      * "scss/at-rule-no-unknown": true,
      *
      * scss/at-rule-no-unknown: scss 기본 문법 이외에 다른 @ 문법 사용 시 에러 발생
      */
-    // 'scss/at-rule-no-unknown': [true, { ignoreAtRules: ['tailwind'] }],
+    'scss/at-rule-no-unknown': [true, { ignoreAtRules: ['tailwind'] }],
     /**
      * stylelint-order rules
-     * https://github.com/hudochenkov/stylelint-order/tree/master/rules
+     * {@link https://github.com/hudochenkov/stylelint-order/tree/master/rules}
      *
-     * order/properties-alphabetical-order: 속성을 알파벳 순으로 정렬할지 여부
+     * order/properties-alphabetical-order: 속성을 알파벳 순으로 정렬
      */
     'order/properties-alphabetical-order': true,
   },
