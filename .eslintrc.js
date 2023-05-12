@@ -5,20 +5,41 @@
 
 module.exports = {
   env: { browser: true, es6: true, node: true },
+  /**
+   * extends
+   *
+   * eslint:recommended: eslint 추천 rule set
+   * plugin:import/recommended: eslint-plugin-import 추천 정렬
+   * plugin:jsx-a11y/recommended: 웹 접근성 관련 jsx 규칙
+   * plugin:prettier/recommended: eslint-config-prettier 추천 설정
+   * plugin:react-hooks/recommended
+   * plugin:react/jsx-runtime: If you are using the new JSX transform from React 17, you should enable this
+   * plugin:react/recommended
+   */
   extends: [
     'eslint:recommended',
-    'plugin:import/recommended', // eslint-plugin-import 추천 정렬
-    'plugin:jsx-a11y/recommended', // 웹 접근성 관련 jsx 규칙
-    'plugin:prettier/recommended', // eslint-config-prettier 추천 설정
+    'plugin:import/recommended',
+    'plugin:jsx-a11y/recommended',
+    'plugin:prettier/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:react/jsx-runtime', // If you are using the new JSX transform from React 17, you should enable this
+    'plugin:react/jsx-runtime',
     'plugin:react/recommended',
   ],
   overrides: [
+    /**
+     * Typescript
+     */
     {
+      /**
+       * extends
+       *
+       * plugin:import/typescript: eslint-plugin-import 플러그인
+       * plugin:@typescript-eslint/recommended: 타입스크립트 추천 룰셋
+       * plugin:@typescript-eslint/recommended-requiring-type-checking
+       */
       extends: [
         'plugin:import/typescript',
-        'plugin:@typescript-eslint/recommended', // 타입스크립트 추천 룰셋
+        'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
       ],
       files: ['*.ts', '*.tsx'],
@@ -74,10 +95,15 @@ module.exports = {
         /**
          * eslint-config-prettier options
          * {@link https://github.com/prettier/eslint-plugin-prettier#options}
+         *
+         * prettier: 타입스크립트에서는 알 수 없는 이유로 에러를 발생시키는 경우가 잦아 off로 설정해 두었다.
          */
-        'prettier/prettier': 'off', // 타입스크립트에서는 알 수 없는 이유로 에러를 발생시키는 경우가 많아 off로 설정해 두었다.
+        'prettier/prettier': 'off',
       },
     },
+    /**
+     * Jest
+     */
     {
       extends: ['plugin:jest/recommended'],
       files: ['*.spec.js', '*.spec.ts', '*.test.js', '*.test.ts'],
