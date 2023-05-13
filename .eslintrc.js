@@ -15,6 +15,8 @@ module.exports = {
    * plugin:react-hooks/recommended
    * plugin:react/jsx-runtime: If you are using the new JSX transform from React 17, you should enable this
    * plugin:react/recommended
+   * react-app: eslint-config-react-app으로 eslint 설정 덮어쓰기
+   * react-app/jest: jest 규칙 설정을 위한 eslint-config-react-app 확장
    */
   extends: [
     'eslint:recommended',
@@ -24,6 +26,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react/recommended',
+    'react-app',
   ],
   overrides: [
     /**
@@ -105,9 +108,8 @@ module.exports = {
      * Jest
      */
     {
-      extends: ['plugin:jest/recommended'],
+      extends: ['plugin:jest/recommended', 'react-app/jest'],
       files: ['*.spec.js', '*.spec.ts', '*.test.js', '*.test.ts'],
-      plugins: ['jest'],
     },
   ],
   parser: '@babel/eslint-parser',
@@ -120,7 +122,6 @@ module.exports = {
     requireConfigFile: false, // "no babel config file detected for ..." 에러 해결을 위해 필요
     sourceType: 'module', // 모듈 시스템 사용 시 필요
   },
-  plugins: ['import', 'jsx-a11y', 'react', 'react-hooks'],
   root: true, // 현재 설정 파일이 root임을 명시하는 옵션. true로 설정하면 상위 설정 파일 찾기를 여기서 멈춘다.
   rules: {
     /**
