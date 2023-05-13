@@ -9,14 +9,13 @@ module.exports = {
    * extends
    *
    * eslint:recommended: eslint 추천 rule set
-   * plugin:import/recommended: eslint-plugin-import 추천 정렬
-   * plugin:jsx-a11y/recommended: 웹 접근성 관련 jsx 규칙
-   * plugin:prettier/recommended: eslint-config-prettier 추천 설정
+   * plugin:import/recommended: eslint-plugin-import 추천 rule set
+   * plugin:jsx-a11y/recommended: 웹 접근성 관련 추천 rule set
+   * plugin:prettier/recommended: eslint-config-prettier 추천 rule set
    * plugin:react-hooks/recommended
    * plugin:react/jsx-runtime: If you are using the new JSX transform from React 17, you should enable this
    * plugin:react/recommended
    * react-app: eslint-config-react-app으로 eslint 설정 덮어쓰기
-   * react-app/jest: jest 규칙 설정을 위한 eslint-config-react-app 확장
    */
   extends: [
     'eslint:recommended',
@@ -53,7 +52,6 @@ module.exports = {
           // './next.config.js', // next 프로젝트 시 필요
         ],
       },
-      plugins: ['@typescript-eslint'],
       rules: {
         /**
          * typescript-eslint supported rules
@@ -108,6 +106,10 @@ module.exports = {
      * Jest
      */
     {
+      /**
+       * plugin:jest/recommended: eslint-plugin-jest 추천 rule set
+       * react-app/jest: jest 규칙 설정을 위한 eslint-config-react-app 확장
+       */
       extends: ['plugin:jest/recommended', 'react-app/jest'],
       files: ['*.spec.js', '*.spec.ts', '*.test.js', '*.test.ts'],
     },
