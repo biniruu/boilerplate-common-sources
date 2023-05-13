@@ -21,5 +21,8 @@
   "homepage": "https://github.com/biniruu/setting-up-prettier-eslint#readme",
   "devDependencies": {
     "jsdoc": "^4.0.2"
+  },
+  "dependencies": {
+    "recoil": "^0.7.7"
   }
 }
