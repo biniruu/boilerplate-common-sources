@@ -1,6 +1,9 @@
 {
   "name": "react-typescript",
   "version": "0.1.0",
+  "description": "typescript starter",
+  "author": "biniruu",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
