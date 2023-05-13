@@ -48,7 +48,6 @@
 - [@craco/craco](https://www.npmjs.com/package/@craco/craco): CRA로 리액트를 설치했을 때 webpack 설정 지원
 - [@types/jest](https://www.npmjs.com/package/@types/jest): jest의 타입 정의와 hint 제공
 - [@types/lodash-es](https://www.npmjs.com/package/@types/lodash-es): lodash 타입 제공
-- [@types/postcss-preset-env](https://www.npmjs.com/package/@types/postcss-preset-env): typescript 환경에서 postcss-preset-env를 사용할 때 필요한 타입 정의
 - [@types/react-test-renderer](https://www.npmjs.com/package/@types/react-test-renderer): react-test-renderer 타입 제공
 - [@types/styled-components](https://www.npmjs.com/package/@types/styled-components): styled-components 타입 제공
 - [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin): typescript 관련 lint 규칙 제공
@@ -119,10 +118,18 @@
 ❌ deprecate 되었어요.
 
 - @stylelint/postcss-css-in-js
-- babel-eslint : @babel/eslint-parser로 대체
-- dart-sass : sass로 대체
-- eslint-loader : eslint-webpack-plugin으로 대체
-- node-sass : dart-sass로 대체
+- @types/postcss-preset-env: postcss-preset-env가 자체적으로 타입 정의 제공
+- babel-eslint: @babel/eslint-parser로 대체
+- dart-sass: sass로 대체
+- eslint-loader: eslint-webpack-plugin으로 대체
+- node-sass: dart-sass로 대체
+```
+
+```text
+💁🏻 typescript를 사용한다면 아래 패키지는 필요하지 않아요.
+
+- @babel/eslint-parser: babel-eslint
+- @babel/preset-react: "This experimental syntax requires enabling one of the following parser plugin(s): 'jsx, flow, typescript'" 에러 해결을 위해 필요[관련 글](https://ffan0811.medium.com/error-debugging-this-experimental-syntax-requires-enabling-one-of-the-following-parser-plugin-s-22946599a0a4)
 ```
 
 <br>

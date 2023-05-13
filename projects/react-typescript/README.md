@@ -62,7 +62,7 @@ yarn add -D @types/lodash-es
 
 # PostCSS
 
-yarn add -D @types/postcss-preset-env postcss-cli postcss-html postcss-syntax postcss-url
+yarn add -D postcss-cli postcss-html postcss-syntax postcss-url
 
 # React
 
@@ -130,10 +130,9 @@ yarn add -D prettier-plugin-tailwindcss tailwindcss
 ```
 
 ```text
-💁🏻 typescript를 사용한다면 아래 패키지는 필요하지 않아요.
+💁🏻‍♂️ postcss-preset-env를 설치했다면 링크에 정리된 postcss 플러그인은 별도로 설치하지 않아도 돼요.
 
-- @babel/eslint-parser : babel-eslint
-- @babel/preset-react : "This experimental syntax requires enabling one of the following parser plugin(s): 'jsx, flow, typescript'" 에러 해결을 위해 필요[관련 글](https://ffan0811.medium.com/error-debugging-this-experimental-syntax-requires-enabling-one-of-the-following-parser-plugin-s-22946599a0a4)
+[postcss plugins](https://github.com/csstools/postcss-plugins/tree/main/plugins)
 ```
 
 <br>

@@ -66,7 +66,7 @@ yarn add -D @types/lodash-es
 
 # PostCSS
 
-yarn add -D @types/postcss-preset-env postcss-cli postcss-flexbugs-fixes postcss-html postcss-normalize postcss-preset-env postcss-syntax postcss-url
+yarn add -D postcss-cli postcss-flexbugs-fixes postcss-html postcss-normalize postcss-preset-env postcss-syntax postcss-url
 
 # Next
 
@@ -112,9 +112,14 @@ yarn add -D prettier-plugin-tailwindcss
 - eslint-plugin-react
 - eslint-plugin-react-hooks
 - eslint-plugin-jsx-a11y
-- postcss-nested
 - tailwindcss
 - typescript
+```
+
+```text
+💁🏻‍♂️ postcss-preset-env를 설치했다면 링크에 정리된 postcss 플러그인은 별도로 설치하지 않아도 돼요.
+
+[postcss plugins](https://github.com/csstools/postcss-plugins/tree/main/plugins)
 ```
 
 <br>
