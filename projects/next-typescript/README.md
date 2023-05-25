@@ -8,7 +8,7 @@ Next.js + TypeScript 프로젝트를 시작할 때 도움이 되는 스타터예
 
 ## 🎬Creating Next.js project
 
-이곳에 있는 설정은 create next app으로 프로젝트를 설치할 때 선택해야 하는 모든 옵션에 yes를 선택했을 경우를 기준으로 작성했어요.
+이곳에 있는 설정은 기본 옵션으로 create next app을 설치한 경우를 기준으로 작성했어요. (Next.js 버전 13.4 이후)
 
 ```bash
 yarn create next-app <my-app-name> --typescript
@@ -35,7 +35,7 @@ yarn create next-app <my-app-name> --typescript
 ```bash
 # Eslint & Prettier
 
-yarn add -D @typescript-eslint/eslint-plugin eslint-config-next
+yarn add -D @typescript-eslint/eslint-plugin
 
 # Dotenv
 
@@ -91,6 +91,7 @@ yarn add -D prettier-plugin-tailwindcss
 - @typescript-eslint/typescript-estree
 - @typescript-eslint/utils
 - eslint
+- eslint-config-next
 - eslint-config-prettier
 - eslint-import-resolver-typescript
 - eslint-plugin-import
