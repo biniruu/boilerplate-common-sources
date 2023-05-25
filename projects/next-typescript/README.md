@@ -35,7 +35,7 @@ yarn create next-app <my-app-name> --typescript
 ```bash
 # Eslint & Prettier
 
-yarn add -D @typescript-eslint/eslint-plugin
+yarn add -D @typescript-eslint/eslint-plugin eslint-config-prettier eslint-plugin-prettier prettier
 
 # Dotenv
 
@@ -92,10 +92,8 @@ yarn add -D prettier-plugin-tailwindcss
 - @typescript-eslint/utils
 - eslint
 - eslint-config-next
-- eslint-config-prettier
 - eslint-import-resolver-typescript
 - eslint-plugin-import
-- eslint-plugin-prettier
 - eslint-plugin-react
 - eslint-plugin-react-hooks
 - eslint-plugin-jsx-a11y

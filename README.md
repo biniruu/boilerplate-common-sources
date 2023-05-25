@@ -1,5 +1,7 @@
 # Starter kit for client side development environment
 
+> ⚠️ 이 레포지토리는 현재 monorepo로 구성되어 있어요. 그런데 새 프로젝트를 시작할 때 이 구성이 빠른 프로젝트 설정을 방해해서 추후에 multi-repo로 변경할 예정이에요.
+
 프로젝트를 시작할 때 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요. 패키지, 설정 파일 등을 프로젝트에 맞게 골라 설치할 수 있어요. 각 프로젝트별로 자세한 설정 방법을 확인하려면 [projects](https://github.com/biniruu/starter-kit-frontend/tree/main/projects/) 폴더로 이동하거나, [Creating a project](https://github.com/biniruu/starter-kit-frontend#creating-a-project)에 있는 프로젝트를 클릭하세요.
 
 > 이곳은 Yarn Workspaces로 제작한 Monorepo 환경이에요. 대부분의 설정 파일은 최상위 폴더에 있어요.
