@@ -6,7 +6,7 @@
 module.exports = {
   env: { browser: true, es6: true, node: true },
   /**
-   * extends
+   * Extends
    *
    * eslint:recommended: eslint 추천 rule set
    * plugin:import/recommended: eslint-plugin-import 추천 rule set
@@ -28,12 +28,9 @@ module.exports = {
     'react-app',
   ],
   overrides: [
-    /**
-     * Typescript
-     */
     {
       /**
-       * extends
+       * Typescript
        *
        * plugin:import/typescript: eslint-plugin-import 플러그인
        * plugin:@typescript-eslint/recommended: 타입스크립트 추천 룰셋
@@ -54,7 +51,7 @@ module.exports = {
       },
       rules: {
         /**
-         * typescript-eslint supported rules
+         * Typescript-eslint supported rules
          * {@link https://typescript-eslint.io/rules/}
          *
          * @typescript-eslint/ban-ts-comment: 설명을 추가하는 조건으로 @ts-expect-error, @ts-ignore, @ts-nocheck, @ts-check 주석을 허용
@@ -94,7 +91,7 @@ module.exports = {
           { anonymous: 'always', named: 'never', asyncArrow: 'always' },
         ],
         /**
-         * eslint-config-prettier options
+         * Eslint-config-prettier options
          * {@link https://github.com/prettier/eslint-plugin-prettier#options}
          *
          * prettier: 타입스크립트에서는 알 수 없는 이유로 에러를 발생시키는 경우가 잦아 off로 설정해 두었다.
@@ -102,11 +99,10 @@ module.exports = {
         'prettier/prettier': 'off',
       },
     },
-    /**
-     * Jest
-     */
     {
       /**
+       * Jest
+       *
        * plugin:jest/recommended: eslint-plugin-jest 추천 rule set
        * react-app/jest: jest 규칙 설정을 위한 eslint-config-react-app 확장
        */
@@ -193,7 +189,7 @@ module.exports = {
     ],
     'space-before-function-paren': ['warn', { anonymous: 'always', named: 'never', asyncArrow: 'always' }],
     /**
-     * eslint-config-prettier options
+     * Eslint-config-prettier options
      * {@link https://github.com/prettier/eslint-plugin-prettier#options}
      *
      * 공식 문서에서는 옵션 설정을 추천하지 않는다. prettier-vscode 확장 프로그램이 .prettierrc 파일을 읽고 이곳에 있는 옵션은 무시하는데, 이 때문에 예상치 못한 문제가 발생할 수도 있기 때문.
@@ -202,7 +198,7 @@ module.exports = {
      */
     'prettier/prettier': 'warn',
     /**
-     * eslint-plugin-import rules
+     * Eslint-plugin-import rules
      * {@link https://github.com/import-js/eslint-plugin-import#rules}
      *
      * no-unresolved: import한 파일/모듈이 unresolved 되는 일이 없도록 방지
@@ -218,7 +214,7 @@ module.exports = {
       },
     ],
     /**
-     * eslint-plugin-jsx-a11y supported rules
+     * Eslint-plugin-jsx-a11y supported rules
      * {@link https://github.com/jsx-eslint/eslint-plugin-jsx-a11y#supported-rules}
      *
      * label-has-associated-control: 기본 html 태그가 아닌 custom component에서 웹 접근성 관련 에러 발생 방지
@@ -251,7 +247,7 @@ module.exports = {
       },
     ],
     /**
-     * eslint-plugin-react rules
+     * Eslint-plugin-react rules
      * {@link https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules}
      *
      * destructuring-assignment: state, prop 등에 구조분해 할당 적용
@@ -299,7 +295,7 @@ module.exports = {
   },
   settings: {
     /**
-     * eslint-plugin-import resolvers
+     * Eslint-plugin-import resolvers
      * {@link https://github.com/import-js/eslint-plugin-import#resolvers}
      *
      * resolver.node.extensions: react 사용 시 활성화 필요. jsx를 import할 때 import/no-unresolved 에러가 발생하지 않도록 함
@@ -310,7 +306,7 @@ module.exports = {
       },
     },
     /**
-     * eslint-plugin-react configuration
+     * Eslint-plugin-react configuration
      * {@link https://github.com/jsx-eslint/eslint-plugin-react#configuration-new-eslintconfigjs}
      *
      * react.version: eslint-plugin-react가 리액트 버전 자동 탐지
