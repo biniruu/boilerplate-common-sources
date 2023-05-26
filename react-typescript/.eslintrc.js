@@ -9,7 +9,6 @@ module.exports = {
    * Extends
    *
    * eslint:recommended: eslint 추천 rule set
-   * next/core-web-vitals: create next app으로 프로젝트 시작 시 기본 설정
    * plugin:@typescript-eslint/recommended: 타입스크립트 추천 룰셋
    * plugin:@typescript-eslint/recommended-requiring-type-checking
    * plugin:import/recommended: eslint-plugin-import 추천 rule set
@@ -23,7 +22,6 @@ module.exports = {
    */
   extends: [
     'eslint:recommended',
-    'next/core-web-vitals',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:import/recommended',
