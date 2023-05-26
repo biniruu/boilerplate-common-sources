@@ -172,7 +172,7 @@
     // "terminal.ansiWhite": "#c7c7c7",
     // "terminal.ansiYellow": "#f3f89d"
   }, // vscode 레이아웃 색상
-  "workbench.colorTheme": "Default Dark+ Experimental",
+  "workbench.colorTheme": "Default Dark+",
   "workbench.editor.decorations.colors": false,
   "workbench.editorAssociations": {
     "git-rebase-todo": "gitlens.rebase" // git rebase -i 실행할 때 띄우는 ui 화면

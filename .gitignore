@@ -1,16 +1,19 @@
-# Created by https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,react,vuejs,dotenv,nextjs,nuxtjs,windows,intellij,webstorm,visualstudiocode,gatsby,wordpress
-# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,yarn,macos,react,vuejs,dotenv,nextjs,nuxtjs,windows,intellij,webstorm,visualstudiocode,gatsby,wordpress
+### VisualStudioCode ###
+# You should use the following for VS Code
+# When you need to reset this file, use this instead
+.vscode/*
+!.vscode/css_custom_data.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Created by https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,react,dotenv,windows,intellij,webstorm,visualstudiocode,nextjs
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,yarn,macos,react,dotenv,windows,intellij,webstorm,visualstudiocode,nextjs
 
 ### dotenv ###
 .env
-
-### Gatsby ###
-node_modules/
-
-.cache/
-public
-
-src/gatsby-types.d.ts
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -246,6 +249,7 @@ bower_components
 build/Release
 
 # Dependency directories
+node_modules/
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
@@ -296,6 +300,7 @@ out
 dist
 
 # Gatsby files
+.cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
@@ -340,11 +345,6 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
-### Nuxtjs ###
-# Nuxt build
-
-# Nuxt generate
-
 ### react ###
 .DS_*
 **/*.backup.*
@@ -358,14 +358,6 @@ psd
 thumb
 sketch
 
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
-
 # Local History for Visual Studio Code
 .history/
 
@@ -376,13 +368,6 @@ sketch
 # Ignore all local history of files
 .history
 .ionide
-
-### Vuejs ###
-# Recommended template: Node.gitignore
-
-dist/
-npm-debug.log
-yarn-error.log
 
 ### WebStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -485,51 +470,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-### WordPress ###
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
-/wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
-
-# Configuration
-wp-config.php
-
-# Example themes
-/wp-content/themes/twenty*/
-
-# Example plugin
-/wp-content/plugins/hello.php
-
-# Uploads
-/wp-content/uploads/
-
-# Log files
-
-# htaccess
-/.htaccess
-
-# All plugins
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
-
-# All themes
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
-
-
 ### yarn ###
 # https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
 
@@ -547,4 +487,4 @@ wp-config.php
 # and uncomment the following lines
 # .pnp.*
 
-# End of https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,react,vuejs,dotenv,nextjs,nuxtjs,windows,intellij,webstorm,visualstudiocode,gatsby,wordpress
+# End of https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,react,dotenv,windows,intellij,webstorm,visualstudiocode,nextjs
