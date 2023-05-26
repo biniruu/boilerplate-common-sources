@@ -144,6 +144,7 @@ VS Code의 설정에서 아래 옵션을 변경해주세요.
 lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익스텐션이에요.
 
 - `ESLint` (dbaeumer.vscode-eslint)
+- `markdownlint` (DavidAnson.vscode-markdownlint)
 - `Prettier - Code formatter` (esbenp.prettier-vscode)
 - `Stylelint` (stylelint.vscode-stylelint)
 
@@ -183,7 +184,6 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 - `Live Share` (ms-vsliveshare.vsliveshare)
 - `Markdown All in One` (yzhang.markdown-all-in-one)
 - `Markdown Preview Enhanced` (shd101wyy.markdown-preview-enhanced)
-- `markdownlint` (DavidAnson.vscode-markdownlint)
 - `Material Icon Theme` (PKief.material-icon-theme)
 - `npm Intellisense` (christian-kohler.npm-intellisense)
 - `Path Intellisense` (christian-kohler.path-intellisense)
@@ -227,4 +227,10 @@ yarn add -D eslint-plugin-nuxt
 # Vue.js
 
 yarn add -D eslint-plugin-vue
+```
+
+```text
+💁🏻‍♀️ vs code에서는 markdownlint 패키지를 설치하지 않아도 기능을 사용할 수 있어요.
+
+vs code 설정에서 editor.codeActionsOnSave > source.fixAll.markdownlint를 true로 설정하면 .markdownlint 파일을 설정하는 것만으로 사용할 수 있어요.
 ```
