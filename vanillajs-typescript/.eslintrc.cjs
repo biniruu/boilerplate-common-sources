@@ -36,12 +36,11 @@ module.exports = {
       files: ['*.spec.js', '*.spec.ts', '*.test.js', '*.test.ts'],
     },
   ],
-  parser: '@babel/eslint-parser',
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaFeatures: { jsx: true }, // JSX 파싱을 위해 필요
-    ecmaVersion: 'latest',
-    requireConfigFile: false, // "no babel config file detected for ..." 에러 해결을 위해 필요
-    sourceType: 'module', // 모듈 시스템 사용 시 필요
+    project: [
+      './tsconfig.json', // parser: @typescript-eslint/parser를 활성화 하기 위해 꼭 필요
+    ],
   },
   root: true, // 현재 설정 파일이 root임을 명시하는 옵션. true로 설정하면 상위 설정 파일 찾기를 여기서 멈춘다.
   rules: {
