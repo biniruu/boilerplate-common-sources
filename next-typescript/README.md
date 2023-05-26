@@ -16,16 +16,6 @@ yarn create next-app <my-app-name> --typescript
 
 <br>
 
-## 🛒Getting configuration files
-
-이곳은 Yarn Workspaces로 제작한 Monorepo 환경이기 때문에 대부분의 설정 파일이 최상위 폴더에 있어요. 만일 최상위 폴더에 있는 설정 파일과 동일한 파일이 이곳에도 있을 경우에는 (필요하다면) 두 파일을 조합해서 사용하세요.
-
-<br>
-
-[설정 파일 가지러 가기](https://github.com/biniruu/starter-kit-frontend)
-
-<br>
-
 ## 📥Installing packages
 
 이곳에 있는 명령어를 사용해 패키지를 설치하세요.
@@ -110,11 +100,3 @@ yarn add -D prettier-plugin-tailwindcss
 ## 📋Detailing packages
 
 각 패키지에 대한 설명은 최상위 폴더에 있는 [README.md](https://github.com/biniruu/starter-kit-frontend#detailing-packages)에서 확인할 수 있어요.
-
-<br>
-
-## 💡Furthermore
-
-이곳에서 더 많은 설정과 패키지를 찾아보세요.
-
-[Starter kit for client side development environment](https://github.com/biniruu/starter-kit-frontend)
