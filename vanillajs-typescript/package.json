@@ -4,10 +4,14 @@
   "description": "typescript starter",
   "author": "biniruu",
   "license": "MIT",
+  "type": "module",
   "private": "true",
   "scripts": {
     "sync-package-version": "npx syncyarnlock -ks",
-    "update-packages": "yarn upgrade --latest && yarn sync-package-version"
+    "update-packages": "yarn upgrade --latest && yarn sync-package-version",
+    "start": "npx ts-node --esm index",
+    "lint:eslint": "npx eslint .",
+    "lint:stylelint": "npx stylelint ."
   },
   "dependencies": {
     "lodash-es": "^4.17.21"
