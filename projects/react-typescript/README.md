@@ -53,7 +53,7 @@ yarn add env-cmd
 
 # Jest
 
-yarn add -D @types/jest eslint-plugin-jest ts-jest
+yarn add -D @types/jest eslint-config-react-app eslint-plugin-jest ts-jest
 
 # Lodash
 
