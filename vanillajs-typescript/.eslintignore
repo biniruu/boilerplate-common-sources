@@ -1,13 +1,9 @@
 # files
 **/.eslintrc.cjs
-**/.eslintrc.js
-**/.stylelintrc.js
-**/craco.config.js
+**/.prettierrc.cjs
+**/.stylelintrc.cjs
 **/jest.config.js
-**/postcss.config.js
-**/tailwind.config.js
 **/tsconfig.json
-**/next.config.js
 
 # paths
 **/node_modules/
