@@ -2,6 +2,13 @@
 
 프로젝트를 시작할 때 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요. 패키지, 설정 파일 등을 프로젝트 기술 스택에 맞게 골라 설치할 수 있어요.
 
+다음 프로젝트를 설정할 때 사용할 수 있어요.
+
+- [Next.js with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/next-typescript)
+- [React.js with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/react-typescript)
+- [Vanilla JS with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/vanillajs-typescript)
+- [Vanilla JS](https://github.com/biniruu/starter-kit-frontend/tree/main/vanillajs)
+
 <br>
 
 ## 📦What is in this starter
