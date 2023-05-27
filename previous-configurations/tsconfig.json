@@ -86,6 +86,8 @@
   },
   "include": [
     // "next-env.d.ts", // next 프로젝트 시 필요
+    "**/*.js",
+    "**/*.jsx",
     "**/*.ts",
     "**/*.tsx"
     // ".next/types/**/*.ts" // next + typescript 프로젝트 시 필요
