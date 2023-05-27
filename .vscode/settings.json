@@ -37,7 +37,8 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.definitionLinkOpensInPeek": true,
-  "editor.fontFamily": "D2Coding, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "'D2Coding ligature', D2Coding, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true, // ligature 폰트 사용. false로 설정하면 font family에 ligature 폰트를 추가해도 반영되지 않는다
   "editor.fontSize": 16,
   "editor.formatOnSave": true, // 저장할 때마다 포맷을 자동으로 교정
   "editor.hover.delay": 600,
