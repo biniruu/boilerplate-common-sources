@@ -1,4 +1,5 @@
 # files
+**/*.cjs
 **/*.js
 **/*.ts
 **/*.spec.js
