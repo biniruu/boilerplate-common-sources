@@ -8,17 +8,9 @@
 
 이곳에는 다음 설정 파일이 포함되어 있어요.
 
-> 설정 파일은 프로젝트 환경에 맞춰 수정해야 할 수도 있어요.
+> 이곳에 올린 .gitignore는 [Toptal](https://www.toptal.com/developers/gitignore)이라는 사이트에서 생성한 파일이에요. 위쪽에 있는 `# Edit at ...` 부분 링크를 클릭한 후에 원하는 기술 스택을 변경하여 사용하세요.
 
 `.babelrc` `.eslintignore` `.eslintrc.js` `.github/ISSUE_TEMPLATE.md` `.github/PULL_REQUEST_TEMPLATE.md` `.gitignore` `.markdownlint.json` `.prettierignore` `.prettierrc.js` `craco.config.js` `jest.config.js` `next.config.js` `postcss.config.js` `.stylelintignore` `.stylelintrc.js` `tailwind.config.js` `tsconfig.js`
-
-<br>
-
-### If `.gitignore` needs to be modified
-
-이곳에 올린 `.gitignore`는 [Toptal](https://www.toptal.com/developers/gitignore) 이라는 사이트에서 생성한 파일이에요. 위쪽에 있는 `# Edit at ...` 부분 링크를 클릭한 후에 원하는 기술 스택을 변경하여 사용하세요.
-
-> ⚠️ vs code를 사용할 때는 가장 위쪽에 있는 ### VisualStudioCode ### 항목을 상황에 맞춰 수정한 다음에 사용해 주세요.
 
 <br>
 
@@ -101,7 +93,8 @@
 - [@vue/server-test-utils](https://www.npmjs.com/package/@vue/server-test-utils): Vue.js 환경에서 단위 테스트를 하기 위한 공식(Official) 라이브러리
 - [@vue/test-utils](https://www.npmjs.com/package/@vue/test-utils): Vue.js 환경에서 단위 테스트를 하기 위한 공식 라이브러리.
 
-```text
+<br>
+
 ❌ deprecate 되었어요.
 
 - @stylelint/postcss-css-in-js
@@ -110,14 +103,13 @@
 - dart-sass: sass로 대체
 - eslint-loader: eslint-webpack-plugin으로 대체
 - node-sass: dart-sass로 대체
-```
 
-```text
+<br>
+
 💁🏻 typescript를 사용한다면 아래 패키지는 필요하지 않아요.
 
-- @babel/eslint-parser: babel-eslint
-- @babel/preset-react: "This experimental syntax requires enabling one of the following parser plugin(s): 'jsx, flow, typescript'" 에러 해결을 위해 필요[관련 글](https://ffan0811.medium.com/error-debugging-this-experimental-syntax-requires-enabling-one-of-the-following-parser-plugin-s-22946599a0a4)
-```
+- @babel/eslint-parser
+- @babel/preset-react
 
 <br>
 
@@ -229,8 +221,8 @@ yarn add -D eslint-plugin-nuxt
 yarn add -D eslint-plugin-vue
 ```
 
-```text
+<br>
+
 💁🏻‍♀️ vs code에서는 markdownlint 패키지를 설치하지 않아도 기능을 사용할 수 있어요.
 
-vs code 설정에서 editor.codeActionsOnSave > source.fixAll.markdownlint를 true로 설정하면 .markdownlint 파일을 설정하는 것만으로 사용할 수 있어요.
-```
+vs code 설정에서 editor.codeActionsOnSave > source.fixAll.markdownlint를 true로 설정하면 .markdownlint 파일을 설정하는 것만으로 markdownlint 기능을 사용할 수 있어요.

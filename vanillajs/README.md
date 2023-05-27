@@ -1,6 +1,6 @@
 # Vanilla JS Starter
 
-Vanilla JS로 프로젝트를 시작할 때 필요한 스타터예요.
+Vanilla JS 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요.
 
 <br>
 
@@ -55,11 +55,11 @@ yarn add -D @types/node eslint-import-resolver-typescript typescript
 yarn add -D source-map-loader style-loader
 ```
 
-```text
+<br>
+
 💁🏻‍♀️ postcss-preset-env를 설치했다면 링크에 정리된 postcss 플러그인은 별도로 설치하지 않아도 돼요.
 
 [postcss plugins](https://github.com/csstools/postcss-plugins/tree/main/plugins)
-```
 
 <br>
 

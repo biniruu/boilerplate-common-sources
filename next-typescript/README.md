@@ -1,6 +1,6 @@
 # Next.js with TypeScript Starter
 
-Next.js + TypeScript 프로젝트를 시작할 때 도움이 되는 스타터예요. Create Next App을 사용해 Next.js 프로젝트를 설치한 다음, 필요한 패키지를 추가해서 사용할 수 있어요.
+Next.js + TypeScript 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요. Create Next App을 사용해 Next.js 프로젝트를 설치한 다음, 필요한 패키지를 추가해서 사용하세요.
 
 <br>
 
@@ -63,12 +63,13 @@ yarn add -D @types/styled-components
 
 yarn add -D stylelint stylelint-config-prettier stylelint-config-standard stylelint-order
 
-# Tailwind css
+# Tailwind CSS
 
 yarn add -D prettier-plugin-tailwindcss
 ```
 
-```text
+<br>
+
 💁🏻‍♀️ 아래 패키지는 Create Next App에 포함돼 있어서 별도로 설치하지 않아도 돼요.
 
 - @types/node
@@ -87,13 +88,12 @@ yarn add -D prettier-plugin-tailwindcss
 - eslint-plugin-jsx-a11y
 - tailwindcss
 - typescript
-```
 
-```text
+<br>
+
 💁🏻‍♂️ postcss-preset-env를 설치했다면 링크에 정리된 postcss 플러그인은 별도로 설치하지 않아도 돼요.
 
 [postcss plugins](https://github.com/csstools/postcss-plugins/tree/main/plugins)
-```
 
 <br>
 
