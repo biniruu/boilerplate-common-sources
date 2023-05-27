@@ -71,7 +71,7 @@
     "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file.
     "resolveJsonModule": true
   },
-  "include": ["**/*.ts"],
+  "include": ["**/*.cjs", "**/*.js", "**/*.ts"],
   "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
   // "extends": "" // 상속 받으려는 tsconfig 파일 경로 입력
 }
