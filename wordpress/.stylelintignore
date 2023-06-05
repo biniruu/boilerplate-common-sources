@@ -1,0 +1,5 @@
+# files
+**/*.js
+
+# paths
+**/node_modules/
