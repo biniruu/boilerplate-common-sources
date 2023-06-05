@@ -26,7 +26,6 @@ module.exports = {
      * length-zero-no-unit: 값이 0일 때 단위 사용 금지 여부
      * no-descending-specificity: 명시도가 높은 선택자를 낮은 선택자보다 먼저 쓸 수 없음 (이 옵션을 비활성할 수 있는 방법이 없음)
      * number-max-precision: 소수점 자릿수 설정
-     * number-no-trailing-zeros: 소수점 이하를 0으로 끝낼 수 없음
      * rule-empty-line-before: rule 앞에 한 줄 여백 강제 여부
      * selector-attribute-quotes: 셀렉터 속성에서 따옴표 사용 여부 ('never'로 하면 "Unclosed string (CssSyntaxError)" 에러 발생. 아마도 eslint의 rule과 충돌하는 듯)
      * selector-nested-pattern: nested 문법 안에서 사용할 패턴 (regex 또는 string)
@@ -61,7 +60,6 @@ module.exports = {
     'length-zero-no-unit': true,
     'no-descending-specificity': [true, { ignore: ['selectors-within-list'] }],
     'number-max-precision': 10,
-    'number-no-trailing-zeros': true,
     'rule-empty-line-before': ['always-multi-line', { except: ['after-single-line-comment', 'first-nested'] }],
     'selector-attribute-quotes': 'always',
     'selector-nested-pattern': '^&?',
