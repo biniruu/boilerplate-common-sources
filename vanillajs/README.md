@@ -11,7 +11,7 @@ Vanilla JS 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주�
 ```bash
 # Babel
 
-yarn add -D @babel/core
+yarn add -D @babel/core @babel/node @babel/preset-env
 
 # Eslint & Prettier
 
