@@ -114,18 +114,18 @@ module.exports = {
      * Typescript-eslint supported rules
      * {@link https://typescript-eslint.io/rules/}
      *
-     * @typescript-eslint/ban-ts-comment: 설명을 추가하는 조건으로 @ts-expect-error, @ts-ignore, @ts-nocheck, @ts-check 주석을 허용
-     * @typescript-eslint/no-explicit-any
-     * @typescript-eslint/no-floating-promises
-     * @typescript-eslint/no-unsafe-argument
-     * @typescript-eslint/no-unsafe-assignment: any 타입 사용 시 알림을 띄움
-     * @typescript-eslint/no-unsafe-call
-     * @typescript-eslint/no-unsafe-member-access
-     * @typescript-eslint/no-unused-vars: no-unused-vars와 동일. no-unused-vars를 비활성화 한 후에 사용할 것
-     * @typescript-eslint/no-var-requires
-     * @typescript-eslint/restrict-plus-operands
-     * @typescript-eslint/restrict-template-expressions
-     * @typescript-eslint/space-before-function-paren: *공식 문서에서는 사용하지 말 것을 적극 권고한다* space-before-function-paren과 동일. space-before-function-paren을 비활성화 한 후에 사용할 것
+     * ban-ts-comment: 설명을 추가하는 조건으로 @ts-expect-error, @ts-ignore, @ts-nocheck, @ts-check 주석을 허용
+     * no-explicit-any
+     * no-floating-promises
+     * no-unsafe-argument
+     * no-unsafe-assignment: any 타입 사용 시 알림을 띄움
+     * no-unsafe-call
+     * no-unsafe-member-access
+     * no-unused-vars: no-unused-vars와 동일. no-unused-vars를 비활성화 한 후에 사용할 것
+     * no-var-requires
+     * restrict-plus-operands
+     * restrict-template-expressions
+     * space-before-function-paren: *공식 문서에서는 사용하지 말 것을 적극 권고한다* space-before-function-paren과 동일. space-before-function-paren을 비활성화 한 후에 사용할 것
      */
     '@typescript-eslint/ban-ts-comment': [
       'error',
