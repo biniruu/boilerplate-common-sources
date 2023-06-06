@@ -6,8 +6,10 @@
 
 - [Next.js with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/next-typescript)
 - [React.js with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/react-typescript)
-- [Vanilla JS with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/vanillajs-typescript)
+- [TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/typescript)
 - [Vanilla JS](https://github.com/biniruu/starter-kit-frontend/tree/main/vanillajs)
+- [Vanilla JS with Express](https://github.com/biniruu/starter-kit-frontend/tree/main/vanillajs-express)
+- [Wordpress](https://github.com/biniruu/starter-kit-frontend/tree/main/wordpress)
 
 <br>
 

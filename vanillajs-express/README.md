@@ -1,6 +1,6 @@
-# Vanilla JS Starter
+# Vanilla JS with Express Starter
 
-Vanilla JS 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요.
+Vanilla JS + Express 풀스택 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요. 아직 백엔드쪽은 매우 단순한 설정만 해 놓은 상태예요.
 
 <br>
 
@@ -66,7 +66,7 @@ yarn add -D source-map-loader style-loader
 
 <br>
 
-💁🏻‍♀️ postcss-preset-env를 설치했다면 링크에 정리된 postcss 플러그인은 별도로 설치하지 않아도 돼요.
+💁🏻‍♀️ postcss-preset-env를 설치했다면 아래 링크에 정리된 postcss 플러그인은 별도로 설치하지 않아도 돼요.
 
 [postcss plugins](https://github.com/csstools/postcss-plugins/tree/main/plugins)
 
