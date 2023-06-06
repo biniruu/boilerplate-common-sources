@@ -33,6 +33,7 @@
 - [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env) : Babel의 지원 스펙을 지정
 - [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react) : "This experimental syntax requires enabling one of the following parser plugin(s) : 'jsx, flow, typescript'" 에러 해결을 위해 필요 ([관련 글 보기](https://ffan0811.medium.com/error-debugging-this-experimental-syntax-requires-enabling-one-of-the-following-parser-plugin-s-22946599a0a4))
 - [@craco/craco](https://www.npmjs.com/package/@craco/craco) : CRA로 리액트를 설치했을 때 webpack 설정 지원
+- [@prettier/plugin-pug](https://www.npmjs.com/package/@prettier/plugin-pug) : pug 파일 code formatting
 - [@types/jest](https://www.npmjs.com/package/@types/jest) : jest의 타입 정의와 hint 제공
 - [@types/lodash-es](https://www.npmjs.com/package/@types/lodash-es) : lodash 타입 제공
 - [@types/react-test-renderer](https://www.npmjs.com/package/@types/react-test-renderer) : react-test-renderer 타입 제공
@@ -58,6 +59,7 @@
 - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) : jsx 내에서 웹 접근성 관련 피드백 제공
 - [eslint-plugin-mocha](https://www.npmjs.com/package/eslint-plugin-mocha)
 - [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier) : prettier에서 인식하는 코드상의 포맷 오류를 eslint 오류로 출력
+- [eslint-plugin-pug](https://www.npmjs.com/package/eslint-plugin-pug) : pug 파일 linting
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) : react 규칙 관련 피드백 제공
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) : react hooks 규칙 관련 피드백 제공
 - [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)
@@ -81,6 +83,7 @@
 - [postcss-preset-env](https://www.npmjs.com/package/postcss-preset-env) : 주요 postcss 플러그인을 모은 plugin pack ([설치 플러그인 목록 확인](https://www.libtrends.info/npm-compare/autoprefixer-vs-postcss-nested-vs-postcss-nesting-vs-postcss-preset-env-vs-precss))
 - [postcss-syntax](https://www.npmjs.com/package/postcss-syntax) : 파일 확장자나 소스에 따라 postcss가 적용할 플러그인을 자동으로 선택
 - [postcss-scss](https://www.npmjs.com/package/postcss-scss) : scss를 css로 트랜스파일
+- [pug](https://www.npmjs.com/package/pug) : haml 템플릿 엔진. [Haml](https://haml.info)
 - [prettier](https://www.npmjs.com/package/prettier)
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom) : 라우터 지원
 - [react-test-renderer](https://www.npmjs.com/package/react-test-renderer) : 테스트 시 reactDOM의 스냅샷 생성
