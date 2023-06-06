@@ -126,11 +126,8 @@ module.exports = {
     'import/order': [
       'warn',
       {
-        alphabetize: {
-          caseInsensitive: true,
-          order: 'asc',
-          // orderImportKind: 'asc', // 알 수 없는 이유로 사용 불가
-        },
+        alphabetize: { caseInsensitive: true, order: 'asc', orderImportKind: 'asc' },
+        'newlines-between': 'always',
       },
     ],
     /**

@@ -182,6 +182,7 @@ module.exports = {
       'warn',
       {
         alphabetize: { caseInsensitive: true, order: 'asc', orderImportKind: 'asc' },
+        'newlines-between': 'always',
       },
     ],
     /**
