@@ -26,6 +26,11 @@ yarn add -D @types/lodash-es
 
 yarn add -D postcss postcss-html postcss-jsx postcss-loader postcss-nesting postcss-preset-env postcss-scss postcss-syntax postcss-url
 
+# Pug
+
+yarn add pug
+yarn add -D eslint-plugin-pug @prettier/plugin-pug
+
 # SASS (SCSS)
 
 yarn add -D sass sass-loader stylelint-config-standard-scss stylelint-scss
