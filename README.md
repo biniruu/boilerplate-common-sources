@@ -25,7 +25,7 @@
 
 이곳에 설치된 패키지가 각각 어떤 기능을 하는지 알아보세요.
 
-- [@babel/core](https://www.npmjs.com/package/@babel/core): @babel/eslint-parser 설치를 위해 필요
+- [@babel/core](https://www.npmjs.com/package/@babel/core): babel 사용을 위한 코어 패키지
 - [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser): babel-eslint
 - [@babel/plugin-transform-modules-commonjs](https://www.npmjs.com/package/@babel/plugin-transform-modules-commonjs): es2015 모듈을 commonJS로 변환
 - [@babel/plugin-transform-runtime](https://www.npmjs.com/package/@babel/plugin-transform-runtime): 전역 스코프를 오염시키지 않는 polyfill 지원
