@@ -46,10 +46,6 @@ yarn add -D stylelint stylelint-config-prettier stylelint-config-standard stylel
 
 yarn add tailwindcss
 
-# Typescript
-
-yarn add -D @types/node eslint-import-resolver-typescript typescript
-
 # Webpack
 
 yarn add -D source-map-loader style-loader
