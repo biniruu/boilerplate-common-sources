@@ -9,10 +9,6 @@ TypeScript 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주�
 이곳에 있는 명령어를 사용해 패키지를 설치하세요.
 
 ```bash
-# Babel
-
-yarn add -D @babel/eslint-parser @babel/preset-eslint-parser
-
 # Eslint & Prettier
 
 yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser @typescript-eslint/types @typescript-eslint/typescript-estree @typescript-eslint/utils eslint eslint-config-prettier eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-prettier eslint-webpack-plugin prettier
