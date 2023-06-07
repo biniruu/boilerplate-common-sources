@@ -4,26 +4,46 @@ Wordpress 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주는
 
 <br>
 
-## 📥Installing packages
+## 📥 Installing packages
 
 이곳에 있는 명령어를 사용해 패키지를 설치하세요.
 
 ```bash
-# Eslint & Prettier
+# Babel for ESLint
 
-yarn add -D @babel/eslint-parser eslint eslint-config-prettier eslint-plugin-prettier prettier
+yarn add -D @babel/eslint-parser
+
+# ESLint
+
+yarn add -D eslint
+
+# ESLint for Prettier
+
+yarn add -D eslint-config-prettier eslint-plugin-prettier
+
+# Prettier
+
+yarn add -D prettier
 
 # SASS (SCSS)
 
-yarn add -D sass sass-loader stylelint-config-standard-scss stylelint-scss
+yarn add -D sass sass-loader
 
 # Stylelint
 
-yarn add -D stylelint stylelint-config-prettier stylelint-config-standard stylelint-order
+yarn add -D stylelint stylelint-config-standard stylelint-order
+
+# Stylelint for Prettier
+
+yarn add -D stylelint-config-prettier
+
+# Stylelint for SCSS
+
+yarn add -D stylelint-config-standard-scss stylelint-scss
 ```
 
 <br>
 
-## 📋Detailing packages
+## 📋 Detailing packages
 
 각 패키지에 대한 설명은 최상위 폴더에 있는 [README.md](https://github.com/biniruu/starter-kit-frontend#detailing-packages)에서 확인할 수 있어요.

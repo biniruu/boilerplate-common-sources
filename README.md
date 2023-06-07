@@ -13,7 +13,7 @@
 
 <br>
 
-## 📦What is in this starter
+## 📦 What is in this starter
 
 이곳에는 다음 설정 파일이 포함되어 있어요.
 
@@ -23,7 +23,7 @@
 
 <br>
 
-## 📋Detailing packages
+## 📋 Detailing packages
 
 이곳에 설치된 패키지가 각각 어떤 기능을 하는지 알아보세요.
 
@@ -63,6 +63,7 @@
 - [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier) : prettier에서 인식하는 코드상의 포맷 오류를 eslint 오류로 출력
 - [eslint-plugin-pug](https://www.npmjs.com/package/eslint-plugin-pug) : pug 파일 linting
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) : react 규칙 관련 피드백 제공
+- [eslint-config-react-app](https://www.npmjs.com/package/eslint-config-react-app) : CRA에서 기본으로 사용하는 eslint 설정
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) : react hooks 규칙 관련 피드백 제공
 - [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)
 - [eslint-plugin-nuxt](https://www.npmjs.com/package/eslint-plugin-nuxt)
@@ -128,7 +129,7 @@
 
 <br>
 
-## 👍🏻Recommended packages
+## 👍🏻 Recommended packages
 
 여기서는 사용하지 않지만, 유용한 패키지예요.
 
@@ -137,7 +138,7 @@
 
 <br>
 
-## 📌Required options in VS Code
+## 📌 Required options in VS Code
 
 VS Code의 설정에서 아래 옵션을 변경해주세요.
 
@@ -146,7 +147,7 @@ VS Code의 설정에서 아래 옵션을 변경해주세요.
 
 <br>
 
-## 🧩Required extensions in VS Code
+## 🧩 Required extensions in VS Code
 
 lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익스텐션이에요.
 
@@ -157,7 +158,7 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 
 <br>
 
-## 🚀Recommanded extensions in VS Code
+## 🚀 Recommanded extensions in VS Code
 
 편의성을 높여주는 익스텐션이에요.
 
@@ -214,26 +215,46 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 
 <br>
 
-## 📥Installing packages
+## 📥 Installing packages
 
 이 스타터에 없는 프로젝트 또는 잘 사용하지 않는 도구를 사용할 때 참고해주세요.
 
 ```bash
+# Chai
+
+yarn add -D chai
+
+# ESLint for Chai
+
+yarn add -D eslint-plugin-chai-friendly
+
+# ESLint for Mocha
+
+yarn add -D eslint-plugin-mocha
+
+# ESLint for Nuxt.js
+
+yarn add -D eslint-plugin-nuxt
+
+# ESLint for Sinon
+
+yarn add -D eslint-config-sinon
+
+# ESLint for Vue.js
+
+yarn add -D eslint-plugin-vue
+
 # Markdownlint
 
 yarn add -D markdownlint
 
 # Mocha
 
-yarn add -D chai eslint-config-sinon eslint-plugin-chai-friendly eslint-plugin-mocha mocha sinon
+yarn add -D mocha
 
-# Nuxt.js
+# Sinon
 
-yarn add -D eslint-plugin-nuxt
-
-# Vue.js
-
-yarn add -D eslint-plugin-vue
+yarn add -D sinon
 ```
 
 <br>

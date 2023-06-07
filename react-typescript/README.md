@@ -4,7 +4,7 @@ React.js + TypeScript 프로젝트 환경 설정을 빠르게 할 수 있도록 
 
 <br>
 
-## 🎬Creating React.js project
+## 🎬 Creating React.js project
 
 ```bash
 yarn create react-app <my-app-name> --template typescript
@@ -28,36 +28,63 @@ create react app으로 react 설치한 다음 아래 설정을 삭제해주세�
 
 <br>
 
-## 📥Installing packages
+## 📥 Installing packages
 
 이곳에 있는 명령어를 사용해 패키지를 설치하세요.
 
 ```bash
-# Eslint & Prettier
+# Craco
 
-yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-plugin-prettier prettier
+yarn add @craco/craco
+
+# ESLint for Jest
+
+yarn add -D eslint-plugin-jest
+
+# ESLint for Prettier
+
+yarn add -D eslint-config-prettier eslint-plugin-prettier
+
+# ESLint for TypeScript
+
+yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 
 # Dotenv
 
 yarn add env-cmd
 
-# Jest
+# Jest for TypeScript
 
-yarn add -D @types/jest eslint-config-react-app eslint-plugin-jest ts-jest
+yarn add -D @types/jest ts-jest
 
 # Lodash
 
 yarn add lodash-es
+
+# Lodash for TypeScript
+
 yarn add -D @types/lodash-es
 
 # PostCSS
 
 yarn add -D postcss-cli postcss-html postcss-syntax postcss-url
 
+# Prettier
+
+yarn add -D prettier
+
+# Prettier for Tailwind CSS
+
+yarn add -D prettier-plugin-tailwindcss
+
 # React
 
-yarn add @craco/craco react-router-dom
-yarn add -D @types/react-test-renderer react-test-renderer
+yarn add react-router-dom
+yarn add -D react-test-renderer
+
+# React for Typescript
+
+yarn add -D @types/react-test-renderer
 
 # Recoil
 
@@ -65,7 +92,7 @@ yarn add recoil
 
 # SASS (SCSS)
 
-yarn add -D sass sass-loader stylelint-config-standard-scss stylelint-scss
+yarn add -D sass sass-loader
 
 # Styled-components
 
@@ -74,11 +101,15 @@ yarn add -D @types/styled-components
 
 # Stylelint
 
-yarn add -D stylelint stylelint-config-prettier stylelint-config-standard stylelint-order
+yarn add -D stylelint stylelint-config-standard stylelint-order
 
-# Tailwind CSS
+# Stylelint for Prettier
 
-yarn add -D prettier-plugin-tailwindcss tailwindcss
+yarn add -D stylelint-config-prettier
+
+# Stylelint for SCSS
+
+yarn add -D stylelint-config-standard-scss stylelint-scss
 ```
 
 <br>
@@ -95,6 +126,7 @@ yarn add -D prettier-plugin-tailwindcss tailwindcss
 - dotenv
 - dotenv-expand
 - eslint
+- eslint-config-react-app
 - eslint-import-resolver-typescript
 - eslint-plugin-import
 - eslint-plugin-react
@@ -127,7 +159,7 @@ yarn add -D prettier-plugin-tailwindcss tailwindcss
 
 <br>
 
-## 📋Detailing packages
+## 📋 Detailing packages
 
 각 패키지에 대한 설명은 최상위 폴더에 있는 [README.md](https://github.com/biniruu/starter-kit-frontend#detailing-packages)에서 확인할 수 있어요.
 
