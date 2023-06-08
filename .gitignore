@@ -1,6 +1,6 @@
 ### VisualStudioCode ###
-# You should use the following for VS Code
-# When you need to reset this file and keep using VS Code, use this instead
+# For VS Code, you should use the following code instead
+# When resetting this file, please make sure that the following is safe
 .vscode/*
 !.vscode/css_custom_data.json
 !.vscode/settings.json

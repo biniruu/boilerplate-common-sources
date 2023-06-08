@@ -1,14 +1,13 @@
 ### VisualStudioCode ###
-# You should use the following for VS Code
-# When you need to reset this file, use this instead
+# For VS Code, you should use the following code instead
+# When resetting this file, please make sure that the following is safe
 .vscode/*
 !.vscode/css_custom_data.json
 !.vscode/tasks.json
 !.vscode/launch.json
-!.vscode/*.code-snippets
 
-# Created by https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,react,dotenv,windows,intellij,webstorm,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,yarn,macos,react,dotenv,windows,intellij,webstorm,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,dotenv,windows,intellij,webstorm,visualstudiocode,react
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,yarn,macos,dotenv,windows,intellij,webstorm,visualstudiocode,react
 
 ### dotenv ###
 .env
@@ -455,4 +454,4 @@ $RECYCLE.BIN/
 # and uncomment the following lines
 # .pnp.*
 
-# End of https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,react,dotenv,windows,intellij,webstorm,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,dotenv,windows,intellij,webstorm,visualstudiocode,react
