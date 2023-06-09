@@ -122,7 +122,7 @@ module.exports = {
      * order : import 자동 정렬. warnOnUnassignedImports는 항상 default값(false)로 놔둘 것. true로 할 경우 import 정렬 관련 경고가 발생하는데, 이 문제는 import/order 또는 sort-import 설정만으로는 해결 불가
      */
     'import/no-unresolved': 'off',
-    'import/newline-after-import': ['warn', { considerComments: true }],
+    'import/newline-after-import': 'warn',
     'import/order': [
       'warn',
       {
