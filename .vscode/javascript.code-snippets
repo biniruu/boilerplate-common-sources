@@ -15,6 +15,25 @@
   // 	],
   // 	"description": "Log output to console"
   // }
+  //
+  // =========
+  // variable
+  // =========
+  "const variable": {
+    "scope": "javascript, typescript",
+    "prefix": "const",
+    "body": "const $1 = $2",
+    "description": "Add const variable"
+  },
+  "let variable": {
+    "scope": "javascript, typescript",
+    "prefix": "let",
+    "body": "let $1 = $2",
+    "description": "Add let variable"
+  },
+  // =========
+  // function
+  // =========
   "arrow function": {
     "scope": "javascript",
     "prefix": "arrFunc",
@@ -23,40 +42,47 @@
       "  $2",
       "}"
     ],
-    "description": "Arrow function"
+    "description": "Add arrow function"
   },
-  "arrow function in one line": {
+  "typed arrow function": {
+    "scope": "typescript",
+    "prefix": "arrFunc",
+    "body": [
+      "($1: ${2:any}): ${3:void} => {", //
+      "  $4",
+      "}"
+    ],
+    "description": "Add arrow function"
+  },
+  "arrow function (in a line)": {
     "scope": "javascript",
-    "prefix": "arrFuncInOne",
+    "prefix": "arrFuncOneLine",
     "body": "($1) => $2",
-    "description": "Arrow function"
+    "description": "Add one-liner arrow function"
   },
+  "typed arrow function (in a line)": {
+    "scope": "typescript",
+    "prefix": "arrFuncOneLine",
+    "body": "($1: ${2:any}): ${3:void} => $4",
+    "description": "Add one-liner arrow function"
+  },
+  // =======================
+  // function as a variable
+  // =======================
   "arrow function as a variable": {
     "scope": "javascript",
-    "prefix": "arrFuncAsVar",
+    "prefix": "arrVar",
     "body": [
       "const $1 = ($2) => {", //
       "  $3",
       "}"
     ],
-    "description": "Arrow function"
+    "description": "Add arrow function into const variable"
   },
-  "arrow function as a variable in one line": {
+  "arrow function as a variable (in a line)": {
     "scope": "javascript",
-    "prefix": "arrFuncAsVarInOne",
+    "prefix": "arrVarOneLine",
     "body": "const $1 = ($2) => $3",
-    "description": "Arrow function"
-  },
-  "const variable": {
-    "scope": "javascript, typescript",
-    "prefix": "const",
-    "body": "const $1 = $2",
-    "description": "variable"
-  },
-  "let variable": {
-    "scope": "javascript, typescript",
-    "prefix": "let",
-    "body": "let $1 = $2",
-    "description": "variable"
+    "description": "Add one-liner arrow function into const variable"
   }
 }
