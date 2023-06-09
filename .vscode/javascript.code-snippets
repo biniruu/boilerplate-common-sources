@@ -24,7 +24,7 @@
     "prefix": "arr",
     "body": [
       "($1) => {", //
-      "  $2",
+      "  $0",
       "}"
     ],
     "description": "Add arrow function"
@@ -33,8 +33,8 @@
     "scope": "typescript",
     "prefix": "arr",
     "body": [
-      "($1: ${2:any}): ${3:void} => {", //
-      "  $4",
+      "($1: ${2:any}) => {", //
+      "  $0",
       "}"
     ],
     "description": "Add arrow function"
