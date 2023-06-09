@@ -158,7 +158,7 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 
 <br>
 
-## 🚀 Recommanded extensions in VS Code
+## 🚀 Recommended extensions in VS Code
 
 편의성을 높여주는 익스텐션이에요.
 
