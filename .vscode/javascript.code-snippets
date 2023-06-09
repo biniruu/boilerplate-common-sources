@@ -17,26 +17,11 @@
   // }
   //
   // =========
-  // variable
-  // =========
-  "const variable": {
-    "scope": "javascript, typescript",
-    "prefix": "const",
-    "body": "const $1 = $2",
-    "description": "Add const variable"
-  },
-  "let variable": {
-    "scope": "javascript, typescript",
-    "prefix": "let",
-    "body": "let $1 = $2",
-    "description": "Add let variable"
-  },
-  // =========
   // function
   // =========
   "arrow function": {
     "scope": "javascript",
-    "prefix": "arrFunc",
+    "prefix": "arr",
     "body": [
       "($1) => {", //
       "  $2",
@@ -44,45 +29,14 @@
     ],
     "description": "Add arrow function"
   },
-  "typed arrow function": {
+  "arrow function (ts)": {
     "scope": "typescript",
-    "prefix": "arrFunc",
+    "prefix": "arr",
     "body": [
       "($1: ${2:any}): ${3:void} => {", //
       "  $4",
       "}"
     ],
     "description": "Add arrow function"
-  },
-  "arrow function (in a line)": {
-    "scope": "javascript",
-    "prefix": "arrFuncOneLine",
-    "body": "($1) => $2",
-    "description": "Add one-liner arrow function"
-  },
-  "typed arrow function (in a line)": {
-    "scope": "typescript",
-    "prefix": "arrFuncOneLine",
-    "body": "($1: ${2:any}): ${3:void} => $4",
-    "description": "Add one-liner arrow function"
-  },
-  // =======================
-  // function as a variable
-  // =======================
-  "arrow function as a variable": {
-    "scope": "javascript",
-    "prefix": "arrVar",
-    "body": [
-      "const $1 = ($2) => {", //
-      "  $3",
-      "}"
-    ],
-    "description": "Add arrow function into const variable"
-  },
-  "arrow function as a variable (in a line)": {
-    "scope": "javascript",
-    "prefix": "arrVarOneLine",
-    "body": "const $1 = ($2) => $3",
-    "description": "Add one-liner arrow function into const variable"
   }
 }
