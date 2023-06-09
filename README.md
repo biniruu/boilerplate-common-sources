@@ -23,6 +23,26 @@
 
 <br>
 
+## 📌 Required options in VS Code
+
+VS Code의 설정에서 아래 옵션을 변경해주세요.
+
+- Editor: Default Formatter => `esbenp.prettier-vscode`
+- Eslint > Format: Enable => `true`
+
+<br>
+
+## 🧩 Required extensions in VS Code
+
+lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익스텐션이에요.
+
+- `ESLint` (dbaeumer.vscode-eslint)
+- `markdownlint` (DavidAnson.vscode-markdownlint)
+- `Prettier - Code formatter` (esbenp.prettier-vscode)
+- `Stylelint` (stylelint.vscode-stylelint)
+
+<br>
+
 ## 📋 Detailing packages
 
 이곳에 설치된 패키지가 각각 어떤 기능을 하는지 알아보세요.
@@ -135,26 +155,6 @@
 
 - [webpack-bundle-analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer): 빌드된 파일 용량을 시각적으로 구성
 - [cra-bundle-analyzer](https://www.npmjs.com/package/cra-bundle-analyzer): eject하지 않고 webpack-bundle-analyzer와 동일한 기능 사용 가능
-
-<br>
-
-## 📌 Required options in VS Code
-
-VS Code의 설정에서 아래 옵션을 변경해주세요.
-
-- Editor: Default Formatter => `esbenp.prettier-vscode`
-- Eslint > Format: Enable => `true`
-
-<br>
-
-## 🧩 Required extensions in VS Code
-
-lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익스텐션이에요.
-
-- `ESLint` (dbaeumer.vscode-eslint)
-- `markdownlint` (DavidAnson.vscode-markdownlint)
-- `Prettier - Code formatter` (esbenp.prettier-vscode)
-- `Stylelint` (stylelint.vscode-stylelint)
 
 <br>
 
