@@ -39,7 +39,7 @@ yarn add -D dotenv dotenv-expand env-cmd
 
 # Jest
 
-yarn add -D  jest jest-resolve
+yarn add -D jest jest-resolve
 
 # Jest for TypeScript
 
