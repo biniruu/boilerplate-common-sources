@@ -49,6 +49,10 @@ yarn add -D @types/lodash-es
 
 yarn add -D @types/node
 
+# Nodemon
+
+yarn add -D nodemon
+
 # PostCSS
 
 yarn add -D postcss postcss-html postcss-loader postcss-nesting postcss-preset-env postcss-syntax postcss-url
@@ -100,6 +104,10 @@ yarn add tailwindcss
 # TypeScript
 
 yarn add -D typescript
+
+# Ts-node
+
+yarn add -D ts-node
 
 # Webpack
 
