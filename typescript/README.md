@@ -115,7 +115,11 @@ yarn add -D ts-node
 
 # Webpack
 
-yarn add -D source-map-loader style-loader
+yarn add -D source-map-loader style-loader webpack
+
+# Webpack for TypeScript
+
+yarn add -D @types/webpack
 ```
 
 <br>

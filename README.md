@@ -60,11 +60,14 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 - [@types/lodash-es](https://www.npmjs.com/package/@types/lodash-es) : lodash 타입 제공
 - [@types/react-test-renderer](https://www.npmjs.com/package/@types/react-test-renderer) : react-test-renderer 타입 제공
 - [@types/styled-components](https://www.npmjs.com/package/@types/styled-components) : styled-components 타입 제공
+- [@types/webpack](https://www.npmjs.com/package/@types/webpack) : typescript에서 webpack을 사용하기 위한 타입 제공
 - [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) : typescript 관련 lint 규칙 제공
 - [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser) : typescript를 위한 eslint 파서
 - [@typescript-eslint/types](https://www.npmjs.com/package/@typescript-eslint/types) : TypeScript-ESTree Types
 - [@typescript-eslint/typescript-estree](https://www.npmjs.com/package/@typescript-eslint/typescript-estree) : TypeScript ESTree
 - [@typescript-eslint/utils](https://www.npmjs.com/package/@typescript-eslint/utils) : typescript에서 eslint를 사용할 때 유용한 도구
+- [@vue/server-test-utils](https://www.npmjs.com/package/@vue/server-test-utils) : Vue.js 환경에서 단위 테스트를 하기 위한 공식(Official) 라이브러리
+- [@vue/test-utils](https://www.npmjs.com/package/@vue/test-utils) : Vue.js 환경에서 단위 테스트를 하기 위한 공식 라이브러리.
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer) : cross browser에 필요한 css 속성 prefix를 자동으로 생성
 - [babel-jest](https://www.npmjs.com/package/babel-jest) : JS/JSX 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
 - [chai](https://www.npmjs.com/package/chai)
@@ -89,6 +92,8 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 - [eslint-plugin-nuxt](https://www.npmjs.com/package/eslint-plugin-nuxt)
 - [eslint-webpack-plugin](https://www.npmjs.com/package/eslint-webpack-plugin)
 - [express](https://www.npmjs.com/package/express) : node.js를 편리하게 사용할 수 있게 해 주는 프레임워크
+- [handlebars](https://www.npmjs.com/package/handlebars) : mustache 템플릿의 superset
+- [handlebars-webpack-plugin](https://www.npmjs.com/package/handlebars-webpack-plugin) : webpack으로 handlebars 템플릿을 렌더링
 - [jest](https://www.npmjs.com/package/jest) : 단위 테스트 도구
 - [jest-resolve](https://www.npmjs.com/package/jest-resolve)
 - [jest-serializer-vue](https://www.npmjs.com/package/jest-serializer-vue) : 저장된 Jest Snapshot을 VueJS에 맞게 개선
@@ -126,8 +131,7 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 - [ts-node](https://www.npmjs.com/package/ts-node) : .ts 파일 실행. typescript 환경에서 사용하는 nodemon. 설치하지 않고 `npx ts-node` 실행만으로 사용 가능
 - [typescript](https://www.npmjs.com/package/typescript)
 - [vue-jest](https://www.npmjs.com/package/vue-jest) : Vue 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
-- [@vue/server-test-utils](https://www.npmjs.com/package/@vue/server-test-utils) : Vue.js 환경에서 단위 테스트를 하기 위한 공식(Official) 라이브러리
-- [@vue/test-utils](https://www.npmjs.com/package/@vue/test-utils) : Vue.js 환경에서 단위 테스트를 하기 위한 공식 라이브러리.
+- [webpack](https://www.npmjs.com/package/webpack) : 모듈 번들러
 
 <br>
 
@@ -136,6 +140,7 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 - @stylelint/postcss-css-in-js
 - @types/handlebars : handlebars가 자체적으로 타입 정의 제공
 - @types/postcss-preset-env : postcss-preset-env가 자체적으로 타입 정의 제공
+- @types/webpack-dev-server : webpack-dev-server가 자체적으로 타입 정의 제공
 - babel-eslint : @babel/eslint-parser로 대체
 - dart-sass : sass로 대체
 - eslint-loader : eslint-webpack-plugin으로 대체

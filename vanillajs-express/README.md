@@ -115,7 +115,7 @@ yarn add tailwindcss
 
 # Webpack
 
-yarn add -D source-map-loader style-loader
+yarn add -D source-map-loader style-loader webpack
 ```
 
 <br>
