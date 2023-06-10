@@ -1,6 +1,7 @@
 # files
 **/*.js
-**/*.ts
+**/*.json
+**/*.lock
 **/*.spec.js
 **/*.spec.jsx
 **/*.spec.ts
@@ -9,6 +10,7 @@
 **/*.test.jsx
 **/*.test.ts
 **/*.test.tsx
+**/*.ts
 
 # paths
 **/node_modules/

@@ -1,5 +1,8 @@
 # files
 **/*.js
+**/*.json
+**/*.lock
+**/*.php
 
 # paths
 **/node_modules/

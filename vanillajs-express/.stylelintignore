@@ -1,5 +1,7 @@
 # files
 **/*.js
+**/*.json
+**/*.lock
 **/*.spec.js
 **/*.test.js
 
