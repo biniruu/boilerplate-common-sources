@@ -134,11 +134,12 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 ❌ deprecate 되었어요.
 
 - @stylelint/postcss-css-in-js
-- @types/postcss-preset-env: postcss-preset-env가 자체적으로 타입 정의 제공
-- babel-eslint: @babel/eslint-parser로 대체
-- dart-sass: sass로 대체
-- eslint-loader: eslint-webpack-plugin으로 대체
-- node-sass: dart-sass로 대체
+- @types/handlebars : handlebars가 자체적으로 타입 정의 제공
+- @types/postcss-preset-env : postcss-preset-env가 자체적으로 타입 정의 제공
+- babel-eslint : @babel/eslint-parser로 대체
+- dart-sass : sass로 대체
+- eslint-loader : eslint-webpack-plugin으로 대체
+- node-sass : dart-sass로 대체
 
 <br>
 
@@ -153,8 +154,8 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 
 여기서는 사용하지 않지만, 유용한 패키지예요.
 
-- [webpack-bundle-analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer): 빌드된 파일 용량을 시각적으로 구성
-- [cra-bundle-analyzer](https://www.npmjs.com/package/cra-bundle-analyzer): eject하지 않고 webpack-bundle-analyzer와 동일한 기능 사용 가능
+- [webpack-bundle-analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) : 빌드된 파일 용량을 시각적으로 구성
+- [cra-bundle-analyzer](https://www.npmjs.com/package/cra-bundle-analyzer) : eject하지 않고 webpack-bundle-analyzer와 동일한 기능 사용 가능
 
 <br>
 

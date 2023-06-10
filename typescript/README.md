@@ -13,6 +13,10 @@ TypeScript 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주�
 
 yarn add -D eslint eslint-plugin-import
 
+# Handlebars
+
+yarn add handlebars
+
 # ESLint for Jest
 
 yarn add -D eslint-plugin-jest

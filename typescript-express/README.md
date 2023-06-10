@@ -41,6 +41,10 @@ yarn add express
 
 yarn add -D @types/express
 
+# Handlebars
+
+yarn add handlebars
+
 # Jest
 
 yarn add -D jest

@@ -45,6 +45,10 @@ yarn add -D eslint-plugin-pug
 
 yarn add -D eslint-webpack-plugin
 
+# Handlebars
+
+yarn add handlebars
+
 # Jest
 
 yarn add -D jest

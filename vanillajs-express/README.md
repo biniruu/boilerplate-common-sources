@@ -49,6 +49,10 @@ yarn add -D eslint-webpack-plugin
 
 yarn add express
 
+# Handlebars
+
+yarn add handlebars
+
 # Jest
 
 yarn add -D jest
