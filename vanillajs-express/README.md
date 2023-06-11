@@ -53,9 +53,13 @@ yarn add express
 
 yarn add handlebars
 
+# Handlebars for Webpack
+
+yarn add handlebars-loader handlebars-webpack-plugin
+
 # Jest
 
-yarn add -D jest
+yarn add -D @types/jest jest
 
 # Lodash
 
@@ -120,7 +124,11 @@ yarn add -D source-map-loader style-loader webpack
 
 <br>
 
-💁🏻‍♀️ postcss-preset-env를 설치했다면 아래 링크에 정리된 postcss 플러그인은 별도로 설치하지 않아도 돼요.
+💁🏻‍♀️ `@types/jest`를 설치하면 jest의 snippets를 사용할 수 있기 때문에 TypeScript 프로젝트가 아니더라도 설치를 권장해요.
+
+<br>
+
+💁🏻‍♂️ `postcss-preset-env`를 설치했다면 아래 링크에 정리된 postcss 플러그인은 별도로 설치하지 않아도 돼요.
 
 [postcss plugins](https://github.com/csstools/postcss-plugins/tree/main/plugins)
 

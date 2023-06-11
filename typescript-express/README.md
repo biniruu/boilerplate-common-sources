@@ -45,6 +45,14 @@ yarn add -D @types/express
 
 yarn add handlebars
 
+# Handlebars for TypeScript
+
+yarn add -D @types/handlebars-webpack-plugin
+
+# Handlebars for Webpack
+
+yarn add handlebars-loader handlebars-webpack-plugin
+
 # Jest
 
 yarn add -D jest
@@ -136,7 +144,7 @@ yarn add -D @types/webpack
 
 <br>
 
-💁🏻‍♂️ postcss-preset-env를 설치했다면 아래 링크에 정리된 postcss 플러그인은 별도로 설치하지 않아도 돼요.
+💁🏻‍♂️ `postcss-preset-env`를 설치했다면 아래 링크에 정리된 postcss 플러그인은 별도로 설치하지 않아도 돼요.
 
 [postcss plugins](https://github.com/csstools/postcss-plugins/tree/main/plugins)
 

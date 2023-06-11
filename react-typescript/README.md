@@ -153,7 +153,7 @@ yarn add -D stylelint-config-standard-scss stylelint-scss
 
 <br>
 
-💁🏻‍♂️ postcss-preset-env를 설치했다면 아래 링크에 정리된 postcss 플러그인은 별도로 설치하지 않아도 돼요.
+💁🏻‍♂️ `postcss-preset-env`를 설치했다면 아래 링크에 정리된 postcss 플러그인은 별도로 설치하지 않아도 돼요.
 
 [postcss plugins](https://github.com/csstools/postcss-plugins/tree/main/plugins)
 
