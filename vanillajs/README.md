@@ -120,7 +120,7 @@ yarn add -D source-map-loader style-loader webpack
 
 <br>
 
-💁🏻‍♀️ `@types/jest`를 설치하면 jest의 snippets를 사용할 수 있기 때문에 TypeScript 프로젝트가 아니더라도 설치를 권장해요.
+💁🏻‍♀️ `@types/jest`는 TypeScript 프로젝트가 아니더라도 설치를 권장해요. jest의 intellisense를 사용할 수 있기 때문이에요.
 
 <br>
 

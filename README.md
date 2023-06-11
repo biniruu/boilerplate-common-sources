@@ -58,7 +58,7 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 - [@prettier/plugin-pug](https://www.npmjs.com/package/@prettier/plugin-pug) : pug 파일 code formatting
 - [@types/express](https://www.npmjs.com/package/@types/express)
 - [@types/handlebars-webpack-plugin](https://www.npmjs.com/package/@types/handlebars-webpack-plugin)
-- [@types/jest](https://www.npmjs.com/package/@types/jest)
+- [@types/jest](https://www.npmjs.com/package/@types/jest) : jest intellisense 제공
 - [@types/lodash-es](https://www.npmjs.com/package/@types/lodash-es)
 - [@types/node](https://www.npmjs.com/package/@types/node)
 - [@types/react-test-renderer](https://www.npmjs.com/package/@types/react-test-renderer)
