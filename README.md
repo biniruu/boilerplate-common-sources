@@ -56,11 +56,14 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 - [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react) : "This experimental syntax requires enabling one of the following parser plugin(s) : 'jsx, flow, typescript'" 에러 해결을 위해 필요 ([관련 글 보기](https://ffan0811.medium.com/error-debugging-this-experimental-syntax-requires-enabling-one-of-the-following-parser-plugin-s-22946599a0a4))
 - [@craco/craco](https://www.npmjs.com/package/@craco/craco) : CRA로 리액트를 설치했을 때 webpack 설정 지원
 - [@prettier/plugin-pug](https://www.npmjs.com/package/@prettier/plugin-pug) : pug 파일 code formatting
-- [@types/jest](https://www.npmjs.com/package/@types/jest) : jest의 타입 정의와 hint 제공
-- [@types/lodash-es](https://www.npmjs.com/package/@types/lodash-es) : lodash 타입 제공
-- [@types/react-test-renderer](https://www.npmjs.com/package/@types/react-test-renderer) : react-test-renderer 타입 제공
-- [@types/styled-components](https://www.npmjs.com/package/@types/styled-components) : styled-components 타입 제공
-- [@types/webpack](https://www.npmjs.com/package/@types/webpack) : typescript에서 webpack을 사용하기 위한 타입 제공
+- [@types/express](https://www.npmjs.com/package/@types/express)
+- [@types/handlebars-webpack-plugin](https://www.npmjs.com/package/@types/handlebars-webpack-plugin)
+- [@types/jest](https://www.npmjs.com/package/@types/jest)
+- [@types/lodash-es](https://www.npmjs.com/package/@types/lodash-es)
+- [@types/node](https://www.npmjs.com/package/@types/node)
+- [@types/react-test-renderer](https://www.npmjs.com/package/@types/react-test-renderer)
+- [@types/styled-components](https://www.npmjs.com/package/@types/styled-components)
+- [@types/webpack](https://www.npmjs.com/package/@types/webpack)
 - [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) : typescript 관련 lint 규칙 제공
 - [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser) : typescript를 위한 eslint 파서
 - [@typescript-eslint/types](https://www.npmjs.com/package/@typescript-eslint/types) : TypeScript-ESTree Types
