@@ -29,7 +29,13 @@ module.exports = {
        * plugin:jest/recommended : eslint-plugin-jest 추천 rule set
        */
       extends: ['plugin:jest/recommended'],
-      files: ['*.spec.js', '*.spec.ts', '*.test.js', '*.test.ts'],
+      files: ['*.spec.js', '*.test.js'],
+      rules: {
+        /**
+         * Rules
+         * {@link https://github.com/jest-community/eslint-plugin-jest#rules}
+         */
+      },
     },
   ],
   parser: '@babel/eslint-parser',
@@ -163,5 +169,16 @@ module.exports = {
         td: ['gridcell'],
       },
     ],
+  },
+  settings: {
+    /**
+     * Jest version setting
+     * {@link https://github.com/jest-community/eslint-plugin-jest#jest-version-setting}
+     *
+     * fetch the installed version of Jest
+     */
+    jest: {
+      version: require('jest/package.json').version,
+    },
   },
 }

@@ -34,6 +34,12 @@ module.exports = {
        */
       extends: ['plugin:jest/recommended'],
       files: ['*.spec.js', '*.spec.ts', '*.test.js', '*.test.ts'],
+      rules: {
+        /**
+         * Rules
+         * {@link https://github.com/jest-community/eslint-plugin-jest#rules}
+         */
+      },
     },
   ],
   parser: '@typescript-eslint/parser',
@@ -209,5 +215,28 @@ module.exports = {
         td: ['gridcell'],
       },
     ],
+  },
+  settings: {
+    /**
+     * Eslint-plugin-import resolvers
+     * {@link https://github.com/import-js/eslint-plugin-import#resolvers}
+     * {@link https://github.com/import-js/eslint-plugin-import#importextensions}
+     *
+     * resolver.node.extensions : require more granular extension definitions. jsx를 import할 때 import/no-unresolved 에러가 발생하지 않도록 함
+     */
+    'import/resolver': {
+      node: {
+        extensions: ['*.js', '*.jsx', '*.ts', '*.tsx'],
+      },
+    },
+    /**
+     * Jest version setting
+     * {@link https://github.com/jest-community/eslint-plugin-jest#jest-version-setting}
+     *
+     * fetch the installed version of Jest
+     */
+    jest: {
+      version: require('jest/package.json').version,
+    },
   },
 }
