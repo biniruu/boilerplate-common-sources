@@ -9,8 +9,8 @@
   "scripts": {
     "sync-package-version": "npx syncyarnlock -ks",
     "update-packages": "yarn upgrade --latest && yarn sync-package-version",
-    "start": "yarn lint && npx ts-node index",
-    "lint:eslint": "eslint ."
+    "start": "yarn lint && nodemon",
+    "lint": "eslint ."
   },
   "dependencies": {
     "lodash": "^4.17.21",
