@@ -31,6 +31,7 @@
     "eslint-webpack-plugin": "^4.0.1",
     "jest": "^29.5.0",
     "prettier": "^2.8.8",
+    "pug-lint": "^2.7.0",
     "stylelint": "^15.7.0",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard": "^33.0.0",
