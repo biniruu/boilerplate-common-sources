@@ -9,7 +9,7 @@
   "scripts": {
     "sync-package-version": "npx syncyarnlock -ks",
     "update-packages": "yarn upgrade --latest && yarn sync-package-version",
-    "start": "npx ts-node --esm index",
+    "start": "npx ts-node index",
     "lint:eslint": "npx eslint .",
     "lint:stylelint": "npx stylelint ."
   },
