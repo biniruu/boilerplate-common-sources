@@ -37,10 +37,6 @@ yarn add -D eslint-plugin-jest
 
 yarn add -D eslint-config-prettier eslint-plugin-prettier
 
-# ESLint for Pug
-
-yarn add -D eslint-plugin-pug
-
 # ESLint for Webpack
 
 yarn add -D eslint-webpack-plugin
@@ -77,14 +73,6 @@ yarn add -D postcss-scss
 # Prettier
 
 yarn add -D prettier
-
-# Prettier for Pug
-
-yarn add -D @prettier/plugin-pug
-
-# Pug
-
-yarn add pug
 
 # SASS (SCSS)
 
