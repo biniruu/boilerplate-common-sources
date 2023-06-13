@@ -71,7 +71,21 @@
     "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file.
     "resolveJsonModule": true
   },
-  "include": ["**/*.cjs", "**/*.js", "**/*.ts"],
-  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
+  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"],
   // "extends": "" // 상속 받으려는 tsconfig 파일 경로 입력
+  "include": ["**/*.cjs", "**/*.js", "**/*.ts"],
+  "ts-node": {
+    /* https://typestrong.org/ts-node/docs/configuration/#via-tsconfigjson-recommended */
+
+    // It is faster to skip typechecking.
+    // Remove if you want ts-node to do typechecking.
+    "transpileOnly": true,
+    "files": true,
+    "compilerOptions": {
+      // compilerOptions specified here will override those declared below,
+      // but *only* in ts-node.  Useful if you want ts-node and tsc to use
+      // different options with a single tsconfig.json.
+      "module": "commonjs" // es module을 commonjs 방식으로 변경
+    }
+  }
 }
