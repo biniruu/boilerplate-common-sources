@@ -13,10 +13,6 @@ TypeScript 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주�
 
 yarn add -D eslint eslint-plugin-import
 
-# Handlebars
-
-yarn add handlebars
-
 # ESLint for Jest
 
 yarn add -D eslint-plugin-jest
@@ -26,8 +22,11 @@ yarn add -D eslint-plugin-jest
 yarn add -D eslint-config-prettier eslint-plugin-prettier
 
 # ESLint for TypeScript
+#
+# 💁🏻‍♀️ eslint-plugin-jest를 설치하지 않는다면 아래 패키지는 별도로 설치해야 해요.
+# @typescript-eslint/types @typescript-eslint/typescript-estree @typescript-eslint/utils
 
-yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser @typescript-eslint/types @typescript-eslint/typescript-estree @typescript-eslint/utils eslint-import-resolver-typescript
+yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript
 
 # ESLint for Webpack
 
@@ -58,6 +57,9 @@ yarn add -D @types/node
 yarn add -D nodemon
 
 # PostCSS
+#
+# 💁🏻‍♂️ postcss-preset-env를 설치하지 않는다면 아래 링크에 정리된 postcss 플러그인은 별도로 설치해야 해요.
+# https://github.com/csstools/postcss-plugins/tree/main/plugins
 
 yarn add -D postcss postcss-html postcss-loader postcss-nesting postcss-preset-env postcss-syntax postcss-url
 
@@ -121,12 +123,6 @@ yarn add -D source-map-loader style-loader webpack
 
 yarn add -D @types/webpack
 ```
-
-<br>
-
-💁🏻‍♂️ `postcss-preset-env`를 설치했다면 아래 링크에 정리된 postcss 플러그인은 별도로 설치하지 않아도 돼요.
-
-[postcss plugins](https://github.com/csstools/postcss-plugins/tree/main/plugins)
 
 <br>
 

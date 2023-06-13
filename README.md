@@ -253,7 +253,23 @@ yarn add -D eslint-config-sinon
 
 yarn add -D eslint-plugin-vue
 
+# Handlebars
+
+yarn add handlebars
+
+# Handlebars for TypeScript
+
+yarn add -D @types/handlebars-webpack-plugin
+
+# Handlebars for Webpack
+
+yarn add handlebars-loader handlebars-webpack-plugin
+
 # Markdownlint
+#
+# 💁🏻‍♀️ vs code에서는 markdownlint 패키지를 설치하지 않아도 기능을 사용할 수 있어요.
+# 1. settings > editor.codeActionsOnSave > source.fixAll.markdownlint를 true로 설정
+# 2. .markdownlint 파일 설정
 
 yarn add -D markdownlint
 
@@ -265,9 +281,3 @@ yarn add -D mocha
 
 yarn add -D sinon
 ```
-
-<br>
-
-💁🏻‍♀️ vs code에서는 markdownlint 패키지를 설치하지 않아도 기능을 사용할 수 있어요.
-
-vs code 설정에서 editor.codeActionsOnSave > source.fixAll.markdownlint를 true로 설정하면 .markdownlint 파일을 설정하는 것만으로 markdownlint 기능을 사용할 수 있어요.

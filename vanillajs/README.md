@@ -45,11 +45,9 @@ yarn add -D eslint-plugin-pug
 
 yarn add -D eslint-webpack-plugin
 
-# Handlebars
-
-yarn add handlebars
-
 # Jest
+#
+# 💁🏻‍♀️ @types/jest는 TypeScript 프로젝트가 아니더라도 설치를 권장해요. jest의 intellisense를 사용할 수 있기 때문이에요.
 
 yarn add -D @types/jest jest
 
@@ -62,6 +60,9 @@ yarn add lodash lodash-es
 yarn add -D nodemon
 
 # PostCSS
+#
+# 💁🏻‍♂️ postcss-preset-env를 설치하지 않는다면 아래 링크에 정리된 postcss 플러그인은 별도로 설치해야 해요.
+# https://github.com/csstools/postcss-plugins/tree/main/plugins
 
 yarn add -D postcss postcss-html postcss-loader postcss-nesting postcss-preset-env postcss-syntax
 
@@ -117,16 +118,6 @@ yarn add tailwindcss
 
 yarn add -D source-map-loader style-loader webpack
 ```
-
-<br>
-
-💁🏻‍♀️ `@types/jest`는 TypeScript 프로젝트가 아니더라도 설치를 권장해요. jest의 intellisense를 사용할 수 있기 때문이에요.
-
-<br>
-
-💁🏻‍♂️ `postcss-preset-env`를 설치했다면 아래 링크에 정리된 postcss 플러그인은 별도로 설치하지 않아도 돼요.
-
-[postcss plugins](https://github.com/csstools/postcss-plugins/tree/main/plugins)
 
 <br>
 
