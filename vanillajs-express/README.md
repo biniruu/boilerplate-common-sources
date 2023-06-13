@@ -89,6 +89,7 @@ yarn add -D @prettier/plugin-pug
 # Pug
 
 yarn add pug
+yarn add -D pug-lint
 
 # SASS (SCSS)
 
