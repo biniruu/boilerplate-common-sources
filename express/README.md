@@ -1,6 +1,6 @@
-# TypeScript with Express Starter
+# Express Starter
 
-TypeScript + Express 풀스택 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요. 아직 백엔드쪽은 매우 단순한 설정한 해 놓은 상태예요.
+Express 풀스택 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요. 아직 백엔드쪽은 매우 단순한 설정만 해 놓은 상태예요.
 
 <br>
 
@@ -9,6 +9,18 @@ TypeScript + Express 풀스택 프로젝트 환경 설정을 빠르게 할 수 �
 이곳에 있는 명령어를 사용해 패키지를 설치하세요.
 
 ```bash
+# Babel
+
+yarn add -D @babel/core @babel/plugin-transform-modules-commonjs @babel/plugin-transform-runtime @babel/preset-env
+
+# Babel for ESLint
+
+yarn add -D @babel/eslint-parser
+
+# Babel for Node.js
+
+yarn add -D @babel/node
+
 # ESLint
 
 yarn add -D eslint eslint-plugin-import
@@ -25,12 +37,9 @@ yarn add -D eslint-plugin-jest
 
 yarn add -D eslint-config-prettier eslint-plugin-prettier
 
-# ESLint for TypeScript
-#
-# 💁🏻‍♀️ eslint-plugin-jest를 설치하지 않는다면 아래 패키지는 별도로 설치해야 해요.
-# @typescript-eslint/types @typescript-eslint/typescript-estree @typescript-eslint/utils
+# ESLint for Pug
 
-yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript
+yarn add -D eslint-plugin-pug
 
 # ESLint for Webpack
 
@@ -40,29 +49,15 @@ yarn add -D eslint-webpack-plugin
 
 yarn add express
 
-# Express for TypeScript
-
-yarn add -D @types/express
-
 # Jest
+#
+#💁🏻‍♀️ @types/jest는 TypeScript 프로젝트가 아니더라도 설치를 권장해요. jest의 intellisense를 사용할 수 있기 때문이에요.
 
-yarn add -D jest
-
-# Jest for TypeScript
-
-yarn add -D @types/jest ts-jest
+yarn add -D @types/jest jest
 
 # Lodash
 
 yarn add lodash lodash-es
-
-# Lodash for TypeScript
-
-yarn add -D @types/lodash-es
-
-# Node.js for TypeScript
-
-yarn add -D @types/node
 
 # Nodemon
 
@@ -73,7 +68,7 @@ yarn add -D nodemon
 # 💁🏻‍♂️ postcss-preset-env를 설치하지 않는다면 아래 링크에 정리된 postcss 플러그인은 별도로 설치해야 해요.
 # https://github.com/csstools/postcss-plugins/tree/main/plugins
 
-yarn add -D postcss postcss-html postcss-loader postcss-nesting postcss-preset-env postcss-syntax postcss-url
+yarn add -D postcss postcss-html postcss-loader postcss-nesting postcss-preset-env postcss-syntax
 
 # PostCSS for JSX
 
@@ -87,9 +82,14 @@ yarn add -D postcss-scss
 
 yarn add -D prettier
 
-# Prettier for Tailwind CSS
+# Prettier for Pug
 
-yarn add -D prettier-plugin-tailwindcss
+yarn add -D @prettier/plugin-pug
+
+# Pug
+
+yarn add pug
+yarn add -D pug-lint
 
 # SASS (SCSS)
 
@@ -98,10 +98,6 @@ yarn add -D sass sass-loader
 # Styled-components
 
 yarn add styled-components
-
-# Styled-components for TypeScript
-
-yarn add -D @types/styled-components
 
 # Stylelint
 
@@ -119,21 +115,9 @@ yarn add -D stylelint-config-standard-scss stylelint-scss
 
 yarn add tailwindcss
 
-# Ts-node
-
-yarn add -D ts-node
-
-# TypeScript
-
-yarn add -D typescript
-
 # Webpack
 
 yarn add -D source-map-loader style-loader webpack
-
-# Webpack for TypeScript
-
-yarn add -D @types/webpack
 ```
 
 <br>
