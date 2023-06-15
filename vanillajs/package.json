@@ -5,9 +5,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "main": ".eslintrc.js",
+  "main": "main.js",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "yarn lint && nodemon",
+    "lint": "eslint . && stylelint ."
   },
   "devDependencies": {
     "@babel/core": "^7.22.1",

@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "typescript starter",
   "author": "biniruu",
+  "main": "dist/main.js",
   "license": "MIT",
   "type": "module",
   "private": "true",
   "scripts": {
     "sync-package-version": "npx syncyarnlock -ks",
     "update-packages": "yarn upgrade --latest && yarn sync-package-version",
-    "start": "yarn lint && yarn compile & nodemon",
-    "lint": "eslint .",
+    "start": "yarn compile & nodemon",
+    "lint": "eslint . && stylelint .",
     "compile": "npx tsc -w"
   },
   "dependencies": {
