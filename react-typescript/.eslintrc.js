@@ -53,10 +53,13 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: [
-      './tsconfig.json', // parser : @typescript-eslint/parser를 활성화 하기 위해 꼭 필요
-      './next.config.js', // next 프로젝트 시 필요
-    ],
+    /**
+     * @typescript-eslint/parser
+     * {@link https://typescript-eslint.io/architecture/parser}
+     *
+     * project : tsconfig.json 경로 설정. true로 설정하면 각 소스파일에서 가장 가까운 경로에 있는 tsconfig.json 파일을 자동으로 찾는다.
+     */
+    project: true,
   },
   root: true, // 현재 설정 파일이 root임을 명시하는 옵션. true로 설정하면 상위 설정 파일 찾기를 여기서 멈춘다.
   rules: {
