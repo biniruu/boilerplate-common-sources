@@ -2,8 +2,9 @@
 **/.eslintrc.cjs
 **/.prettierrc.cjs
 **/.stylelintrc.cjs
-**/jest.config.js
+**/jest.config.cjs
 **/tsconfig.json
 
 # paths
-**/node_modules/
+node_modules/*
+src/client/dist/*
