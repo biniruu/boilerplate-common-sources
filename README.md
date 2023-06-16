@@ -65,6 +65,7 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 - [@types/react-test-renderer](https://www.npmjs.com/package/@types/react-test-renderer)
 - [@types/styled-components](https://www.npmjs.com/package/@types/styled-components)
 - [@types/webpack](https://www.npmjs.com/package/@types/webpack)
+- [@types/ws](https://www.npmjs.com/package/@types/ws)
 - [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) : typescript 관련 lint 규칙 제공
 - [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser) : typescript를 위한 eslint 파서
 - [@typescript-eslint/types](https://www.npmjs.com/package/@typescript-eslint/types) : TypeScript-ESTree Types
@@ -122,6 +123,8 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 - [sass](https://www.npmjs.com/package/sass)
 - [sass-loader](https://www.npmjs.com/package/sass-loader) : webpack에서 scss를 실행
 - [sinon](https://www.npmjs.com/package/sinon)
+- [socket.io](https://www.npmjs.com/package/socket.io) : websocket을 기반으로 한 양방향 통신 라이브러리
+- [socket.io-client](https://www.npmjs.com/package/socket.io-client) : 클라이언트 서버에서 socket.io 사용
 - [source-map-loader](https://www.npmjs.com/package/source-map-loader) : 빌드 파일의 소스 맵 제공
 - [styled-components](https://www.npmjs.com/package/styled-components)
 - [stylelint](https://www.npmjs.com/package/stylelint)
@@ -136,6 +139,7 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 - [typescript](https://www.npmjs.com/package/typescript)
 - [vue-jest](https://www.npmjs.com/package/vue-jest) : Vue 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
 - [webpack](https://www.npmjs.com/package/webpack) : 모듈 번들러
+- [ws](https://www.npmjs.com/package/ws) : a Node.js WebSocket Library
 
 <br>
 
@@ -281,4 +285,16 @@ yarn add -D mocha
 # Sinon
 
 yarn add -D sinon
+
+# Socket.io
+
+yarn add socket.io socket.io-client
+
+# WebSocket
+
+yarn add ws
+
+# WebSocket for TypeScript
+
+yarn add -D @types/ws
 ```
