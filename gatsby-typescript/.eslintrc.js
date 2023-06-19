@@ -32,6 +32,7 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:react/recommended',
     'react-app',
+    'prettier',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -159,7 +160,7 @@ module.exports = {
      *
      * prettier : 이곳에 설정한 옵션은 .prettier 파일에 있는 옵션을 덮어쓴다. 타입스크립트에서는 알 수 없는 이유로 에러를 발생시키는 경우가 잦아 off로 설정해 두었다.
      */
-    'prettier/prettier': 'off',
+    'prettier/prettier': 'error',
     /**
      * Eslint-plugin-import rules
      * {@link https://github.com/import-js/eslint-plugin-import#rules}
@@ -221,13 +222,13 @@ module.exports = {
      * jsx-no-useless-fragment : 불필요한 fragment 금지
      * jsx-pascal-case : 컴포넌트 이름을 PascalCase로 강제
      * jsx-no-bind : JSX에서 .bind() 또는 화살표 함수 사용 금지
-     * jsx-uses-react : react를 import한 후 JSX 사용 강제. 'react/recommended' 설정 시 활성화. 'no-unused-vars'가 활성화 된 경우 효과 발생
+     * jsx-uses-react : react를 import한 후 JSX 사용 강제. 'react/recommended' 설정 시 활성화. 'no-unused-vars'가 활성화 된 경우 효과 발생. react v17 이후 필요없어짐 {@link https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#eslint How to Upgrade to the New JSX Transform}
      * jsx-uses-vars : JSX를 import한 후 해당 JSX 사용 강제. 'no-unused-vars'가 활성화 된 경우 효과 발생
      * no-direct-mutation-state : state 직접 수정 금지. 'react/recommended' 설정 시 활성화
      * no-unescaped-entities : JSX 안에서 escape 되지 않은 entity 코드 사용 금지. 'react/recommended' 설정 시 활성화
      * no-unused-state : 사용하지 않는 state가 있을 시 경고 발생
      * prop-types : prop의 type을 정의하도록 강제. 'react/recommended' 설정 시 활성화. typescript를 사용하면 필요없는 옵션
-     * react-in-jsx-scope : component에서 React를 import하지 않을 경우 오류 발생. 'react/recommended' 설정 시 활성화
+     * react-in-jsx-scope : component에서 React를 import하지 않을 경우 오류 발생. 'react/recommended' 설정 시 활성화. react v17 이후 필요없어짐 {@link https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#eslint How to Upgrade to the New JSX Transform}
      * self-closing-comp : JSX 태그 안에 하위 태그가 없을 경우 self-closing 태그로 변환
      * static-property-placement : 클래스에서 childContextTypes, contextTypes, contextType, defaultProps, displayName, propTypes를 정의하도록 강제. default : 'static public field'
      * react-hooks/rules-of-hooks : react hooks 공식 문서에서 제공하는 규칙을 준수하도록 강제. {@link https://reactjs.org/docs/hooks-rules.html Roles of Hooks 공식 문서}
@@ -240,7 +241,7 @@ module.exports = {
     'react/jsx-no-useless-fragment': ['warn', { allowExpressions: true }],
     'react/jsx-pascal-case': 'warn',
     'react/jsx-no-bind': ['error', { allowArrowFunctions: true, allowFunctions: true }],
-    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-react': 'off',
     'react/jsx-uses-vars': 'error',
     'react/no-direct-mutation-state': 'error',
     'react/no-unescaped-entities': 'error',
