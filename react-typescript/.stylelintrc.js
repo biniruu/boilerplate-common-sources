@@ -25,6 +25,9 @@ module.exports = {
      * Rules
      * {@link https://stylelint.io/user-guide/rules}
      *
+     * Deprecated rules
+     * {@link https://stylelint.io/user-guide/rules#deprecated}
+     *
      * alpha-value-notation : rgb()에서 opacity 표현 형식을 %나 숫자 중에서 선택
      * at-rule-empty-line-before : at rule 전에 한 줄 여백 강제 여부
      * at-rule-no-unknown : css 기본 문법 이외에 다른 @ 문법 사용 시 에러 발생
