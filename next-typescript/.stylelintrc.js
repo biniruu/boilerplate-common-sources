@@ -4,7 +4,7 @@
  */
 
 module.exports = {
-  extends: ['stylelint-config-standard', 'stylelint-config-prettier'], // stylelint-config-prettier는 항상 마지막에 추가할 것. 이전 확장 규칙을 덮어쓰기 함으로써 prettier와 stylelint끼리 충돌하는 상황을 방지할 수 있다.
+  extends: ['stylelint-config-standard'],
   overrides: [
     {
       /**
