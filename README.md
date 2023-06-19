@@ -6,6 +6,7 @@
 
 - [Express](https://github.com/biniruu/starter-kit-frontend/tree/main/express)
 - [Express with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/express-typescript)
+- [Gatsby with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/gatsby)
 - [Next.js with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/next-typescript)
 - [React.js with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/react-typescript)
 - [TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/typescript)
@@ -20,7 +21,7 @@
 
 > 이곳에 올린 .gitignore는 [Toptal](https://www.toptal.com/developers/gitignore)이라는 사이트에서 생성한 파일이에요. 위쪽에 있는 `# Edit at ...` 부분 링크를 클릭한 후에 원하는 기술 스택을 변경하여 사용하세요.
 
-`.babelrc` `.eslintignore` `.eslintrc.js` `.github/ISSUE_TEMPLATE.md` `.github/PULL_REQUEST_TEMPLATE.md` `.gitignore` `.markdownlint.json` `.prettierignore` `.prettierrc.js` `craco.config.js` `jest.config.js` `next.config.js` `nodemon.json` `postcss.config.js` `.pug-lintrc.json` `.stylelintignore` `.stylelintrc.js` `tailwind.config.js` `tsconfig.js`
+`.babelrc` `.eslintignore` `.eslintrc.js` `.github/ISSUE_TEMPLATE.md` `.github/PULL_REQUEST_TEMPLATE.md` `.gitignore` `.markdownlint.json` `.prettierignore` `.prettierrc.js` `.pug-lintrc.json` `.stylelintignore` `.stylelintrc.js` `craco.config.js` `gatsby-config.ts` `jest.config.js` `next.config.js` `nodemon.json` `postcss.config.js` `tailwind.config.js` `tsconfig.js`
 
 <br>
 
