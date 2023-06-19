@@ -51,10 +51,6 @@ npm install --save-dev prettier-plugin-tailwindcss
 # Stylelint
 
 npm install --save-dev stylelint stylelint-config-standard stylelint-order
-
-# Stylelint for Prettier
-
-npm install --save-dev stylelint-config-prettier
 ```
 
 <br>

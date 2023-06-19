@@ -107,10 +107,6 @@ yarn add -D @types/styled-components
 
 yarn add -D stylelint stylelint-config-standard stylelint-order
 
-# Stylelint for Prettier
-
-yarn add -D stylelint-config-prettier
-
 # Stylelint for SCSS
 
 yarn add -D stylelint-config-standard-scss stylelint-scss

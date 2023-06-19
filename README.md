@@ -128,7 +128,6 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 - [source-map-loader](https://www.npmjs.com/package/source-map-loader) : 빌드 파일의 소스 맵 제공
 - [styled-components](https://www.npmjs.com/package/styled-components)
 - [stylelint](https://www.npmjs.com/package/stylelint)
-- [stylelint-config-prettier](https://www.npmjs.com/package/stylelint-config-prettier) : prettier 관련 stylelint rules 확장
 - [stylelint-config-standard](https://www.npmjs.com/package/stylelint-config-standard) : stylelint rules 확장
 - [stylelint-config-standard-scss](https://www.npmjs.com/package/stylelint-config-standard-scss) : scss 관련 stylelint rules 확장
 - [stylelint-order](https://www.npmjs.com/package/stylelint-order) : .stylelintrc.js에서 설정한 order대로 코드가 작성되었는지 파악
@@ -153,6 +152,7 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 - dart-sass : sass로 대체
 - eslint-loader : eslint-webpack-plugin으로 대체
 - node-sass : dart-sass로 대체
+- stylelint-config-prettier : stylelint 버전 15 이하 환경 또는 [deprecated stylistic rules](https://stylelint.io/migration-guide/to-15/#deprecated-stylistic-rules) 사용 시에만 필요
 
 <br>
 
