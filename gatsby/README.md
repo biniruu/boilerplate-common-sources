@@ -38,23 +38,23 @@ gatsby new
 ```bash
 # ESLint for Prettier
 
-yarn add -D eslint-config-prettier eslint-plugin-prettier
+npm install --save-dev eslint-config-prettier eslint-plugin-prettier
 
 # Prettier
 
-yarn add -D prettier
+npm install --save-dev prettier
 
 # Prettier for Tailwind CSS
 
-yarn add -D prettier-plugin-tailwindcss
+npm install --save-dev prettier-plugin-tailwindcss
 
 # Stylelint
 
-yarn add -D stylelint stylelint-config-standard stylelint-order
+npm install --save-dev stylelint stylelint-config-standard stylelint-order
 
 # Stylelint for Prettier
 
-yarn add -D stylelint-config-prettier
+npm install --save-dev stylelint-config-prettier
 ```
 
 <br>
