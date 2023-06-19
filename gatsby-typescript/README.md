@@ -1,6 +1,6 @@
-# Gatsby Starter
+# Gatsby with TypeScript Starter
 
-Gatsby 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요. 다음 옵션을 기준으로 환경을 설정했어요.
+Gatsby with TypeScript 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요. 이 스타터는 다음 옵션을 기준으로 설정했어요.
 
 ```text
 ✓ Will you be using JavaScript or TypeScript?

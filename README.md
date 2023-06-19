@@ -6,7 +6,7 @@
 
 - [Express](https://github.com/biniruu/starter-kit-frontend/tree/main/express)
 - [Express with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/express-typescript)
-- [Gatsby with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/gatsby)
+- [Gatsby with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/gatsby-typescript)
 - [Next.js with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/next-typescript)
 - [React.js with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/react-typescript)
 - [TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/typescript)
