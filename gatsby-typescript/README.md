@@ -60,6 +60,14 @@ npm install --save-dev eslint-config-prettier eslint-plugin-prettier
 
 npm install --save-dev @typescript-eslint/eslint-plugin
 
+# Markdownlint
+#
+# 💁🏻‍♀️ vs code에서는 markdownlint 패키지를 설치하지 않아도 기능을 사용할 수 있어요.
+# 1. settings > editor.codeActionsOnSave > source.fixAll.markdownlint를 true로 설정
+# 2. .markdownlint 파일 설정
+
+yarn add -D markdownlint
+
 # PostCSS
 
 npm install --save-dev postcss-html

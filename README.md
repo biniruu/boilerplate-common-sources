@@ -153,7 +153,7 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 - dart-sass : sass로 대체
 - eslint-loader : eslint-webpack-plugin으로 대체
 - node-sass : dart-sass로 대체
-- stylelint-config-prettier : stylelint 버전 15 이하 환경 또는 [deprecated stylistic rules](https://stylelint.io/migration-guide/to-15/#deprecated-stylistic-rules) 사용 시에만 필요
+- stylelint-config-prettier : stylelint 버전 16 이하 환경 또는 [deprecated stylistic rules](https://stylelint.io/migration-guide/to-15/#deprecated-stylistic-rules)을 사용하는 경우에만 필요
 
 <br>
 
@@ -178,55 +178,25 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 편의성을 높여주는 익스텐션이에요.
 
 - `Abracadabra, refactor this!` (nicoespeon.abracadabra)
-- `Auto Close Tag` (formulahendry.auto-close-tag)
 - `Auto Import` (steoates.autoimport)
-- `Auto Rename Tag` (formulahendry.auto-rename-tag)
 - `AWS Toolkit` (amazonwebservices.aws-toolkit-vscode)
 - `Bookmarks` (alefragnani.Bookmarks)
 - `Code Spell Checker` (streetsidesoftware.code-spell-checker)
-- `Color Highlight` (naumovs.color-highlight)
-- `CSS Peek` (pranaygp.vscode-css-peek)
 - `Error Lens` (usernamehw.errorlens)
-- `ES7+ React/Redux/React-Native snippets` (dsznajder.es7-react-js-snippets)
 - `Git Graph` (mhutchie.git-graph)
 - `Git History` (donjayamanne.githistory)
 - `Git History Diff` (huizhou.githd)
 - `GitHub Pull Requests and Issues` (GitHub.vscode-pull-request-github)
 - `GitLens — Git supercharged` (eamodio.gitlens)
-- `HTML CSS Support` (ecmel.vscode-html-css)
 - `Import Cost` (wix.vscode-import-cost)
-- `IntelliCode` (VisualStudioExptTeam.vscodeintellicode)
-- `IntelliCode API Usage Examples` (VisualStudioExptTeam.intellicode-api-usage-examples)
-- `IntelliSense for CSS class names in HTML` (Zignd.html-css-class-completion)
-- `JavaScript (ES6) code snippets` (xabikos.JavaScriptSnippets)
-- `JavaScript and TypeScript Nightly` (ms-vscode.vscode-typescript-next)
-- `JavaScript Debugger (Nightly)` (ms-vscode.js-debug-nightly)
 - `Jest` (Orta.vscode-jest)
-- `Jest Snippets` (andys8.jest-snippets)
 - `Jira and Bitbucket (Atlassian Labs)` (atlassian.atlascode)
 - `Live Share` (ms-vsliveshare.vsliveshare)
-- `Markdown All in One` (yzhang.markdown-all-in-one)
-- `Markdown Preview Enhanced` (shd101wyy.markdown-preview-enhanced)
-- `Material Icon Theme` (PKief.material-icon-theme)
-- `npm Intellisense` (christian-kohler.npm-intellisense)
 - `Path Intellisense` (christian-kohler.path-intellisense)
-- `Polacode` (pnp.polacode)
 - `Project Manager` (alefragnani.project-manager)
 - `px to rem & rpx & vw (cssrem)` (cipchk.cssrem)
-- `React Jest Snippets` (jalisimo.react-jest-vscode-snippets)
-- `React Testing Library Cheatsheet` (willnemo.rtlcheatsheet)
-- `SFTP` (Natizyskunk.sftp)
-- `Stylelint Disable Snippets` (hedinne.stylelint-disable-snippets)
-- `Tailwind CSS IntelliSense` (bradlc.vscode-tailwindcss)
-- `TabOut` (albert.TabOut)
-- `Todo Highlight` (wayou.vscode-todo-highlight)
 - `Todo Tree` (Gruntfuggly.todo-tree)
 - `Turbo Console Log` (ChakrounAnas.turbo-console-log)
-- `Vetur` (octref.vetur)
-- `Vue 3 Snippets` (hollowtree.vue-snippets)
-- `Vue Language Features (Volar)` (Vue.volar)
-- `Vue VSCode Snippets` (sdras.vue-vscode-snippets)
-- `WakaTime` (WakaTime.vscode-wakatime)
 
 <br>
 
