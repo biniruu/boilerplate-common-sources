@@ -4,7 +4,18 @@
  */
 
 module.exports = {
-  extends: ['stylelint-config-standard', 'stylelint-config-prettier'], // stylelint-config-prettier는 항상 마지막에 추가할 것. 이전 확장 규칙을 덮어쓰기 함으로써 prettier와 stylelint끼리 충돌하는 상황을 방지할 수 있다.
+  extends: ['stylelint-config-standard'],
+  overrides: [
+    {
+      /**
+       * Postcss
+       *
+       * postcss-html : html 또는 html과 유사한 형식을 가진 파일, Vue Single-File Components 등에서 postcss를 사용하도록 지원. scss, less 등을 사용하는 프로젝트에서는 별도 패키지 추가 필요 {@link https://www.npmjs.com/package/postcss-html}
+       */
+      customSyntax: 'postcss-html',
+      files: ['**/*.{html,jsx,svg,tsx}'],
+    },
+  ],
   plugins: ['stylelint-order'],
   rules: {
     /**

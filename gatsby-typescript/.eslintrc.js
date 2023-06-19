@@ -33,24 +33,6 @@ module.exports = {
     'plugin:react/recommended',
     'react-app',
   ],
-  overrides: [
-    {
-      /**
-       * Jest
-       *
-       * plugin:jest/recommended : eslint-plugin-jest 추천 rule set
-       * react-app/jest : jest 규칙 설정을 위한 eslint-config-react-app 확장
-       */
-      extends: ['plugin:jest/recommended', 'react-app/jest'],
-      files: ['*.spec.js', '*.spec.ts', '*.test.js', '*.test.ts'],
-      rules: {
-        /**
-         * Rules
-         * {@link https://github.com/jest-community/eslint-plugin-jest#rules}
-         */
-      },
-    },
-  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     /**
@@ -287,15 +269,6 @@ module.exports = {
       node: {
         extensions: ['*.js', '*.jsx', '*.ts', '*.tsx'],
       },
-    },
-    /**
-     * Jest version setting
-     * {@link https://github.com/jest-community/eslint-plugin-jest#jest-version-setting}
-     *
-     * fetch the installed version of Jest
-     */
-    jest: {
-      version: require('jest/package.json').version,
     },
     /**
      * Eslint-plugin-react configuration
