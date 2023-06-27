@@ -1,6 +1,6 @@
 ### VisualStudioCode ###
-# For VS Code, you should use the following code instead
-# When resetting this file, please make sure that the following is safe
+# For VS Code, you should use the following list instead
+# When resetting this file, please make sure that the following .vscode list is safe
 .vscode/*
 !.vscode/css_custom_data.json
 !.vscode/tasks.json
