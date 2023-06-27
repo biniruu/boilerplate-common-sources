@@ -55,7 +55,7 @@ module.exports = {
   parserOptions: {
     /**
      * @typescript-eslint/parser
-     * {@link https://typescript-eslint.io/architecture/parser}
+     * {@link https://typescript-eslint.io/packages/parser}
      *
      * project : tsconfig.json 경로 설정. true로 설정하면 각 소스파일에서 가장 가까운 경로에 있는 tsconfig.json 파일을 자동으로 찾는다.
      */
