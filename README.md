@@ -1,47 +1,104 @@
-# Starter kit for client side development environment
+# Starter pack for web development environment
 
 프로젝트를 시작할 때 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요. 패키지, 설정 파일 등을 프로젝트 기술 스택에 맞게 골라 설치할 수 있어요.
 
 다음 프로젝트를 설정할 때 사용할 수 있어요.
 
-- [Express](https://github.com/biniruu/starter-kit-frontend/tree/main/express)
-- [Express with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/express-typescript)
-- [Gatsby with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/gatsby-typescript)
-- [Next.js with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/next-typescript)
-- [React.js with TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/react-typescript)
-- [TypeScript](https://github.com/biniruu/starter-kit-frontend/tree/main/typescript)
-- [Vanilla JS](https://github.com/biniruu/starter-kit-frontend/tree/main/vanillajs)
-- [Wordpress](https://github.com/biniruu/starter-kit-frontend/tree/main/wordpress)
+- [Express](https://github.com/biniruu/starter-pack/tree/main/express)
+- [Express with TypeScript](https://github.com/biniruu/starter-pack/tree/main/express-typescript)
+- [Gatsby with TypeScript](https://github.com/biniruu/starter-pack/tree/main/gatsby-typescript)
+- [Next.js with TypeScript](https://github.com/biniruu/starter-pack/tree/main/next-typescript)
+- [React.js with TypeScript](https://github.com/biniruu/starter-pack/tree/main/react-typescript)
+- [TypeScript](https://github.com/biniruu/starter-pack/tree/main/typescript)
+- [Vanilla JS](https://github.com/biniruu/starter-pack/tree/main/vanillajs)
+- [Wordpress](https://github.com/biniruu/starter-pack/tree/main/wordpress)
 
 <br>
 
-## 📦What is in this starter
+## 📦What is in this starter pack
 
 이곳에는 다음 설정 파일이 포함되어 있어요.
 
-> 이곳에 올린 .gitignore는 [Toptal](https://www.toptal.com/developers/gitignore)이라는 사이트에서 생성한 파일이에요. 위쪽에 있는 `# Edit at ...` 부분 링크를 클릭한 후에 원하는 기술 스택을 변경하여 사용하세요.
+> .gitignore 파일은 [Toptal](https://www.toptal.com/developers/gitignore)이라는 사이트에서 생성했어요. 변경이 필요한 경우에는 파일 내부 위쪽에 있는 `# Edit at ...` 부분 링크로 이동한 후에 원하는 기술 스택을 선택하여 사용하세요.
 
 `.babelrc` `.eslintignore` `.eslintrc.js` `.github/ISSUE_TEMPLATE.md` `.github/PULL_REQUEST_TEMPLATE.md` `.gitignore` `.markdownlint.json` `.prettierignore` `.prettierrc.js` `.pug-lintrc.json` `.stylelintignore` `.stylelintrc.js` `craco.config.js` `gatsby-config.ts` `jest.config.js` `next.config.js` `nodemon.json` `postcss.config.js` `tailwind.config.js` `tsconfig.js`
 
 <br>
 
-## 📌Required options in VS Code
+## 📌Required options for VS Code
 
 VS Code의 설정에서 아래 옵션을 변경해주세요.
 
-- Editor: Default Formatter => `esbenp.prettier-vscode`
-- Eslint > Format: Enable => `true`
+- Editor: Default Formatter ➡️ `esbenp.prettier-vscode`
+- Eslint > Format: Enable ➡️ `true`
 
 <br>
 
 ## 🧩Required extensions for VS Code
 
-lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익스텐션이에요.
+lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 확장 프로그램이에요.
 
 - `ESLint` (dbaeumer.vscode-eslint)
 - `markdownlint` (DavidAnson.vscode-markdownlint)
 - `Prettier - Code formatter` (esbenp.prettier-vscode)
 - `Stylelint` (stylelint.vscode-stylelint)
+
+<br>
+
+## 🚀Recommended extensions for VS Code
+
+편의성을 높여주는 확장 프로그램이에요.
+
+- `Abracadabra, refactor this!` (nicoespeon.abracadabra)
+- `Auto Close Tag` (formulahendry.auto-close-tag)
+- `Auto Import` (steoates.autoimport)
+- `Auto Rename Tag` (formulahendry.auto-rename-tag)
+- `AWS Toolkit` (amazonwebservices.aws-toolkit-vscode)
+- `Bookmarks` (alefragnani.Bookmarks)
+- `Code Spell Checker` (streetsidesoftware.code-spell-checker)
+- `Color Highlight` (naumovs.color-highlight)
+- `CSS Peek` (pranaygp.vscode-css-peek)
+- `Error Lens` (usernamehw.errorlens)
+- `ES7+ React/Redux/React-Native snippets` (dsznajder.es7-react-js-snippets)
+- `Git Graph` (mhutchie.git-graph)
+- `Git History` (donjayamanne.githistory)
+- `Git History Diff` (huizhou.githd)
+- `GitHub Pull Requests and Issues` (GitHub.vscode-pull-request-github)
+- `GitLens — Git supercharged` (eamodio.gitlens)
+- `HTML CSS Support` (ecmel.vscode-html-css)
+- `Import Cost` (wix.vscode-import-cost)
+- `IntelliCode` (VisualStudioExptTeam.vscodeintellicode)
+- `IntelliCode API Usage Examples` (VisualStudioExptTeam.intellicode-api-usage-examples)
+- `IntelliSense for CSS class names in HTML` (Zignd.html-css-class-completion)
+- `JavaScript (ES6) code snippets` (xabikos.JavaScriptSnippets)
+- `JavaScript and TypeScript Nightly` (ms-vscode.vscode-typescript-next)
+- `JavaScript Debugger (Nightly)` (ms-vscode.js-debug-nightly)
+- `Jest` (Orta.vscode-jest)
+- `Jest Snippets` (andys8.jest-snippets)
+- `Jira and Bitbucket (Atlassian Labs)` (atlassian.atlascode)
+- `Live Share` (ms-vsliveshare.vsliveshare)
+- `Markdown All in One` (yzhang.markdown-all-in-one)
+- `Markdown Preview Enhanced` (shd101wyy.markdown-preview-enhanced)
+- `Material Icon Theme` (PKief.material-icon-theme)
+- `npm Intellisense` (christian-kohler.npm-intellisense)
+- `Path Intellisense` (christian-kohler.path-intellisense)
+- `Polacode` (pnp.polacode)
+- `Project Manager` (alefragnani.project-manager)
+- `px to rem & rpx & vw (cssrem)` (cipchk.cssrem)
+- `React Jest Snippets` (jalisimo.react-jest-vscode-snippets)
+- `React Testing Library Cheatsheet` (willnemo.rtlcheatsheet)
+- `SFTP` (Natizyskunk.sftp)
+- `Stylelint Disable Snippets` (hedinne.stylelint-disable-snippets)
+- `Tailwind CSS IntelliSense` (bradlc.vscode-tailwindcss)
+- `TabOut` (albert.TabOut)
+- `Todo Highlight` (wayou.vscode-todo-highlight)
+- `Todo Tree` (Gruntfuggly.todo-tree)
+- `Turbo Console Log` (ChakrounAnas.turbo-console-log)
+- `Vetur` (octref.vetur)
+- `Vue 3 Snippets` (hollowtree.vue-snippets)
+- `Vue Language Features (Volar)` (Vue.volar)
+- `Vue VSCode Snippets` (sdras.vue-vscode-snippets)
+- `WakaTime` (WakaTime.vscode-wakatime)
 
 <br>
 
@@ -173,66 +230,9 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 익�
 
 <br>
 
-## 🚀Recommended extensions for VS Code
-
-편의성을 높여주는 익스텐션이에요.
-
-- `Abracadabra, refactor this!` (nicoespeon.abracadabra)
-- `Auto Close Tag` (formulahendry.auto-close-tag)
-- `Auto Import` (steoates.autoimport)
-- `Auto Rename Tag` (formulahendry.auto-rename-tag)
-- `AWS Toolkit` (amazonwebservices.aws-toolkit-vscode)
-- `Bookmarks` (alefragnani.Bookmarks)
-- `Code Spell Checker` (streetsidesoftware.code-spell-checker)
-- `Color Highlight` (naumovs.color-highlight)
-- `CSS Peek` (pranaygp.vscode-css-peek)
-- `Error Lens` (usernamehw.errorlens)
-- `ES7+ React/Redux/React-Native snippets` (dsznajder.es7-react-js-snippets)
-- `Git Graph` (mhutchie.git-graph)
-- `Git History` (donjayamanne.githistory)
-- `Git History Diff` (huizhou.githd)
-- `GitHub Pull Requests and Issues` (GitHub.vscode-pull-request-github)
-- `GitLens — Git supercharged` (eamodio.gitlens)
-- `HTML CSS Support` (ecmel.vscode-html-css)
-- `Import Cost` (wix.vscode-import-cost)
-- `IntelliCode` (VisualStudioExptTeam.vscodeintellicode)
-- `IntelliCode API Usage Examples` (VisualStudioExptTeam.intellicode-api-usage-examples)
-- `IntelliSense for CSS class names in HTML` (Zignd.html-css-class-completion)
-- `JavaScript (ES6) code snippets` (xabikos.JavaScriptSnippets)
-- `JavaScript and TypeScript Nightly` (ms-vscode.vscode-typescript-next)
-- `JavaScript Debugger (Nightly)` (ms-vscode.js-debug-nightly)
-- `Jest` (Orta.vscode-jest)
-- `Jest Snippets` (andys8.jest-snippets)
-- `Jira and Bitbucket (Atlassian Labs)` (atlassian.atlascode)
-- `Live Share` (ms-vsliveshare.vsliveshare)
-- `Markdown All in One` (yzhang.markdown-all-in-one)
-- `Markdown Preview Enhanced` (shd101wyy.markdown-preview-enhanced)
-- `Material Icon Theme` (PKief.material-icon-theme)
-- `npm Intellisense` (christian-kohler.npm-intellisense)
-- `Path Intellisense` (christian-kohler.path-intellisense)
-- `Polacode` (pnp.polacode)
-- `Project Manager` (alefragnani.project-manager)
-- `px to rem & rpx & vw (cssrem)` (cipchk.cssrem)
-- `React Jest Snippets` (jalisimo.react-jest-vscode-snippets)
-- `React Testing Library Cheatsheet` (willnemo.rtlcheatsheet)
-- `SFTP` (Natizyskunk.sftp)
-- `Stylelint Disable Snippets` (hedinne.stylelint-disable-snippets)
-- `Tailwind CSS IntelliSense` (bradlc.vscode-tailwindcss)
-- `TabOut` (albert.TabOut)
-- `Todo Highlight` (wayou.vscode-todo-highlight)
-- `Todo Tree` (Gruntfuggly.todo-tree)
-- `Turbo Console Log` (ChakrounAnas.turbo-console-log)
-- `Vetur` (octref.vetur)
-- `Vue 3 Snippets` (hollowtree.vue-snippets)
-- `Vue Language Features (Volar)` (Vue.volar)
-- `Vue VSCode Snippets` (sdras.vue-vscode-snippets)
-- `WakaTime` (WakaTime.vscode-wakatime)
-
-<br>
-
 ## 📥Installing packages
 
-이 스타터에 없는 프로젝트 또는 잘 사용하지 않는 도구를 사용할 때 참고해주세요.
+이 스타터에 없는 프로젝트 또는 잘 사용하지 않는 도구를 사용할 때 참조해주세요.
 
 ```bash
 # Chai
