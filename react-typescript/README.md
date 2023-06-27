@@ -4,7 +4,7 @@ React.js + TypeScript 프로젝트 환경 설정을 빠르게 할 수 있도록 
 
 <br>
 
-## 🎬 Creating React.js project
+## 🎬Creating React.js project
 
 ```bash
 yarn create react-app <my-app-name> --template typescript
@@ -28,7 +28,7 @@ create react app으로 react 설치한 다음 아래 설정을 삭제해주세�
 
 <br>
 
-## 📥 Installing packages
+## 📥Installing packages
 
 이곳에 있는 명령어를 사용해 패키지를 설치하세요.
 
@@ -152,7 +152,7 @@ yarn add -D stylelint-config-standard-scss stylelint-scss
 
 <br>
 
-## 📋 Detailing packages
+## 📋Detailing packages
 
 각 패키지에 대한 설명은 최상위 폴더에 있는 [README.md](https://github.com/biniruu/starter-kit-frontend#detailing-packages)에서 확인할 수 있어요.
 

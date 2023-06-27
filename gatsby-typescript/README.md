@@ -21,7 +21,7 @@ Gatsby with TypeScript 프로젝트 환경 설정을 빠르게 할 수 있도록
 
 <br>
 
-## 🚀 Beginning gatsby with starter library
+## 🚀Beginning gatsby with starter library
 
 테마와 함께 Gatsby를 이용하고 싶다면 Gatsby에서 제공하는 스타터를 사용하세요. 아래 페이지에서 필요한 스타터 라이브러리를 골라 설치할 수 있어요.
 
@@ -29,7 +29,7 @@ Gatsby with TypeScript 프로젝트 환경 설정을 빠르게 할 수 있도록
 
 <br>
 
-## 🎬 Creating gatsby project
+## 🎬Creating gatsby project
 
 ```bash
 gatsby new
@@ -39,7 +39,7 @@ gatsby new
 
 <br>
 
-## 🔌 Installing plugins
+## 🔌Installing plugins
 
 아래 페이지에서 필요한 플러그인을 골라 설치할 수 있어요.
 
@@ -47,7 +47,7 @@ gatsby new
 
 <br>
 
-## 📥 Installing packages
+## 📥Installing packages
 
 이곳에 있는 명령어를 사용해 패키지를 설치하세요.
 
@@ -118,7 +118,7 @@ npm install --save-dev stylelint stylelint-config-standard stylelint-order
 
 <br>
 
-## 📋 Detailing packages
+## 📋Detailing packages
 
 각 패키지에 대한 설명은 최상위 폴더에 있는 [README.md](https://github.com/biniruu/starter-kit-frontend#detailing-packages)에서 확인할 수 있어요.
 
