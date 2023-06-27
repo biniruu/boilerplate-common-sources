@@ -48,9 +48,9 @@ module.exports = {
      * @typescript-eslint/parser
      * {@link https://typescript-eslint.io/packages/parser}
      *
-     * project : tsconfig.json 경로 설정. true로 설정하면 각 소스파일에서 가장 가까운 경로에 있는 tsconfig.json 파일을 자동으로 찾는다.
+     * project : tsconfig.json 경로 설정
      */
-    project: true,
+    project: ['./tsconfig.json'],
   },
   root: true, // 현재 설정 파일이 root임을 명시하는 옵션. true로 설정하면 상위 설정 파일 찾기를 여기서 멈춘다.
   rules: {
@@ -182,7 +182,7 @@ module.exports = {
     'import/order': [
       'warn',
       {
-        alphabetize: { caseInsensitive: true, order: 'asc', orderImportKind: 'asc' },
+        // alphabetize: { caseInsensitive: true, order: 'asc', orderImportKind: 'asc' },
         'newlines-between': 'always',
       },
     ],
