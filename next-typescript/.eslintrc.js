@@ -77,7 +77,6 @@ module.exports = {
      * no-console : 콘솔 사용 금지
      * no-debugger : debugger 사용 금지
      * no-duplicate-imports : 동일한 모듈에서 import를 여러 번 할 때 import문을 한 번만 사용하도록 강제. e.g. import { apple, banana } from 'fruits'
-     * no-extra-semi : 불필요한 세미콜론 사용 금지
      * no-inner-declarations : nested block에서 변수 또는 함수 선언 금지
      * no-multiple-empty-lines : 여러 줄 공백 금지
      * no-nested-ternary : 중첩 삼항 연산자 금지
@@ -105,7 +104,6 @@ module.exports = {
     'no-console': ['warn', { allow: ['warn', 'error'] }],
     'no-debugger': process.env.NODE_ENV === 'development' ? 'warn' : 'error',
     'no-duplicate-imports': 'error',
-    'no-extra-semi': 'error',
     'no-inner-declarations': 'warn',
     'no-multiple-empty-lines': 'warn',
     'no-nested-ternary': 'warn',
