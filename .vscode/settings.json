@@ -149,10 +149,10 @@
     "xml",
     "xsl"
   ], // stylelint로 유효성을 검증할 언어만 선택
-  "turboConsoleLog.logMessagePrefix": "📝",
+  "turboConsoleLog.delimiterInsideMessage": "",
+  "turboConsoleLog.logMessagePrefix": "",
   "turboConsoleLog.quote": "'",
   "turboConsoleLog.includeFileNameAndLineNum": false,
-  "turboConsoleLog.delimiterInsideMessage": "--",
   "turboConsoleLog.insertEnclosingFunction": false,
   "turboConsoleLog.insertEnclosingClass": false,
   "terminal.integrated.defaultProfile.linux": "/bin/zsh",
