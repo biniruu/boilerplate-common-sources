@@ -111,8 +111,8 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 확�
 - [@babel/node](https://www.npmjs.com/package/@babel/node) : node.js cli와 동일하게 동작하는 babel cli
 - [@babel/plugin-transform-modules-commonjs](https://www.npmjs.com/package/@babel/plugin-transform-modules-commonjs) : es2015 모듈을 commonJS로 변환
 - [@babel/plugin-transform-runtime](https://www.npmjs.com/package/@babel/plugin-transform-runtime) : 전역 스코프를 오염시키지 않는 polyfill 지원
-- [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env) : Babel의 지원 스펙을 지정
-- [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react) : "This experimental syntax requires enabling one of the following parser plugin(s) : 'jsx, flow, typescript'" 에러 해결을 위해 필요 ([관련 글 보기](https://ffan0811.medium.com/error-debugging-this-experimental-syntax-requires-enabling-one-of-the-following-parser-plugin-s-22946599a0a4))
+- [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env) : 각 개발 환경에 맞춘 babel 지원 설정 제공
+- [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react) : 리액트 플러그인 지원을 위한 babel 설정 제공
 - [@craco/craco](https://www.npmjs.com/package/@craco/craco) : CRA로 리액트를 설치했을 때 webpack 설정 지원
 - [@prettier/plugin-pug](https://www.npmjs.com/package/@prettier/plugin-pug) : pug 파일 code formatting
 - [@types/express](https://www.npmjs.com/package/@types/express)
