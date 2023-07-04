@@ -28,7 +28,7 @@
   "breadcrumbs.enabled": true,
   "color-highlight.markRuler": false, // minimap에서 color-highlight 활성화
   "compile-hero.disable-compile-files-on-did-save-code": false, // 저장 시 파일 자동 변환 방지
-  "compile-hero.ignore": ["node_modules/**/*"],
+  "compile-hero.ignore": ["**/node_modules/*"],
   "compile-hero.scss-output-directory": "../css", // .css로 변환된 .scss 파일이 저장될 폴더 경로
   "compile-hero.watch": ["scss/*"], // 저장 시 자동으로 변환할 파일 목록
   "css.customData": ["./css_custom_data.json"], // at-rule 등 css 관련 규칙을 사용자화 하여 이용하는 데 필요한 설정 파일을 연결하는 옵션
