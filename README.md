@@ -57,7 +57,6 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 확�
 - `Bookmarks` (alefragnani.Bookmarks)
 - `Code Spell Checker` (streetsidesoftware.code-spell-checker)
 - `Color Highlight` (naumovs.color-highlight)
-- `CSS Peek` (pranaygp.vscode-css-peek)
 - `Error Lens` (usernamehw.errorlens)
 - `ES7+ React/Redux/React-Native snippets` (dsznajder.es7-react-js-snippets)
 - `Git Graph` (mhutchie.git-graph)
