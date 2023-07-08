@@ -1,24 +1,7 @@
 {
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.autoClosingBrackets": "always",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true
-  },
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnSave": true
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.tabSize": 4
   },
   "autoimport.useSemiColon": false, // auto import 기능으로 import한 모듈에 세미콜론 삽입
   "aws.codeWhisperer.shareCodeWhispererContentWithAWS": false,
@@ -45,10 +28,11 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.definitionLinkOpensInPeek": true,
-  "editor.fontFamily": "'D2Coding ligature', D2Coding, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "D2Coding, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true, // ligature 폰트 사용. false로 설정하면 font family에 ligature 폰트를 추가해도 반영되지 않는다
   "editor.fontSize": 16,
-  "editor.formatOnSave": true, // 저장할 때마다 포맷을 자동으로 교정
+  "editor.formatOnPaste": true, // 붙여넣기 할 때마다 포맷에 맞춰 코드 변경
+  "editor.formatOnSave": true, // 저장할 때마다 포맷에 맞춰 코드 변경
   "editor.hover.delay": 600,
   "editor.inlineSuggest.enabled": true,
   "editor.linkedEditing": true,
@@ -102,7 +86,7 @@
     "vue": false,
     "yaml": false
   },
-  "githubNotificationsBell.oauthToken": "${env:GITHUB_NOTIFICATIONS_BELL}",
+  "githubNotificationsBell.oauthToken": "",
   "gitlens.gitCommands.search.showResultsInSideBar": true,
   "html-css-class-completion.enableEmmetSupport": true,
   "jest.autoRun": {
