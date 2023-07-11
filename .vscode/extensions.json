@@ -77,6 +77,8 @@
     "ms-vsliveshare.vsliveshare",
     "ms-python.pylint",
     "wscats.eno",
-    "burkeholland.simple-react-snippets"
+    "burkeholland.simple-react-snippets",
+    "vue.volar",
+    "vue.vscode-typescript-vue-plugin"
   ]
 }
