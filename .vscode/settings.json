@@ -133,12 +133,13 @@
     "xml",
     "xsl"
   ], // stylelint로 유효성을 검증할 언어만 선택
-  "turboConsoleLog.delimiterInsideMessage": "",
-  "turboConsoleLog.logMessagePrefix": "",
-  "turboConsoleLog.quote": "'",
+  "turboConsoleLog.delimiterInsideMessage": "➕",
   "turboConsoleLog.includeFileNameAndLineNum": false,
-  "turboConsoleLog.insertEnclosingFunction": false,
   "turboConsoleLog.insertEnclosingClass": false,
+  "turboConsoleLog.insertEnclosingFunction": false,
+  "turboConsoleLog.logMessagePrefix": "🍭",
+  "turboConsoleLog.logMessageSuffix": " 🟰",
+  "turboConsoleLog.quote": "'",
   "terminal.integrated.defaultProfile.linux": "/bin/zsh",
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.fontFamily": "D2Coding, Menlo, Monaco, 'Courier New', monospace",
