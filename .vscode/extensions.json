@@ -82,6 +82,7 @@
     "vue.vscode-typescript-vue-plugin",
     "cmstead.jsrefactor",
     "cmstead.js-codeformer",
-    "p42ai.refactor"
+    "p42ai.refactor",
+    "fosshaas.fontsize-shortcuts"
   ]
 }
