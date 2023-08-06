@@ -156,6 +156,7 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 확�
 - [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)
 - [eslint-plugin-nuxt](https://www.npmjs.com/package/eslint-plugin-nuxt)
 - [eslint-webpack-plugin](https://www.npmjs.com/package/eslint-webpack-plugin)
+- [env-cmd](https://www.npmjs.com/package/env-cmd) : env 파일에 있는 환경 변수를 command에서 실행하는 기능 제공
 - [express](https://www.npmjs.com/package/express) : node.js를 편리하게 사용할 수 있게 해 주는 프레임워크
 - [handlebars](https://www.npmjs.com/package/handlebars) : mustache 템플릿의 superset
 - [handlebars-webpack-plugin](https://www.npmjs.com/package/handlebars-webpack-plugin) : webpack으로 handlebars 템플릿을 렌더링
