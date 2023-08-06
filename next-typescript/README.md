@@ -33,10 +33,6 @@ yarn add -D eslint-config-prettier eslint-plugin-prettier
 
 yarn add -D @typescript-eslint/eslint-plugin
 
-# Dotenv
-
-yarn add -D dotenv dotenv-expand env-cmd
-
 # Jest
 
 yarn add -D jest jest-resolve
