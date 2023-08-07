@@ -4,7 +4,7 @@ Next.js + TypeScript 프로젝트 환경 설정을 빠르게 할 수 있도록 �
 
 <br>
 
-## 🎬 Creating Next.js project
+## 🎬Creating Next.js project
 
 이곳에 있는 설정은 기본 옵션으로 create next app을 설치한 경우를 기준으로 작성했어요. (Next.js 버전 13.4 이후)
 
@@ -13,6 +13,22 @@ yarn create next-app <my-app-name> --typescript
 ```
 
 이미 만든 폴더에 설치한다면 `yarn create next-app . --typescript`를 입력하면 돼요. 초기 설정과 관련된 사항은 [NEXT.JS 공식 문서](https://nextjs.org/docs/api-reference/create-next-app)를 참고하세요.
+
+<br>
+
+## 📒Setting up Storybook
+
+스토리북은 프로젝트 환경 설정을 모두 마친 후에 설치하면 좋아요.
+
+```bash
+npx storybook@latest init
+```
+
+설치 중에 ESLint 설치 여부를 파악하여 다음과 같이 eslint-plugin-storybook 플러그인 설치를 물어봐요.
+
+> We have detected that you're using ESLint. Storybook provides a plugin that gives the best experience with Storybook and helps follow best practices: <https://github.com/storybookjs/eslint-plugin-storybook#readme>
+
+yes를 선택하면 플러그인 설치와 함께 .eslintrc.js > extends에 `plugin:storybook/recommended` 옵션 추가까지 자동으로 해 줘요.
 
 <br>
 
@@ -28,6 +44,12 @@ yarn add -D eslint-plugin-jest
 # ESLint for Prettier
 
 yarn add -D eslint-config-prettier eslint-plugin-prettier
+
+# ESLint for Storybook
+#
+# 💁🏻 Storybook을 설치하는 과정에서 설치 여부를 물어보기 때문에 굳이 먼저 설치할 필요는 없어요.
+
+yarn add -D eslint-plugin-storybook
 
 # ESLint for TypeScript
 
@@ -121,6 +143,12 @@ yarn add -D source-map-loader
 - eslint-plugin-jsx-a11y
 - tailwindcss
 - typescript
+
+<br>
+
+💁🏻 아래 패키지는 Storybook을 설치할 때, 이미 ESLint가 설치된 상태라면 자동으로 설치를 제안해 줘요.
+
+- eslint-plugin-storybook
 
 <br>
 

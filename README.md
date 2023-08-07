@@ -153,6 +153,7 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 확�
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) : react 규칙 관련 피드백 제공
 - [eslint-config-react-app](https://www.npmjs.com/package/eslint-config-react-app) : CRA에서 기본으로 사용하는 eslint 설정
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) : react hooks 규칙 관련 피드백 제공
+- [eslint-plugin-storybook](https://www.npmjs.com/package/eslint-plugin-storybook) : 스토리북에 최적화 된 lint 규칙 제공
 - [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)
 - [eslint-plugin-nuxt](https://www.npmjs.com/package/eslint-plugin-nuxt)
 - [eslint-webpack-plugin](https://www.npmjs.com/package/eslint-webpack-plugin)
