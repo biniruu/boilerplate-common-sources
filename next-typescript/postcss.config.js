@@ -16,7 +16,6 @@
  */
 
 module.exports = {
-  syntax: 'postcss-syntax', //  automatically switch the required PostCSS syntax by file extension/source
   plugins: {
     'postcss-preset-env': {
       autoprefixer: {
