@@ -4,7 +4,11 @@
  */
 
 module.exports = {
-  env: { browser: true, es6: true, node: true },
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
   /**
    * Extends
    *
@@ -19,6 +23,7 @@ module.exports = {
    * plugin:react-hooks/recommended
    * plugin:react/jsx-runtime : If you are using the new JSX transform from React 17, you should enable this
    * plugin:react/recommended
+   * plugin:storybook/recommended : 스토리북 추천 rule set
    */
   extends: [
     'eslint:recommended',
@@ -32,6 +37,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react/recommended',
+    'plugin:storybook/recommended',
   ],
   overrides: [
     {
@@ -60,7 +66,8 @@ module.exports = {
      */
     project: ['./tsconfig.json', './next.config.js'],
   },
-  root: true, // 현재 설정 파일이 root임을 명시하는 옵션. true로 설정하면 상위 설정 파일 찾기를 여기서 멈춘다.
+  root: true,
+  // 현재 설정 파일이 root임을 명시하는 옵션. true로 설정하면 상위 설정 파일 찾기를 여기서 멈춘다.
   rules: {
     /**
      * Rules reference
@@ -95,14 +102,30 @@ module.exports = {
      * space-before-function-paren : 함수 선언 시 함수명과 괄호 사이에 간격 추가를 강제
      */
     'array-bracket-spacing': 'warn',
-    camelcase: ['error', { properties: 'never' }],
+    camelcase: [
+      'error',
+      {
+        properties: 'never',
+      },
+    ],
     'comma-dangle': ['warn', 'always-multiline'],
-    'computed-property-spacing': ['warn', 'never', { enforceForClassMembers: false }],
+    'computed-property-spacing': [
+      'warn',
+      'never',
+      {
+        enforceForClassMembers: false,
+      },
+    ],
     eqeqeq: 'error',
     'generator-star-spacing': ['warn', 'after'],
     'new-cap': 'error',
     'no-array-constructor': 'error',
-    'no-console': ['warn', { allow: ['warn', 'error'] }],
+    'no-console': [
+      'warn',
+      {
+        allow: ['warn', 'error'],
+      },
+    ],
     'no-debugger': process.env.NODE_ENV === 'development' ? 'warn' : 'error',
     'no-duplicate-imports': 'error',
     'no-inner-declarations': 'warn',
@@ -111,13 +134,24 @@ module.exports = {
     'no-new-object': 'warn',
     'no-undef': 'error',
     'no-underscore-dangle': 'error',
-    'no-unused-vars': ['error', { args: 'after-used' }],
+    'no-unused-vars': [
+      'error',
+      {
+        args: 'after-used',
+      },
+    ],
     'no-useless-escape': 'warn',
     'no-var': 'error',
     'object-curly-spacing': ['warn', 'always'],
     'prefer-const': 'error',
     'prefer-rest-params': 'error',
-    quotes: ['warn', 'single', { allowTemplateLiterals: true }],
+    quotes: [
+      'warn',
+      'single',
+      {
+        allowTemplateLiterals: true,
+      },
+    ],
     semi: ['error', 'never'],
     'sort-imports': [
       'warn',
@@ -127,7 +161,14 @@ module.exports = {
         ignoreDeclarationSort: true,
       },
     ],
-    'space-before-function-paren': ['warn', { anonymous: 'always', named: 'never', asyncArrow: 'always' }],
+    'space-before-function-paren': [
+      'warn',
+      {
+        anonymous: 'always',
+        named: 'never',
+        asyncArrow: 'always',
+      },
+    ],
     /**
      * Typescript-eslint supported rules
      * {@link https://typescript-eslint.io/rules/}
@@ -154,7 +195,12 @@ module.exports = {
         'ts-check': 'allow-with-description',
       },
     ],
-    '@typescript-eslint/no-explicit-any': ['error', { ignoreRestArgs: true }],
+    '@typescript-eslint/no-explicit-any': [
+      'error',
+      {
+        ignoreRestArgs: true,
+      },
+    ],
     '@typescript-eslint/no-floating-promises': 'warn',
     '@typescript-eslint/no-unsafe-argument': 'error',
     '@typescript-eslint/no-unsafe-assignment': 'error',
@@ -166,7 +212,11 @@ module.exports = {
     '@typescript-eslint/restrict-template-expressions': 'warn',
     '@typescript-eslint/space-before-function-paren': [
       'warn',
-      { anonymous: 'always', named: 'never', asyncArrow: 'always' },
+      {
+        anonymous: 'always',
+        named: 'never',
+        asyncArrow: 'always',
+      },
     ],
     /**
      * Eslint-config-prettier options
@@ -187,12 +237,22 @@ module.exports = {
      * order : import 자동 정렬. warnOnUnassignedImports는 항상 default값(false)로 놔둘 것. true로 할 경우 import 정렬 관련 경고가 발생하는데, 이 문제는 import/order 또는 sort-import 설정만으로는 해결 불가
      */
     'import/newline-after-import': 'warn',
-    'import/no-anonymous-default-export': ['warn', { allowArray: true, allowObject: true }],
+    'import/no-anonymous-default-export': [
+      'warn',
+      {
+        allowArray: true,
+        allowObject: true,
+      },
+    ],
     'import/no-unresolved': 'off',
     'import/order': [
       'warn',
       {
-        alphabetize: { caseInsensitive: true, order: 'asc', orderImportKind: 'asc' },
+        alphabetize: {
+          caseInsensitive: true,
+          order: 'asc',
+          orderImportKind: 'asc',
+        },
         'newlines-between': 'always',
       },
     ],
@@ -244,6 +304,7 @@ module.exports = {
      * jsx-uses-vars : JSX를 import한 후 해당 JSX 사용 강제. 'no-unused-vars'가 활성화 된 경우 효과 발생
      * no-direct-mutation-state : state 직접 수정 금지. 'react/recommended' 설정 시 활성화
      * no-unescaped-entities : JSX 안에서 escape 되지 않은 entity 코드 사용 금지. 'react/recommended' 설정 시 활성화
+     * no-unknown-property : DOM property에 해당하지 않는 property를 비활성화
      * no-unused-state : 사용하지 않는 state가 있을 시 경고 발생
      * prop-types : prop의 type을 정의하도록 강제. 'react/recommended' 설정 시 활성화. typescript를 사용하면 필요없는 옵션
      * react-in-jsx-scope : component에서 React를 import하지 않을 경우 오류 발생. 'react/recommended' 설정 시 활성화. react v17 이후 필요없어짐 {@link https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#eslint How to Upgrade to the New JSX Transform}
@@ -256,17 +317,40 @@ module.exports = {
     'react/jsx-curly-brace-presence': 'warn',
     // 'react/jsx-curly-spacing': ['warn', { when: 'always', children: true, objectLiterals: 'never' }], // prettier와 충돌하여 사용할 수 없음
     'react/jsx-key': 'error',
-    'react/jsx-no-useless-fragment': ['warn', { allowExpressions: true }],
+    'react/jsx-no-useless-fragment': [
+      'warn',
+      {
+        allowExpressions: true,
+      },
+    ],
     'react/jsx-pascal-case': 'warn',
-    'react/jsx-no-bind': ['error', { allowArrowFunctions: true, allowFunctions: true }],
+    'react/jsx-no-bind': [
+      'error',
+      {
+        allowArrowFunctions: true,
+        allowFunctions: true,
+      },
+    ],
     'react/jsx-uses-react': 'off',
     'react/jsx-uses-vars': 'error',
     'react/no-direct-mutation-state': 'error',
     'react/no-unescaped-entities': 'error',
+    'react/no-unknown-property': [
+      'error',
+      {
+        ignore: ['jsx'],
+      },
+    ],
     'react/no-unused-state': 'warn',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
-    'react/self-closing-comp': ['warn', { component: true, html: false }],
+    'react/self-closing-comp': [
+      'warn',
+      {
+        component: true,
+        html: false,
+      },
+    ],
     'react/static-property-placement': 'warn',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': [
@@ -276,6 +360,7 @@ module.exports = {
       // },
     ],
   },
+
   settings: {
     /**
      * Eslint-plugin-import resolvers
@@ -304,6 +389,8 @@ module.exports = {
      *
      * 'detect' automatically picks the version you have installed.
      */
-    react: { version: 'detect' },
+    react: {
+      version: 'detect',
+    },
   },
 }
