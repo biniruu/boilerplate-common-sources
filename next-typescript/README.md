@@ -78,6 +78,10 @@ yarn add -D @types/lodash-es
 
 yarn add -D postcss-cli postcss-flexbugs-fixes postcss-html postcss-normalize postcss-preset-env postcss-syntax postcss-url
 
+# PostCSS for Styled-Components
+
+yarn add -D postcss-styled-syntax
+
 # Prettier
 
 yarn add -D prettier

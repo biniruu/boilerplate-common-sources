@@ -176,6 +176,7 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 확�
 - [postcss-nesting](https://www.npmjs.com/package/postcss-nesting) : nesting 문법 코드를 pure css 문법에 맞게 변환
 - [postcss-normalize](https://www.npmjs.com/package/postcss-normalize) : browserslist 설정에 적합한 normalize css 생성
 - [postcss-preset-env](https://www.npmjs.com/package/postcss-preset-env) : 주요 postcss 플러그인을 모은 plugin pack ([설치 플러그인 목록 확인](https://www.libtrends.info/npm-compare/autoprefixer-vs-postcss-nested-vs-postcss-nesting-vs-postcss-preset-env-vs-precss))
+- [postcss-styled-syntax](https://www.npmjs.com/package/postcss-styled-syntax) : css-in-js 사용을 위한 postcss 문법 지원. stylelint에서 `CssSyntaxError`를 발생시키는 문제를 해결하기 위해 필요
 - [postcss-syntax](https://www.npmjs.com/package/postcss-syntax) : 파일 확장자나 소스에 따라 postcss가 적용할 플러그인을 자동으로 선택
 - [postcss-scss](https://www.npmjs.com/package/postcss-scss) : scss를 css로 트랜스파일
 - [pug](https://www.npmjs.com/package/pug) : haml 템플릿 엔진. [Haml](https://haml.info)
