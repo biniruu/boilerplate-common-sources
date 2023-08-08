@@ -1,13 +1,16 @@
 ### VisualStudioCode ###
 # For VS Code, you should use the following list instead
-# When resetting this file, please make sure that the following .vscode list is safe
+# When resetting this file, make sure that the following .vscode list is safe
 .vscode/*
 !.vscode/css_custom_data.json
+!.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
 
-# Created by https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,dotenv,windows,intellij,webstorm,visualstudiocode,nextjs
-# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,yarn,macos,dotenv,windows,intellij,webstorm,visualstudiocode,nextjs
+## Created by https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,dotenv,nextjs,windows,intellij,webstorm,visualstudiocode,storybookjs
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,yarn,macos,dotenv,nextjs,windows,intellij,webstorm,visualstudiocode,storybookjs
 
 ### dotenv ###
 .env
@@ -342,6 +345,12 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+### StorybookJs ###
+# gitignore template for the Storybook, UI guide for front apps
+# website: https://storybook.js.org/
+
+storybook-static/
+
 # Local History for Visual Studio Code
 .history/
 
@@ -471,4 +480,4 @@ $RECYCLE.BIN/
 # and uncomment the following lines
 # .pnp.*
 
-# End of https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,dotenv,windows,intellij,webstorm,visualstudiocode,nextjs
+# End of https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,dotenv,nextjs,windows,intellij,webstorm,visualstudiocode,storybookjs
