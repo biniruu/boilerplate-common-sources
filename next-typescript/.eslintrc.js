@@ -38,6 +38,7 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:react/recommended',
     'plugin:storybook/recommended',
+    'plugin:storybook/recommended',
   ],
   overrides: [
     {
