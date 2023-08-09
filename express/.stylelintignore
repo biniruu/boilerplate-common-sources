@@ -1,8 +1,10 @@
 # files
+**/*.html
 **/*.js
 **/*.json
 **/*.lock
 **/*.spec.js
+**/*.svg
 **/*.test.js
 
 # paths

@@ -6,6 +6,7 @@
 **/*.spec.jsx
 **/*.spec.ts
 **/*.spec.tsx
+**/*.svg
 **/*.test.js
 **/*.test.jsx
 **/*.test.ts

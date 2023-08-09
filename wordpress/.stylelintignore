@@ -1,8 +1,10 @@
 # files
+**/*.html
 **/*.js
 **/*.json
 **/*.lock
 **/*.php
+**/*.svg
 
 # paths
 **/node_modules/*
