@@ -18,6 +18,7 @@ module.exports = {
    * plugin:react-hooks/recommended
    * plugin:react/jsx-runtime : If you are using the new JSX transform from React 17, you should enable this
    * plugin:react/recommended
+   * plugin:storybook/recommended : 스토리북 추천 rule set
    * react-app : eslint-config-react-app으로 eslint 설정 덮어쓰기
    */
   extends: [
@@ -31,6 +32,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react/recommended',
+    'plugin:storybook/recommended',
     'react-app',
     'prettier',
   ],
@@ -228,6 +230,7 @@ module.exports = {
      * jsx-uses-vars : JSX를 import한 후 해당 JSX 사용 강제. 'no-unused-vars'가 활성화 된 경우 효과 발생
      * no-direct-mutation-state : state 직접 수정 금지. 'react/recommended' 설정 시 활성화
      * no-unescaped-entities : JSX 안에서 escape 되지 않은 entity 코드 사용 금지. 'react/recommended' 설정 시 활성화
+     * no-unknown-property : DOM property에 해당하지 않는 property를 비활성화
      * no-unused-state : 사용하지 않는 state가 있을 시 경고 발생
      * prop-types : prop의 type을 정의하도록 강제. 'react/recommended' 설정 시 활성화. typescript를 사용하면 필요없는 옵션
      * react-in-jsx-scope : component에서 React를 import하지 않을 경우 오류 발생. 'react/recommended' 설정 시 활성화. react v17 이후 필요없어짐 {@link https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#eslint How to Upgrade to the New JSX Transform}
@@ -247,6 +250,12 @@ module.exports = {
     'react/jsx-uses-vars': 'error',
     'react/no-direct-mutation-state': 'error',
     'react/no-unescaped-entities': 'error',
+    'react/no-unknown-property': [
+      'error',
+      {
+        ignore: ['jsx'],
+      },
+    ],
     'react/no-unused-state': 'warn',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',

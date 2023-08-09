@@ -13,6 +13,7 @@ module.exports = {
    * plugin:import/typescript : eslint-plugin-import 플러그인
    * plugin:jsx-a11y/recommended : 웹 접근성 관련 추천 rule set
    * plugin:prettier/recommended : eslint-config-prettier 추천 rule set
+   * plugin:storybook/recommended : 스토리북 추천 rule set
    */
   extends: [
     'eslint:recommended',
@@ -20,6 +21,7 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:jsx-a11y/recommended',
     'plugin:prettier/recommended',
+    'plugin:storybook/recommended',
   ],
   overrides: [
     {
