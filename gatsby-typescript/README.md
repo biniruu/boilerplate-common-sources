@@ -98,6 +98,10 @@ npm install --save-dev postcss-html
 
 npm install --save-dev prettier
 
+# React
+
+yarn add react-hook-form
+
 # Stylelint
 
 npm install --save-dev stylelint stylelint-config-standard stylelint-order

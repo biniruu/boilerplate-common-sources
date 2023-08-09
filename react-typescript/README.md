@@ -104,7 +104,7 @@ yarn add -D prettier-plugin-tailwindcss
 
 # React
 
-yarn add react-router-dom
+yarn add react-hook-form react-router-dom
 yarn add -D react-test-renderer
 
 # React for Typescript

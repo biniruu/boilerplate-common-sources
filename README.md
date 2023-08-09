@@ -181,6 +181,7 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 확�
 - [postcss-scss](https://www.npmjs.com/package/postcss-scss) : scss를 css로 트랜스파일
 - [pug](https://www.npmjs.com/package/pug) : haml 템플릿 엔진. [Haml](https://haml.info)
 - [prettier](https://www.npmjs.com/package/prettier)
+- [react-hook-form](https://www.npmjs.com/package/react-hook-form) : react에서 사용하는 form validation 라이브러리
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom) : 라우터 지원
 - [react-test-renderer](https://www.npmjs.com/package/react-test-renderer) : 테스트 시 reactDOM의 스냅샷 생성
 - [sass](https://www.npmjs.com/package/sass)
