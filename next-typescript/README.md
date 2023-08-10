@@ -49,15 +49,11 @@ yarn add -D eslint-config-prettier eslint-plugin-prettier
 #
 # 💁🏻 Storybook을 설치하는 과정에서 설치 여부를 물어보기 때문에 굳이 먼저 설치할 필요는 없어요.
 
-# ESLint for SWR
-
-yarn add -D @swrlab/eslint-plugin-swr
+yarn add -D eslint-plugin-storybook
 
 # ESLint for TanStack Query
 
 yarn add -D @tanstack/eslint-plugin-query
-
-yarn add -D eslint-plugin-storybook
 
 # ESLint for TypeScript
 
@@ -84,7 +80,7 @@ yarn add -D @types/lodash-es
 # 💁🏻‍♂️ postcss-preset-env를 설치하지 않는다면 아래 링크에 정리된 postcss 플러그인은 별도로 설치해야 해요.
 # https://github.com/csstools/postcss-plugins/tree/main/plugins
 
-yarn add -D postcss-cli postcss-flexbugs-fixes postcss-html postcss-normalize postcss-preset-env postcss-syntax postcss-url
+yarn add -D postcss-cli postcss-flexbugs-fixes postcss-html postcss-loader postcss-normalize postcss-preset-env postcss-syntax postcss-url
 
 # PostCSS for Styled-Components
 
@@ -165,14 +161,16 @@ yarn add -D source-map-loader
 - eslint-plugin-react
 - eslint-plugin-react-hooks
 - eslint-plugin-jsx-a11y
+- postcss-import
+- postcss-nested
 - tailwindcss
 - typescript
 
 <br>
 
-💁🏻 아래 패키지는 Storybook을 설치할 때, 이미 ESLint가 설치된 상태라면 자동으로 설치를 제안해 줘요.
+💁🏻 아래 패키지는 다른 패키지와 충돌을 일으키기 때문에 사용하지 않아요.
 
-- eslint-plugin-storybook
+- @swrlab/eslint-plugin-swr : 필수 패키지들이 의존성 패키지로 사용 중인 `eslint-plugin-import`와 충돌을 일으킨다.
 
 <br>
 

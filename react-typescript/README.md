@@ -53,10 +53,6 @@ yes를 선택하면 플러그인 설치와 함께 .eslintrc.js > extends에 `plu
 
 yarn add @craco/craco
 
-# ESLint for Jest
-
-yarn add -D eslint-plugin-jest
-
 # ESLint for Prettier
 
 yarn add -D eslint-config-prettier eslint-plugin-prettier
@@ -67,17 +63,9 @@ yarn add -D eslint-config-prettier eslint-plugin-prettier
 
 yarn add -D eslint-plugin-storybook
 
-# ESLint for SWR
-
-yarn add -D @swrlab/eslint-plugin-swr
-
 # ESLint for TanStack Query
 
 yarn add -D @tanstack/eslint-plugin-query
-
-# ESLint for TypeScript
-
-yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 
 # Dotenv
 
@@ -85,7 +73,7 @@ yarn add env-cmd
 
 # Jest for TypeScript
 
-yarn add -D @types/jest ts-jest
+yarn add -D ts-jest
 
 # Lodash
 
@@ -125,7 +113,7 @@ yarn add recoil
 
 # SASS (SCSS)
 
-yarn add -D sass sass-loader
+yarn add -D sass
 
 # Styled-components
 
@@ -156,8 +144,11 @@ yarn add @tanstack/react-query
 - @babel/core
 - @types/jest
 - @types/node
+- @types/prettier
 - @types/react
 - @types/react-dom
+- @typescript-eslint/eslint-plugin
+- @typescript-eslint/parser
 - css-loader
 - css-minimizer-webpack-plugin
 - dotenv
@@ -166,9 +157,10 @@ yarn add @tanstack/react-query
 - eslint-config-react-app
 - eslint-import-resolver-typescript
 - eslint-plugin-import
+- eslint-plugin-jest
+- eslint-plugin-jsx-a11y
 - eslint-plugin-react
 - eslint-plugin-react-hooks
-- eslint-plugin-jsx-a11y
 - eslint-webpack-plugin
 - file-loader
 - jest
@@ -187,6 +179,12 @@ yarn add @tanstack/react-query
 - style-loader
 - tailwindcss
 - typescript
+
+<br>
+
+💁🏻 아래 패키지는 다른 패키지와 충돌을 일으키기 때문에 사용하지 않아요.
+
+- @swrlab/eslint-plugin-swr : 필수 패키지들이 의존성 패키지로 사용 중인 `eslint-plugin-import`와 충돌을 일으킨다.
 
 <br>
 
