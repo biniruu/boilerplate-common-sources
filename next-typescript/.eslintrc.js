@@ -14,6 +14,7 @@ module.exports = {
    *
    * eslint:recommended : eslint 추천 rule set
    * next/core-web-vitals : create next app으로 프로젝트 시작 시 기본 설정
+   * plugin:@swrlab/eslint-plugin-swr/recommended : swr 추천 rule set
    * plugin:@tanstack/eslint-plugin-query/recommended : tanstack query (react query) 추천 rule set
    * plugin:@typescript-eslint/recommended : 타입스크립트 추천 룰셋
    * plugin:@typescript-eslint/recommended-requiring-type-checking
@@ -29,6 +30,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'next/core-web-vitals',
+    'plugin:@swrlab/eslint-plugin-swr/recommended',
     'plugin:@tanstack/eslint-plugin-query/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
