@@ -9,7 +9,6 @@ module.exports = {
    * Extends
    *
    * eslint:recommended : eslint 추천 rule set
-   * plugin:@swrlab/eslint-plugin-swr/recommended : swr 추천 rule set
    * plugin:@tanstack/eslint-plugin-query/recommended : tanstack query (react query) 추천 rule set
    * plugin:@typescript-eslint/recommended-requiring-type-checking : 타입스크립트 추천 룰셋 {@link https://typescript-eslint.io/linting/typed-linting/}
    * plugin:import/recommended : eslint-plugin-import 추천 rule set
@@ -24,7 +23,6 @@ module.exports = {
    */
   extends: [
     'eslint:recommended',
-    'plugin:@swrlab/eslint-plugin-swr/recommended',
     'plugin:@tanstack/eslint-plugin-query/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:import/recommended',
