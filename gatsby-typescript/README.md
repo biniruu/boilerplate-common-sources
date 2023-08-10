@@ -21,22 +21,6 @@ Gatsby with TypeScript 프로젝트 환경 설정을 빠르게 할 수 있도록
 
 <br>
 
-## 📒Setting up Storybook
-
-스토리북은 프로젝트 환경 설정을 모두 마친 후에 설치하면 좋아요.
-
-```bash
-npx storybook@latest init
-```
-
-설치 중에 ESLint 설치 여부를 파악하여 다음과 같이 eslint-plugin-storybook 플러그인 설치를 물어봐요.
-
-> We have detected that you're using ESLint. Storybook provides a plugin that gives the best experience with Storybook and helps follow best practices: <https://github.com/storybookjs/eslint-plugin-storybook#readme>
-
-yes를 선택하면 플러그인 설치와 함께 .eslintrc.js > extends에 `plugin:storybook/recommended` 옵션 추가까지 자동으로 해 줘요.
-
-<br>
-
 ## 🚀Beginning gatsby with starter library
 
 테마와 함께 Gatsby를 이용하고 싶다면 Gatsby에서 제공하는 스타터를 사용하세요. 아래 페이지에서 필요한 스타터 라이브러리를 골라 설치할 수 있어요.
@@ -60,6 +44,22 @@ gatsby new
 아래 페이지에서 필요한 플러그인을 골라 설치할 수 있어요.
 
 [Gatsby Plugin Library](https://www.gatsbyjs.com/plugins)
+
+<br>
+
+## 📒Setting up Storybook
+
+스토리북은 프로젝트 환경 설정을 모두 마친 후에 설치하면 좋아요.
+
+```bash
+npx storybook@latest init
+```
+
+설치 중에 ESLint 설치 여부를 파악하여 다음과 같이 eslint-plugin-storybook 플러그인 설치를 물어봐요.
+
+> We have detected that you're using ESLint. Storybook provides a plugin that gives the best experience with Storybook and helps follow best practices: <https://github.com/storybookjs/eslint-plugin-storybook#readme>
+
+yes를 선택하면 플러그인 설치와 함께 .eslintrc.js > extends에 `plugin:storybook/recommended` 옵션 추가까지 자동으로 해 줘요.
 
 <br>
 
