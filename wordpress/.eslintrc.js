@@ -63,7 +63,7 @@ module.exports = {
     'no-new-object': 'warn',
     'no-undef': 'error',
     'no-underscore-dangle': 'error',
-    'no-unused-vars': ['error', { args: 'after-used' }],
+    'no-unused-vars': ['error', { args: 'all' }],
     'no-useless-escape': 'warn',
     'no-var': 'error',
     'object-curly-spacing': ['warn', 'always'],

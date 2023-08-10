@@ -4,7 +4,11 @@
  */
 
 module.exports = {
-  env: { browser: true, es6: true, node: true },
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
   /**
    * Extends
    *
@@ -81,14 +85,30 @@ module.exports = {
      * space-before-function-paren : 함수 선언 시 함수명과 괄호 사이에 간격 추가를 강제
      */
     'array-bracket-spacing': 'warn',
-    camelcase: ['error', { properties: 'never' }],
+    camelcase: [
+      'error',
+      {
+        properties: 'never',
+      },
+    ],
     'comma-dangle': ['warn', 'always-multiline'],
-    'computed-property-spacing': ['warn', 'never', { enforceForClassMembers: false }],
+    'computed-property-spacing': [
+      'warn',
+      'never',
+      {
+        enforceForClassMembers: false,
+      },
+    ],
     eqeqeq: 'error',
     'generator-star-spacing': ['warn', 'after'],
     'new-cap': 'error',
     'no-array-constructor': 'error',
-    'no-console': ['warn', { allow: ['warn', 'error'] }],
+    'no-console': [
+      'warn',
+      {
+        allow: ['warn', 'error'],
+      },
+    ],
     'no-debugger': process.env.NODE_ENV === 'development' ? 'warn' : 'error',
     'no-duplicate-imports': 'error',
     'no-inner-declarations': 'warn',
@@ -97,13 +117,19 @@ module.exports = {
     'no-new-object': 'warn',
     'no-undef': 'error',
     'no-underscore-dangle': 'error',
-    'no-unused-vars': ['error', { args: 'after-used' }],
+    'no-unused-vars': 'off',
     'no-useless-escape': 'warn',
     'no-var': 'error',
     'object-curly-spacing': ['warn', 'always'],
     'prefer-const': 'error',
     'prefer-rest-params': 'error',
-    quotes: ['warn', 'single', { allowTemplateLiterals: true }],
+    quotes: [
+      'warn',
+      'single',
+      {
+        allowTemplateLiterals: true,
+      },
+    ],
     semi: ['error', 'never'],
     'sort-imports': [
       'warn',
@@ -113,7 +139,14 @@ module.exports = {
         ignoreDeclarationSort: true,
       },
     ],
-    'space-before-function-paren': ['warn', { anonymous: 'always', named: 'never', asyncArrow: 'always' }],
+    'space-before-function-paren': [
+      'warn',
+      {
+        anonymous: 'always',
+        named: 'never',
+        asyncArrow: 'always',
+      },
+    ],
     /**
      * Typescript-eslint supported rules
      * {@link https://typescript-eslint.io/rules/}
@@ -125,7 +158,7 @@ module.exports = {
      * no-unsafe-assignment : any 타입 사용 시 알림을 띄움
      * no-unsafe-call
      * no-unsafe-member-access
-     * no-unused-vars : no-unused-vars와 동일. no-unused-vars를 비활성화 한 후에 사용할 것
+     * no-unused-vars : eslint에서 제공하는 no-unused-vars와 동일. no-unused-vars를 비활성화 한 후에 사용할 것
      * no-var-requires
      * restrict-plus-operands
      * restrict-template-expressions
@@ -140,19 +173,28 @@ module.exports = {
         'ts-check': 'allow-with-description',
       },
     ],
-    '@typescript-eslint/no-explicit-any': ['error', { ignoreRestArgs: true }],
+    '@typescript-eslint/no-explicit-any': [
+      'error',
+      {
+        ignoreRestArgs: true,
+      },
+    ],
     '@typescript-eslint/no-floating-promises': 'warn',
     '@typescript-eslint/no-unsafe-argument': 'error',
     '@typescript-eslint/no-unsafe-assignment': 'error',
     '@typescript-eslint/no-unsafe-call': 'error',
     '@typescript-eslint/no-unsafe-member-access': 'error',
-    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': ['error', { args: 'all' }],
     '@typescript-eslint/no-var-requires': 'error',
     '@typescript-eslint/restrict-plus-operands': 'warn',
     '@typescript-eslint/restrict-template-expressions': 'warn',
     '@typescript-eslint/space-before-function-paren': [
       'warn',
-      { anonymous: 'always', named: 'never', asyncArrow: 'always' },
+      {
+        anonymous: 'always',
+        named: 'never',
+        asyncArrow: 'always',
+      },
     ],
     /**
      * Eslint-config-prettier options
@@ -173,12 +215,22 @@ module.exports = {
      * order : import 자동 정렬. warnOnUnassignedImports는 항상 default값(false)로 놔둘 것. true로 할 경우 import 정렬 관련 경고가 발생하는데, 이 문제는 import/order 또는 sort-import 설정만으로는 해결 불가
      */
     'import/newline-after-import': 'warn',
-    'import/no-anonymous-default-export': ['warn', { allowArray: true, allowObject: true }],
+    'import/no-anonymous-default-export': [
+      'warn',
+      {
+        allowArray: true,
+        allowObject: true,
+      },
+    ],
     'import/no-unresolved': 'off',
     'import/order': [
       'warn',
       {
-        alphabetize: { caseInsensitive: true, order: 'asc', orderImportKind: 'asc' },
+        alphabetize: {
+          caseInsensitive: true,
+          order: 'asc',
+          orderImportKind: 'asc',
+        },
         'newlines-between': 'always',
       },
     ],
@@ -243,9 +295,20 @@ module.exports = {
     'react/jsx-curly-brace-presence': 'warn',
     // 'react/jsx-curly-spacing': ['warn', { when: 'always', children: true, objectLiterals: 'never' }], // prettier와 충돌하여 사용할 수 없음
     'react/jsx-key': 'error',
-    'react/jsx-no-useless-fragment': ['warn', { allowExpressions: true }],
+    'react/jsx-no-useless-fragment': [
+      'warn',
+      {
+        allowExpressions: true,
+      },
+    ],
     'react/jsx-pascal-case': 'warn',
-    'react/jsx-no-bind': ['error', { allowArrowFunctions: true, allowFunctions: true }],
+    'react/jsx-no-bind': [
+      'error',
+      {
+        allowArrowFunctions: true,
+        allowFunctions: true,
+      },
+    ],
     'react/jsx-uses-react': 'off',
     'react/jsx-uses-vars': 'error',
     'react/no-direct-mutation-state': 'error',
@@ -259,7 +322,13 @@ module.exports = {
     'react/no-unused-state': 'warn',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
-    'react/self-closing-comp': ['warn', { component: true, html: false }],
+    'react/self-closing-comp': [
+      'warn',
+      {
+        component: true,
+        html: false,
+      },
+    ],
     'react/static-property-placement': 'warn',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': [
@@ -288,6 +357,8 @@ module.exports = {
      *
      * 'detect' automatically picks the version you have installed.
      */
-    react: { version: 'detect' },
+    react: {
+      version: 'detect',
+    },
   },
 }
