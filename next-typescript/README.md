@@ -138,7 +138,7 @@ yarn add -D stylelint-config-standard-scss stylelint-scss
 
 yarn add swr
 
-# TanStack Query
+# TanStack Query (React Query)
 
 yarn add @tanstack/react-query
 
