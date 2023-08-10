@@ -49,6 +49,14 @@ yarn add -D eslint-config-prettier eslint-plugin-prettier
 #
 # 💁🏻 Storybook을 설치하는 과정에서 설치 여부를 물어보기 때문에 굳이 먼저 설치할 필요는 없어요.
 
+# ESLint for SWR
+
+yarn add -D @swrlab/eslint-plugin-swr
+
+# ESLint for TanStack Query
+
+yarn add -D @tanstack/eslint-plugin-query
+
 yarn add -D eslint-plugin-storybook
 
 # ESLint for TypeScript
@@ -125,6 +133,14 @@ yarn add -D stylelint stylelint-config-standard stylelint-order
 # Stylelint for SCSS
 
 yarn add -D stylelint-config-standard-scss stylelint-scss
+
+# SWR
+
+yarn add swr
+
+# TanStack Query
+
+yarn add @tanstack/react-query
 
 # Webpack
 

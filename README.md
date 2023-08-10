@@ -117,6 +117,9 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 확�
 - [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react) : 리액트 플러그인 지원을 위한 babel 설정 제공
 - [@craco/craco](https://www.npmjs.com/package/@craco/craco) : CRA로 리액트를 설치했을 때 webpack 설정 지원
 - [@prettier/plugin-pug](https://www.npmjs.com/package/@prettier/plugin-pug) : pug 파일 code formatting
+- [@swrlab/eslint-plugin-swr](https://www.npmjs.com/package/@swrlab/eslint-plugin-swr) : swr 관련 lint 규칙 제공
+- [@tanstack/eslint-plugin-query](https://www.npmjs.com/package/@tanstack/eslint-plugin-query) : tanstack query 관련 lint 규칙 제공
+- [@tanstack/react-query](https://www.npmjs.com/package/@tanstack/react-query) : react에서, 서버 측으로부터 받아오는 데이터를 최신 상태로 유지
 - [@types/express](https://www.npmjs.com/package/@types/express)
 - [@types/handlebars-webpack-plugin](https://www.npmjs.com/package/@types/handlebars-webpack-plugin)
 - [@types/jest](https://www.npmjs.com/package/@types/jest) : jest intellisense 제공
@@ -197,6 +200,7 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 확�
 - [stylelint-order](https://www.npmjs.com/package/stylelint-order) : .stylelintrc.js에서 설정한 order대로 코드가 작성되었는지 파악
 - [stylelint-scss](https://www.npmjs.com/package/stylelint-scss) : scss 문법 오류 피드백
 - [style-loader](https://www.npmjs.com/package/style-loader) : DOM에 style 주입
+- [swr](https://www.npmjs.com/package/swr) : react에서, 서버 측으로부터 받아 온 데이터를 캐싱
 - [ts-jest](https://www.npmjs.com/package/ts-jest) : typescript 환경에서 jest를 사용할 때 필요
 - [ts-node](https://www.npmjs.com/package/ts-node) : .ts 파일 실행. typescript 환경에서 사용하는 nodemon. 설치하지 않고 `npx ts-node` 실행만으로 사용 가능
 - [typescript](https://www.npmjs.com/package/typescript)

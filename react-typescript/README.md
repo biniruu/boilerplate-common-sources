@@ -67,6 +67,14 @@ yarn add -D eslint-config-prettier eslint-plugin-prettier
 
 yarn add -D eslint-plugin-storybook
 
+# ESLint for SWR
+
+yarn add -D @swrlab/eslint-plugin-swr
+
+# ESLint for TanStack Query
+
+yarn add -D @tanstack/eslint-plugin-query
+
 # ESLint for TypeScript
 
 yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
@@ -131,6 +139,14 @@ yarn add -D stylelint stylelint-config-standard stylelint-order
 # Stylelint for SCSS
 
 yarn add -D stylelint-config-standard-scss stylelint-scss
+
+# SWR
+
+yarn add swr
+
+# TanStack Query
+
+yarn add @tanstack/react-query
 ```
 
 <br>
