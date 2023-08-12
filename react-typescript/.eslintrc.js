@@ -7,7 +7,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    node: true
+    node: true,
   },
   /**
    * Extends
@@ -107,16 +107,16 @@ module.exports = {
     camelcase: [
       'error',
       {
-        properties: 'never'
-      }
+        properties: 'never',
+      },
     ],
     'comma-dangle': ['warn', 'always-multiline'],
     'computed-property-spacing': [
       'warn',
       'never',
       {
-        enforceForClassMembers: false
-      }
+        enforceForClassMembers: false,
+      },
     ],
     eqeqeq: 'error',
     'generator-star-spacing': ['warn', 'after'],
@@ -125,8 +125,8 @@ module.exports = {
     'no-console': [
       'warn',
       {
-        allow: ['warn', 'error']
-      }
+        allow: ['warn', 'error'],
+      },
     ],
     'no-debugger': process.env.NODE_ENV === 'development' ? 'warn' : 'error',
     'no-duplicate-imports': 'error',
@@ -146,8 +146,8 @@ module.exports = {
       'warn',
       'single',
       {
-        allowTemplateLiterals: true
-      }
+        allowTemplateLiterals: true,
+      },
     ],
     semi: ['error', 'never'],
     'sort-imports': [
@@ -163,8 +163,8 @@ module.exports = {
       {
         anonymous: 'always',
         named: 'never',
-        asyncArrow: 'always'
-      }
+        asyncArrow: 'always',
+      },
     ],
     /**
      * Typescript-eslint supported rules
@@ -195,15 +195,20 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': [
       'error',
       {
-        ignoreRestArgs: true
-      }
+        ignoreRestArgs: true,
+      },
     ],
     '@typescript-eslint/no-floating-promises': 'warn',
     '@typescript-eslint/no-unsafe-argument': 'error',
     '@typescript-eslint/no-unsafe-assignment': 'error',
     '@typescript-eslint/no-unsafe-call': 'error',
     '@typescript-eslint/no-unsafe-member-access': 'error',
-    '@typescript-eslint/no-unused-vars': ['error', { args: 'all' }],
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        args: 'all',
+      },
+    ],
     '@typescript-eslint/no-var-requires': 'error',
     '@typescript-eslint/restrict-plus-operands': 'warn',
     '@typescript-eslint/restrict-template-expressions': 'warn',
@@ -234,8 +239,8 @@ module.exports = {
       'warn',
       {
         allowArray: true,
-        allowObject: true
-      }
+        allowObject: true,
+      },
     ],
     'import/no-unresolved': 'off',
     'import/order': [
@@ -244,7 +249,7 @@ module.exports = {
         alphabetize: {
           caseInsensitive: true,
           order: 'asc',
-          orderImportKind: 'asc'
+          orderImportKind: 'asc',
         },
         'newlines-between': 'always',
       },
@@ -313,16 +318,16 @@ module.exports = {
     'react/jsx-no-useless-fragment': [
       'warn',
       {
-        allowExpressions: true
-      }
+        allowExpressions: true,
+      },
     ],
     'react/jsx-pascal-case': 'warn',
     'react/jsx-no-bind': [
       'error',
       {
         allowArrowFunctions: true,
-        allowFunctions: true
-      }
+        allowFunctions: true,
+      },
     ],
     'react/jsx-uses-react': 'off',
     'react/jsx-uses-vars': 'error',
@@ -341,8 +346,8 @@ module.exports = {
       'warn',
       {
         component: true,
-        html: false
-      }
+        html: false,
+      },
     ],
     'react/static-property-placement': 'warn',
     'react-hooks/rules-of-hooks': 'error',
@@ -382,7 +387,7 @@ module.exports = {
      * 'detect' automatically picks the version you have installed.
      */
     react: {
-      version: 'detect'
+      version: 'detect',
     },
   },
 }
