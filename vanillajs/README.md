@@ -82,10 +82,6 @@ yarn add -D sass sass-loader
 
 yarn add styled-components
 
-# Styled-components for TypeScript
-
-yarn add -D @types/styled-components
-
 # Stylelint
 
 yarn add -D stylelint stylelint-config-standard stylelint-order
