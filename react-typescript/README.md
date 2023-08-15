@@ -63,7 +63,7 @@ yarn add -D eslint-config-prettier eslint-plugin-prettier
 
 yarn add -D eslint-plugin-storybook
 
-# ESLint for TanStack Query
+# ESLint for TanStack Query (React Query)
 
 yarn add -D @tanstack/eslint-plugin-query
 
@@ -134,7 +134,7 @@ yarn add swr
 
 # TanStack Query (React Query)
 
-yarn add @tanstack/react-query
+yarn add @tanstack/react-query @tanstack/react-query-devtools
 ```
 
 <br>
