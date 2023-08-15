@@ -86,6 +86,7 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 확�
 - `Path Intellisense` (christian-kohler.path-intellisense)
 - `Polacode` (pnp.polacode)
 - `Project Manager` (alefragnani.project-manager)
+- `Postman` (Postman.postman-for-vscode)
 - `px to rem & rpx & vw (cssrem)` (cipchk.cssrem)
 - `React Jest Snippets` (jalisimo.react-jest-vscode-snippets)
 - `React Testing Library Cheatsheet` (willnemo.rtlcheatsheet)
