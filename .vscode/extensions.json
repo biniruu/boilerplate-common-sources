@@ -83,6 +83,7 @@
     "cmstead.jsrefactor",
     "cmstead.js-codeformer",
     "p42ai.refactor",
-    "fosshaas.fontsize-shortcuts"
+    "fosshaas.fontsize-shortcuts",
+    "postman.postman-for-vscode"
   ]
 }
