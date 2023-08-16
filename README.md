@@ -68,6 +68,7 @@
 - `Stylelint Disable Snippets` (hedinne.stylelint-disable-snippets)
 - `Tailwind CSS IntelliSense` (bradlc.vscode-tailwindcss)
 - `TabOut` (albert.TabOut)
+- `Thunder Client` (rangav.vscode-thunder-client)
 - `Todo Highlight` (wayou.vscode-todo-highlight)
 - `Todo Tree` (Gruntfuggly.todo-tree)
 - `Turbo Console Log` (ChakrounAnas.turbo-console-log)
