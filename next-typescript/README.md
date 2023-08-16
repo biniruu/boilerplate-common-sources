@@ -96,15 +96,12 @@ yarn add -D prettier-plugin-tailwindcss
 
 # Next
 
+yarn add react-hook-form
 yarn add -D react-test-renderer
 
 # Next for TypeScript
 
 yarn add -D @types/react-test-renderer
-
-# React
-
-yarn add react-hook-form
 
 # Recoil
 
