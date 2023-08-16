@@ -171,6 +171,7 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 확�
 - [lodash](https://www.npmjs.com/package/lodash) : javascript 유틸리티 라이브러리
 - [lodash-es](https://www.npmjs.com/package/lodash-es) : 필요한 lodash 함수만 골라 사용하고, 사용하지 않은 함수는 tree shaking할 수 있는 lodash 패키지
 - [mocha](https://www.npmjs.com/package/mocha)
+- [next-auth](https://www.npmjs.com/package/next-auth) : next에서 다양한 인증 서비스를 편리하게 구현
 - [nodemon](https://www.npmjs.com/package/nodemon) : 파일이 변경될 때마다 node.js 앱 서버를 자동으로 재실행
 - [postcss](https://www.npmjs.com/package/postcss)
 - [postcss-flexbugs-fixes](https://www.npmjs.com/package/postcss-flexbugs-fixes) : 잘못 사용한 CSS 문법 교정. 아마도 동작은 하지만 표준 문법에 맞지 않는 것만 교정해주는 듯

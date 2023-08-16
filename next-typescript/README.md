@@ -37,6 +37,10 @@ yes를 선택하면 플러그인 설치와 함께 .eslintrc.js > extends에 `plu
 이곳에 있는 명령어를 사용해 패키지를 설치하세요.
 
 ```bash
+# Authentication
+
+yarn add next-auth
+
 # ESLint for Jest
 
 yarn add -D eslint-plugin-jest
