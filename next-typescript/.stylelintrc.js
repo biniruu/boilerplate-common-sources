@@ -92,7 +92,12 @@ module.exports = {
         except: ['after-custom-property', 'first-nested'],
       },
     ],
-    'declaration-empty-line-before': ['always', { except: ['after-comment', 'after-declaration', 'first-nested'] }],
+    'declaration-empty-line-before': [
+      'always',
+      {
+        except: ['after-comment', 'after-declaration', 'first-nested'],
+      },
+    ],
     'font-family-name-quotes': 'always-where-recommended',
     'function-name-case': 'lower',
     'function-url-quotes': 'always',
