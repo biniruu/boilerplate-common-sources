@@ -15,36 +15,6 @@
 
 <br>
 
-## 📦What is in this starter pack
-
-이곳에는 다음 설정 파일이 포함되어 있어요.
-
-> .gitignore 파일은 [Toptal](https://www.toptal.com/developers/gitignore)이라는 사이트에서 생성했어요. 변경이 필요한 경우에는 파일 내부 위쪽에 있는 `# Edit at ...` 부분 링크로 이동한 후에 원하는 기술 스택을 선택하여 사용하세요.
-
-`.babelrc` `.eslintignore` `.eslintrc.js` `.github/ISSUE_TEMPLATE.md` `.github/PULL_REQUEST_TEMPLATE.md` `.gitignore` `.markdownlint.json` `.prettierignore` `.prettierrc.js` `.pug-lintrc.json` `.stylelintignore` `.stylelintrc.js` `craco.config.js` `gatsby-config.ts` `jest.config.js` `next.config.js` `nodemon.json` `postcss.config.js` `tailwind.config.js` `tsconfig.js`
-
-<br>
-
-## 📌Required options for VS Code
-
-VS Code의 설정에서 아래 옵션을 변경해주세요.
-
-- Editor: Default Formatter ➡️ `esbenp.prettier-vscode`
-- Eslint > Format: Enable ➡️ `true`
-
-<br>
-
-## 🧩Required extensions for VS Code
-
-lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 확장 프로그램이에요.
-
-- `ESLint` (dbaeumer.vscode-eslint)
-- `markdownlint` (DavidAnson.vscode-markdownlint)
-- `Prettier - Code formatter` (esbenp.prettier-vscode)
-- `Stylelint` (stylelint.vscode-stylelint)
-
-<br>
-
 ## 🚀Recommended extensions for VS Code
 
 편의성을 높여주는 확장 프로그램이에요.
@@ -56,8 +26,10 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 확�
 - `AWS Toolkit` (amazonwebservices.aws-toolkit-vscode)
 - `Bookmarks` (alefragnani.Bookmarks)
 - `Code Spell Checker` (streetsidesoftware.code-spell-checker)
+- `CodiumAI - powered by TestGPT-1 and GPT-3.5&4` (Codium.codium)
 - `Color Highlight` (naumovs.color-highlight)
 - `Error Lens` (usernamehw.errorlens)
+- `ESLint` (dbaeumer.vscode-eslint)
 - `ES7+ React/Redux/React-Native snippets` (dsznajder.es7-react-js-snippets)
 - `Git Graph` (mhutchie.git-graph)
 - `Git History` (donjayamanne.githistory)
@@ -85,12 +57,14 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 확�
 - `npm Intellisense` (christian-kohler.npm-intellisense)
 - `Path Intellisense` (christian-kohler.path-intellisense)
 - `Polacode` (pnp.polacode)
+- `Prettier - Code formatter` (esbenp.prettier-vscode)
 - `Project Manager` (alefragnani.project-manager)
 - `Postman` (Postman.postman-for-vscode)
 - `px to rem & rpx & vw (cssrem)` (cipchk.cssrem)
 - `React Jest Snippets` (jalisimo.react-jest-vscode-snippets)
 - `React Testing Library Cheatsheet` (willnemo.rtlcheatsheet)
 - `SFTP` (Natizyskunk.sftp)
+- `Stylelint` (stylelint.vscode-stylelint)
 - `Stylelint Disable Snippets` (hedinne.stylelint-disable-snippets)
 - `Tailwind CSS IntelliSense` (bradlc.vscode-tailwindcss)
 - `TabOut` (albert.TabOut)
@@ -242,7 +216,7 @@ lint나 formatting 패키지를 사용하기 위해 꼭 설치해야 하는 확�
 
 <br>
 
-## 📥Installing packages
+## 📦Installing packages
 
 이 스타터에 없는 프로젝트 또는 잘 사용하지 않는 도구를 사용할 때 참조해주세요.
 
