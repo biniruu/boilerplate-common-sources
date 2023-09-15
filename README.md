@@ -113,6 +113,7 @@
 - [@vue/server-test-utils](https://www.npmjs.com/package/@vue/server-test-utils) : Vue.js 환경에서 단위 테스트를 하기 위한 공식(Official) 라이브러리
 - [@vue/test-utils](https://www.npmjs.com/package/@vue/test-utils) : Vue.js 환경에서 단위 테스트를 하기 위한 공식 라이브러리.
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer) : cross browser에 필요한 css 속성 prefix를 자동으로 생성
+- [axios](https://www.npmjs.com/package/axios) : HTTP 클라이언트 라이브러리
 - [babel-jest](https://www.npmjs.com/package/babel-jest) : JS/JSX 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
 - [chai](https://www.npmjs.com/package/chai)
 - [dotenv](https://www.npmjs.com/package/dotenv)

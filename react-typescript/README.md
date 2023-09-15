@@ -49,9 +49,17 @@ yes를 선택하면 플러그인 설치와 함께 .eslintrc.js > extends에 `plu
 이곳에 있는 명령어를 사용해 패키지를 설치하세요.
 
 ```bash
+# Axios
+
+yarn add axios
+
 # Craco
 
 yarn add @craco/craco
+
+# Dotenv
+
+yarn add env-cmd
 
 # ESLint for Prettier
 
@@ -66,10 +74,6 @@ yarn add -D eslint-plugin-storybook
 # ESLint for TanStack Query (React Query)
 
 yarn add -D @tanstack/eslint-plugin-query
-
-# Dotenv
-
-yarn add env-cmd
 
 # Jest for TypeScript
 
