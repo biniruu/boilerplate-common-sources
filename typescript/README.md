@@ -109,7 +109,7 @@ yarn add -D typescript
 
 # Ts-node
 
-yarn add -D ts-node
+yarn add -D ts-node ts-node-dev
 
 # Webpack
 

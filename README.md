@@ -180,6 +180,7 @@
 - [swr](https://www.npmjs.com/package/swr) : react에서, 서버 측으로부터 받아 온 데이터를 캐싱
 - [ts-jest](https://www.npmjs.com/package/ts-jest) : typescript 환경에서 jest를 사용할 때 필요
 - [ts-node](https://www.npmjs.com/package/ts-node) : .ts 파일 실행. typescript 환경에서 사용하는 nodemon. 설치하지 않고 `npx ts-node` 실행만으로 사용 가능
+- [ts-node-dev](https://www.npmjs.com/package/ts-node-dev) : ts-node 실행 후 서버를 재실행할 때 필요
 - [typescript](https://www.npmjs.com/package/typescript)
 - [vue-jest](https://www.npmjs.com/package/vue-jest) : Vue 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
 - [webpack](https://www.npmjs.com/package/webpack) : 모듈 번들러
