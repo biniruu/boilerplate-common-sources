@@ -9,6 +9,14 @@ Express + TypeScript 풀스택 프로젝트 환경 설정을 빠르게 할 수 �
 이곳에 있는 명령어를 사용해 패키지를 설치하세요.
 
 ```bash
+# EJS
+
+yarn add ejs
+
+# EJS for TypeScript
+
+yarn add -D @types/ejs
+
 # ESLint
 
 yarn add -D eslint eslint-plugin-import
@@ -59,6 +67,10 @@ yarn add lodash lodash-es
 # Lodash for TypeScript
 
 yarn add -D @types/lodash-es
+
+# Mongoose
+
+yarn add mongoose
 
 # Node.js for TypeScript
 
