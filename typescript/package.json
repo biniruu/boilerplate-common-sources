@@ -5,7 +5,6 @@
   "author": "biniruu",
   "main": "dist/main.js",
   "license": "MIT",
-  "type": "module",
   "private": "true",
   "scripts": {
     "sync-package-version": "npx syncyarnlock -ks",

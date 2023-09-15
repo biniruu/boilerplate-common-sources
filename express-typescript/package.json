@@ -4,7 +4,6 @@
   "description": "typescript starter",
   "author": "biniruu",
   "license": "MIT",
-  "type": "module",
   "private": "true",
   "scripts": {
     "sync-package-version": "npx syncyarnlock -ks",
