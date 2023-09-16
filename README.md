@@ -84,6 +84,7 @@
 
 이곳에 설치된 패키지가 각각 어떤 기능을 하는지 알아보세요.
 
+- [@apollo/client](https://www.npmjs.com/package/@apollo/client) : fetch data from GraphQL
 - [@babel/core](https://www.npmjs.com/package/@babel/core) : babel 사용을 위한 코어 패키지
 - [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser) : babel-eslint
 - [@babel/node](https://www.npmjs.com/package/@babel/node) : node.js cli와 동일하게 동작하는 babel cli
@@ -92,6 +93,8 @@
 - [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env) : 각 개발 환경에 맞춘 babel 지원 설정 제공
 - [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react) : 리액트 플러그인 지원을 위한 babel 설정 제공
 - [@craco/craco](https://www.npmjs.com/package/@craco/craco) : CRA로 리액트를 설치했을 때 webpack 설정 지원
+- [@graphql-codegen/cli](https://www.npmjs.com/package/@graphql-codegen/cli) : generate typescript code out of the GraphQL schema
+- [@graphql-eslint/eslint-plugin](https://www.npmjs.com/package/@graphql-eslint/eslint-plugin) : provide eslint rules for GraphQL
 - [@prettier/plugin-pug](https://www.npmjs.com/package/@prettier/plugin-pug) : pug 파일 code formatting
 - [@swrlab/eslint-plugin-swr](https://www.npmjs.com/package/@swrlab/eslint-plugin-swr) : swr 관련 lint 규칙 제공
 - [@tanstack/eslint-plugin-query](https://www.npmjs.com/package/@tanstack/eslint-plugin-query) : tanstack query 관련 lint 규칙 제공
@@ -116,6 +119,7 @@
 - [axios](https://www.npmjs.com/package/axios) : HTTP 클라이언트 라이브러리
 - [babel-jest](https://www.npmjs.com/package/babel-jest) : JS/JSX 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
 - [chai](https://www.npmjs.com/package/chai)
+- [dataloader](https://www.npmjs.com/package/dataloader) : N+1번의 SQL 쿼리 요청이 실행되는 문제 해결, 데이터 일괄 처리 및 캐싱 기능 제공
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [dotenv-expand](https://www.npmjs.com/package/dotenv-expand) : dotenv 변수 확장
 - [eslint](https://www.npmjs.com/package/eslint)
@@ -139,6 +143,7 @@
 - [eslint-webpack-plugin](https://www.npmjs.com/package/eslint-webpack-plugin)
 - [env-cmd](https://www.npmjs.com/package/env-cmd) : env 파일에 있는 환경 변수를 command에서 실행하는 기능 제공
 - [express](https://www.npmjs.com/package/express) : node.js를 편리하게 사용할 수 있게 해 주는 프레임워크
+- [graphql](https://www.npmjs.com/package/graphql) : a query language for client application
 - [handlebars](https://www.npmjs.com/package/handlebars) : mustache 템플릿의 superset
 - [handlebars-webpack-plugin](https://www.npmjs.com/package/handlebars-webpack-plugin) : webpack으로 handlebars 템플릿을 렌더링
 - [jest](https://www.npmjs.com/package/jest) : 단위 테스트 도구

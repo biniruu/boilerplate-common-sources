@@ -61,6 +61,10 @@ yarn add @craco/craco
 
 yarn add env-cmd
 
+# Eslint for GraphQL
+
+yarn add -D @graphql-eslint/eslint-plugin
+
 # ESLint for Prettier
 
 yarn add -D eslint-config-prettier eslint-plugin-prettier
@@ -74,6 +78,15 @@ yarn add -D eslint-plugin-storybook
 # ESLint for TanStack Query (React Query)
 
 yarn add -D @tanstack/eslint-plugin-query
+
+# GraphQL
+
+yarn add dataloader graphql
+yarn add -D @graphql-codegen/cli
+
+# GraphQL for Client
+
+yarn add @apollo/client
 
 # Jest for TypeScript
 
