@@ -81,7 +81,7 @@ yarn add -D @tanstack/eslint-plugin-query
 
 # GraphQL
 
-yarn add dataloader graphql
+yarn add dataloader graphql graphql-scalars reflect-metadata type-graphql
 yarn add -D @graphql-codegen/cli
 
 # GraphQL for Client

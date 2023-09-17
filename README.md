@@ -149,6 +149,7 @@
 - [env-cmd](https://www.npmjs.com/package/env-cmd) : env 파일에 있는 환경 변수를 command에서 실행하는 기능 제공
 - [express](https://www.npmjs.com/package/express) : node.js를 편리하게 사용할 수 있게 해 주는 프레임워크
 - [graphql](https://www.npmjs.com/package/graphql) : a query language for client application
+- [graphql-scalars](https://www.npmjs.com/package/graphql-scalars) : make custom GraphQL scalar types as type-safe schemas
 - [handlebars](https://www.npmjs.com/package/handlebars) : mustache 템플릿의 superset
 - [handlebars-webpack-plugin](https://www.npmjs.com/package/handlebars-webpack-plugin) : webpack으로 handlebars 템플릿을 렌더링
 - [jest](https://www.npmjs.com/package/jest) : 단위 테스트 도구
@@ -195,6 +196,7 @@
 - [ts-node](https://www.npmjs.com/package/ts-node) : .ts 파일 실행. typescript 환경에서 사용하는 nodemon. 설치하지 않고 `npx ts-node` 실행만으로 사용 가능
 - [ts-node-dev](https://www.npmjs.com/package/ts-node-dev) : ts-node 실행 후 서버를 재실행할 때 필요
 - [typescript](https://www.npmjs.com/package/typescript)
+- [type-graphql](https://www.npmjs.com/package/type-graphql) : GraphQL API library with typescript decorator
 - [vue-jest](https://www.npmjs.com/package/vue-jest) : Vue 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
 - [webpack](https://www.npmjs.com/package/webpack) : 모듈 번들러
 - [ws](https://www.npmjs.com/package/ws) : a Node.js WebSocket Library
