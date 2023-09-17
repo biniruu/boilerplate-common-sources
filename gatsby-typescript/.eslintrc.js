@@ -137,6 +137,7 @@ module.exports = {
         allowSeparatedGroups: true,
         ignoreCase: true,
         ignoreDeclarationSort: true,
+        ignoreMemberSort: true,
       },
     ],
     'space-before-function-paren': [
