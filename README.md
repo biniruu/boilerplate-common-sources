@@ -85,6 +85,7 @@
 이곳에 설치된 패키지가 각각 어떤 기능을 하는지 알아보세요.
 
 - [@apollo/client](https://www.npmjs.com/package/@apollo/client) : fetch data from GraphQL
+- [@apollo/server](https://www.npmjs.com/package/@apollo/server) : GraphQL server for JavaScript and TypeScript
 - [@babel/core](https://www.npmjs.com/package/@babel/core) : babel 사용을 위한 코어 패키지
 - [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser) : babel-eslint
 - [@babel/node](https://www.npmjs.com/package/@babel/node) : node.js cli와 동일하게 동작하는 babel cli
@@ -99,15 +100,17 @@
 - [@swrlab/eslint-plugin-swr](https://www.npmjs.com/package/@swrlab/eslint-plugin-swr) : swr 관련 lint 규칙 제공
 - [@tanstack/eslint-plugin-query](https://www.npmjs.com/package/@tanstack/eslint-plugin-query) : tanstack query 관련 lint 규칙 제공
 - [@tanstack/react-query](https://www.npmjs.com/package/@tanstack/react-query) : react에서, 서버 측으로부터 받아오는 데이터를 최신 상태로 유지
-- [@types/express](https://www.npmjs.com/package/@types/express)
-- [@types/handlebars-webpack-plugin](https://www.npmjs.com/package/@types/handlebars-webpack-plugin)
-- [@types/jest](https://www.npmjs.com/package/@types/jest) : jest intellisense 제공
-- [@types/lodash-es](https://www.npmjs.com/package/@types/lodash-es)
-- [@types/node](https://www.npmjs.com/package/@types/node)
-- [@types/react-test-renderer](https://www.npmjs.com/package/@types/react-test-renderer)
-- [@types/styled-components](https://www.npmjs.com/package/@types/styled-components)
-- [@types/webpack](https://www.npmjs.com/package/@types/webpack)
-- [@types/ws](https://www.npmjs.com/package/@types/ws)
+- [@types/body-parser](https://www.npmjs.com/package/@types/body-parser) : type declarations for body-parser
+- [@types/cors](https://www.npmjs.com/package/@types/cors) : type declarations for cors
+- [@types/express](https://www.npmjs.com/package/@types/express) : type declarations for express
+- [@types/handlebars-webpack-plugin](https://www.npmjs.com/package/@types/handlebars-webpack-plugin) type declarations for handlebars-webpack-plugin
+- [@types/jest](https://www.npmjs.com/package/@types/jest) : type declarations for jest
+- [@types/lodash-es](https://www.npmjs.com/package/@types/lodash-es) : type declarations for lodash-es
+- [@types/node](https://www.npmjs.com/package/@types/node) : type declarations for node
+- [@types/react-test-renderer](https://www.npmjs.com/package/@types/react-test-renderer) : type declarations for react-test-renderer
+- [@types/styled-components](https://www.npmjs.com/package/@types/styled-components) : type declarations for styled-components
+- [@types/webpack](https://www.npmjs.com/package/@types/webpack) : type declarations for webpack
+- [@types/ws](https://www.npmjs.com/package/@types/ws) : type declarations for ws
 - [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) : typescript 관련 lint 규칙 제공
 - [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser) : typescript를 위한 eslint 파서
 - [@typescript-eslint/types](https://www.npmjs.com/package/@typescript-eslint/types) : TypeScript-ESTree Types
@@ -118,7 +121,9 @@
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer) : cross browser에 필요한 css 속성 prefix를 자동으로 생성
 - [axios](https://www.npmjs.com/package/axios) : HTTP 클라이언트 라이브러리
 - [babel-jest](https://www.npmjs.com/package/babel-jest) : JS/JSX 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
+- [body-parser](https://www.npmjs.com/package/body-parser) : Node.js body parsing middleware
 - [chai](https://www.npmjs.com/package/chai)
+- [cors](https://www.npmjs.com/package/cors) : solve a cors error
 - [dataloader](https://www.npmjs.com/package/dataloader) : N+1번의 SQL 쿼리 요청이 실행되는 문제 해결, 데이터 일괄 처리 및 캐싱 기능 제공
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [dotenv-expand](https://www.npmjs.com/package/dotenv-expand) : dotenv 변수 확장
@@ -171,6 +176,7 @@
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom) : 라우터 지원
 - [react-test-renderer](https://www.npmjs.com/package/react-test-renderer) : 테스트 시 reactDOM의 스냅샷 생성
 - [redis](https://www.npmjs.com/package/redis) : Redis client for Node.js
+- [reflect-metadata](https://www.npmjs.com/package/reflect-metadata) : 자바스크립트에서 리플렉션을 구현할 수 있도록 지원
 - [sass](https://www.npmjs.com/package/sass)
 - [sass-loader](https://www.npmjs.com/package/sass-loader) : webpack에서 scss를 실행
 - [sinon](https://www.npmjs.com/package/sinon)
@@ -201,6 +207,8 @@
 - @types/handlebars : handlebars가 자체적으로 타입 정의 제공
 - @types/postcss-preset-env : postcss-preset-env가 자체적으로 타입 정의 제공
 - @types/webpack-dev-server : webpack-dev-server가 자체적으로 타입 정의 제공
+- apollo-server-core : @apollo/server로 대체
+- apollo-server-express : @apollo/server로 대체
 - babel-eslint : @babel/eslint-parser로 대체
 - dart-sass : sass로 대체
 - eslint-loader : eslint-webpack-plugin으로 대체

@@ -46,11 +46,15 @@ yarn add -D eslint-webpack-plugin
 
 # Express
 
-yarn add express
+yarn add body-parser cors express
 
 # Express for TypeScript
 
-yarn add -D @types/express
+yarn add -D @types/body-parser @types/cors @types/express
+
+# GraphQL
+
+yarn add @apollo/server graphql reflect-metadata
 
 # Jest
 
