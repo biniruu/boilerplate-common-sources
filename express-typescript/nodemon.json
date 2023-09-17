@@ -1,4 +1,10 @@
 {
-  "exec": "ts-node src/server/server.ts",
-  "ignore": ["src/client/dist/*"]
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "exec": "ts-node ./src/index.ts",
+  "ext": "ts,json",
+  "ignore": [".git", ".github", ".idea", ".vscode", "**/node_modules/*"],
+  "verbose": true,
+  "watch": ["./src"]
 }
