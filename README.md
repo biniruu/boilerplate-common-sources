@@ -170,6 +170,7 @@
 - [react-hook-form](https://www.npmjs.com/package/react-hook-form) : react에서 사용하는 form validation 라이브러리
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom) : 라우터 지원
 - [react-test-renderer](https://www.npmjs.com/package/react-test-renderer) : 테스트 시 reactDOM의 스냅샷 생성
+- [redis](https://www.npmjs.com/package/redis) : Redis client for Node.js
 - [sass](https://www.npmjs.com/package/sass)
 - [sass-loader](https://www.npmjs.com/package/sass-loader) : webpack에서 scss를 실행
 - [sinon](https://www.npmjs.com/package/sinon)

@@ -128,6 +128,10 @@ yarn add -D @types/react-test-renderer
 
 yarn add recoil
 
+# Redis
+
+yarn add redis
+
 # SASS (SCSS)
 
 yarn add -D sass
