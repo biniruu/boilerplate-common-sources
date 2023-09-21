@@ -21,7 +21,7 @@ module.exports = {
   endOfLine: 'auto',
   htmlWhitespaceSensitivity: 'ignore',
   plugins: [
-    // '@prettier/plugin-pug',
+    '@prettier/plugin-pug',
     // 'prettier-plugin-tailwindcss', // 항상 목록 마지막에 위치시킬 것
   ],
   printWidth: 120,
