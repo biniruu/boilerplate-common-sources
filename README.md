@@ -203,12 +203,16 @@
 - [style-loader](https://www.npmjs.com/package/style-loader) : DOM에 style 주입
 - [swr](https://www.npmjs.com/package/swr) : react에서, 서버 측으로부터 받아 온 데이터를 캐싱
 - [ts-jest](https://www.npmjs.com/package/ts-jest) : typescript 환경에서 jest를 사용할 때 필요
+- [ts-loader](https://www.npmjs.com/package/ts-loader) : Webpack에서 TypeScript를 실행하기 위해 필요
 - [ts-node](https://www.npmjs.com/package/ts-node) : .ts 파일 실행. typescript 환경에서 사용하는 nodemon. 설치하지 않고 `npx ts-node` 실행만으로 사용 가능
 - [ts-node-dev](https://www.npmjs.com/package/ts-node-dev) : ts-node 실행 후 서버를 재실행할 때 필요
 - [typescript](https://www.npmjs.com/package/typescript)
 - [type-graphql](https://www.npmjs.com/package/type-graphql) : GraphQL API library with typescript decorator
 - [vue-jest](https://www.npmjs.com/package/vue-jest) : Vue 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
 - [webpack](https://www.npmjs.com/package/webpack) : 모듈 번들러
+- [webpack-cli](https://www.npmjs.com/package/webpack-cli)
+- [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server) : 로컬 환경에서 서버를 띄우는 기능 제공
+- [webpack-merge](https://www.npmjs.com/package/webpack-merge) : 배열이나 객체를 병합하여 새로운 객체 생성
 - [ws](https://www.npmjs.com/package/ws) : a Node.js WebSocket Library
 
 <br>

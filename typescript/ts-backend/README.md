@@ -64,13 +64,17 @@ yarn add -D prettier
 
 yarn add -D typescript
 
+# TypeScript for Webpack
+
+yarn add -D ts-loader
+
 # Ts-node
 
 yarn add -D ts-node ts-node-dev
 
 # Webpack
 
-yarn add -D source-map-loader style-loader webpack
+yarn add -D source-map-loader style-loader webpack webpack-cli webpack-dev-server webpack-merge
 
 # Webpack for TypeScript
 
