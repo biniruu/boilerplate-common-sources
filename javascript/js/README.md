@@ -1,4 +1,4 @@
-# Vanilla JS Starter
+# JavaScript(Vanilla JS) Starter
 
 Vanilla JS 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요.
 

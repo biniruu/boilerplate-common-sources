@@ -1,6 +1,6 @@
 # TypeScript Starter
 
-TypeScript 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요. TypeScript 기본 설치 외에도 프론트엔드 개발에 필요한 패키지까지 포함했어요.
+TypeScript 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요.
 
 <br>
 

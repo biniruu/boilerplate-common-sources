@@ -1,6 +1,6 @@
-# Vanilla JS Starter
+# JavaScript(Vanilla JS) for Backend Starter
 
-Vanilla JS 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요.
+백엔드 개발을 위한 Vanilla JS 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요.
 
 <br>
 
