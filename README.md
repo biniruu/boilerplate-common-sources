@@ -9,8 +9,10 @@
 - [Gatsby with TypeScript](https://github.com/biniruu/starter-pack/tree/main/gatsby-typescript)
 - [Next.js with TypeScript](https://github.com/biniruu/starter-pack/tree/main/next-typescript)
 - [React.js with TypeScript](https://github.com/biniruu/starter-pack/tree/main/react-typescript)
-- [TypeScript](https://github.com/biniruu/starter-pack/tree/main/typescript)
-- [Vanilla JS](https://github.com/biniruu/starter-pack/tree/main/vanillajs)
+- [TypeScript](https://github.com/biniruu/starter-pack/tree/main/typescript/ts)
+- [TypeScript for Backend](https://github.com/biniruu/starter-pack/tree/main/typescript/ts-backend)
+- [JavaScript](https://github.com/biniruu/starter-pack/tree/main/javascript/js)
+- [JavaScript for Backend](https://github.com/biniruu/starter-pack/tree/main/javascript/js-backend)
 - [Wordpress](https://github.com/biniruu/starter-pack/tree/main/wordpress)
 
 <br>
