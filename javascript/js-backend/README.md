@@ -25,10 +25,6 @@ yarn add -D @babel/node
 
 yarn add -D eslint eslint-plugin-import
 
-# ESLint for A11y with JSX
-
-yarn add -D eslint-plugin-jsx-a11y
-
 # ESLint for Jest
 
 yarn add -D eslint-plugin-jest
@@ -36,10 +32,6 @@ yarn add -D eslint-plugin-jest
 # ESLint for Prettier
 
 yarn add -D eslint-config-prettier eslint-plugin-prettier
-
-# ESLint for Pug
-
-yarn add -D eslint-plugin-pug
 
 # ESLint for Webpack
 
@@ -59,53 +51,9 @@ yarn add lodash lodash-es
 
 yarn add -D nodemon
 
-# PostCSS
-#
-# 💁🏻‍♂️ postcss-preset-env를 설치하지 않는다면 아래 링크에 정리된 postcss 플러그인은 별도로 설치해야 해요.
-# https://github.com/csstools/postcss-plugins/tree/main/plugins
-
-yarn add -D postcss postcss-html postcss-loader postcss-nesting postcss-preset-env postcss-syntax
-
-# PostCSS for JSX
-
-yarn add -D postcss-jsx
-
-# PostCSS for SCSS
-
-yarn add -D postcss-scss
-
 # Prettier
 
 yarn add -D prettier
-
-# Prettier for Pug
-
-yarn add -D @prettier/plugin-pug
-
-# Pug
-
-yarn add pug
-yarn add -D pug-lint
-
-# SASS (SCSS)
-
-yarn add -D sass sass-loader
-
-# Styled-components
-
-yarn add styled-components
-
-# Stylelint
-
-yarn add -D stylelint stylelint-config-standard stylelint-order
-
-# Stylelint for SCSS
-
-yarn add -D stylelint-config-standard-scss stylelint-scss
-
-# Tailwind CSS
-
-yarn add tailwindcss
 
 # Webpack
 
