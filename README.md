@@ -2,7 +2,7 @@
 
 프로젝트를 시작할 때 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요. 패키지, 설정 파일 등을 프로젝트 기술 스택에 맞게 골라 설치할 수 있어요.
 
-다음 프로젝트를 설정할 때 사용할 수 있어요.
+다음 프로젝트를 설정할 때 사용할 수 있어요. 필요한 프로젝트를 클릭해서 이동하세요.
 
 - [Express](https://github.com/biniruu/starter-pack/tree/main/express)
 - [Express with TypeScript](https://github.com/biniruu/starter-pack/tree/main/express-typescript)
@@ -12,6 +12,14 @@
 - [TypeScript](https://github.com/biniruu/starter-pack/tree/main/typescript)
 - [Vanilla JS](https://github.com/biniruu/starter-pack/tree/main/vanillajs)
 - [Wordpress](https://github.com/biniruu/starter-pack/tree/main/wordpress)
+
+<br>
+
+---
+
+<br>
+
+> ❗️여기서부터는 이 레포지토리에서 사용하는 패키지에 대한 설명 또는 추천 확장 프로그램 등에 관한 정보만 제공하고 있어요. 프로젝트 설정을 위한 내용은 위 링크 중 필요한 것을 클릭해주세요.
 
 <br>
 
