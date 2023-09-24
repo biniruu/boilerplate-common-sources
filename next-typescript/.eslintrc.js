@@ -61,7 +61,7 @@ module.exports = {
        *
        * plugin:@typescript-eslint/disable-type-checked : turn off type-aware linting on specific subsets of files with a disabled-type-checked config {@link https://typescript-eslint.io/linting/typed-linting/#how-can-i-disable-type-aware-linting-for-a-subset-of-files}
        */
-      files: ['*.js'],
+      files: ['*.js', '*.cjs'],
       extends: ['plugin:@typescript-eslint/disable-type-checked'],
     },
   ],
