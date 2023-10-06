@@ -14,9 +14,15 @@ module.exports = {
    *
    * eslint:recommended : eslint 추천 rule set
    * plugin:import/recommended : eslint-plugin-import 추천 rule set
+   * plugin:jsx-a11y/recommended : 웹 접근성 관련 추천 rule set
    * plugin:prettier/recommended : eslint-config-prettier 추천 rule set
    */
-  extends: ['eslint:recommended', 'plugin:import/recommended', 'plugin:prettier/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:import/recommended',
+    'plugin:jsx-a11y/recommended',
+    'plugin:prettier/recommended',
+  ],
   overrides: [
     {
       /**
@@ -35,6 +41,7 @@ module.exports = {
     },
   ],
   parser: '@babel/eslint-parser',
+  plugins: ['pug'],
   root: true, // 현재 설정 파일이 root임을 명시하는 옵션. true로 설정하면 상위 설정 파일 찾기를 여기서 멈춘다.
   rules: {
     /**
@@ -66,7 +73,10 @@ module.exports = {
      * prefer-rest-params : 함수의 parameter에서 arguments 객체 대신 rest parameter를 사용하도록 강제. e.g. function (...args) {}
      * quotes : 따옴표를 작은따옴표, 큰따옴표, 백틱 중 한 가지만 사용하도록 강제
      * semi : 세미콜론 사용 여부. 'never' 옵션은 semicolon before self-invoking function을 제외한 모든 세미콜론 사용 금지
-     * sort-imports : import 정렬. ignoreDeclarationSort는 항상 true로 할 것. false로 하면 import 정렬 관련 경고가 발생하는데, 이 경고를 해결할 방법이 없다.
+     * sort-imports : import 정렬
+     * sort-imports > ignoreCase의 값은 항상 eslint-plugin-import의 order > caseInsensitive와 동일하게 맞출 것
+     * sort-imports > ignoreDeclarationSort는 항상 true로 할 것. false로 하면 import 정렬 관련 경고 발생 시 해결 불가
+     * sort-imports > ignoreMemberSort는 항상 default값(false)로 놔둘 것. ignoreCase와 eslint-plugin-import의 order > caseInsensitive 설정을 함께 사용하는 환경에서 ignoreMemberSort의 값을 true로 하면 해결하기 까다로운 문제 발생
      * space-before-function-paren : 함수 선언 시 함수명과 괄호 사이에 간격 추가를 강제
      */
     'array-bracket-spacing': 'warn',
@@ -127,7 +137,6 @@ module.exports = {
         allowSeparatedGroups: true,
         ignoreCase: true,
         ignoreDeclarationSort: true,
-        ignoreMemberSort: true,
       },
     ],
     'space-before-function-paren': [
@@ -154,7 +163,9 @@ module.exports = {
      * newline-after-import : import 다음에 한 줄 띄기
      * no-anonymous-default-export : 익명 default export 금지
      * no-unresolved : import한 파일/모듈이 unresolved 되는 일이 없도록 방지
-     * order : import 자동 정렬. warnOnUnassignedImports는 항상 default값(false)로 놔둘 것. true로 할 경우 import 정렬 관련 경고가 발생하는데, 이 문제는 import/order 또는 sort-import 설정만으로는 해결 불가
+     * order : import 자동 정렬
+     * order > warnOnUnassignedImports는 항상 default값(false)로 놔둘 것. true로 할 경우 import 정렬 관련 경고가 발생하는데, 이 문제는 import/order 또는 sort-import 설정만으로는 해결 불가
+     * order > caseInsensitive의 값은 항상 eslint 기본 rule 중 sort-imports > ignoreCase와 동일하게 맞출 것
      */
     'import/newline-after-import': 'warn',
     'import/no-anonymous-default-export': [
@@ -174,6 +185,39 @@ module.exports = {
           orderImportKind: 'asc',
         },
         'newlines-between': 'always',
+      },
+    ],
+    /**
+     * Eslint-plugin-jsx-a11y supported rules
+     * {@link https://github.com/jsx-eslint/eslint-plugin-jsx-a11y#supported-rules}
+     *
+     * label-has-associated-control : 기본 html 태그가 아닌 custom component에서 웹 접근성 관련 에러 발생 방지
+     * no-noninteractive-element-interactions : (웹 접근성 문제로)상호작용하지 않는 태그(li, div 등)에 onClick 등과 같은 이벤트를 연결할 때 필요
+     * no-noninteractive-element-to-interactive-role : (웹 접근성 문제로)상호작용하지 않는 태그에 onClick 등과 같은 이벤트를 연결하고 해당 태그의 사용 목적을 role 속성으로 명시할 때 필요
+     */
+    'jsx-a11y/label-has-associated-control': [
+      'warn',
+      {
+        labelComponents: ['label'],
+        labelAttributes: ['htmlFor'],
+        controlComponents: ['Input'],
+        depth: 1,
+      },
+    ],
+    'jsx-a11y/no-noninteractive-element-interactions': [
+      'warn',
+      {
+        handlers: ['onClick', 'onMouseDown', 'onMouseUp', 'onKeyPress', 'onKeyDown', 'onKeyUp'],
+      },
+    ],
+    'jsx-a11y/no-noninteractive-element-to-interactive-role': [
+      'warn',
+      {
+        ul: ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
+        ol: ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
+        li: ['button', 'menuitem', 'option', 'row', 'tab', 'treeitem'],
+        table: ['grid'],
+        td: ['gridcell'],
       },
     ],
   },
