@@ -138,6 +138,7 @@
 - [dataloader](https://www.npmjs.com/package/dataloader) : N+1번의 SQL 쿼리 요청이 실행되는 문제 해결, 데이터 일괄 처리 및 캐싱 기능 제공
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [dotenv-expand](https://www.npmjs.com/package/dotenv-expand) : dotenv 변수 확장
+- [env-cmd](https://www.npmjs.com/package/env-cmd) : command에서 env 변수를 사용할 수 있도록 지원
 - [eslint](https://www.npmjs.com/package/eslint)
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next)
 - [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier) : prettier와 충돌을 일으키는 eslint 규칙 비활성화
