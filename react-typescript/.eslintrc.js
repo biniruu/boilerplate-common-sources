@@ -319,8 +319,6 @@ module.exports = {
      * react-in-jsx-scope : component에서 React를 import하지 않을 경우 오류 발생. 'react/recommended' 설정 시 활성화. react v17 이후 필요없어짐 {@link https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#eslint How to Upgrade to the New JSX Transform}
      * self-closing-comp : JSX 태그 안에 하위 태그가 없을 경우 self-closing 태그로 변환
      * static-property-placement : 클래스에서 childContextTypes, contextTypes, contextType, defaultProps, displayName, propTypes를 정의하도록 강제. default : 'static public field'
-     * react-hooks/rules-of-hooks : react hooks 공식 문서에서 제공하는 규칙을 준수하도록 강제. {@link https://legacy.reactjs.org/docs/hooks-rules.html Roles of Hooks}
-     * react-hooks/exhaustive-deps : useEffect 안에서 사용하는 함수나 변수를 dependency로 등록하지 않았을 때 경고 발생
      */
     'react/destructuring-assignment': 'warn',
     'react/jsx-curly-brace-presence': 'warn',
@@ -361,13 +359,15 @@ module.exports = {
       },
     ],
     'react/static-property-placement': 'warn',
+    /**
+     * Eslint-plugin-react-hooks rules
+     * {@link https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks}
+     *
+     * react-hooks/rules-of-hooks : react hooks 공식 문서에서 제공하는 규칙을 준수하도록 강제. {@link https://legacy.reactjs.org/docs/hooks-rules.html Roles of Hooks}
+     * react-hooks/exhaustive-deps : useEffect 안에서 사용하는 함수나 변수를 dependency로 등록하지 않았을 때 경고 발생
+     */
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': [
-      'warn',
-      // {
-      //   additionHooks: '(useRecoilCallback|useRecoilTransaction_UNSTABLE)', // recoil 사용 시 필요
-      // },
-    ],
+    'react-hooks/exhaustive-deps': 'off',
   },
   settings: {
     /**
