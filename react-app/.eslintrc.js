@@ -44,7 +44,7 @@ module.exports = {
        * react-app/jest : jest 규칙 설정을 위한 eslint-config-react-app 확장
        */
       extends: ['plugin:jest/recommended', 'react-app/jest'],
-      files: ['*.spec.js', '*.spec.ts', '*.test.js', '*.test.ts'],
+      files: ['*.spec.js', '*.test.js'],
       rules: {
         /**
          * Rules
@@ -304,7 +304,7 @@ module.exports = {
      */
     'import/resolver': {
       node: {
-        extensions: ['*.js', '*.jsx', '*.ts', '*.tsx'],
+        extensions: ['*.js', '*.jsx'],
       },
     },
     /**
