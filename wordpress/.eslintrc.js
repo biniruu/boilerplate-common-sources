@@ -48,9 +48,8 @@ module.exports = {
      * quotes : 따옴표를 작은따옴표, 큰따옴표, 백틱 중 한 가지만 사용하도록 강제
      * semi : 세미콜론 사용 여부. 'never' 옵션은 semicolon before self-invoking function을 제외한 모든 세미콜론 사용 금지
      * sort-imports : import 정렬
-     * sort-imports > ignoreCase의 값은 항상 eslint-plugin-import의 order > caseInsensitive와 동일하게 맞출 것
+     * sort-imports > ignoreCase의 값은 항상 default값(false)으로 놔둘 것. true로 했을 때 가끔 다른 import 정렬 관련 rule과 충돌 발생
      * sort-imports > ignoreDeclarationSort는 항상 true로 할 것. false로 하면 import 정렬 관련 경고 발생 시 해결 불가
-     * sort-imports > ignoreMemberSort는 항상 default값(false)로 놔둘 것. ignoreCase와 eslint-plugin-import의 order > caseInsensitive 설정을 함께 사용하는 환경에서 ignoreMemberSort의 값을 true로 하면 해결하기 까다로운 문제 발생
      * space-before-function-paren : 함수 선언 시 함수명과 괄호 사이에 간격 추가를 강제
      */
     'array-bracket-spacing': 'warn',
@@ -109,7 +108,6 @@ module.exports = {
       'warn',
       {
         allowSeparatedGroups: true,
-        ignoreCase: true,
         ignoreDeclarationSort: true,
       },
     ],
