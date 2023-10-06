@@ -8,6 +8,7 @@
 - [Express with TypeScript](https://github.com/biniruu/starter-pack/tree/main/express-typescript)
 - [Gatsby with TypeScript](https://github.com/biniruu/starter-pack/tree/main/gatsby-typescript)
 - [Next.js with TypeScript](https://github.com/biniruu/starter-pack/tree/main/next-typescript)
+- [React.js](https://github.com/biniruu/starter-pack/tree/main/react-app)
 - [React.js with TypeScript](https://github.com/biniruu/starter-pack/tree/main/react-typescript)
 - [TypeScript](https://github.com/biniruu/starter-pack/tree/main/typescript/ts)
 - [TypeScript for Backend](https://github.com/biniruu/starter-pack/tree/main/typescript/ts-backend)
