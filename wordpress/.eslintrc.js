@@ -32,7 +32,7 @@ module.exports = {
      * no-array-constructor : Array() 생성자에 배열 리터럴 생성법을 사용해서 배열 생성 금지
      * no-console : 콘솔 사용 금지
      * no-debugger : debugger 사용 금지
-     * no-duplicate-imports : 동일한 모듈에서 import를 여러 번 할 때 import문을 한 번만 사용하도록 강제. e.g. import { apple, banana } from 'fruits'
+     * no-duplicate-imports : 동일한 모듈에서 import를 여러 번 할 경우 모든 import를 inline으로 작성하도록 강제
      * no-inner-declarations : nested block에서 변수 또는 함수 선언 금지
      * no-multiple-empty-lines : 여러 줄 공백 금지
      * no-nested-ternary : 중첩 삼항 연산자 금지
@@ -50,6 +50,7 @@ module.exports = {
      * sort-imports : import 정렬
      * sort-imports > ignoreCase의 값은 항상 default값(false)으로 놔둘 것. true로 했을 때 가끔 다른 import 정렬 관련 rule과 충돌 발생
      * sort-imports > ignoreDeclarationSort는 항상 true로 할 것. false로 하면 import 정렬 관련 경고 발생 시 해결 불가
+     * sort-imports > ignoreMemberSort는 항상 true로 할 것. false로 하면 typescript에서 type-only import를 inline으로 정의할 때 정렬 에러 발생
      * space-before-function-paren : 함수 선언 시 함수명과 괄호 사이에 간격 추가를 강제
      */
     'array-bracket-spacing': 'warn',
@@ -109,6 +110,7 @@ module.exports = {
       {
         allowSeparatedGroups: true,
         ignoreDeclarationSort: true,
+        ignoreMemberSort: true,
       },
     ],
     'space-before-function-paren': [
