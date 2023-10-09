@@ -4,7 +4,7 @@
   },
   "exec": "ts-node ./src/index.ts",
   "ext": "ts,json",
-  "ignore": [".git", ".github", ".idea", ".vscode", "**/node_modules/*"],
+  "ignore": [".git", ".github", ".idea", ".vscode", "node_modules"],
   "verbose": true,
   "watch": ["./src"]
 }
