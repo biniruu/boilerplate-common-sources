@@ -3,4 +3,4 @@
 
 # paths
 node_modules/
-src/client/dist/*
+src/client/dist/
