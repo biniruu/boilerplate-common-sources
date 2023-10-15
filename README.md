@@ -8,6 +8,7 @@
 - [Express with TypeScript](https://github.com/biniruu/starter-pack/tree/main/express-typescript)
 - [Gatsby with TypeScript](https://github.com/biniruu/starter-pack/tree/main/gatsby-typescript)
 - [Next.js with TypeScript](https://github.com/biniruu/starter-pack/tree/main/next-typescript)
+- [Nuxt.js with TypeScript](https://github.com/biniruu/starter-pack/tree/main/nuxt-typescript)
 - [React.js](https://github.com/biniruu/starter-pack/tree/main/react-app)
 - [React.js with TypeScript](https://github.com/biniruu/starter-pack/tree/main/react-typescript)
 - [TypeScript](https://github.com/biniruu/starter-pack/tree/main/typescript/ts)
@@ -107,6 +108,9 @@
 - [@craco/craco](https://www.npmjs.com/package/@craco/craco) : CRA로 리액트를 설치했을 때 webpack 설정 지원
 - [@graphql-codegen/cli](https://www.npmjs.com/package/@graphql-codegen/cli) : generate typescript code out of the GraphQL schema
 - [@graphql-eslint/eslint-plugin](https://www.npmjs.com/package/@graphql-eslint/eslint-plugin) : provide eslint rules for GraphQL
+- [@nuxtjs/eslint-module](https://www.npmjs.com/package/@nuxtjs/eslint-module) : nuxt에서 제공하는 eslint 모듈
+- [@nuxtjs/stylelint-module](https://www.npmjs.com/package/@nuxtjs/tailwindcss) : nuxt에서 제공하는 stylelint 모듈
+- [@nuxtjs/tailwindcss](https://www.npmjs.com/package/@nuxtjs/tailwindcss) : nuxt에서 제공하는 tailwind css 모듈
 - [@prettier/plugin-pug](https://www.npmjs.com/package/@prettier/plugin-pug) : pug 파일 code formatting
 - [@swrlab/eslint-plugin-swr](https://www.npmjs.com/package/@swrlab/eslint-plugin-swr) : swr 관련 lint 규칙 제공
 - [@tanstack/eslint-plugin-query](https://www.npmjs.com/package/@tanstack/eslint-plugin-query) : tanstack query 관련 lint 규칙 제공
@@ -129,6 +133,7 @@
 - [@typescript-eslint/utils](https://www.npmjs.com/package/@typescript-eslint/utils) : typescript에서 eslint를 사용할 때 유용한 도구
 - [@vue/server-test-utils](https://www.npmjs.com/package/@vue/server-test-utils) : Vue.js 환경에서 단위 테스트를 하기 위한 공식(Official) 라이브러리
 - [@vue/test-utils](https://www.npmjs.com/package/@vue/test-utils) : Vue.js 환경에서 단위 테스트를 하기 위한 공식 라이브러리.
+- [@vue/vue3-jest](https://www.npmjs.com/package/@vue/vue3-jest) : Vue 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer) : cross browser에 필요한 css 속성 prefix를 자동으로 생성
 - [axios](https://www.npmjs.com/package/axios) : HTTP 클라이언트 라이브러리
 - [babel-jest](https://www.npmjs.com/package/babel-jest) : JS/JSX 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
@@ -155,8 +160,8 @@
 - [eslint-config-react-app](https://www.npmjs.com/package/eslint-config-react-app) : CRA에서 기본으로 사용하는 eslint 설정
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) : react hooks 규칙 관련 피드백 제공
 - [eslint-plugin-storybook](https://www.npmjs.com/package/eslint-plugin-storybook) : 스토리북에 최적화 된 lint 규칙 제공
-- [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)
-- [eslint-plugin-nuxt](https://www.npmjs.com/package/eslint-plugin-nuxt)
+- [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue) : vue 규칙 관련 피드백 제공
+- [eslint-plugin-nuxt](https://www.npmjs.com/package/eslint-plugin-nuxt) : nuxt 규칙 관련 피드백 제공
 - [eslint-webpack-plugin](https://www.npmjs.com/package/eslint-webpack-plugin)
 - [env-cmd](https://www.npmjs.com/package/env-cmd) : env 파일에 있는 환경 변수를 command에서 실행하는 기능 제공
 - [express](https://www.npmjs.com/package/express) : node.js를 편리하게 사용할 수 있게 해 주는 프레임워크
@@ -166,25 +171,30 @@
 - [handlebars-webpack-plugin](https://www.npmjs.com/package/handlebars-webpack-plugin) : webpack으로 handlebars 템플릿을 렌더링
 - [jest](https://www.npmjs.com/package/jest) : 단위 테스트 도구
 - [jest-resolve](https://www.npmjs.com/package/jest-resolve)
+- [jest-resolve-dependencies](https://www.npmjs.com/package/jest-resolve-dependencies)
 - [jest-serializer-vue](https://www.npmjs.com/package/jest-serializer-vue) : 저장된 Jest Snapshot을 VueJS에 맞게 개선
 - [lodash](https://www.npmjs.com/package/lodash) : javascript 유틸리티 라이브러리
 - [lodash-es](https://www.npmjs.com/package/lodash-es) : 필요한 lodash 함수만 골라 사용하고, 사용하지 않은 함수는 tree shaking할 수 있는 lodash 패키지
 - [mocha](https://www.npmjs.com/package/mocha)
 - [next-auth](https://www.npmjs.com/package/next-auth) : next에서 다양한 인증 서비스를 편리하게 구현
 - [nodemon](https://www.npmjs.com/package/nodemon) : 파일이 변경될 때마다 node.js 앱 서버를 자동으로 재실행
+- [nuxt-lodash](https://www.npmjs.com/package/nuxt-lodash) : nuxt에서 lodash 모듈을 자동으로 import
 - [postcss](https://www.npmjs.com/package/postcss)
 - [postcss-flexbugs-fixes](https://www.npmjs.com/package/postcss-flexbugs-fixes) : 잘못 사용한 CSS 문법 교정. 아마도 동작은 하지만 표준 문법에 맞지 않는 것만 교정해주는 듯
+- [postcss-hexrgba](https://www.npmjs.com/package/postcss-hexrgba) : rgba()에서 단축 rgb 사용 지원
 - [postcss-html](https://www.npmjs.com/package/postcss-html) : html을 파싱할 때 필요한 postcss 문법
 - [postcss-jsx](https://www.npmjs.com/package/postcss-jsx) : postcss의 css-in-js 실행을 위해 필요
 - [postcss-loader](https://www.npmjs.com/package/postcss-loader) : webpack에서 postcss를 실행
 - [postcss-nesting](https://www.npmjs.com/package/postcss-nesting) : nesting 문법 코드를 pure css 문법에 맞게 변환
 - [postcss-normalize](https://www.npmjs.com/package/postcss-normalize) : browserslist 설정에 적합한 normalize css 생성
 - [postcss-preset-env](https://www.npmjs.com/package/postcss-preset-env) : 주요 postcss 플러그인을 모은 plugin pack ([설치 플러그인 목록 확인](https://www.libtrends.info/npm-compare/autoprefixer-vs-postcss-nested-vs-postcss-nesting-vs-postcss-preset-env-vs-precss))
+- [postcss-responsive-type](https://www.npmjs.com/package/postcss-responsive-type) : 반응형 타이포그라피 생성
 - [postcss-styled-syntax](https://www.npmjs.com/package/postcss-styled-syntax) : css-in-js 사용을 위한 postcss 문법 지원. stylelint에서 `CssSyntaxError`를 발생시키는 문제를 해결하기 위해 필요
 - [postcss-syntax](https://www.npmjs.com/package/postcss-syntax) : 파일 확장자나 소스에 따라 postcss가 적용할 플러그인을 자동으로 선택
 - [postcss-scss](https://www.npmjs.com/package/postcss-scss) : scss를 css로 트랜스파일
 - [pug](https://www.npmjs.com/package/pug) : haml 템플릿 엔진. [Haml](https://haml.info)
 - [prettier](https://www.npmjs.com/package/prettier)
+- [prettier-plugin-tailwindcss](https://www.npmjs.com/package/prettier-plugin-tailwindcss) : class 속성에 선언한 tailwind 클래스 자동 정렬
 - [react-hook-form](https://www.npmjs.com/package/react-hook-form) : react에서 사용하는 form validation 라이브러리
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom) : 라우터 지원
 - [react-test-renderer](https://www.npmjs.com/package/react-test-renderer) : 테스트 시 reactDOM의 스냅샷 생성
@@ -210,7 +220,9 @@
 - [ts-node-dev](https://www.npmjs.com/package/ts-node-dev) : ts-node 실행 후 서버를 재실행할 때 필요
 - [typescript](https://www.npmjs.com/package/typescript)
 - [type-graphql](https://www.npmjs.com/package/type-graphql) : GraphQL API library with typescript decorator
-- [vue-jest](https://www.npmjs.com/package/vue-jest) : Vue 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
+- [volar-service-vetur](https://www.npmjs.com/package/volar-service-vetur) : Volar plugin for [VLS](https://www.npmjs.com/package/vls)
+- [vue-tsc](https://www.npmjs.com/package/vue-tsc) : command line을 통해 build 과정에서 타입 체크 지원
+- [vue-eslint-parser](https://www.npmjs.com/package/vue-eslint-parser) : .vue 파일 안에 있는 \<Template\> 태그에 lint 적용
 - [webpack](https://www.npmjs.com/package/webpack) : 모듈 번들러
 - [webpack-cli](https://www.npmjs.com/package/webpack-cli)
 - [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server) : 로컬 환경에서 서버를 띄우는 기능 제공
@@ -224,6 +236,7 @@
 - @stylelint/postcss-css-in-js
 - @types/handlebars : handlebars가 자체적으로 타입 정의 제공
 - @types/postcss-preset-env : postcss-preset-env가 자체적으로 타입 정의 제공
+- @types/prettier : prettier가 자체적으로 타입 정의 제공
 - @types/webpack-dev-server : webpack-dev-server가 자체적으로 타입 정의 제공
 - apollo-server-core : @apollo/server로 대체
 - apollo-server-express : @apollo/server로 대체

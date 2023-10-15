@@ -1,0 +1,6 @@
+# files
+**/tsconfig.json
+
+# paths
+.nuxt/
+node_modules/
