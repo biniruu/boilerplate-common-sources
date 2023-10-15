@@ -1,13 +1,5 @@
-### VisualStudioCode ###
-# For VS Code, you should use the following list instead
-# When resetting this file, please make sure that the following .vscode list is safe
-.vscode/*
-!.vscode/css_custom_data.json
-!.vscode/tasks.json
-!.vscode/launch.json
-
-# Created by https://www.toptal.com/developers/gitignore/api/git,yarn,macos,dotenv,windows,intellij,webstorm,visualstudiocode,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=git,yarn,macos,dotenv,windows,intellij,webstorm,visualstudiocode,node
+# Created by https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,dotenv,windows,intellij,webstorm,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,yarn,macos,dotenv,windows,intellij,webstorm,visualstudiocode
 
 ### dotenv ###
 .env
@@ -312,6 +304,14 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
 # Local History for Visual Studio Code
 .history/
 
@@ -441,4 +441,4 @@ $RECYCLE.BIN/
 # and uncomment the following lines
 # .pnp.*
 
-# End of https://www.toptal.com/developers/gitignore/api/git,yarn,macos,dotenv,windows,intellij,webstorm,visualstudiocode,node
+# End of https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,dotenv,windows,intellij,webstorm,visualstudiocode

@@ -1,27 +1,17 @@
-### VisualStudioCode ###
-# For VS Code, you should use the following list instead
-# When resetting this file, please make sure that the following .vscode list is safe
-.vscode/*
-!.vscode/css_custom_data.json
-!.vscode/tasks.json
-!.vscode/launch.json
-
-# Created by https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,react,dotenv,windows,intellij,webstorm,visualstudiocode,gatsby
-# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,yarn,macos,react,dotenv,windows,intellij,webstorm,visualstudiocode,gatsby
+# Created by https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,react,dotenv,gatsby,windows,intellij,webstorm,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,yarn,macos,react,dotenv,gatsby,windows,intellij,webstorm,visualstudiocode
 
 ### dotenv ###
 .env
 
 ### Gatsby ###
 node_modules/
-**/node_modules/**
 
 .cache/
-**/.cache
 public
 
 src/gatsby-types.d.ts
- 
+
 ### Git ###
 # Created by git for backups. To disable backups in Git:
 # $ git config --global mergetool.keepBackup false
@@ -233,9 +223,6 @@ web_modules/
 # TypeScript cache
 *.tsbuildinfo
 
-# Typescript v1 declaration files
-typings/
-
 # Optional npm cache directory
 .npm
 
@@ -335,6 +322,14 @@ node_modules
 psd
 thumb
 sketch
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
 
 # Local History for Visual Studio Code
 .history/
@@ -465,4 +460,4 @@ $RECYCLE.BIN/
 # and uncomment the following lines
 # .pnp.*
 
-# End of https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,react,dotenv,windows,intellij,webstorm,visualstudiocode,gatsbygat
+# End of https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,react,dotenv,gatsby,windows,intellij,webstorm,visualstudiocode

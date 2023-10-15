@@ -1,12 +1,5 @@
-### VisualStudioCode ###
-# You should use the following for VS Code
-# When you need to reset this file and keep using VS Code, use this instead
-.vscode/*
-!.vscode/tasks.json
-!.vscode/*.code-snippets
-
-# Created by https://www.toptal.com/developers/gitignore/api/git,yarn,macos,dotenv,windows,intellij,webstorm,wordpress,visualstudiocode,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=git,yarn,macos,dotenv,windows,intellij,webstorm,wordpress,visualstudiocode,node
+# Created by https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,dotenv,windows,intellij,webstorm,visualstudiocode,wordpress,sass
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,yarn,macos,dotenv,windows,intellij,webstorm,visualstudiocode,wordpress,sass
 
 ### dotenv ###
 .env
@@ -311,6 +304,20 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
 # Local History for Visual Studio Code
 .history/
 
@@ -485,4 +492,4 @@ wp-config.php
 # and uncomment the following lines
 # .pnp.*
 
-# End of https://www.toptal.com/developers/gitignore/api/git,yarn,macos,dotenv,windows,intellij,webstorm,wordpress,visualstudiocode,node
+# End of https://www.toptal.com/developers/gitignore/api/git,node,yarn,macos,dotenv,windows,intellij,webstorm,visualstudiocode,wordpress,sass
