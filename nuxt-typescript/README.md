@@ -58,7 +58,7 @@ yarn add -D @typescript-eslint/eslint-plugin eslint-import-resolver-typescript
 
 # ESLint for Vue.js
 
-yarn add -D eslint-plugin-vue vue-eslint-parser
+yarn add -D vue-eslint-parser
 
 # ESLint for Web Accessibility
 

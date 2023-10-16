@@ -20,7 +20,6 @@ module.exports = {
    * plugin:jsx-a11y/recommended : 웹 접근성 관련 추천 rule set
    * plugin:nuxt/recommended : Nuxt.js 추천 rule set
    * plugin:prettier/recommended : eslint-config-prettier 추천 rule set
-   * plugin:vue/vue3-recommended : Vue.js 추천 rule set
    */
   extends: [
     '@nuxtjs/eslint-config-typescript',
@@ -31,7 +30,6 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:nuxt/recommended',
     'plugin:prettier/recommended',
-    'plugin:vue/vue3-recommended',
   ],
   overrides: [
     {
