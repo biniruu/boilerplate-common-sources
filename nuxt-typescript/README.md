@@ -27,6 +27,17 @@ postcss 설정은 `postcss.config.js` 파일 대신 `nuxt.config.ts`에서 해�
 
 <br>
 
+## ⚠️Modules
+
+Nuxt.js에서는 Nuxt 팀과 커뮤니티에서 제공하는 모듈을 nuxt.config.ts에 추가해서 사용할 수 있어요. 그런데 모듈을 사용할 경우 dev 서버 실행 시 빌드 시간이 너무 오래 걸리는 문제가 생겼어요.
+
+아직 이 문제를 해결할 방법을 알지 못해서 모듈을 설치해 사용할 수 있는 기능을 일반적인 방식으로 사용 중이에요. 자세한 사항은 아래 공식문서 페이지에서 확인할 수 있어요.
+
+- [Modules](https://nuxt.com/modules)
+- [Exploring Nuxt Modules](https://nuxt.com/docs/guide/concepts/modules#exploring-nuxt-modules)
+
+<br>
+
 ## 📥Installing packages
 
 이곳에 있는 명령어를 사용해 패키지를 설치하세요.
@@ -46,7 +57,7 @@ yarn add -D eslint eslint-plugin-import eslint-plugin-jest
 
 # ESLint for Nuxt.js
 
-yarn add -D @nuxtjs/eslint-config-typescript @nuxtjs/eslint-module eslint-plugin-nuxt
+yarn add -D @nuxtjs/eslint-config-typescript eslint-plugin-nuxt
 
 # ESLint for Prettier
 
@@ -80,10 +91,6 @@ yarn add -D @vue/vue3-jest
 
 yarn add -D lodash-es
 
-# Lodash for Nuxt.js
-
-yarn add -D nuxt-lodash
-
 # Lodash for TypeScript
 
 yarn add -D @types/lodash-es
@@ -111,17 +118,13 @@ yarn add -D sass
 
 yarn add -D stylelint stylelint-config-standard stylelint-order
 
-# Stylelint for Nuxt.js
-
-yarn add -D @nuxtjs/stylelint-module
-
 # Stylelint for SCSS
 
 yarn add -D stylelint-config-standard-scss stylelint-scss
 
-# Tailwind CSS for Nuxt.js
+# Tailwind CSS
 
-yarn add @nuxtjs/tailwindcss
+yarn add -D tailwindcss
 
 # TypeScript
 
