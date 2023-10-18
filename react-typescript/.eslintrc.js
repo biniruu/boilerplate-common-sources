@@ -14,7 +14,7 @@ module.exports = {
    *
    * eslint:recommended : eslint 추천 rule set
    * plugin:@tanstack/eslint-plugin-query/recommended : tanstack query (react query) 추천 rule set
-   * plugin:@typescript-eslint/recommended-type-checked : 타입스크립트 추천 룰셋 {@link https://typescript-eslint.io/linting/typed-linting/}
+   * plugin:@typescript-eslint/recommended : typescript-eslint v5 추천 rule set
    * plugin:import/recommended : eslint-plugin-import 추천 rule set
    * plugin:import/typescript : eslint-plugin-import 플러그인
    * plugin:jsx-a11y/recommended : 웹 접근성 관련 추천 rule set
@@ -28,7 +28,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@tanstack/eslint-plugin-query/recommended',
-    'plugin:@typescript-eslint/recommended-type-checked',
+    'plugin:@typescript-eslint/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
     'plugin:jsx-a11y/recommended',
@@ -55,15 +55,6 @@ module.exports = {
          * {@link https://github.com/jest-community/eslint-plugin-jest#rules}
          */
       },
-    },
-    {
-      /**
-       * Specifying TSConfigs
-       *
-       * plugin:@typescript-eslint/disable-type-checked : turn off type-aware linting on specific subsets of files with a disabled-type-checked config {@link https://typescript-eslint.io/linting/typed-linting/#how-can-i-disable-type-aware-linting-for-a-subset-of-files}
-       */
-      files: ['*.js', '*.cjs', '*.config.ts'],
-      extends: ['plugin:@typescript-eslint/disable-type-checked'],
     },
   ],
   parser: '@typescript-eslint/parser',
@@ -226,7 +217,11 @@ module.exports = {
     '@typescript-eslint/restrict-template-expressions': 'warn',
     '@typescript-eslint/space-before-function-paren': [
       'warn',
-      { anonymous: 'always', named: 'never', asyncArrow: 'always' },
+      {
+        anonymous: 'always',
+        named: 'never',
+        asyncArrow: 'always',
+      },
     ],
     /**
      * Eslint-config-prettier options
@@ -259,7 +254,12 @@ module.exports = {
         allowObject: true,
       },
     ],
-    'import/no-duplicates': ['error', { 'prefer-inline': true }],
+    'import/no-duplicates': [
+      'error',
+      {
+        'prefer-inline': true,
+      },
+    ],
     'import/no-unresolved': 'off',
     'import/order': [
       'warn',

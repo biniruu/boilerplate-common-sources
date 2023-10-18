@@ -13,7 +13,7 @@ module.exports = {
    * Extends
    *
    * eslint:recommended : eslint 추천 rule set
-   * plugin:@typescript-eslint/recommended-type-checked : 타입스크립트 추천 룰셋 {@link https://typescript-eslint.io/linting/typed-linting/}
+   * plugin:@typescript-eslint/recommended : typescript-eslint v4 추천 rule set
    * plugin:import/recommended : eslint-plugin-import 추천 rule set
    * plugin:import/typescript : eslint-plugin-import 플러그인
    * plugin:jsx-a11y/recommended : 웹 접근성 관련 추천 rule set
@@ -21,12 +21,11 @@ module.exports = {
    * plugin:react-hooks/recommended
    * plugin:react/jsx-runtime : If you are using the new JSX transform from React 17, you should enable this
    * plugin:react/recommended
-   * plugin:storybook/recommended : 스토리북 추천 rule set
    * react-app : eslint-config-react-app으로 eslint 설정 덮어쓰기
    */
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended-type-checked',
+    'plugin:@typescript-eslint/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
     'plugin:jsx-a11y/recommended',
@@ -34,21 +33,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react/recommended',
-    'plugin:storybook/recommended',
     'react-app',
-    'prettier',
-  ],
-  overrides: [
-    {
-      /**
-       * Specifying TSConfigs
-       * {@link https://typescript-eslint.io/linting/typed-linting/#specifying-tsconfigs}
-       *
-       * plugin:@typescript-eslint/disable-type-checked : turn off type-aware linting on specific subsets of files with a disabled-type-checked config {@link https://typescript-eslint.io/linting/typed-linting/#how-can-i-disable-type-aware-linting-for-a-subset-of-files}
-       */
-      files: ['*.js', '*.cjs', '*.config.ts'],
-      extends: ['plugin:@typescript-eslint/disable-type-checked'],
-    },
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -168,15 +153,8 @@ module.exports = {
      *
      * ban-ts-comment : 설명을 추가하는 조건으로 @ts-expect-error, @ts-ignore, @ts-nocheck, @ts-check 주석을 허용
      * no-explicit-any
-     * no-floating-promises
-     * no-unsafe-argument
-     * no-unsafe-assignment : any 타입 사용 시 알림을 띄움
-     * no-unsafe-call
-     * no-unsafe-member-access
      * no-unused-vars : eslint에서 제공하는 no-unused-vars와 동일. no-unused-vars를 비활성화 한 후에 사용할 것
      * no-var-requires : require 문을 변수에 할당 금지. 특정 모듈 문법에 구애 받지 않는 상황이라면 비활성화 할 것
-     * restrict-plus-operands
-     * restrict-template-expressions
      * space-before-function-paren : *공식 문서에서는 사용하지 말 것을 적극 권고한다* space-before-function-paren과 동일. space-before-function-paren을 비활성화 한 후에 사용할 것
      */
     '@typescript-eslint/ban-ts-comment': [
@@ -194,15 +172,13 @@ module.exports = {
         ignoreRestArgs: true,
       },
     ],
-    '@typescript-eslint/no-floating-promises': 'warn',
-    '@typescript-eslint/no-unsafe-argument': 'error',
-    '@typescript-eslint/no-unsafe-assignment': 'error',
-    '@typescript-eslint/no-unsafe-call': 'error',
-    '@typescript-eslint/no-unsafe-member-access': 'error',
-    '@typescript-eslint/no-unused-vars': ['error', { args: 'all' }],
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        args: 'all',
+      },
+    ],
     '@typescript-eslint/no-var-requires': 'off',
-    '@typescript-eslint/restrict-plus-operands': 'warn',
-    '@typescript-eslint/restrict-template-expressions': 'warn',
     '@typescript-eslint/space-before-function-paren': [
       'warn',
       {

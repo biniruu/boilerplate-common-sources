@@ -15,14 +15,12 @@ module.exports = {
    * eslint:recommended : eslint 추천 rule set
    * plugin:import/recommended : eslint-plugin-import 추천 rule set
    * plugin:import/typescript : eslint-plugin-import 플러그인
-   * plugin:jsx-a11y/recommended : 웹 접근성 관련 추천 rule set
    * plugin:prettier/recommended : eslint-config-prettier 추천 rule set
    */
   extends: [
     'eslint:recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
-    'plugin:jsx-a11y/recommended',
     'plugin:prettier/recommended',
   ],
   overrides: [
@@ -190,41 +188,20 @@ module.exports = {
         'newlines-between': 'always',
       },
     ],
-    /**
-     * Eslint-plugin-jsx-a11y supported rules
-     * {@link https://github.com/jsx-eslint/eslint-plugin-jsx-a11y#supported-rules}
-     *
-     * label-has-associated-control : 기본 html 태그가 아닌 custom component에서 웹 접근성 관련 에러 발생 방지
-     * no-noninteractive-element-interactions : (웹 접근성 문제로)상호작용하지 않는 태그(li, div 등)에 onClick 등과 같은 이벤트를 연결할 때 필요
-     * no-noninteractive-element-to-interactive-role : (웹 접근성 문제로)상호작용하지 않는 태그에 onClick 등과 같은 이벤트를 연결하고 해당 태그의 사용 목적을 role 속성으로 명시할 때 필요
-     */
-    'jsx-a11y/label-has-associated-control': [
-      'warn',
-      {
-        labelComponents: ['label'],
-        labelAttributes: ['htmlFor'],
-        controlComponents: ['Input'],
-        depth: 1,
-      },
-    ],
-    'jsx-a11y/no-noninteractive-element-interactions': [
-      'warn',
-      {
-        handlers: ['onClick', 'onMouseDown', 'onMouseUp', 'onKeyPress', 'onKeyDown', 'onKeyUp'],
-      },
-    ],
-    'jsx-a11y/no-noninteractive-element-to-interactive-role': [
-      'warn',
-      {
-        ul: ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
-        ol: ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
-        li: ['button', 'menuitem', 'option', 'row', 'tab', 'treeitem'],
-        table: ['grid'],
-        td: ['gridcell'],
-      },
-    ],
   },
   settings: {
+    /**
+     * Eslint-plugin-import resolvers
+     * {@link https://github.com/import-js/eslint-plugin-import#resolvers}
+     * {@link https://github.com/import-js/eslint-plugin-import#importextensions}
+     *
+     * resolver.node.extensions : require more granular extension definitions. jsx를 import할 때 import/no-unresolved 에러가 발생하지 않도록 함
+     */
+    'import/resolver': {
+      node: {
+        extensions: ['*.js', '*.jsx'],
+      },
+    },
     /**
      * Jest version setting
      * {@link https://github.com/jest-community/eslint-plugin-jest#jest-version-setting}

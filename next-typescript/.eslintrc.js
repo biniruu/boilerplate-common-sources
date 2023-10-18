@@ -15,7 +15,9 @@ module.exports = {
    * eslint:recommended : eslint 추천 rule set
    * next/core-web-vitals : create next app으로 프로젝트 시작 시 기본 설정
    * plugin:@tanstack/eslint-plugin-query/recommended : tanstack query (react query) 추천 rule set
-   * plugin:@typescript-eslint/recommended-type-checked : 타입스크립트 추천 룰셋 {@link https://typescript-eslint.io/linting/typed-linting/}
+   * plugin:@typescript-eslint/recommended-type-checked : typescript-eslint v6 이상 추천 룰셋
+   * {@link https://typescript-eslint.io/linting/typed-linting/}
+   * {@link https://typescript-eslint.io/blog/announcing-typescript-eslint-v6/#user-facing-breaking-changes}
    * plugin:import/recommended : eslint-plugin-import 추천 rule set
    * plugin:import/typescript : eslint-plugin-import 플러그인
    * plugin:jsx-a11y/recommended : 웹 접근성 관련 추천 rule set
@@ -78,8 +80,7 @@ module.exports = {
     project: true,
     tsconfigRootDir: __dirname,
   },
-  root: true,
-  // 현재 설정 파일이 root임을 명시하는 옵션. true로 설정하면 상위 설정 파일 찾기를 여기서 멈춘다.
+  root: true, // 현재 설정 파일이 root임을 명시하는 옵션. true로 설정하면 상위 설정 파일 찾기를 여기서 멈춘다.
   rules: {
     /**
      * Rules reference

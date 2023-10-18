@@ -14,7 +14,9 @@ module.exports = {
    *
    * @nuxtjs/eslint-config-typescript : nuxt 3를 위한, 옵션 없는 eslint 설정
    * eslint:recommended : eslint 추천 rule set
-   * plugin:@typescript-eslint/recommended-type-checked : 타입스크립트 추천 룰셋 {@link https://typescript-eslint.io/linting/typed-linting/}
+   * plugin:@typescript-eslint/recommended-type-checked : typescript-eslint v6 이상 추천 룰셋
+   * {@link https://typescript-eslint.io/linting/typed-linting/}
+   * {@link https://typescript-eslint.io/blog/announcing-typescript-eslint-v6/#user-facing-breaking-changes}
    * plugin:import/recommended : eslint-plugin-import 추천 rule set
    * plugin:import/typescript : eslint-plugin-import 플러그인
    * plugin:jsx-a11y/recommended : 웹 접근성 관련 추천 rule set
