@@ -107,7 +107,6 @@
     "/Users/biniruu/Learning"
   ],
   "puglint.enable": true,
-  "python.formatting.provider": "black",
   "python.jediEnabled": false,
   "pythonPreview.codeFooterDocs.fontSize": 13,
   "quokka.automaticRestart": true,
