@@ -94,7 +94,6 @@ module.exports = {
      *
      * camelcase : 카멜 케이스 작명 방식 강제
      * eqeqeq : 일치 연산자(===) 사용 강제. 동등 연산자(==) 사용 금지
-     * generator-star-spacing : 제네레이터 함수에서 별표의 위치를 강제
      * new-cap : 'new' 연산자로 인스턴스 생성 시 constructor 함수명의 첫 글자를 대문자로 강제
      * no-array-constructor : Array() 생성자에 배열 리터럴 생성법을 사용해서 배열 생성 금지
      * no-console : 콘솔 사용 금지
@@ -127,7 +126,6 @@ module.exports = {
       },
     ],
     eqeqeq: 'error',
-    'generator-star-spacing': ['warn', 'after'],
     'new-cap': 'error',
     'no-array-constructor': 'error',
     'no-console': [
