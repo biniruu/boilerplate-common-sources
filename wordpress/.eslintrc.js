@@ -23,7 +23,6 @@ module.exports = {
      * {@link https://eslint.org/docs/latest/rules}
      *
      * camelcase : 카멜 케이스 작명 방식 강제
-     * computed-property-spacing : 계산된 인자(obj[property]) 표시 시 괄호 안에 공백문자 허용 여부
      * eqeqeq : 일치 연산자(===) 사용 강제. 동등 연산자(==) 사용 금지
      * generator-star-spacing : 제네레이터 함수에서 별표의 위치를 강제
      * new-cap : 'new' 연산자로 인스턴스 생성 시 constructor 함수명의 첫 글자를 대문자로 강제
@@ -55,13 +54,6 @@ module.exports = {
       'error',
       {
         properties: 'never',
-      },
-    ],
-    'computed-property-spacing': [
-      'warn',
-      'never',
-      {
-        enforceForClassMembers: false,
       },
     ],
     eqeqeq: 'error',
