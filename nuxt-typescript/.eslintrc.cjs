@@ -92,7 +92,6 @@ module.exports = {
      * Rules reference
      * {@link https://eslint.org/docs/latest/rules}
      *
-     * array-bracket-spacing : 대괄호 안에서 간격 허용 여부
      * camelcase : 카멜 케이스 작명 방식 강제
      * comma-dangle : trailing commas 사용 여부
      * computed-property-spacing : 계산된 인자(obj[property]) 표시 시 괄호 안에 공백문자 허용 여부
@@ -123,7 +122,6 @@ module.exports = {
      * sort-imports > ignoreMemberSort는 항상 true로 할 것. false로 하면 typescript에서 type-only import를 inline으로 정의할 때 정렬 에러 발생
      * space-before-function-paren : 함수 선언 시 함수명과 괄호 사이에 간격 추가를 강제
      */
-    'array-bracket-spacing': 'warn',
     camelcase: [
       'error',
       {
