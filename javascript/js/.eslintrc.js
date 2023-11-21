@@ -43,7 +43,6 @@ module.exports = {
      * {@link https://eslint.org/docs/latest/rules}
      *
      * camelcase : 카멜 케이스 작명 방식 강제
-     * comma-dangle : trailing commas 사용 여부
      * computed-property-spacing : 계산된 인자(obj[property]) 표시 시 괄호 안에 공백문자 허용 여부
      * eqeqeq : 일치 연산자(===) 사용 강제. 동등 연산자(==) 사용 금지
      * generator-star-spacing : 제네레이터 함수에서 별표의 위치를 강제
@@ -78,7 +77,6 @@ module.exports = {
         properties: 'never',
       },
     ],
-    'comma-dangle': ['warn', 'always-multiline'],
     'computed-property-spacing': [
       'warn',
       'never',
