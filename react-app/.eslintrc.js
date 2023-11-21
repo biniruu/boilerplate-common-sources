@@ -68,7 +68,6 @@ module.exports = {
      * no-debugger : debugger 사용 금지
      * no-duplicate-imports : 동일한 모듈에서 import를 여러 번 할 경우 모든 import를 inline으로 작성하도록 강제. eslint-plugin-import > import/no-duplicates의 prefer-inline 값이 true인 경우에는 off로 설정할 것
      * no-inner-declarations : nested block에서 변수 또는 함수 선언 금지
-     * no-multiple-empty-lines : 여러 줄 공백 금지
      * no-nested-ternary : 중첩 삼항 연산자 금지
      * no-new-object : new Object로 객체 생성 금지
      * no-undef : 정의하지 않은 전역 변수는 /✱ global ... ✱/ 주석에 명시해야 사용 가능하도록 강제
@@ -105,7 +104,6 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'development' ? 'warn' : 'error',
     'no-duplicate-imports': 'off',
     'no-inner-declarations': 'warn',
-    'no-multiple-empty-lines': 'warn',
     'no-nested-ternary': 'warn',
     'no-new-object': 'warn',
     'no-undef': 'error',
