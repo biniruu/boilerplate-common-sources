@@ -210,7 +210,12 @@ module.exports = {
         allowObject: true,
       },
     ],
-    'import/no-duplicates': ['error', { 'prefer-inline': true }],
+    'import/no-duplicates': [
+      'error',
+      {
+        'prefer-inline': true,
+      },
+    ],
     'import/no-unresolved': 'off',
     'import/order': [
       'warn',
