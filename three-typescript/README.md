@@ -19,10 +19,6 @@ yarn add -D eslint eslint-plugin-import
 
 yarn add -D eslint-plugin-jest
 
-# ESLint for Prettier
-
-yarn add -D eslint-config-prettier eslint-plugin-prettier
-
 # ESLint for TypeScript
 #
 # 💁🏻‍♀️ eslint-plugin-jest를 설치하지 않는다면 아래 패키지는 별도로 설치해야 해요.

@@ -65,10 +65,6 @@ yarn add env-cmd
 
 yarn add -D @graphql-eslint/eslint-plugin
 
-# ESLint for Prettier
-
-yarn add -D eslint-config-prettier eslint-plugin-prettier
-
 # ESLint for Storybook
 #
 # 💁🏻 Storybook을 설치하는 과정에서 설치 여부를 물어보기 때문에 굳이 먼저 설치할 필요는 없어요.

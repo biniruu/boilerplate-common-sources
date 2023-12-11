@@ -29,10 +29,6 @@ yarn add -D eslint eslint-plugin-import
 
 yarn add -D eslint-plugin-jest
 
-# ESLint for Prettier
-
-yarn add -D eslint-config-prettier eslint-plugin-prettier
-
 # ESLint for Webpack
 
 yarn add -D eslint-webpack-plugin

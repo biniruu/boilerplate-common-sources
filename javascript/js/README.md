@@ -33,10 +33,6 @@ yarn add -D eslint-plugin-jsx-a11y
 
 yarn add -D eslint-plugin-jest
 
-# ESLint for Prettier
-
-yarn add -D eslint-config-prettier eslint-plugin-prettier
-
 # ESLint for Pug
 
 yarn add -D eslint-plugin-pug

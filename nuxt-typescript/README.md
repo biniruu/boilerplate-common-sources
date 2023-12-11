@@ -59,10 +59,6 @@ yarn add -D eslint eslint-plugin-import eslint-plugin-jest
 
 yarn add -D @nuxtjs/eslint-config-typescript eslint-plugin-nuxt
 
-# ESLint for Prettier
-
-yarn add -D eslint-config-prettier eslint-plugin-prettier
-
 # ESLint for TypeScript
 
 yarn add -D @typescript-eslint/eslint-plugin eslint-import-resolver-typescript

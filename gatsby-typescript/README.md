@@ -68,10 +68,6 @@ yes를 선택하면 플러그인 설치와 함께 .eslintrc.js > extends에 `plu
 이곳에 있는 명령어를 사용해 패키지를 설치하세요.
 
 ```bash
-# ESLint for Prettier
-
-npm install --save-dev eslint-config-prettier eslint-plugin-prettier
-
 # ESLint for Storybook
 #
 # 💁🏻 Storybook을 설치하는 과정에서 설치 여부를 물어보기 때문에 굳이 먼저 설치할 필요는 없어요.

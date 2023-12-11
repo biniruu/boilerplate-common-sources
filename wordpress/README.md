@@ -21,10 +21,6 @@ yarn add -D @babel/eslint-parser
 
 yarn add -D eslint
 
-# ESLint for Prettier
-
-yarn add -D eslint-config-prettier eslint-plugin-prettier
-
 # Prettier
 
 yarn add -D prettier

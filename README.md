@@ -146,7 +146,6 @@
 - [env-cmd](https://www.npmjs.com/package/env-cmd) : command에서 env 변수를 사용할 수 있도록 지원
 - [eslint](https://www.npmjs.com/package/eslint)
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next)
-- [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier) : prettier와 충돌을 일으키는 eslint 규칙 비활성화
 - [eslint-config-sinon](https://www.npmjs.com/package/eslint-config-sinon)
 - [eslint-import-resolver-typescript](https://www.npmjs.com/package/eslint-import-resolver-typescript) : tsconfig에서 path alias 사용을 위해 필요. CRA로 리액트를 설치했다면 craco와 함께 사용할 것
 - [eslint-plugin-chai-friendly](https://www.npmjs.com/package/eslint-plugin-chai-friendly)
@@ -154,7 +153,6 @@
 - [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest) : jest 관련 규칙 제공
 - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) : jsx 내에서 웹 접근성 관련 피드백 제공
 - [eslint-plugin-mocha](https://www.npmjs.com/package/eslint-plugin-mocha)
-- [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier) : prettier에서 인식하는 코드상의 포맷 오류를 eslint 오류로 출력
 - [eslint-plugin-pug](https://www.npmjs.com/package/eslint-plugin-pug) : pug 파일 linting
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) : react 규칙 관련 피드백 제공
 - [eslint-config-react-app](https://www.npmjs.com/package/eslint-config-react-app) : CRA에서 기본으로 사용하는 eslint 설정
