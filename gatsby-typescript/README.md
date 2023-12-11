@@ -76,7 +76,7 @@ npm install --save-dev eslint-config-prettier eslint-plugin-prettier
 #
 # 💁🏻 Storybook을 설치하는 과정에서 설치 여부를 물어보기 때문에 굳이 먼저 설치할 필요는 없어요.
 
-yarn add -D eslint-plugin-storybook
+npm add -D eslint-plugin-storybook
 
 # ESLint for TypeScript
 
@@ -88,7 +88,7 @@ npm install --save-dev @typescript-eslint/eslint-plugin
 # 1. settings > editor.codeActionsOnSave > source.fixAll.markdownlint를 true로 설정
 # 2. .markdownlint 파일 설정
 
-yarn add -D markdownlint
+npm add -D markdownlint
 
 # PostCSS
 
@@ -100,7 +100,7 @@ npm install --save-dev prettier
 
 # React
 
-yarn add react-hook-form
+npm add react-hook-form
 
 # Stylelint
 
