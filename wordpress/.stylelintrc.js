@@ -4,7 +4,10 @@
  */
 
 module.exports = {
-  extends: ['stylelint-config-standard'],
+  extends: [
+    'stylelint-config-standard',
+    // 'stylelint-config-standard-scss',
+  ],
   plugins: ['stylelint-scss', 'stylelint-order'],
   rules: {
     /**
