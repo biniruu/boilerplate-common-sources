@@ -13,9 +13,8 @@ module.exports = {
    * Extends
    *
    * eslint:recommended : eslint 추천 rule set
-   * plugin:prettier/recommended : eslint-config-prettier 추천 rule set
    */
-  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+  extends: ['eslint:recommended'],
   root: true, // 현재 설정 파일이 root임을 명시하는 옵션. true로 설정하면 상위 설정 파일 찾기를 여기서 멈춘다.
   rules: {
     /**
@@ -92,14 +91,5 @@ module.exports = {
         ignoreMemberSort: true,
       },
     ],
-    /**
-     * Eslint-config-prettier options
-     * {@link https://github.com/prettier/eslint-plugin-prettier#options}
-     *
-     * 공식 문서에서는 옵션 설정을 추천하지 않는다. prettier-vscode 확장 프로그램이 .prettierrc 파일을 읽고 이곳에 있는 옵션은 무시하는데, 이 때문에 예상치 못한 문제가 발생할 수도 있기 때문.
-     *
-     * prettier : 이곳에 설정한 옵션은 .prettier 파일에 있는 옵션을 덮어쓴다. 타입스크립트에서는 알 수 없는 이유로 에러를 발생시키는 경우가 잦아 off로 설정해 두었다.
-     */
-    'prettier/prettier': 'off',
   },
 }

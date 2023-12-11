@@ -18,7 +18,6 @@ module.exports = {
    * plugin:import/recommended : eslint-plugin-import 추천 rule set
    * plugin:import/typescript : eslint-plugin-import 플러그인
    * plugin:jsx-a11y/recommended : 웹 접근성 관련 추천 rule set
-   * plugin:prettier/recommended : eslint-config-prettier 추천 rule set
    * plugin:react-hooks/recommended
    * plugin:react/jsx-runtime : If you are using the new JSX transform from React 17, you should enable this
    * plugin:react/recommended
@@ -32,7 +31,6 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:import/typescript',
     'plugin:jsx-a11y/recommended',
-    'plugin:prettier/recommended',
     'plugin:react-hooks/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react/recommended',
@@ -194,15 +192,6 @@ module.exports = {
         asyncArrow: 'always',
       },
     ],
-    /**
-     * Eslint-config-prettier options
-     * {@link https://github.com/prettier/eslint-plugin-prettier#options}
-     *
-     * 공식 문서에서는 옵션 설정을 추천하지 않는다. prettier-vscode 확장 프로그램이 .prettierrc 파일을 읽고 이곳에 있는 옵션은 무시하는데, 이 때문에 예상치 못한 문제가 발생할 수도 있기 때문.
-     *
-     * prettier : 이곳에 설정한 옵션은 .prettier 파일에 있는 옵션을 덮어쓴다. 타입스크립트에서는 알 수 없는 이유로 에러를 발생시키는 경우가 잦아 off로 설정해 두었다.
-     */
-    'prettier/prettier': 'off',
     /**
      * Eslint-plugin-import rules
      * {@link https://github.com/import-js/eslint-plugin-import#rules}
