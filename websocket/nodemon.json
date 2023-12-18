@@ -1,0 +1,9 @@
+{
+  "execMap": {
+    "ts": "ts-node --esm"
+  },
+  "ext": "ts",
+  "ignore": ["**/dist/", "**/mode_modules/", "**/*.cjs", "**/*.json", ".gitignore", ".eslintignore", ".prettierignore"],
+  "verbose": true,
+  "watch": ["./client/src", "./server"]
+}
