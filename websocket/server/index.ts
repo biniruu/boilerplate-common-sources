@@ -20,20 +20,25 @@ const io = new Server<ClientToServerEvents, ServerToClientEvents, InterServerEve
 })
 
 const path = import.meta.url
+// eslint-disable-next-line no-underscore-dangle
 const __dirname = dirname(fileURLToPath(path))
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 app.get('/', (req, res) => {
   res.sendFile(join(__dirname, 'index.html'))
 })
 
 io.on('connection', socket => {
+  // eslint-disable-next-line no-console
   console.log('a user connected')
 
   socket.on('disconnect', () => {
+    // eslint-disable-next-line no-console
     console.log('user disconnected')
   })
 })
 
 server.listen(3000, () => {
+  // eslint-disable-next-line no-console
   console.log('server running at http://localhost:3000')
 })
