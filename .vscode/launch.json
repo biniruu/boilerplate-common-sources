@@ -18,6 +18,13 @@
       "skipFiles": ["<node_internals>/**"],
       "runtimeExecutable": "nodemon",
       "restart": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Current File",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${file}"
     }
   ]
 }
