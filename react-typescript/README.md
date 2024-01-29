@@ -71,6 +71,10 @@ yarn add -D @graphql-eslint/eslint-plugin
 
 yarn add -D eslint-plugin-storybook
 
+# ESLint for Tailwind CSS
+
+yarn add -D eslint-plugin-tailwindcss
+
 # ESLint for TanStack Query (React Query)
 
 yarn add -D @tanstack/eslint-plugin-query
