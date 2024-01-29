@@ -17,6 +17,10 @@ yarn add -D eslint eslint-plugin-import
 
 yarn add -D eslint-plugin-jest
 
+# ESLint for Tailwind CSS
+
+yarn add -D eslint-plugin-tailwindcss
+
 # ESLint for TypeScript
 #
 # 💁🏻‍♀️ eslint-plugin-jest를 설치하지 않는다면 아래 패키지는 별도로 설치해야 해요.
