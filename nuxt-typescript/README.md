@@ -59,6 +59,10 @@ yarn add -D eslint eslint-plugin-import eslint-plugin-jest
 
 yarn add -D @nuxtjs/eslint-config-typescript eslint-plugin-nuxt
 
+# ESLint for Tailwind CSS
+
+yarn add -D eslint-plugin-tailwindcss
+
 # ESLint for TypeScript
 
 yarn add -D @typescript-eslint/eslint-plugin eslint-import-resolver-typescript

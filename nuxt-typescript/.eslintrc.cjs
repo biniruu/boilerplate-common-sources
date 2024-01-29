@@ -21,6 +21,7 @@ module.exports = {
    * plugin:import/typescript : eslint-plugin-import 플러그인
    * plugin:jsx-a11y/recommended : 웹 접근성 관련 추천 rule set
    * plugin:nuxt/recommended : Nuxt.js 추천 rule set
+   * plugin:tailwindcss/recommended : Rules enforcing best practices and consistency using Tailwind CSS
    */
   extends: [
     '@nuxtjs/eslint-config-typescript',
@@ -30,6 +31,7 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:jsx-a11y/recommended',
     'plugin:nuxt/recommended',
+    'plugin:tailwindcss/recommended',
   ],
   overrides: [
     {
@@ -91,6 +93,7 @@ module.exports = {
      * {@link https://eslint.org/docs/latest/rules}
      *
      * camelcase : 카멜 케이스 작명 방식 강제
+     * comma-dangle : trailing commas 강제
      * eqeqeq : 일치 연산자(===) 사용 강제. 동등 연산자(==) 사용 금지
      * new-cap : 'new' 연산자로 인스턴스 생성 시 constructor 함수명의 첫 글자를 대문자로 강제
      * no-array-constructor : Array() 생성자에 배열 리터럴 생성법을 사용해서 배열 생성 금지
@@ -119,6 +122,7 @@ module.exports = {
         properties: 'never',
       },
     ],
+    'comma-dangle': 'always-multiline',
     eqeqeq: 'error',
     'new-cap': 'error',
     'no-array-constructor': 'error',
@@ -276,6 +280,13 @@ module.exports = {
         td: ['gridcell'],
       },
     ],
+    /**
+     * Eslint-plugin-tailwindcss rules
+     * {@link https://github.com/francoismassart/eslint-plugin-tailwindcss/tree/master/docs/rules}
+     *
+     * tailwindcss/classnames-order : className 프로퍼티에 추가한 클래스명 정렬
+     */
+    // 'tailwindcss/classnames-order': 'off',
   },
   settings: {
     /**
