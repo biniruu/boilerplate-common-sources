@@ -55,6 +55,10 @@ yarn add -D eslint-plugin-storybook
 
 yarn add -D @tanstack/eslint-plugin-query
 
+# ESLint for Tailwind CSS
+
+yarn add -D eslint-plugin-tailwindcss
+
 # ESLint for TypeScript
 
 yarn add -D @typescript-eslint/eslint-plugin
