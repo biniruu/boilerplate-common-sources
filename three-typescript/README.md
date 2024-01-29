@@ -77,10 +77,6 @@ yarn add -D postcss-scss
 
 yarn add -D prettier
 
-# Prettier for Tailwind CSS
-
-yarn add -D prettier-plugin-tailwindcss
-
 # SASS (SCSS)
 
 yarn add -D sass sass-loader
@@ -133,6 +129,12 @@ yarn add -D source-map-loader style-loader webpack webpack-cli webpack-dev-serve
 
 yarn add -D @types/webpack
 ```
+
+<br>
+
+💁🏻 아래 패키지는 다른 패키지와 충돌을 일으키기 때문에 사용하지 않아요.
+
+- prettier-plugin-tailwindcss : `eslint-plugin-tailwindcss`의 `classnames-order`와 충돌을 일으킨다.
 
 <br>
 

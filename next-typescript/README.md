@@ -94,10 +94,6 @@ yarn add -D postcss-styled-syntax
 
 yarn add -D prettier
 
-# Prettier for Tailwind CSS
-
-yarn add -D prettier-plugin-tailwindcss
-
 # Next
 
 yarn add react-hook-form
@@ -172,6 +168,7 @@ yarn add -D source-map-loader
 💁🏻 아래 패키지는 다른 패키지와 충돌을 일으키기 때문에 사용하지 않아요.
 
 - @swrlab/eslint-plugin-swr : 필수 패키지들이 의존성 패키지로 사용 중인 `eslint-plugin-import`와 충돌을 일으킨다.
+- prettier-plugin-tailwindcss : `eslint-plugin-tailwindcss`의 `classnames-order`와 충돌을 일으킨다.
 
 <br>
 

@@ -103,10 +103,6 @@ yarn add -D postcss-cli postcss-html postcss-syntax postcss-url
 
 yarn add -D prettier
 
-# Prettier for Tailwind CSS
-
-yarn add -D prettier-plugin-tailwindcss
-
 # React
 
 yarn add react-hook-form react-router-dom
@@ -197,11 +193,10 @@ yarn add @tanstack/react-query @tanstack/react-query-devtools
 💁🏻 아래 패키지는 다른 패키지와 충돌을 일으키기 때문에 사용하지 않아요.
 
 - @swrlab/eslint-plugin-swr : 필수 패키지들이 의존성 패키지로 사용 중인 `eslint-plugin-import`와 충돌을 일으킨다.
+- prettier-plugin-tailwindcss : `eslint-plugin-tailwindcss`의 `classnames-order`와 충돌을 일으킨다.
 
 <br>
 
 ## 📋Detailing packages
 
 각 패키지에 대한 설명은 최상위 폴더에 있는 [README.md](https://github.com/biniruu/starter-pack#detailing-packages)에서 확인할 수 있어요.
-
-<br>
