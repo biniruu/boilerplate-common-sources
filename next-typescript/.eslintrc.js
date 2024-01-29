@@ -25,6 +25,7 @@ module.exports = {
    * plugin:react/jsx-runtime : If you are using the new JSX transform from React 17, you should enable this
    * plugin:react/recommended
    * plugin:storybook/recommended : 스토리북 추천 rule set
+   * plugin:tailwindcss/recommended : Rules enforcing best practices and consistency using Tailwind CSS
    */
   extends: [
     'eslint:recommended',
@@ -38,6 +39,7 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:react/recommended',
     'plugin:storybook/recommended',
+    'plugin:tailwindcss/recommended',
   ],
   overrides: [
     {
@@ -345,6 +347,13 @@ module.exports = {
      */
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'off',
+    /**
+     * Eslint-plugin-tailwindcss rules
+     * {@link https://github.com/francoismassart/eslint-plugin-tailwindcss/tree/master/docs/rules}
+     *
+     * tailwindcss/classnames-order : className 프로퍼티에 추가한 클래스명 정렬
+     */
+    // 'tailwindcss/classnames-order': 'off',
   },
   settings: {
     /**
