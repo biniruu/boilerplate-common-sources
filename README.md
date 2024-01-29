@@ -160,6 +160,7 @@
 - [eslint-plugin-storybook](https://www.npmjs.com/package/eslint-plugin-storybook) : 스토리북에 최적화 된 lint 규칙 제공
 - [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue) : vue 규칙 관련 피드백 제공
 - [eslint-plugin-nuxt](https://www.npmjs.com/package/eslint-plugin-nuxt) : nuxt 규칙 관련 피드백 제공
+- [eslint-plugin-tailwindcss](https://www.npmjs.com/package/eslint-plugin-tailwindcss) : HTML 요소에 사용한 Tailwind CSS 클래스명 사용 및 정렬과 관련한 규칙 제공
 - [eslint-webpack-plugin](https://www.npmjs.com/package/eslint-webpack-plugin)
 - [env-cmd](https://www.npmjs.com/package/env-cmd) : env 파일에 있는 환경 변수를 command에서 실행하는 기능 제공
 - [express](https://www.npmjs.com/package/express) : node.js를 편리하게 사용할 수 있게 해 주는 프레임워크
