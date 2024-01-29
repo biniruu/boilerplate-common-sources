@@ -53,6 +53,7 @@
     "@testing-library/user-event": "^14.5.1",
     "@types/styled-components": "^5.1.31",
     "eslint-plugin-storybook": "^0.6.15",
+    "eslint-plugin-tailwindcss": "^3.14.1",
     "postcss-cli": "^10.1.0",
     "postcss-html": "^1.5.0",
     "postcss-syntax": "^0.36.2",
