@@ -107,6 +107,10 @@ yarn add -D @types/lodash-es
 
 yarn add -D postcss-cli postcss-html postcss-syntax postcss-url
 
+# PostCSS for Tailwind CSS
+
+yarn add -D @tailwindcss/nesting
+
 # Prettier
 
 yarn add -D prettier

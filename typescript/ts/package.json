@@ -19,6 +19,7 @@
     "styled-components": "^6.1.1"
   },
   "devDependencies": {
+    "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
     "@types/jest": "^29.5.9",
     "@types/lodash-es": "^4.17.12",
     "@types/node": "^20.9.3",

@@ -47,6 +47,7 @@
   "devDependencies": {
     "@graphql-codegen/cli": "^5.0.0",
     "@graphql-eslint/eslint-plugin": "^3.20.1",
+    "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
     "@tanstack/eslint-plugin-query": "^5.8.4",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.1.2",

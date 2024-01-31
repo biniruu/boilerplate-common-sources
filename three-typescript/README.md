@@ -65,6 +65,10 @@ yarn add -D nodemon
 
 yarn add -D postcss postcss-html postcss-loader postcss-nesting postcss-preset-env postcss-syntax postcss-url
 
+# PostCSS for Tailwind CSS
+
+yarn add -D @tailwindcss/nesting
+
 # PostCSS for JSX
 
 yarn add -D postcss-jsx

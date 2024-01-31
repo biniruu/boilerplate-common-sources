@@ -19,12 +19,14 @@
  */
 
 module.exports = {
-  syntax: 'postcss-syntax', //  automatically switch the required PostCSS syntax by file extension/source
   plugins: {
+    '@tailwindcss/nesting': {}, // 항상 tailwindcss 앞에 위치
     'postcss-preset-env': {
-      autoprefixer: {},
+      autoprefixer: {
+        // grid: 'autoplace', // ie 10-11 대응 grid layout 속성 prefix
+      },
       features: {
-        'nesting-rules': true,
+        'nesting-rules': false, // @tailwindcss/nesting 사용 시 false로 설정
       },
     },
     tailwindcss: {}, // tailwindcss 사용 시 필요

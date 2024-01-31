@@ -90,6 +90,10 @@ yarn add -D postcss-cli postcss-flexbugs-fixes postcss-html postcss-loader postc
 
 yarn add -D postcss-styled-syntax
 
+# PostCSS for Tailwind CSS
+
+yarn add -D @tailwindcss/nesting
+
 # Prettier
 
 yarn add -D prettier
