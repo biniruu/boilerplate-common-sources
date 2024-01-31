@@ -14,11 +14,15 @@
  * Additional options in autoprefixer
  * {@link https://github.com/postcss/autoprefixer#options}
  *
- * Optimising tailwindcss for production
+ * Optimising Tailwind CSS for production
  * {@link https://tailwindcss.com/docs/optimizing-for-production}
+ *
+ * Nesting support in the Tailwind CSS plugin API (tailwindcss/nesting)
+ * {@link https://tailwindcss.com/docs/using-with-preprocessors#nesting}
  */
 
 module.exports = {
+  syntax: 'postcss-syntax', //  automatically switch the required PostCSS syntax by file extension/source
   plugins: {
     '@tailwindcss/nesting': {}, // 항상 tailwindcss 앞에 위치
     'postcss-preset-env': {
