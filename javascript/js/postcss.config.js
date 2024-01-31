@@ -29,7 +29,6 @@ module.exports = {
         'nesting-rules': true,
       },
     },
-    tailwindcss: {}, // tailwindcss 사용 시 필요
     ...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {}), // production 환경에서 css minify 구현
   },
 }
