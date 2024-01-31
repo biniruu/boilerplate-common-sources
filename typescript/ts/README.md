@@ -71,6 +71,10 @@ yarn add -D postcss-jsx
 
 yarn add -D postcss-scss
 
+# PostCSS for Tailwind CSS
+
+yarn add -D @tailwindcss/nesting
+
 # Prettier
 
 yarn add -D prettier
