@@ -115,6 +115,7 @@
 - [@swrlab/eslint-plugin-swr](https://www.npmjs.com/package/@swrlab/eslint-plugin-swr) : swr 관련 lint 규칙 제공
 - [@tanstack/eslint-plugin-query](https://www.npmjs.com/package/@tanstack/eslint-plugin-query) : tanstack query 관련 lint 규칙 제공
 - [@tanstack/react-query](https://www.npmjs.com/package/@tanstack/react-query) : react에서, 서버 측으로부터 받아오는 데이터를 최신 상태로 유지
+- [@tailwindcss/nesting](https://www.npmjs.com/package/@tailwindcss/nesting) : Tailwind CSS 에서 CSS nesting 문법 사용을 지원하는 PostCSS 플러그인
 - [@types/body-parser](https://www.npmjs.com/package/@types/body-parser) : type declarations for body-parser
 - [@types/cors](https://www.npmjs.com/package/@types/cors) : type declarations for cors
 - [@types/express](https://www.npmjs.com/package/@types/express) : type declarations for express
