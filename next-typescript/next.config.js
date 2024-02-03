@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   compiler: {
     styledComponents: true, // styled component 활성화
@@ -7,7 +8,12 @@ const nextConfig = {
   //   serverActions: true, // App Router에서 server actions 활성화
   // },
   images: {
-    domains: [], // 외부 이미지 uri
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.pexels.com',
+      },
+    ], // 외부 이미지 주소
   },
   reactStrictMode: true,
 }
