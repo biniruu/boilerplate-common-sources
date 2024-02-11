@@ -53,6 +53,14 @@ yes를 선택하면 플러그인 설치와 함께 .eslintrc.js > extends에 `plu
 
 yarn add axios
 
+# Bcrypt.js
+
+yarn add bcryptjs
+
+# Bcrypt.js for TypeScript
+
+yarn add -D @types/bcryptjs
+
 # Craco
 
 yarn add @craco/craco
