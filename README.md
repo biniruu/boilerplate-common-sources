@@ -116,6 +116,7 @@
 - [@tanstack/eslint-plugin-query](https://www.npmjs.com/package/@tanstack/eslint-plugin-query) : tanstack query 관련 lint 규칙 제공
 - [@tanstack/react-query](https://www.npmjs.com/package/@tanstack/react-query) : react에서, 서버 측으로부터 받아오는 데이터를 최신 상태로 유지
 - [@tailwindcss/nesting](https://www.npmjs.com/package/@tailwindcss/nesting) : Tailwind CSS 에서 CSS nesting 문법 사용을 지원하는 PostCSS 플러그인
+- [@types/bcryptjs](https://www.npmjs.com/package/@types/bcryptjs) : type declarations for bcrypt.js
 - [@types/body-parser](https://www.npmjs.com/package/@types/body-parser) : type declarations for body-parser
 - [@types/cors](https://www.npmjs.com/package/@types/cors) : type declarations for cors
 - [@types/express](https://www.npmjs.com/package/@types/express) : type declarations for express
@@ -133,11 +134,12 @@
 - [@typescript-eslint/typescript-estree](https://www.npmjs.com/package/@typescript-eslint/typescript-estree) : TypeScript ESTree
 - [@typescript-eslint/utils](https://www.npmjs.com/package/@typescript-eslint/utils) : typescript에서 eslint를 사용할 때 유용한 도구
 - [@vue/server-test-utils](https://www.npmjs.com/package/@vue/server-test-utils) : Vue.js 환경에서 단위 테스트를 하기 위한 공식(Official) 라이브러리
-- [@vue/test-utils](https://www.npmjs.com/package/@vue/test-utils) : Vue.js 환경에서 단위 테스트를 하기 위한 공식 라이브러리.
+- [@vue/test-utils](https://www.npmjs.com/package/@vue/test-utils) : Vue.js 환경에서 단위 테스트를 하기 위한 공식 라이브러리
 - [@vue/vue3-jest](https://www.npmjs.com/package/@vue/vue3-jest) : Vue 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer) : cross browser에 필요한 css 속성 prefix를 자동으로 생성
 - [axios](https://www.npmjs.com/package/axios) : HTTP 클라이언트 라이브러리
 - [babel-jest](https://www.npmjs.com/package/babel-jest) : JS/JSX 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
+- [bcryptjs](https://www.npmjs.com/package/@types/bcryptjs) : adding hash and salt in passwords
 - [body-parser](https://www.npmjs.com/package/body-parser) : Node.js body parsing middleware
 - [chai](https://www.npmjs.com/package/chai)
 - [cors](https://www.npmjs.com/package/cors) : solve a cors error
