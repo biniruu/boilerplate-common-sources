@@ -1,5 +1,5 @@
 /**
- * Syntaxes (It's not supported by Next.js)
+ * Syntaxes
  * {@link https://github.com/postcss/postcss#syntaxes}
  *
  * Plugins
@@ -22,17 +22,18 @@
  */
 
 module.exports = {
+  syntax: 'postcss-syntax', //  automatically switch the required PostCSS syntax by file extension/source
   plugins: {
-    '@tailwindcss/nesting': {}, // 항상 tailwindcss 앞에 위치
+    '@tailwindcss/nesting': {}, // this plugin has to come before 'tailwindcss'
     'postcss-preset-env': {
       autoprefixer: {
-        // grid: 'autoplace', // ie 10-11 대응 grid layout 속성 prefix
+        // grid: 'autoplace', // adding prefixes of grid layout properties for IE 10-11
       },
       features: {
-        'nesting-rules': false, // @tailwindcss/nesting 사용 시 false로 설정
+        'nesting-rules': false, // ensure this value as false when using @tailwindcss/nesting
       },
     },
-    tailwindcss: {}, // tailwindcss 사용 시 필요
-    ...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {}), // production 환경에서 css minify 구현
+    tailwindcss: {}, // for using tailwindcss
+    ...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {}), // invoking CSS minification in production environment
   },
 }
