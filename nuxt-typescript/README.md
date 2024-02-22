@@ -100,7 +100,7 @@ yarn add -D @types/lodash-es
 # 💁🏻‍♂️ postcss-preset-env를 설치하지 않는다면 아래 링크에 정리된 postcss 플러그인은 별도로 설치해야 해요.
 # https://github.com/csstools/postcss-plugins/tree/main/plugins
 
-yarn add -D postcss-cli postcss-flexbugs-fixes postcss-hexrgba postcss-html postcss-normalize postcss-preset-env postcss-responsive-type postcss-syntax
+yarn add -D cssnano postcss-cli postcss-flexbugs-fixes postcss-hexrgba postcss-html postcss-normalize postcss-preset-env postcss-responsive-type postcss-syntax
 
 # PostCSS for Tailwind CSS
 

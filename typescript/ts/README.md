@@ -61,7 +61,7 @@ yarn add -D nodemon
 # 💁🏻‍♂️ postcss-preset-env를 설치하지 않는다면 아래 링크에 정리된 postcss 플러그인은 별도로 설치해야 해요.
 # https://github.com/csstools/postcss-plugins/tree/main/plugins
 
-yarn add -D postcss postcss-html postcss-loader postcss-nesting postcss-preset-env postcss-syntax postcss-url
+yarn add -D cssnano postcss postcss-html postcss-loader postcss-preset-env postcss-syntax postcss-url
 
 # PostCSS for JSX
 
