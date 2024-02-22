@@ -143,6 +143,7 @@
 - [body-parser](https://www.npmjs.com/package/body-parser) : Node.js body parsing middleware
 - [chai](https://www.npmjs.com/package/chai)
 - [cors](https://www.npmjs.com/package/cors) : solve a cors error
+- [cssnano](https://www.npmjs.com/package/cssnano) : Minification CSS
 - [dataloader](https://www.npmjs.com/package/dataloader) : N+1번의 SQL 쿼리 요청이 실행되는 문제 해결, 데이터 일괄 처리 및 캐싱 기능 제공
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [dotenv-expand](https://www.npmjs.com/package/dotenv-expand) : dotenv 변수 확장
