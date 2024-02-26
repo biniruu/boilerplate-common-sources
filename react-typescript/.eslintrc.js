@@ -217,7 +217,7 @@ module.exports = {
      * order > warnOnUnassignedImports는 항상 default값(false)으로 놔둘 것. true로 할 경우 import 정렬 관련 경고가 발생하는데, 이 문제는 import/order 또는 sort-import 설정만으로는 해결 불가
      * order > caseInsensitive의 값은 항상 default값(false)으로 놔둘 것. true로 했을 때 가끔 다른 import 정렬 관련 rule과 충돌 발생
      */
-    'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
+    'import/consistent-type-specifier-style': 'warn',
     'import/newline-after-import': 'warn',
     'import/no-anonymous-default-export': [
       'warn',

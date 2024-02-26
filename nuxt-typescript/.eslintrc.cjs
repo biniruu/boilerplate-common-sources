@@ -12,26 +12,32 @@ module.exports = {
   /**
    * Extends
    *
-   * @nuxtjs/eslint-config-typescript : nuxt 3를 위한, 옵션 없는 eslint 설정
    * eslint:recommended : eslint 추천 rule set
-   * plugin:@typescript-eslint/recommended-type-checked : typescript-eslint v6 이상 추천 룰셋
-   * {@link https://typescript-eslint.io/linting/typed-linting/}
-   * {@link https://typescript-eslint.io/blog/announcing-typescript-eslint-v6/#user-facing-breaking-changes}
+   * plugin:@tanstack/eslint-plugin-query/recommended : tanstack query (react query) 추천 rule set
+   * plugin:@typescript-eslint/recommended : typescript-eslint v5 추천 rule set
    * plugin:import/recommended : eslint-plugin-import 추천 rule set
    * plugin:import/typescript : eslint-plugin-import 플러그인
    * plugin:jsx-a11y/recommended : 웹 접근성 관련 추천 rule set
-   * plugin:nuxt/recommended : Nuxt.js 추천 rule set
+   * plugin:react-hooks/recommended
+   * plugin:react/jsx-runtime : If you are using the new JSX transform from React 17, you should enable this
+   * plugin:react/recommended
+   * plugin:storybook/recommended : 스토리북 추천 rule set
    * plugin:tailwindcss/recommended : Rules enforcing best practices and consistency using Tailwind CSS
+   * react-app : eslint-config-react-app으로 eslint 설정 덮어쓰기
    */
   extends: [
-    '@nuxtjs/eslint-config-typescript',
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended-type-checked',
+    'plugin:@tanstack/eslint-plugin-query/recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
     'plugin:jsx-a11y/recommended',
-    'plugin:nuxt/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:react/jsx-runtime',
+    'plugin:react/recommended',
+    'plugin:storybook/recommended',
     'plugin:tailwindcss/recommended',
+    'react-app',
   ],
   overrides: [
     {
@@ -39,8 +45,9 @@ module.exports = {
        * Jest
        *
        * plugin:jest/recommended : eslint-plugin-jest 추천 rule set
+       * react-app/jest : jest 규칙 설정을 위한 eslint-config-react-app 확장
        */
-      extends: ['plugin:jest/recommended'],
+      extends: ['plugin:jest/recommended', 'react-app/jest'],
       files: ['*.spec.js', '*.spec.ts', '*.test.js', '*.test.ts'],
       rules: {
         /**
@@ -49,42 +56,18 @@ module.exports = {
          */
       },
     },
-    {
-      /**
-       * Specifying TSConfigs
-       * {@link https://typescript-eslint.io/linting/typed-linting/#specifying-tsconfigs}
-       *
-       * plugin:@typescript-eslint/disable-type-checked : turn off type-aware linting on specific subsets of files with a disabled-type-checked config {@link https://typescript-eslint.io/linting/typed-linting/#how-can-i-disable-type-aware-linting-for-a-subset-of-files}
-       */
-      files: ['*.js', '*.cjs', '*.config.ts'],
-      extends: ['plugin:@typescript-eslint/disable-type-checked'],
-    },
   ],
-  /**
-   * vue-eslint-parser
-   * {@link https://github.com/vuejs/vue-eslint-parser#-options}
-   */
-  parser: 'vue-eslint-parser',
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     /**
      * @typescript-eslint/parser
      * {@link https://typescript-eslint.io/packages/parser}
      *
-     * extraFileExtensions : 표준 확장자가 아닌 파일에서 에러 발생 방지
      * project : tsconfig.json 경로 설정. true로 설정하면 각 소스파일에서 가장 가까운 경로에 있는 tsconfig.json 파일을 자동으로 찾는다.
      * tsconfigRootDir : project에서 제공한 tsconfig의 상대 경로에 대한 루트 디렉토리 제공
      */
-    extraFileExtensions: ['.vue'],
-    parser: '@typescript-eslint/parser',
     project: true,
     tsconfigRootDir: __dirname,
-    /**
-     * vue-eslint-parser
-     * {@link https://github.com/vuejs/vue-eslint-parser#parseroptionsvuefeatures}
-     *
-     * vueFeatures : Vue.js와 연관된 기능 설정
-     */
-    // vueFeatures: {},
   },
   root: true, // 현재 설정 파일이 root임을 명시하는 옵션. true로 설정하면 상위 설정 파일 찾기를 여기서 멈춘다.
   rules: {
@@ -93,7 +76,6 @@ module.exports = {
      * {@link https://eslint.org/docs/latest/rules}
      *
      * camelcase : 카멜 케이스 작명 방식 강제
-     * comma-dangle : trailing commas 강제
      * eqeqeq : 일치 연산자(===) 사용 강제. 동등 연산자(==) 사용 금지
      * new-cap : 'new' 연산자로 인스턴스 생성 시 constructor 함수명의 첫 글자를 대문자로 강제
      * no-array-constructor : Array() 생성자에 배열 리터럴 생성법을 사용해서 배열 생성 금지
@@ -122,7 +104,6 @@ module.exports = {
         properties: 'never',
       },
     ],
-    'comma-dangle': 'always-multiline',
     eqeqeq: 'error',
     'new-cap': 'error',
     'no-array-constructor': 'error',
@@ -236,7 +217,7 @@ module.exports = {
      * order > warnOnUnassignedImports는 항상 default값(false)으로 놔둘 것. true로 할 경우 import 정렬 관련 경고가 발생하는데, 이 문제는 import/order 또는 sort-import 설정만으로는 해결 불가
      * order > caseInsensitive의 값은 항상 default값(false)으로 놔둘 것. true로 했을 때 가끔 다른 import 정렬 관련 rule과 충돌 발생
      */
-    'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
+    'import/consistent-type-specifier-style': 'warn',
     'import/newline-after-import': 'warn',
     'import/no-anonymous-default-export': [
       'warn',
@@ -245,7 +226,12 @@ module.exports = {
         allowObject: true,
       },
     ],
-    'import/no-duplicates': ['error', { 'prefer-inline': true }],
+    'import/no-duplicates': [
+      'error',
+      {
+        'prefer-inline': true,
+      },
+    ],
     'import/no-unresolved': 'off',
     'import/order': [
       'warn',
@@ -291,6 +277,76 @@ module.exports = {
       },
     ],
     /**
+     * Eslint-plugin-react rules
+     * {@link https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules}
+     *
+     * destructuring-assignment : state, prop 등에 구조분해 할당 적용
+     * jsx-curly-brace-presence : jsx 내 불필요한 중괄호 금지
+     * jsx-curly-spacing
+     * jsx-key : 반복문으로 생성하는 요소에 key 속성 강제. 'react/recommended' 설정 시 활성화
+     * jsx-no-useless-fragment : 불필요한 fragment 금지
+     * jsx-pascal-case : 컴포넌트 이름을 PascalCase로 강제
+     * jsx-no-bind : JSX에서 .bind() 또는 화살표 함수 사용 금지
+     * jsx-uses-react : react를 import한 후 JSX 사용 강제. 'react/recommended' 설정 시 활성화. 'no-unused-vars'가 활성화 된 경우 효과 발생. react v17 이후 필요없어짐 {@link https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#eslint How to Upgrade to the New JSX Transform}
+     * jsx-uses-vars : JSX를 import한 후 해당 JSX 사용 강제. 'no-unused-vars'가 활성화 된 경우 효과 발생
+     * no-direct-mutation-state : state 직접 수정 금지. 'react/recommended' 설정 시 활성화
+     * no-unescaped-entities : JSX 안에서 escape 되지 않은 entity 코드 사용 금지. 'react/recommended' 설정 시 활성화
+     * no-unknown-property : DOM property에 해당하지 않는 property를 비활성화
+     * no-unused-state : 사용하지 않는 state가 있을 시 경고 발생
+     * prop-types : prop의 type을 정의하도록 강제. 'react/recommended' 설정 시 활성화. typescript를 사용하면 필요없는 옵션
+     * react-in-jsx-scope : component에서 React를 import하지 않을 경우 오류 발생. 'react/recommended' 설정 시 활성화. react v17 이후 필요없어짐 {@link https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#eslint How to Upgrade to the New JSX Transform}
+     * self-closing-comp : JSX 태그 안에 하위 태그가 없을 경우 self-closing 태그로 변환
+     * static-property-placement : 클래스에서 childContextTypes, contextTypes, contextType, defaultProps, displayName, propTypes를 정의하도록 강제. default : 'static public field'
+     */
+    'react/destructuring-assignment': 'warn',
+    'react/jsx-curly-brace-presence': 'warn',
+    // 'react/jsx-curly-spacing': ['warn', { when: 'always', children: true, objectLiterals: 'never' }], // prettier와 충돌하여 사용할 수 없음
+    'react/jsx-key': 'error',
+    'react/jsx-no-useless-fragment': [
+      'warn',
+      {
+        allowExpressions: true,
+      },
+    ],
+    'react/jsx-pascal-case': 'warn',
+    'react/jsx-no-bind': [
+      'error',
+      {
+        allowArrowFunctions: true,
+        allowFunctions: true,
+      },
+    ],
+    'react/jsx-uses-react': 'off',
+    'react/jsx-uses-vars': 'error',
+    'react/no-direct-mutation-state': 'error',
+    'react/no-unescaped-entities': 'error',
+    'react/no-unknown-property': [
+      'error',
+      {
+        ignore: ['jsx'],
+      },
+    ],
+    'react/no-unused-state': 'warn',
+    'react/prop-types': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'react/self-closing-comp': [
+      'warn',
+      {
+        component: true,
+        html: false,
+      },
+    ],
+    'react/static-property-placement': 'warn',
+    /**
+     * Eslint-plugin-react-hooks rules
+     * {@link https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks}
+     *
+     * react-hooks/rules-of-hooks : react hooks 공식 문서에서 제공하는 규칙을 준수하도록 강제. {@link https://legacy.reactjs.org/docs/hooks-rules.html Roles of Hooks}
+     * react-hooks/exhaustive-deps : useEffect 안에서 사용하는 함수나 변수를 dependency로 등록하지 않았을 때 경고 발생
+     */
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'off',
+    /**
      * Eslint-plugin-tailwindcss rules
      * {@link https://github.com/francoismassart/eslint-plugin-tailwindcss/tree/master/docs/rules}
      *
@@ -319,6 +375,15 @@ module.exports = {
      */
     jest: {
       version: require('jest/package.json').version,
+    },
+    /**
+     * Eslint-plugin-react configuration
+     * {@link https://github.com/jsx-eslint/eslint-plugin-react#configuration-legacy-eslintrc-}
+     *
+     * 'detect' automatically picks the version you have installed.
+     */
+    react: {
+      version: 'detect',
     },
   },
 }
