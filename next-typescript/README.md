@@ -38,6 +38,8 @@ yes를 선택하면 플러그인 설치와 함께 .eslintrc.js > extends에 `plu
 
 ```bash
 # Authentication
+#
+# need to use NextAuth.js v5, add 'next-auth@beta' instead
 
 yarn add next-auth
 
