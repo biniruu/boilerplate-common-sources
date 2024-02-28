@@ -43,7 +43,6 @@
     "mikestead.dotenv",
     "formulahendry.code-runner",
     "github.remotehub",
-    "ecmel.vscode-html-css",
     "bierner.markdown-preview-github-styles",
     "davidanson.vscode-markdownlint",
     "unifiedjs.vscode-mdx",
@@ -84,6 +83,8 @@
     "cmstead.js-codeformer",
     "p42ai.refactor",
     "fosshaas.fontsize-shortcuts",
-    "postman.postman-for-vscode"
+    "postman.postman-for-vscode",
+    "figma.figma-vscode-extension",
+    "cpylua.language-postcss"
   ]
 }
