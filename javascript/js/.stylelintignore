@@ -6,6 +6,8 @@
 **/*.spec.js
 **/*.svg
 **/*.test.js
+**/*.md
+**/*.ico
 
 # paths
 node_modules/

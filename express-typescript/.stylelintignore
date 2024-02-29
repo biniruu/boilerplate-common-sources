@@ -10,6 +10,8 @@
 **/*.test.js
 **/*.test.ts
 **/*.ts
+**/*.md
+**/*.ico
 
 # paths
 node_modules/

@@ -5,6 +5,8 @@
 **/*.lock
 **/*.php
 **/*.svg
+**/*.md
+**/*.ico
 
 # paths
 node_modules/

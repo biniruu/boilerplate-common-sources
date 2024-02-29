@@ -8,6 +8,8 @@
 **/*.svg
 **/*.test.js
 **/*.test.jsx
+**/*.md
+**/*.ico
 
 # paths
 node_modules/*

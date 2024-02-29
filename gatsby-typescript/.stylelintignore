@@ -13,6 +13,8 @@
 **/*.test.ts
 **/*.test.tsx
 **/*.ts
+**/*.md
+**/*.ico
 
 # paths
 node_modules/
