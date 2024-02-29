@@ -76,8 +76,9 @@
   "explorer.confirmDelete": false, // 파일 삭제 전 확인 모달 띄우기
   "explorer.confirmDragAndDrop": false, // 파일 드래그 & 드롭 전 확인 모달 띄우기
   "files.associations": {
-    // "*.css": "css", // postcss를 사용하지 않을 때 활성화
-    "*.css": "postcss" // postcss를 사용할 때 활성화
+    // "*.css": "css", // Allow this option without PostCSS.
+    "*.css": "postcss", // Make sure this option is enabled when using PostCSS.
+    ".stylelintignore": "ignore" // Keep it ignored as sometimes this file is being treated as a markdown file.
   },
   "files.exclude": {
     "**/.git": false
