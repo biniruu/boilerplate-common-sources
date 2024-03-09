@@ -21,10 +21,6 @@ yarn add -D @types/ejs
 
 yarn add -D eslint eslint-plugin-import
 
-# ESLint for A11y with JSX
-
-yarn add -D eslint-plugin-jsx-a11y
-
 # ESLint for Jest
 
 yarn add -D eslint-plugin-jest

@@ -16,23 +16,6 @@ module.exports = {
    * plugin:import/recommended : eslint-plugin-import 추천 rule set
    */
   extends: ['eslint:recommended', 'plugin:import/recommended'],
-  overrides: [
-    {
-      /**
-       * Jest
-       *
-       * plugin:jest/recommended : eslint-plugin-jest 추천 rule set
-       */
-      extends: ['plugin:jest/recommended'],
-      files: ['*.spec.js', '*.test.js'],
-      rules: {
-        /**
-         * Rules
-         * {@link https://github.com/jest-community/eslint-plugin-jest#rules}
-         */
-      },
-    },
-  ],
   parser: '@babel/eslint-parser',
   root: true, // 현재 설정 파일이 root임을 명시하는 옵션. true로 설정하면 상위 설정 파일 찾기를 여기서 멈춘다.
   rules: {
@@ -161,15 +144,6 @@ module.exports = {
       node: {
         extensions: ['*.js', '*.jsx'],
       },
-    },
-    /**
-     * Jest version setting
-     * {@link https://github.com/jest-community/eslint-plugin-jest#jest-version-setting}
-     *
-     * fetch the installed version of Jest
-     */
-    jest: {
-      version: require('jest/package.json').version,
     },
   },
 }

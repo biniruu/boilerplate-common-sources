@@ -13,14 +13,16 @@ module.exports = {
    * Extends
    *
    * eslint:recommended : eslint 추천 rule set
-   * plugin:@typescript-eslint/recommended : typescript-eslint v5 추천 rule set
+   * plugin:@typescript-eslint/recommended-type-checked : typescript-eslint v6 이상 추천 룰셋
+   * {@link https://typescript-eslint.io/linting/typed-linting/}
+   * {@link https://typescript-eslint.io/blog/announcing-typescript-eslint-v6/#user-facing-breaking-changes}
    * plugin:import/recommended : eslint-plugin-import 추천 rule set
    * plugin:import/typescript : eslint-plugin-import 플러그인
    * plugin:tailwindcss/recommended : Rules enforcing best practices and consistency using Tailwind CSS
    */
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-type-checked',
     'plugin:import/recommended',
     'plugin:import/typescript',
     'plugin:tailwindcss/recommended',
@@ -40,6 +42,16 @@ module.exports = {
          * {@link https://github.com/jest-community/eslint-plugin-jest#rules}
          */
       },
+    },
+    {
+      /**
+       * Specifying TSConfigs
+       * {@link https://typescript-eslint.io/getting-started/typed-linting/#how-can-i-disable-type-aware-linting-for-a-subset-of-files}
+       *
+       * plugin:@typescript-eslint/disable-type-checked : turn off type-aware linting on specific subsets of files with a disabled-type-checked config {@link https://typescript-eslint.io/linting/typed-linting/#how-can-i-disable-type-aware-linting-for-a-subset-of-files}
+       */
+      extends: ['plugin:@typescript-eslint/disable-type-checked'],
+      files: ['*.js', '*.cjs', '*.config.ts'],
     },
   ],
   parser: '@typescript-eslint/parser',
@@ -66,7 +78,7 @@ module.exports = {
      * no-array-constructor : Array() 생성자에 배열 리터럴 생성법을 사용해서 배열 생성 금지
      * no-console : 콘솔 사용 금지
      * no-debugger : debugger 사용 금지
-     * no-duplicate-imports : 동일한 모듈에서 import를 여러 번 할 경우 모든 import를 inline으로 작성하도록 강제
+     * no-duplicate-imports : 동일한 모듈에서 import를 여러 번 할 경우 모든 import를 inline으로 작성하도록 강제. eslint-plugin-import > import/no-duplicates의 prefer-inline 값이 true인 경우에는 off로 설정할 것
      * no-inner-declarations : nested block에서 변수 또는 함수 선언 금지
      * no-nested-ternary : 중첩 삼항 연산자 금지
      * no-new-object : new Object로 객체 생성 금지
@@ -196,7 +208,7 @@ module.exports = {
      * consistent-type-specifier-style : type-only import를 inline과 top-level 중 하나로만 사용하도록 강제
      * newline-after-import : import 다음에 한 줄 띄기
      * no-anonymous-default-export : 익명 default export 금지
-     * no-duplicates : enforce all imports to be inline or top-level when importing multiple times from the same module.
+     * no-duplicates : enforce all imports to be inline or top-level when importing multiple times the same module.
      * no-unresolved : import한 파일/모듈이 unresolved 되는 일이 없도록 방지
      * order : import 자동 정렬
      * order > alphabetize : Make sure it is always set as the default. If not, it can cause conflicts with prettier.
@@ -217,7 +229,7 @@ module.exports = {
     //   {
     //     'prefer-inline': true,
     //   },
-    // ], // to be enabled if 'consistent-type-specifier-style' is 'prefer-inline'
+    // ], // to be enable if 'consistent-type-specifier-style' is 'prefer-inline'
     'import/no-unresolved': 'off',
     'import/order': [
       'warn',
