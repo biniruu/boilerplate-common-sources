@@ -101,7 +101,7 @@
     "skipLibCheck": true // Skip type checking all .d.ts files.
   },
   "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts", "dist"],
-  "include": ["**/*.ts", ".eslintrc.cjs"],
+  "include": ["**/*.ts", ".eslintrc.cjs", "webpack.config.js"],
   "ts-node": {
     /* https://typestrong.org/ts-node/docs/configuration/#via-tsconfigjson-recommended */
 
