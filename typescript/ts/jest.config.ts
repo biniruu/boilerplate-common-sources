@@ -2,9 +2,21 @@
  * For a detailed explanation regarding each configuration property and type check, visit:
  * https://jestjs.io/docs/configuration
  */
-/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 
-module.exports = {
+import type { JestConfigWithTsJest } from 'ts-jest'
+import { defaults as tsjPreset } from 'ts-jest/presets'
+
+/**
+ * @property {String[]} moduleDirectories - add root directories of the files you will test
+ * {@link https://jestjs.io/docs/configuration#moduledirectories-arraystring}
+ * @property {string} preset - add a preset such as ts-jest or vue-jest
+ * {@link https://kulshekhar.github.io/ts-jest/docs/getting-started/presets#basic-usage}
+ * @property {string} roots - the path where the test files are
+ * @property {string} rootDir - keep it as default if there are no issues there
+ * @property {Object} transform - specify presets to transform non-javascript files to javascript ones
+ * {@link https://kulshekhar.github.io/ts-jest/docs/getting-started/presets#advanced}
+ */
+const jestConfig: JestConfigWithTsJest = {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
@@ -67,9 +79,7 @@ module.exports = {
   // maxWorkers: "50%",
 
   // An array of directory names to be searched recursively up from the requiring module's location
-  // moduleDirectories: [
-  //   "node_modules"
-  // ],
+  moduleDirectories: ['node_modules', 'src'],
 
   // An array of file extensions your modules use
   // moduleFileExtensions: [
@@ -94,7 +104,7 @@ module.exports = {
   // notifyMode: "failure-change",
 
   // A preset that is used as a base for Jest's configuration
-  // preset: undefined,
+  preset: 'ts-jest',
 
   // Run tests from one or more projects
   // projects: undefined,
@@ -118,9 +128,7 @@ module.exports = {
   // rootDir: undefined,
 
   // A list of paths to directories that Jest should use to search for files in
-  // roots: [
-  //   "<rootDir>"
-  // ],
+  roots: ['<rootDir>/tests'],
 
   // Allows you to use a custom runner instead of Jest's default test runner
   // runner: "jest-runner",
@@ -138,7 +146,6 @@ module.exports = {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  // testEnvironment: "jest-environment-node",
   testEnvironment: 'node',
 
   // Options that will be passed to the testEnvironment
@@ -171,11 +178,12 @@ module.exports = {
   // timers: "real",
 
   // A map from regular expressions to paths to transformers
-  // transform: {
-  //   '^.+\\.jsx$': 'babel-jest',
-  //   '^.+\\.(ts|tsx)$': 'ts-jest',
-  //   '^.+\\.vue$': 'vue-jest',
-  // }, // 자바스크립트 코드로 변환할 파일 확장자 입력
+  transform: {
+    // '^.+\\.jsx$': 'babel-jest',
+    // '^.+\\.(ts|tsx)$': 'ts-jest',
+    // '^.+\\.vue$': 'vue-jest',
+    ...tsjPreset.transform,
+  },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
   // transformIgnorePatterns: [
@@ -195,3 +203,5 @@ module.exports = {
   // Whether to use watchman for file crawling
   // watchman: true,
 }
+
+export default jestConfig
