@@ -3,5 +3,5 @@
     "outDir": "out/spec"
   },
   "extends": "./tsconfig.default.json",
-  "include": ["src/**/*.ts", "tests/**/*.spec.ts", "tests/**/*.test.ts"]
+  "include": ["**/*.ts", "tests/**/*.spec.ts", "tests/**/*.test.ts"]
 }
