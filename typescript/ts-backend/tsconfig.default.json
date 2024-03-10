@@ -102,8 +102,7 @@
     // "skipDefaultLibCheck": true, // Skip type checking .d.ts files that are included with TypeScript.
     "skipLibCheck": true // Skip type checking all .d.ts files.
   },
-  "exclude": ["**/node_modules", "**/*.spec.ts", "**/*.test.ts", "**/dist"],
-  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist"],
   "ts-node": {
     /* https://typestrong.org/ts-node/docs/configuration/#via-tsconfigjson-recommended */
 
@@ -113,9 +112,9 @@
     "files": true,
     "compilerOptions": {
       // compilerOptions specified here will override those declared below,
-      // but *only* in ts-node.  Useful if you want ts-node and tsc to use
+      // but *only* in ts-node. Useful if you want ts-node and tsc to use
       // different options with a single tsconfig.json.
-      // "module": "CommonJS"
+      "module": "ESNext"
     }
   }
 }
