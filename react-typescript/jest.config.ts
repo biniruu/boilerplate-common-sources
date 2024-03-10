@@ -7,9 +7,11 @@ import type { JestConfigWithTsJest } from 'ts-jest'
 import { defaults as tsjPreset } from 'ts-jest/presets'
 
 /**
- * @property {String[]} moduleDirectories - add root directories of the files you will test
+ * @property {String[]} moduleDirectories - root directories of the files you will test
  * {@link https://jestjs.io/docs/configuration#moduledirectories-arraystring}
- * @property {string} preset - add a preset such as ts-jest or vue-jest
+ * @property {Object} moduleNameMapper - match aliases with its paths
+ * {@link https://jestjs.io/docs/configuration#modulenamemapper-objectstring-string--arraystring}
+ * @property {string} preset - presets such as ts-jest or vue-jest
  * {@link https://kulshekhar.github.io/ts-jest/docs/getting-started/presets#basic-usage}
  * @property {string} roots - the path where the test files are
  * @property {string} rootDir - keep it as default if there are no issues there
@@ -92,7 +94,9 @@ const jestConfig: JestConfigWithTsJest = {
   // ],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
-  // moduleNameMapper: {},
+  moduleNameMapper: {
+    '@/(.*)': '<rootDir>/src/$1',
+  },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
