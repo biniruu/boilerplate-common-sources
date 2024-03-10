@@ -3,8 +3,13 @@
 import path from 'path'
 
 import HtmlWebpackPlugin from 'html-webpack-plugin'
-import type { Configuration } from 'webpack'
+import type { Configuration as WebpackConfiguration } from 'webpack'
+import type { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-server'
 import WorkboxWebpackPlugin from 'workbox-webpack-plugin'
+
+interface Configuration extends WebpackConfiguration {
+  devServer?: WebpackDevServerConfiguration
+}
 
 const isProduction = process.env.NODE_ENV === 'production'
 
