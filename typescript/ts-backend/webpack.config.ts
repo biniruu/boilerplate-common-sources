@@ -1,17 +1,15 @@
 // Generated using webpack-cli https://github.com/webpack/webpack-cli
 
-const path = require('path')
+import path from 'path'
 
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const WorkboxWebpackPlugin = require('workbox-webpack-plugin')
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import type { Configuration } from 'webpack'
+import WorkboxWebpackPlugin from 'workbox-webpack-plugin'
 
 const isProduction = process.env.NODE_ENV === 'production'
 
-const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader'
-
-const config = {
-  entry: './src/index.ts',
+const config: Configuration = {
+  entry: './src/main.ts',
   output: {
     path: path.resolve(__dirname, 'dist'),
   },
@@ -27,16 +25,13 @@ const config = {
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
+  mode: isProduction ? 'production' : 'development',
   module: {
     rules: [
       {
         test: /\.(ts|tsx)$/i,
         loader: 'ts-loader',
         exclude: ['/node_modules/'],
-      },
-      {
-        test: /\.css$/i,
-        use: [stylesHandler, 'css-loader', 'postcss-loader'],
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
@@ -48,19 +43,16 @@ const config = {
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.jsx', '.js', '...'],
+    extensions: ['.tsx', '.ts', '.jsx', '.js'],
   },
 }
 
-module.exports = () => {
+const result = () => {
   if (isProduction) {
-    config.mode = 'production'
-
-    config.plugins.push(new MiniCssExtractPlugin())
-
-    config.plugins.push(new WorkboxWebpackPlugin.GenerateSW())
-  } else {
-    config.mode = 'development'
+    config.plugins?.push(new WorkboxWebpackPlugin.GenerateSW())
   }
+
   return config
 }
+
+export default result
