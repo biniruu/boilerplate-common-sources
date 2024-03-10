@@ -1,8 +1,8 @@
 # Starter pack for web development environment
 
-프로젝트를 시작할 때 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요. 패키지, 설정 파일 등을 프로젝트 기술 스택에 맞게 골라 설치할 수 있어요.
+It's a starter that helps you quickly set up the environment when starting a project. You can choose and install packages, configuration files, etc., tailored to the project's technology stack.
 
-다음 프로젝트를 설정할 때 사용할 수 있어요. 필요한 프로젝트를 클릭해서 이동하세요.
+It can be used for setting up the following projects. Click on the required project and proceed.
 
 - [Express](https://github.com/biniruu/starter-pack/tree/main/express)
 - [Express with TypeScript](https://github.com/biniruu/starter-pack/tree/main/express-typescript)
@@ -23,78 +23,13 @@
 
 <br>
 
-> ❗️여기서부터는 이 레포지토리에서 사용하는 패키지에 대한 설명 또는 추천 확장 프로그램 등에 관한 정보만 제공하고 있어요. 프로젝트 설정을 위한 내용은 위 링크 중 필요한 것을 클릭해주세요.
-
-<br>
-
-## 🚀Recommended extensions for VS Code
-
-편의성을 높여주는 확장 프로그램이에요.
-
-- `Abracadabra, refactor this!` (nicoespeon.abracadabra)
-- `Auto Close Tag` (formulahendry.auto-close-tag)
-- `Auto Import` (steoates.autoimport)
-- `Auto Rename Tag` (formulahendry.auto-rename-tag)
-- `AWS Toolkit` (amazonwebservices.aws-toolkit-vscode)
-- `Bookmarks` (alefragnani.Bookmarks)
-- `Code Spell Checker` (streetsidesoftware.code-spell-checker)
-- `CodiumAI - powered by TestGPT-1 and GPT-3.5&4` (Codium.codium)
-- `Color Highlight` (naumovs.color-highlight)
-- `Error Lens` (usernamehw.errorlens)
-- `ESLint` (dbaeumer.vscode-eslint)
-- `ES7+ React/Redux/React-Native snippets` (dsznajder.es7-react-js-snippets)
-- `Git Graph` (mhutchie.git-graph)
-- `Git History` (donjayamanne.githistory)
-- `Git History Diff` (huizhou.githd)
-- `GitHub Pull Requests and Issues` (GitHub.vscode-pull-request-github)
-- `GitLens — Git supercharged` (eamodio.gitlens)
-- `HTML CSS Support` (ecmel.vscode-html-css)
-- `Import Cost` (wix.vscode-import-cost)
-- `IntelliCode` (VisualStudioExptTeam.vscodeintellicode)
-- `IntelliCode API Usage Examples` (VisualStudioExptTeam.intellicode-api-usage-examples)
-- `IntelliSense for CSS class names in HTML` (Zignd.html-css-class-completion)
-- `JavaScript (ES6) code snippets` (xabikos.JavaScriptSnippets)
-- `JavaScript and TypeScript Nightly` (ms-vscode.vscode-typescript-next)
-- `JavaScript Debugger (Nightly)` (ms-vscode.js-debug-nightly)
-- `Jest` (Orta.vscode-jest)
-- `Jest Snippets` (andys8.jest-snippets)
-- `Jira and Bitbucket (Atlassian Labs)` (atlassian.atlascode)
-- `JS CodeFormer: Javascript Refactoring & Code Automation` (cmstead.js-codeformer)
-- `JS Refactor :: JS CodeFormer` (cmstead.jsrefactor)
-- `JS Refactoring Assistant` (p42ai.refactor)
-- `Live Share` (ms-vsliveshare.vsliveshare)
-- `Markdown All in One` (yzhang.markdown-all-in-one)
-- `Markdown Preview Enhanced` (shd101wyy.markdown-preview-enhanced)
-- `Material Icon Theme` (PKief.material-icon-theme)
-- `npm Intellisense` (christian-kohler.npm-intellisense)
-- `Path Intellisense` (christian-kohler.path-intellisense)
-- `Polacode` (pnp.polacode)
-- `Prettier - Code formatter` (esbenp.prettier-vscode)
-- `Project Manager` (alefragnani.project-manager)
-- `Postman` (Postman.postman-for-vscode)
-- `px to rem & rpx & vw (cssrem)` (cipchk.cssrem)
-- `React Jest Snippets` (jalisimo.react-jest-vscode-snippets)
-- `React Testing Library Cheatsheet` (willnemo.rtlcheatsheet)
-- `SFTP` (Natizyskunk.sftp)
-- `Stylelint` (stylelint.vscode-stylelint)
-- `Stylelint Disable Snippets` (hedinne.stylelint-disable-snippets)
-- `Tailwind CSS IntelliSense` (bradlc.vscode-tailwindcss)
-- `TabOut` (albert.TabOut)
-- `Thunder Client` (rangav.vscode-thunder-client)
-- `Todo Highlight` (wayou.vscode-todo-highlight)
-- `Todo Tree` (Gruntfuggly.todo-tree)
-- `Turbo Console Log` (ChakrounAnas.turbo-console-log)
-- `Vetur` (octref.vetur)
-- `Vue 3 Snippets` (hollowtree.vue-snippets)
-- `Vue Language Features (Volar)` (Vue.volar)
-- `Vue VSCode Snippets` (sdras.vue-vscode-snippets)
-- `WakaTime` (WakaTime.vscode-wakatime)
+> ❗️From here on, I am providing information only about the packages used in this repository, explanations, or recommended extension programs. Please click on the necessary link above for project setup details.
 
 <br>
 
 ## 📋Detailing packages
 
-이곳에 설치된 패키지가 각각 어떤 기능을 하는지 알아보세요.
+Find out what each installed package does here.
 
 - [@apollo/client](https://www.npmjs.com/package/@apollo/client) : fetch data from GraphQL
 - [@apollo/server](https://www.npmjs.com/package/@apollo/server) : GraphQL server for JavaScript and TypeScript
@@ -264,6 +199,14 @@
 
 - [webpack-bundle-analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) : 빌드된 파일 용량을 시각적으로 구성
 - [cra-bundle-analyzer](https://www.npmjs.com/package/cra-bundle-analyzer) : eject하지 않고 webpack-bundle-analyzer와 동일한 기능 사용 가능
+
+<br>
+
+## 🚀Recommended extensions for VS Code
+
+This extensions can enhanced convenience.
+
+[https://github.com/biniruu/starter-pack/blob/main/.vscode/extensions.json](https://github.com/biniruu/starter-pack/blob/main/.vscode/extensions.json)
 
 <br>
 
