@@ -1,4 +1,6 @@
 {
-  "exec": "ts-node src/index.ts",
-  "ignore": ["dist/*"]
+  "exec": "ts-node -P tsconfig.json src/main.ts",
+  "ext": "ts",
+  "ignore": ["dist/*", "**/*.spec.ts", "**/*.test.ts"],
+  "watch": ["src"]
 }
