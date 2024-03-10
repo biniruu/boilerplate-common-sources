@@ -117,7 +117,7 @@ yarn add -D ts-node ts-node-dev
 
 # Webpack
 
-yarn add -D source-map-loader style-loader webpack webpack-cli webpack-dev-server webpack-merge
+yarn add -D source-map-loader style-loader webpack webpack-cli webpack-dev-server webpack-merge html-webpack-plugin mini-css-extract-plugin workbox-webpack-plugin
 
 # Webpack for TypeScript
 
