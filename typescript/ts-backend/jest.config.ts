@@ -9,14 +9,23 @@ import { defaults as tsjPreset } from 'ts-jest/presets'
 /**
  * @property {String[]} moduleDirectories - root directories of the files you will test
  * {@link https://jestjs.io/docs/configuration#moduledirectories-arraystring}
+ *
  * @property {Object} moduleNameMapper - match aliases with its paths
  * {@link https://jestjs.io/docs/configuration#modulenamemapper-objectstring-string--arraystring}
+ * [it doesn't work on this configuration]{@link https://kulshekhar.github.io/ts-jest/docs/getting-started/paths-mapping#jest-config-with-helper}
+ *
  * @property {string} preset - presets such as ts-jest or vue-jest
  * {@link https://kulshekhar.github.io/ts-jest/docs/getting-started/presets#basic-usage}
+ *
  * @property {string} roots - the path where the test files are
+ *
  * @property {string} rootDir - keep it as default if there are no issues there
+ *
  * @property {Object} transform - specify presets to transform non-javascript files to javascript ones
  * {@link https://kulshekhar.github.io/ts-jest/docs/getting-started/presets#advanced}
+ *
+ * Paths mapping
+ * {@link https://kulshekhar.github.io/ts-jest/docs/getting-started/paths-mapping}
  */
 const jestConfig: JestConfigWithTsJest = {
   // All imported modules in your tests should be mocked automatically
