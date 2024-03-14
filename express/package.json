@@ -8,7 +8,9 @@
   "main": "src/client/main.js",
   "scripts": {
     "dev": "yarn lint && nodemon",
-    "lint": "eslint . && stylelint ."
+    "lint": "eslint . && stylelint .",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "express": "^4.18.2",

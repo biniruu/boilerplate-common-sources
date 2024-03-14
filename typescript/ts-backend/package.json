@@ -11,7 +11,9 @@
     "update-packages": "yarn upgrade --latest && yarn sync-package-version",
     "start": "yarn compile & nodemon",
     "lint": "eslint . && stylelint .",
-    "compile": "npx tsc -w"
+    "compile": "npx tsc -w",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "lodash": "^4.17.21",
