@@ -17,9 +17,11 @@ import { defaults as tsjPreset } from 'ts-jest/presets'
  * @property {string} preset - presets such as ts-jest or vue-jest
  * {@link https://kulshekhar.github.io/ts-jest/docs/getting-started/presets#basic-usage}
  *
+ * @property {string} rootDir - keep it as default if there are no issues there
+ *
  * @property {string} roots - the path where the test files are
  *
- * @property {string} rootDir - keep it as default if there are no issues there
+ * @property {string} testEnvironment - if it is set as 'node', it makes any tests intended for a browser environment invalid.
  *
  * @property {Object} transform - specify presets to transform non-javascript files to javascript ones
  * {@link https://kulshekhar.github.io/ts-jest/docs/getting-started/presets#advanced}
@@ -117,7 +119,7 @@ const jestConfig: JestConfigWithTsJest = {
   // notifyMode: "failure-change",
 
   // A preset that is used as a base for Jest's configuration
-  preset: 'ts-jest',
+  // preset: undefined,
 
   // Run tests from one or more projects
   // projects: undefined,
@@ -159,7 +161,7 @@ const jestConfig: JestConfigWithTsJest = {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  testEnvironment: 'node',
+  testEnvironment: 'jest-environment-jsdom',
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
