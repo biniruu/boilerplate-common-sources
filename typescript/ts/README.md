@@ -34,7 +34,7 @@ yarn add -D eslint-webpack-plugin
 
 # Jest
 
-yarn add -D jest
+yarn add -D jest jest-environment-jsdom
 
 # Jest for TypeScript
 

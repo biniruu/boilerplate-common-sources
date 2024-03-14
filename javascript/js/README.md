@@ -45,7 +45,7 @@ yarn add -D eslint-webpack-plugin
 #
 # 💁🏻‍♀️ @types/jest는 TypeScript 프로젝트가 아니더라도 설치를 권장해요. jest의 intellisense를 사용할 수 있기 때문이에요.
 
-yarn add -D @types/jest jest
+yarn add -D @types/jest jest jest-environment-jsdom
 
 # Lodash
 

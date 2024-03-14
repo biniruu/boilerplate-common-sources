@@ -50,7 +50,7 @@ yarn add @apollo/server graphql reflect-metadata
 
 # Jest
 
-yarn add -D jest
+yarn add -D jest jest-environment-jsdom
 
 # Jest for TypeScript
 
