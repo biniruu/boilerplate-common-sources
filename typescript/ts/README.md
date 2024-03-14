@@ -33,8 +33,10 @@ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-im
 yarn add -D eslint-webpack-plugin
 
 # Jest
+#
+# 💁🏻 If you have added 'jest', you don't need to add these packages: jest-resolve and jest-resolve-dependencies.
 
-yarn add -D jest jest-environment-jsdom
+yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event jest jest-environment-jsdom jsdom
 
 # Jest for TypeScript
 

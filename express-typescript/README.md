@@ -49,8 +49,11 @@ yarn add -D @types/body-parser @types/cors @types/express
 yarn add @apollo/server graphql reflect-metadata
 
 # Jest
+#
+# 💁🏻 If you have added 'jest', you don't need to add these packages: jest-resolve and jest-resolve-dependencies.
+# 💁🏻‍♂️ I recommend adding @types/jest even if it is not a TypeScript project because of its IntelliSense.
 
-yarn add -D jest jest-environment-jsdom
+yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event jest jest-environment-jsdom jsdom
 
 # Jest for TypeScript
 
@@ -125,7 +128,7 @@ yarn add tailwindcss
 
 # Ts-node
 
-yarn add -D ts-node
+yarn add -D ts-node ts-node-dev
 
 # TypeScript
 

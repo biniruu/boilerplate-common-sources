@@ -96,9 +96,19 @@ yarn add -D @graphql-codegen/cli
 
 yarn add @apollo/client
 
+# Jest
+#
+# 💁🏻 If you have added 'jest', you don't need to add these packages: jest-resolve and jest-resolve-dependencies.
+
+yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event jsdom
+
+# Jest for React.js
+
+yarn add -D @testing-library/react @testing-library/react-hooks
+
 # Jest for TypeScript
 
-yarn add -D ts-jest
+yarn add -D @types/jest ts-jest
 
 # Lodash
 

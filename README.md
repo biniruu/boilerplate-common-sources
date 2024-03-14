@@ -51,6 +51,11 @@ Find out what each installed package does here.
 - [@tanstack/eslint-plugin-query](https://www.npmjs.com/package/@tanstack/eslint-plugin-query) : tanstack query 관련 lint 규칙 제공
 - [@tanstack/react-query](https://www.npmjs.com/package/@tanstack/react-query) : react에서, 서버 측으로부터 받아오는 데이터를 최신 상태로 유지
 - [@tailwindcss/nesting](https://www.npmjs.com/package/@tailwindcss/nesting) : Tailwind CSS 에서 CSS nesting 문법 사용을 지원하는 PostCSS 플러그인
+- [@testing-library/dom](https://www.npmjs.com/package/@testing-library/dom) : It provides utilities for querying and interacting with the DOM
+- [@testing-library/jest-dom](https://www.npmjs.com/package/@testing-library/jest-dom) : It provides custom matchers for making assertions about the DOM when using Jest.
+- [@testing-library/user-event](@testing-library/user-event) : Fire events the same way the user does
+- [@testing-library/react](https://www.npmjs.com/package/@testing-library/react)
+- [@testing-library/react-hooks](https://www.npmjs.com/package/@testing-library/react-hooks)
 - [@types/bcryptjs](https://www.npmjs.com/package/@types/bcryptjs) : type declarations for bcrypt.js
 - [@types/body-parser](https://www.npmjs.com/package/@types/body-parser) : type declarations for body-parser
 - [@types/cors](https://www.npmjs.com/package/@types/cors) : type declarations for cors
@@ -70,6 +75,7 @@ Find out what each installed package does here.
 - [@typescript-eslint/utils](https://www.npmjs.com/package/@typescript-eslint/utils) : typescript에서 eslint를 사용할 때 유용한 도구
 - [@vue/server-test-utils](https://www.npmjs.com/package/@vue/server-test-utils) : Vue.js 환경에서 단위 테스트를 하기 위한 공식(Official) 라이브러리
 - [@vue/test-utils](https://www.npmjs.com/package/@vue/test-utils) : Vue.js 환경에서 단위 테스트를 하기 위한 공식 라이브러리
+- [@types/react-test-renderer](https://www.npmjs.com/package/@types/react-test-renderer)
 - [@vue/vue3-jest](https://www.npmjs.com/package/@vue/vue3-jest) : Vue 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer) : cross browser에 필요한 css 속성 prefix를 자동으로 생성
 - [axios](https://www.npmjs.com/package/axios) : HTTP 클라이언트 라이브러리
@@ -108,9 +114,11 @@ Find out what each installed package does here.
 - [handlebars](https://www.npmjs.com/package/handlebars) : mustache 템플릿의 superset
 - [handlebars-webpack-plugin](https://www.npmjs.com/package/handlebars-webpack-plugin) : webpack으로 handlebars 템플릿을 렌더링
 - [jest](https://www.npmjs.com/package/jest) : 단위 테스트 도구
+- [jest-environment-jsdom](https://www.npmjs.com/package/jest-environment-jsdom) : connect jsdom with jest
 - [jest-resolve](https://www.npmjs.com/package/jest-resolve)
 - [jest-resolve-dependencies](https://www.npmjs.com/package/jest-resolve-dependencies)
 - [jest-serializer-vue](https://www.npmjs.com/package/jest-serializer-vue) : 저장된 Jest Snapshot을 VueJS에 맞게 개선
+- [jsdom](https://www.npmjs.com/package/jsdom) : for testing DOM
 - [lodash](https://www.npmjs.com/package/lodash) : javascript 유틸리티 라이브러리
 - [lodash-es](https://www.npmjs.com/package/lodash-es) : 필요한 lodash 함수만 골라 사용하고, 사용하지 않은 함수는 tree shaking할 수 있는 lodash 패키지
 - [mocha](https://www.npmjs.com/package/mocha)

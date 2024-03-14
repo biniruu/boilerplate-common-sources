@@ -43,9 +43,10 @@ yarn add -D eslint-webpack-plugin
 
 # Jest
 #
-# 💁🏻‍♀️ @types/jest는 TypeScript 프로젝트가 아니더라도 설치를 권장해요. jest의 intellisense를 사용할 수 있기 때문이에요.
+# 💁🏻 If you have added 'jest', you don't need to add these packages: jest-resolve and jest-resolve-dependencies.
+# 💁🏻‍♂️ I recommend adding @types/jest even if it is not a TypeScript project because of its IntelliSense.
 
-yarn add -D @types/jest jest jest-environment-jsdom
+yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event @types/jest jest jest-environment-jsdom jsdom
 
 # Lodash
 

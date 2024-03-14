@@ -37,11 +37,11 @@ yes를 선택하면 플러그인 설치와 함께 .eslintrc.js > extends에 `plu
 이곳에 있는 명령어를 사용해 패키지를 설치하세요.
 
 ```bash
-# Authentication
+# NextAuth.js
 #
-# need to use NextAuth.js v5, add 'next-auth@beta' instead
+# need to use NextAuth.js under v5, add 'next-auth' instead
 
-yarn add next-auth
+yarn add next-auth@beta
 
 # ESLint for Jest
 
@@ -66,8 +66,14 @@ yarn add -D eslint-plugin-tailwindcss
 yarn add -D @typescript-eslint/eslint-plugin
 
 # Jest
+#
+# 💁🏻 If you have added 'jest', you don't need to add these packages: jest-resolve and jest-resolve-dependencies.
 
-yarn add -D jest jest-resolve
+yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event jest jest-environment-jsdom jsdom
+
+# Jest for Next.js
+
+yarn add -D @testing-library/react @testing-library/react-hooks
 
 # Jest for TypeScript
 
@@ -100,12 +106,12 @@ yarn add -D @tailwindcss/nesting
 
 yarn add -D prettier
 
-# Next
+# Next.js
 
 yarn add react-hook-form
 yarn add -D react-test-renderer
 
-# Next for TypeScript
+# Next.js for TypeScript
 
 yarn add -D @types/react-test-renderer
 
@@ -140,6 +146,10 @@ yarn add swr
 # TanStack Query (React Query)
 
 yarn add @tanstack/react-query
+
+# Jest for Next.js with TypeScript
+
+yarn add -D @types/react-test-renderer
 
 # Webpack
 

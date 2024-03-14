@@ -79,6 +79,17 @@ yarn add -D eslint-plugin-tailwindcss
 
 yarn add -D @tanstack/eslint-plugin-query
 
+# Jest
+#
+# 💁🏻 If you have added 'jest', you don't need to add these packages: jest-resolve and jest-resolve-dependencies.
+# 💁🏻‍♂️ I recommend adding @types/jest even if it is not a TypeScript project because of its IntelliSense.
+
+yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/react @testing-library/react-hooks @testing-library/user-event @types/jest jest jest-environment-jsdom jsdom
+
+# Jest for React.js
+
+yarn add -D @testing-library/react @testing-library/react-hooks
+
 # GraphQL
 
 yarn add dataloader graphql graphql-scalars reflect-metadata type-graphql
@@ -177,6 +188,7 @@ yarn add @tanstack/react-query @tanstack/react-query-devtools
 - eslint-webpack-plugin
 - file-loader
 - jest
+- jest-environment-jsdom
 - jest-resolve
 - jest-watch-typeahead
 - mini-css-extract-plugin

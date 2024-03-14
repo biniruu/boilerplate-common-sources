@@ -76,8 +76,10 @@ yarn add -D vue-eslint-parser
 yarn add -D eslint-plugin-jsx-a11y
 
 # Jest
+#
+# 💁🏻 If you have added 'jest', you don't need to add these packages: jest-resolve and jest-resolve-dependencies.
 
-yarn add -D jest jest-resolve jest-resolve-dependencies
+yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event jest jest-environment-jsdom jsdom
 
 # Jest for TypeScript
 
@@ -85,7 +87,7 @@ yarn add -D @types/jest jest-watch-typeahead ts-jest
 
 # Jest for Vue.js
 
-yarn add -D @vue/vue3-jest
+yarn add -D @testing-library/vue @vue/vue3-jest
 
 # Lodash
 
