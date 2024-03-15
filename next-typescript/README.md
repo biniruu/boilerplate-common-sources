@@ -73,7 +73,11 @@ yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user
 
 # Jest for Next.js
 
-yarn add -D @testing-library/react @testing-library/react-hooks
+yarn add -D @testing-library/react @testing-library/react-hooks react-test-renderer
+
+# Jest for Next.js with TypeScript
+
+yarn add -D @types/react-test-renderer
 
 # Jest for TypeScript
 
@@ -109,11 +113,6 @@ yarn add -D prettier
 # Next.js
 
 yarn add react-hook-form
-yarn add -D react-test-renderer
-
-# Next.js for TypeScript
-
-yarn add -D @types/react-test-renderer
 
 # Recoil
 
@@ -146,10 +145,6 @@ yarn add swr
 # TanStack Query (React Query)
 
 yarn add @tanstack/react-query
-
-# Jest for Next.js with TypeScript
-
-yarn add -D @types/react-test-renderer
 
 # Webpack
 
