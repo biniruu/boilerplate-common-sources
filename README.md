@@ -160,6 +160,7 @@ Find out what each installed package does here.
 - [stylelint-scss](https://www.npmjs.com/package/stylelint-scss) : scss 문법 오류 피드백
 - [style-loader](https://www.npmjs.com/package/style-loader) : DOM에 style 주입
 - [swr](https://www.npmjs.com/package/swr) : react에서, 서버 측으로부터 받아 온 데이터를 캐싱
+- [tsconfig-paths](https://www.npmjs.com/package/tsconfig-paths) : load modules whose location is specified in the paths section of tsconfig.json
 - [ts-jest](https://www.npmjs.com/package/ts-jest) : typescript 환경에서 jest를 사용할 때 필요
 - [ts-loader](https://www.npmjs.com/package/ts-loader) : Webpack에서 TypeScript를 실행하기 위해 필요
 - [ts-node](https://www.npmjs.com/package/ts-node) : .ts 파일 실행. typescript 환경에서 사용하는 nodemon. 설치하지 않고 `npx ts-node` 실행만으로 사용 가능
