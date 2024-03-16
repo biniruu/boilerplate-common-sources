@@ -62,10 +62,6 @@ yarn add -D prettier
 
 yarn add -D typescript
 
-# TypeScript for Webpack
-
-yarn add -D ts-loader
-
 # Ts-node
 
 yarn add -D ts-node ts-node-dev
@@ -76,7 +72,7 @@ yarn add -D source-map-loader style-loader webpack webpack-cli webpack-dev-serve
 
 # Webpack for TypeScript
 
-yarn add -D @types/webpack @types/webpack-dev-server
+yarn add -D @types/webpack @types/webpack-dev-server ts-loader
 ```
 
 <br>
