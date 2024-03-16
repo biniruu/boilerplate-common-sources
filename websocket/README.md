@@ -60,7 +60,7 @@ yarn add -D typescript
 
 # Ts-node
 
-yarn add -D ts-node ts-node-dev
+yarn add -D tsconfig-paths ts-node ts-node-dev
 ```
 
 <br>

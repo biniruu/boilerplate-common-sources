@@ -128,7 +128,7 @@ yarn add tailwindcss
 
 # Ts-node
 
-yarn add -D ts-node ts-node-dev
+yarn add -D tsconfig-paths ts-node ts-node-dev
 
 # TypeScript
 
