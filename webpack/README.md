@@ -66,15 +66,11 @@ yarn add -D @types/jest ts-jest
 
 # Lodash
 
-yarn add lodash lodash-es
+yarn add lodash-es
 
 # Lodash for TypeScript
 
 yarn add -D @types/lodash-es
-
-# Node.js for TypeScript
-
-yarn add -D @types/node
 
 # PostCSS
 #
@@ -105,7 +101,7 @@ yarn add -D tsconfig-paths ts-node ts-node-dev
 
 # Webpack
 
-yarn add -D source-map-loader style-loader webpack-merge html-webpack-plugin mini-css-extract-plugin
+yarn add -D source-map-loader style-loader html-webpack-plugin mini-css-extract-plugin
 
 # Webpack for TypeScript
 
