@@ -1,4 +1,7 @@
-// Generated using webpack-cli https://github.com/webpack/webpack-cli
+/**
+ * Generated using webpack-cli
+ * {@link https://github.com/webpack/webpack-cli}
+ */
 
 import path from 'path'
 
@@ -14,23 +17,15 @@ interface Configuration extends WebpackConfiguration {
 const isProduction = process.env.NODE_ENV === 'production'
 
 const config: Configuration = {
-  entry: './src/main.ts',
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-  },
   devServer: {
     open: true,
     host: 'localhost',
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: 'index.html',
-    }),
-
-    // Add your plugins here
-    // Learn more about plugins from https://webpack.js.org/configuration/plugins/
-  ],
+  entry: './src/main.ts',
   mode: isProduction ? 'production' : 'development',
+  /**
+   * [rules]{@link https://webpack.js.org/loaders}
+   */
   module: {
     rules: [
       {
@@ -42,11 +37,19 @@ const config: Configuration = {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
         type: 'asset',
       },
-
-      // Add your rules for custom modules here
-      // Learn more about loaders from https://webpack.js.org/loaders/
     ],
   },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+  },
+  /**
+   * [plugins]{@link https://webpack.js.org/configuration/plugins}
+   */
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'index.html',
+    }),
+  ],
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js'],
   },
