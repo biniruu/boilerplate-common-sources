@@ -1,20 +1,22 @@
 # Starter pack for web development environment
 
-It's a starter that helps you quickly set up the environment when starting a project. You can choose and install packages, configuration files, etc., tailored to the project's technology stack.
+It is starters that help you quickly set up the environment when starting a project. You can choose and install packages, configuration files, etc., tailored to the project's technology stack.
 
 It can be used for setting up the following projects. Click on the required project and proceed.
 
 - [Express](https://github.com/biniruu/starter-pack/tree/main/express)
 - [Express with TypeScript](https://github.com/biniruu/starter-pack/tree/main/express-typescript)
 - [Gatsby with TypeScript](https://github.com/biniruu/starter-pack/tree/main/gatsby-typescript)
+- [JavaScript](https://github.com/biniruu/starter-pack/tree/main/javascript/js)
+- [JavaScript for Backend](https://github.com/biniruu/starter-pack/tree/main/javascript/js-backend)
 - [Next.js with TypeScript](https://github.com/biniruu/starter-pack/tree/main/next-typescript)
 - [Nuxt.js with TypeScript](https://github.com/biniruu/starter-pack/tree/main/nuxt-typescript)
 - [React.js](https://github.com/biniruu/starter-pack/tree/main/react-app)
 - [React.js with TypeScript](https://github.com/biniruu/starter-pack/tree/main/react-typescript)
+- [Three.js with TypeScript](https://github.com/biniruu/starter-pack/tree/main/three-typescript)
 - [TypeScript](https://github.com/biniruu/starter-pack/tree/main/typescript/ts)
 - [TypeScript for Backend](https://github.com/biniruu/starter-pack/tree/main/typescript/ts-backend)
-- [JavaScript](https://github.com/biniruu/starter-pack/tree/main/javascript/js)
-- [JavaScript for Backend](https://github.com/biniruu/starter-pack/tree/main/javascript/js-backend)
+- [Websocket](https://github.com/biniruu/starter-pack/tree/main/websocket)
 - [Wordpress](https://github.com/biniruu/starter-pack/tree/main/wordpress)
 
 <br>
@@ -179,7 +181,7 @@ Find out what each installed package does here.
 
 <br>
 
-❌ deprecate packages
+❌ deprecated packages
 
 - @stylelint/postcss-css-in-js
 - @types/handlebars : handlebars가 자체적으로 타입 정의 제공
@@ -196,7 +198,7 @@ Find out what each installed package does here.
 
 <br>
 
-💁🏻 no need to use the following packages when you use TypeScript
+💁🏻 You don't need to use the following packages when using TypeScript
 
 - @babel/eslint-parser
 - @babel/preset-react
