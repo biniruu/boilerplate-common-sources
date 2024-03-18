@@ -16,6 +16,7 @@ It can be used for setting up the following projects. Click on the required proj
 - [Three.js with TypeScript](https://github.com/biniruu/starter-pack/tree/main/three-typescript)
 - [TypeScript](https://github.com/biniruu/starter-pack/tree/main/typescript/ts)
 - [TypeScript for Backend](https://github.com/biniruu/starter-pack/tree/main/typescript/ts-backend)
+- [Webpack](https://github.com/biniruu/starter-pack/tree/main/webpack)
 - [Websocket](https://github.com/biniruu/starter-pack/tree/main/websocket)
 - [Wordpress](https://github.com/biniruu/starter-pack/tree/main/wordpress)
 
@@ -78,8 +79,8 @@ Find out what each installed package does here.
 - [@typescript-eslint/utils](https://www.npmjs.com/package/@typescript-eslint/utils) : typescript에서 eslint를 사용할 때 유용한 도구
 - [@vue/server-test-utils](https://www.npmjs.com/package/@vue/server-test-utils) : Vue.js 환경에서 단위 테스트를 하기 위한 공식(Official) 라이브러리
 - [@vue/test-utils](https://www.npmjs.com/package/@vue/test-utils) : Vue.js 환경에서 단위 테스트를 하기 위한 공식 라이브러리
-- [@types/react-test-renderer](https://www.npmjs.com/package/@types/react-test-renderer)
 - [@vue/vue3-jest](https://www.npmjs.com/package/@vue/vue3-jest) : Vue 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
+- [@webpack-cli/generators](https://www.npmjs.com/package/@webpack-cli/generators) : It contains all webpack-cli related yeoman generators
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer) : cross browser에 필요한 css 속성 prefix를 자동으로 생성
 - [axios](https://www.npmjs.com/package/axios) : HTTP 클라이언트 라이브러리
 - [babel-jest](https://www.npmjs.com/package/babel-jest) : JS/JSX 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일
@@ -177,6 +178,7 @@ Find out what each installed package does here.
 - [webpack-cli](https://www.npmjs.com/package/webpack-cli)
 - [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server) : 로컬 환경에서 서버를 띄우는 기능 제공
 - [webpack-merge](https://www.npmjs.com/package/webpack-merge) : 배열이나 객체를 병합하여 새로운 객체 생성
+- [workbox-webpack-plugin](https://www.npmjs.com/package/workbox-webpack-plugin) : to set PWA
 - [ws](https://www.npmjs.com/package/ws) : a Node.js WebSocket Library
 
 <br>
