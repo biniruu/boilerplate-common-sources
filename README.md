@@ -56,6 +56,7 @@ Find out what each installed package does here.
 - [@testing-library/user-event](@testing-library/user-event) : Fire events the same way the user does
 - [@testing-library/react](https://www.npmjs.com/package/@testing-library/react)
 - [@testing-library/react-hooks](https://www.npmjs.com/package/@testing-library/react-hooks)
+- [@testing-library/vue](https://www.npmjs.com/package/@testing-library/vue) : DOM Testing Library and @vue/test-utils.
 - [@types/bcryptjs](https://www.npmjs.com/package/@types/bcryptjs) : type declarations for bcrypt.js
 - [@types/body-parser](https://www.npmjs.com/package/@types/body-parser) : type declarations for body-parser
 - [@types/cors](https://www.npmjs.com/package/@types/cors) : type declarations for cors
