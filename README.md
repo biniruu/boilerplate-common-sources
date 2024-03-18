@@ -179,7 +179,7 @@ Find out what each installed package does here.
 
 <br>
 
-❌ deprecate 되었어요.
+❌ deprecate packages
 
 - @stylelint/postcss-css-in-js
 - @types/handlebars : handlebars가 자체적으로 타입 정의 제공
@@ -196,7 +196,7 @@ Find out what each installed package does here.
 
 <br>
 
-💁🏻 typescript를 사용한다면 아래 패키지는 필요하지 않아요.
+💁🏻 no need to use the following packages when you use TypeScript
 
 - @babel/eslint-parser
 - @babel/preset-react
@@ -205,7 +205,7 @@ Find out what each installed package does here.
 
 ## 👍🏻Recommended packages
 
-여기서는 사용하지 않지만, 유용한 패키지예요.
+Useful packages but are not included in this repository.
 
 - [webpack-bundle-analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) : 빌드된 파일 용량을 시각적으로 구성
 - [cra-bundle-analyzer](https://www.npmjs.com/package/cra-bundle-analyzer) : eject하지 않고 webpack-bundle-analyzer와 동일한 기능 사용 가능
@@ -220,9 +220,9 @@ This extensions can enhanced convenience.
 
 <br>
 
-## 📦Installing packages
+## 📦Consider using these packages
 
-이 스타터에 없는 프로젝트 또는 잘 사용하지 않는 도구를 사용할 때 참조해주세요.
+Note that these packages might be used in your projects. (not included in this projects)
 
 ```bash
 # Chai
@@ -236,10 +236,6 @@ yarn add -D eslint-plugin-chai-friendly
 # ESLint for Mocha
 
 yarn add -D eslint-plugin-mocha
-
-# ESLint for Nuxt.js
-
-yarn add -D eslint-plugin-nuxt
 
 # ESLint for Sinon
 
@@ -272,10 +268,6 @@ yarn add -D mocha
 # Sinon
 
 yarn add -D sinon
-
-# Socket.io
-
-yarn add socket.io socket.io-client
 
 # WebSocket
 
