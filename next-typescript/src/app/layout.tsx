@@ -1,8 +1,10 @@
 import { Inter } from 'next/font/google'
 import { ReactNode } from 'react'
+
 import './globals.css'
 
-import ReactQueryProvider from 'providers/reactQueryProvider'
+// import ReactQueryProvider from 'providers/reactQueryProvider'
+// import SWRProvider from 'providers/swrProvider'
 
 // eslint-disable-next-line new-cap
 const inter = Inter({ subsets: ['latin'] })
@@ -16,7 +18,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ReactQueryProvider>{children}</ReactQueryProvider>
+        {/* React Query */}
+        {/* <ReactQueryProvider>{children}</ReactQueryProvider> */}
+
+        {/* SWR */}
+        {/* <SWRProvider>{children}</SWRProvider> */}
+
+        {children}
       </body>
     </html>
   )
