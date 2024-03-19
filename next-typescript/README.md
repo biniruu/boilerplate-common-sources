@@ -32,6 +32,12 @@ yes를 선택하면 플러그인 설치와 함께 .eslintrc.js > extends에 `plu
 
 <br>
 
+## ⏱️Setting up TanStack Query (React Query) and SWR
+
+To use global configurations of those libraries, remove comments from `app/layout.tsx`.
+
+<br>
+
 ## 📥Installing packages
 
 이곳에 있는 명령어를 사용해 패키지를 설치하세요.
