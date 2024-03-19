@@ -50,9 +50,11 @@ Find out what each installed package does here.
 - [@nuxtjs/stylelint-module](https://www.npmjs.com/package/@nuxtjs/tailwindcss) : nuxt에서 제공하는 stylelint 모듈
 - [@nuxtjs/tailwindcss](https://www.npmjs.com/package/@nuxtjs/tailwindcss) : nuxt에서 제공하는 tailwind css 모듈
 - [@prettier/plugin-pug](https://www.npmjs.com/package/@prettier/plugin-pug) : pug 파일 code formatting
-- [@swrlab/eslint-plugin-swr](https://www.npmjs.com/package/@swrlab/eslint-plugin-swr) : swr 관련 lint 규칙 제공
-- [@tanstack/eslint-plugin-query](https://www.npmjs.com/package/@tanstack/eslint-plugin-query) : tanstack query 관련 lint 규칙 제공
-- [@tanstack/react-query](https://www.npmjs.com/package/@tanstack/react-query) : react에서, 서버 측으로부터 받아오는 데이터를 최신 상태로 유지
+- [@swrlab/eslint-plugin-swr](https://www.npmjs.com/package/@swrlab/eslint-plugin-swr) : SWR 관련 lint 규칙 제공
+- [@tanstack/eslint-plugin-query](https://www.npmjs.com/package/@tanstack/eslint-plugin-query) : Tanstack Query 관련 lint 규칙 제공
+- [@tanstack/query-core](https://www.npmjs.com/package/@tanstack/query-core) : core library of Tanstack Query
+- [@tanstack/react-query](https://www.npmjs.com/package/@tanstack/react-query) : retrieve latest data from a server
+- [@tanstack/react-query-devtools](https://www.npmjs.com/package/@tanstack/react-query-devtools) : dev tools for React Query
 - [@tailwindcss/nesting](https://www.npmjs.com/package/@tailwindcss/nesting) : Tailwind CSS 에서 CSS nesting 문법 사용을 지원하는 PostCSS 플러그인
 - [@testing-library/dom](https://www.npmjs.com/package/@testing-library/dom) : It provides utilities for querying and interacting with the DOM
 - [@testing-library/jest-dom](https://www.npmjs.com/package/@testing-library/jest-dom) : It provides custom matchers for making assertions about the DOM when using Jest.

@@ -144,7 +144,8 @@ yarn add swr
 
 # TanStack Query (React Query)
 
-yarn add @tanstack/react-query
+yarn add @tanstack/query-core @tanstack/react-query
+yarn add -D @tanstack/react-query-devtools
 
 # Webpack
 
