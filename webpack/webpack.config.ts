@@ -8,6 +8,7 @@ import path from 'path'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import type { Configuration as WebpackConfiguration } from 'webpack'
+import { SourceMapDevToolPlugin } from 'webpack'
 import type { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-server'
 import WorkboxWebpackPlugin from 'workbox-webpack-plugin'
 
@@ -20,10 +21,17 @@ const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader
 
 const config: Configuration = {
   devServer: {
+    // allowedHosts: [],
+    compress: true,
     open: true,
     host: 'localhost',
+    port: 8000,
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
+    watchFiles: ['src/**/*.ts', 'public/*.html'],
   },
-  entry: './src/main.ts',
+  entry: './src/index.ts',
   mode: isProduction ? 'production' : 'development',
   /**
    * [rules]{@link https://webpack.js.org/loaders}
@@ -50,6 +58,7 @@ const config: Configuration = {
     ],
   },
   output: {
+    filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
   },
   /**
@@ -57,8 +66,9 @@ const config: Configuration = {
    */
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'index.html',
+      template: './public/index.html',
     }),
+    new SourceMapDevToolPlugin({}),
   ],
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js'],

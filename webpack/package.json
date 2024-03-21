@@ -2,6 +2,8 @@
   "version": "1.0.0",
   "name": "webpack",
   "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
