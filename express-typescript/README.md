@@ -140,7 +140,7 @@ yarn add -D source-map-loader style-loader webpack
 
 # Webpack for TypeScript
 
-yarn add -D @types/webpack @types/webpack-dev-server
+yarn add -D @types/webpack ts-loader
 ```
 
 <br>
