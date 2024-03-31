@@ -102,6 +102,7 @@ Find out what each installed package does here.
 - [eslint-plugin-chai-friendly](https://www.npmjs.com/package/eslint-plugin-chai-friendly)
 - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) : es2015+ import/export 구문 지원 및 규칙 제공
 - [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest) : jest 관련 규칙 제공
+- [eslint-plugin-jest-dom](https://www.npmjs.com/package/eslint-plugin-jest-dom) : eslint jest-dom rules
 - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) : jsx 내에서 웹 접근성 관련 피드백 제공
 - [eslint-plugin-mocha](https://www.npmjs.com/package/eslint-plugin-mocha)
 - [eslint-plugin-pug](https://www.npmjs.com/package/eslint-plugin-pug) : pug 파일 linting
@@ -109,6 +110,7 @@ Find out what each installed package does here.
 - [eslint-config-react-app](https://www.npmjs.com/package/eslint-config-react-app) : CRA에서 기본으로 사용하는 eslint 설정
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) : react hooks 규칙 관련 피드백 제공
 - [eslint-plugin-storybook](https://www.npmjs.com/package/eslint-plugin-storybook) : 스토리북에 최적화 된 lint 규칙 제공
+- [eslint-plugin-testing-library](https://www.npmjs.com/package/eslint-plugin-testing-library) : eslint @testing-library rules
 - [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue) : vue 규칙 관련 피드백 제공
 - [eslint-plugin-nuxt](https://www.npmjs.com/package/eslint-plugin-nuxt) : nuxt 규칙 관련 피드백 제공
 - [eslint-plugin-tailwindcss](https://www.npmjs.com/package/eslint-plugin-tailwindcss) : HTML 요소에 사용한 Tailwind CSS 클래스명 사용 및 정렬과 관련한 규칙 제공
