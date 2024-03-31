@@ -55,6 +55,10 @@ yarn add -D dotenv-expand
 
 yarn add -D eslint eslint-plugin-import eslint-plugin-jest
 
+# ESLint for Jest
+
+yarn add -D eslint-plugin-jest eslint-plugin-jest-dom eslint-plugin-testing-library
+
 # ESLint for Nuxt.js
 
 yarn add -D @nuxtjs/eslint-config-typescript eslint-plugin-nuxt

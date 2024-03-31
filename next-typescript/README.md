@@ -51,7 +51,7 @@ yarn add next-auth@beta
 
 # ESLint for Jest
 
-yarn add -D eslint-plugin-jest
+yarn add -D eslint-plugin-jest eslint-plugin-jest-dom eslint-plugin-testing-library
 
 # ESLint for Storybook
 #

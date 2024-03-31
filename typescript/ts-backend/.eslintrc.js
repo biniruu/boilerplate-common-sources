@@ -29,14 +29,15 @@ module.exports = {
       /**
        * Jest
        *
-       * plugin:jest/recommended : eslint-plugin-jest 추천 rule set
+       * plugin:jest/recommended : recommended eslint-plugin-jest rules
+       * plugin:jest-dom/recommended : recommended jest-dom rules
        */
-      extends: ['plugin:jest/recommended'],
-      files: ['*.spec.js', '*.spec.ts', '*.test.js', '*.test.ts'],
+      extends: ['plugin:jest/recommended', 'plugin:jest-dom/recommended'],
+      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
       rules: {
         /**
-         * Rules
-         * {@link https://github.com/jest-community/eslint-plugin-jest#rules}
+         * [eslint-plugin-jest]{@link https://github.com/jest-community/eslint-plugin-jest#rules}
+         * [eslint-plugin-jest-dom]{@link https://www.npmjs.com/package/eslint-plugin-jest-dom#supported-rules}
          */
       },
     },

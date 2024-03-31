@@ -31,7 +31,7 @@ yarn add -D eslint-plugin-jsx-a11y
 
 # ESLint for Jest
 
-yarn add -D eslint-plugin-jest
+yarn add -D eslint-plugin-jest eslint-plugin-jest-dom
 
 # ESLint for Pug
 
