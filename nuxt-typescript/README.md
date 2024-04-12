@@ -85,6 +85,10 @@ yarn add -D eslint-plugin-jsx-a11y
 
 yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event jest jest-environment-jsdom jsdom
 
+# Jest for CSS module
+
+yarn add -D @types/identity-obj-proxy identity-obj-proxy
+
 # Jest for TypeScript
 
 yarn add -D @types/jest jest-watch-typeahead ts-jest

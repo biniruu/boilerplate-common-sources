@@ -106,6 +106,10 @@ yarn add @apollo/client
 
 yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event jsdom
 
+# Jest for CSS module
+
+yarn add -D @types/identity-obj-proxy identity-obj-proxy
+
 # Jest for React.js
 
 yarn add -D @testing-library/react @testing-library/react-hooks

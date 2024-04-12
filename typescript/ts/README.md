@@ -38,6 +38,10 @@ yarn add -D eslint-webpack-plugin
 
 yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event jest jest-environment-jsdom jsdom
 
+# Jest for CSS module
+
+yarn add -D @types/identity-obj-proxy identity-obj-proxy
+
 # Jest for TypeScript
 
 yarn add -D @types/jest ts-jest

@@ -90,6 +90,10 @@ yarn add -D @tanstack/eslint-plugin-query
 
 yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/react @testing-library/react-hooks @testing-library/user-event @types/jest jest jest-environment-jsdom jsdom
 
+# Jest for CSS module
+
+yarn add -D identity-obj-proxy
+
 # Jest for React.js
 
 yarn add -D @testing-library/react @testing-library/react-hooks

@@ -52,6 +52,10 @@ yarn add express
 
 yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event @types/jest jest jest-environment-jsdom jsdom
 
+# Jest for CSS module
+
+yarn add -D @types/identity-obj-proxy identity-obj-proxy
+
 # Lodash
 
 yarn add lodash lodash-es

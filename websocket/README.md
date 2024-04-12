@@ -27,8 +27,14 @@ yarn add -D eslint-plugin-jest eslint-plugin-jest-dom
 yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript
 
 # Jest
+#
+# 💁🏻 If you have added 'jest', you don't need to add these packages: jest-resolve and jest-resolve-dependencies.
 
-yarn add -D jest
+yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event jest jest-environment-jsdom jsdom
+
+# Jest for CSS module
+
+yarn add -D @types/identity-obj-proxy identity-obj-proxy
 
 # Jest for TypeScript
 
