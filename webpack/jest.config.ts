@@ -108,6 +108,7 @@ const jestConfig: JestConfigWithTsJest = {
   moduleNameMapper: {
     '@/(.*)': '<rootDir>/src/$1',
     '\\.(css|scss)$': 'identity-obj-proxy',
+    'lodash-es': 'lodash', // resolve an error that import methods from lodash-es
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
