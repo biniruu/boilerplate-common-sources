@@ -14,6 +14,9 @@
 **/*.ts
 **/*.md
 **/*.ico
+**/*.png
+**/*.txt
+**/*.log
 
 # paths
 node_modules/
