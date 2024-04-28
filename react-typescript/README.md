@@ -91,6 +91,12 @@ yarn add -D eslint-plugin-tailwindcss
 
 yarn add -D @tanstack/eslint-plugin-query
 
+# ESLint for TypeScript
+#
+# 💁🏻‍♀️ @typescript-eslint/parser is just for the latest version of itself (It is already installed when use CRA)
+
+yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
+
 # GraphQL
 
 yarn add dataloader graphql graphql-scalars reflect-metadata type-graphql
