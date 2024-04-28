@@ -4,7 +4,6 @@
  */
 
 import type { JestConfigWithTsJest } from 'ts-jest'
-import { defaults as tsjPreset } from 'ts-jest/presets'
 
 /**
  * @property {String[]} moduleDirectories - root directories of the files you will test
@@ -145,7 +144,7 @@ const jestConfig: JestConfigWithTsJest = {
   // rootDir: undefined,
 
   // A list of paths to directories that Jest should use to search for files in
-  roots: ['<rootDir>/tests'],
+  roots: ['<rootDir>/src'],
 
   // Allows you to use a custom runner instead of Jest's default test runner
   // runner: "jest-runner",
@@ -154,7 +153,7 @@ const jestConfig: JestConfigWithTsJest = {
   // setupFiles: [],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
-  // setupFilesAfterEnv: [],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
 
   // The number of seconds after which a test is considered as slow and reported as such in the results.
   // slowTestThreshold: 5,
@@ -197,9 +196,8 @@ const jestConfig: JestConfigWithTsJest = {
   // A map from regular expressions to paths to transformers
   transform: {
     // '^.+\\.jsx$': 'babel-jest',
-    // '^.+\\.(ts|tsx)$': 'ts-jest',
+    '^.+\\.(ts|tsx)$': 'ts-jest',
     // '^.+\\.vue$': 'vue-jest',
-    ...tsjPreset.transform,
   },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
