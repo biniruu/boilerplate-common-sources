@@ -15,7 +15,9 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/tests/**/*.spec.ts",
+    "**/tests/**/*.spec.tsx",
     "**/tests/**/*.test.ts",
+    "**/tests/**/*.test.tsx",
     "dist/types/**/*.ts"
   ]
 }
