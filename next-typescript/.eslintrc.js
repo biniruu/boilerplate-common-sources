@@ -22,7 +22,7 @@ module.exports = {
    * plugin:import/recommended : eslint-plugin-import 추천 rule set
    * plugin:import/typescript : eslint-plugin-import 플러그인
    * plugin:jsx-a11y/recommended : 웹 접근성 관련 추천 rule set
-   * plugin:react-hooks/recommended
+   * plugin:react-hooks/recommended : recommended eslint-plugin-react-hooks rules
    * plugin:react/jsx-runtime : If you are using the new JSX transform from React 17, you should enable this
    * plugin:react/recommended
    * plugin:tailwindcss/recommended : Rules enforcing best practices and consistency using Tailwind CSS
@@ -54,7 +54,7 @@ module.exports = {
       rules: {
         /**
          * Rules
-         * 
+         *
          * [eslint-plugin-jest]{@link https://github.com/jest-community/eslint-plugin-jest#rules}
          * [eslint-plugin-jest-dom]{@link https://www.npmjs.com/package/eslint-plugin-jest-dom#supported-rules}
          * [eslint-plugin-testing-library]{@link https://www.npmjs.com/package/eslint-plugin-testing-library#supported-rules}
