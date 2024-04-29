@@ -1,6 +1,6 @@
 # React.js with TypeScript Starter
 
-React.js + TypeScript 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요. Create React App을 사용해 React.js 프로젝트를 설치한 다음, 필요한 패키지를 추가해서 사용하세요.
+Vite를 사용해서 React.js + TypeScript 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주는 스타터예요.
 
 <br>
 
@@ -30,13 +30,9 @@ yes를 선택하면 플러그인 설치와 함께 .eslintrc.js > extends에 `plu
 
 <br>
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-
 ## 📥Installing packages
 
-이곳에 있는 명령어를 사용해 패키지를 설치하세요.
+Install packages using these commends.
 
 ```bash
 # Axios
