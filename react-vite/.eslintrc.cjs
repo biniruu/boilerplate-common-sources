@@ -19,6 +19,8 @@ module.exports = {
    * {@link https://typescript-eslint.io/blog/announcing-typescript-eslint-v6/#user-facing-breaking-changes}
    * plugin:import/recommended : eslint-plugin-import 추천 rule set
    * plugin:import/typescript : eslint-plugin-import 플러그인
+   * plugin:react/recommended : (make sure this is always before react/jsx-runtime) recommended eslint-plugin-react rules
+   * plugin:react/jsx-runtime : when using the new JSX transform from React 17, it will disable the relevant rules
    * plugin:react-hooks/recommended : recommended eslint-plugin-react-hooks rules
    * plugin:tailwindcss/recommended : Rules enforcing best practices and consistency using Tailwind CSS
    */
@@ -27,6 +29,8 @@ module.exports = {
     'plugin:@typescript-eslint/recommended-type-checked',
     'plugin:import/recommended',
     'plugin:import/typescript',
+    'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
     'plugin:tailwindcss/recommended',
   ],

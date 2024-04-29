@@ -23,8 +23,8 @@ module.exports = {
    * plugin:import/typescript : eslint-plugin-import 플러그인
    * plugin:jsx-a11y/recommended : 웹 접근성 관련 추천 rule set
    * plugin:react-hooks/recommended : recommended eslint-plugin-react-hooks rules
-   * plugin:react/jsx-runtime : If you are using the new JSX transform from React 17, you should enable this
-   * plugin:react/recommended
+   * plugin:react/recommended : (make sure this is always before react/jsx-runtime) recommended eslint-plugin-react rules
+   * plugin:react/jsx-runtime : when using the new JSX transform from React 17, it will disable the relevant rules
    * plugin:tailwindcss/recommended : Rules enforcing best practices and consistency using Tailwind CSS
    */
   extends: [
@@ -36,8 +36,8 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:jsx-a11y/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:react/jsx-runtime',
     'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
     'plugin:tailwindcss/recommended',
   ],
   overrides: [
