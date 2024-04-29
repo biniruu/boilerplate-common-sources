@@ -188,6 +188,10 @@ yarn add tailwindcss
 # TanStack Query (React Query)
 
 yarn add @tanstack/react-query @tanstack/react-query-devtools
+
+# Vite
+
+yarn add -D vite-plugin-dts
 ```
 
 <br>
