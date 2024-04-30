@@ -301,5 +301,14 @@ module.exports = {
     jest: {
       version: require('jest/package.json').version,
     },
+    /**
+     * React.js version setting
+     * {@link https://github.com/jsx-eslint/eslint-plugin-react#configuration}
+     *
+     * version : React version. "detect" automatically picks the version you have installed. You can also use `16.0`, `16.3`, etc, if you want to override the detected value. It will default to "latest" and warn if missing, and to "detect" in the future
+     */
+    react: {
+      version: 'detect',
+    },
   },
 }
