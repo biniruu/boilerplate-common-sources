@@ -112,9 +112,3 @@ yarn add tailwindcss
 
 yarn add -D source-map-loader style-loader webpack
 ```
-
-<br>
-
-## 📋Detailing packages
-
-각 패키지에 대한 설명은 최상위 폴더에 있는 [README.md](https://github.com/biniruu/starter-pack#detailing-packages)에서 확인할 수 있어요.
