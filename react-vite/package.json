@@ -65,6 +65,7 @@
     "stylelint-order": "^6.0.4",
     "stylelint-scss": "^6.2.1",
     "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vite-plugin-dts": "^3.9.0"

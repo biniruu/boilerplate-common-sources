@@ -120,9 +120,9 @@ yarn add lodash-es
 
 yarn add -D @types/lodash-es
 
-# Node.js
+# Node.js for TypeScript
 
-yarn add -D @types/node
+yarn add -D @types/node ts-node
 
 # PostCSS
 #
