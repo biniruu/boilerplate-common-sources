@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && NODE_ENV=development vite build --mode development",
-    "build:prod": "tsc && vite build",
+    "build:prod": "yarn lint && tsc && vite build",
     "lint": "eslint . && stylelint .",
     "preview": "vite preview"
   },
