@@ -98,7 +98,7 @@ yarn add @apollo/client
 #
 # 💁🏻 If you have added 'jest', you don't need to add these packages: jest-resolve and jest-resolve-dependencies.
 
-yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event jest jest-watch-typeahead jsdom
+yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event jest jest-environment-jsdom jest-watch-typeahead jsdom
 
 # Jest for CSS module
 
