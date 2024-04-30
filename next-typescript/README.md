@@ -122,7 +122,7 @@ yarn add -D prettier
 
 # Next.js
 
-yarn add react-hook-form
+yarn add react-hook-form react-refresh
 
 # Recoil
 

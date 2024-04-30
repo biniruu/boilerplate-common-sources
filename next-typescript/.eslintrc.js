@@ -22,9 +22,9 @@ module.exports = {
    * plugin:import/recommended : eslint-plugin-import 추천 rule set
    * plugin:import/typescript : eslint-plugin-import 플러그인
    * plugin:jsx-a11y/recommended : 웹 접근성 관련 추천 rule set
-   * plugin:react-hooks/recommended : recommended eslint-plugin-react-hooks rules
    * plugin:react/recommended : (make sure this is always before react/jsx-runtime) recommended eslint-plugin-react rules
    * plugin:react/jsx-runtime : when using the new JSX transform from React 17, it will disable the relevant rules
+   * plugin:react-hooks/recommended : recommended eslint-plugin-react-hooks rules
    * plugin:tailwindcss/recommended : Rules enforcing best practices and consistency using Tailwind CSS
    */
   extends: [
@@ -35,9 +35,9 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:import/typescript',
     'plugin:jsx-a11y/recommended',
-    'plugin:react-hooks/recommended',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
+    'plugin:react-hooks/recommended',
     'plugin:tailwindcss/recommended',
   ],
   overrides: [
@@ -84,6 +84,12 @@ module.exports = {
     project: true,
     tsconfigRootDir: __dirname,
   },
+  plugins: [
+    /**
+     * react-refresh : use eslint-plugin-react-refresh
+     */
+    'react-refresh',
+  ],
   root: true, // 현재 설정 파일이 root임을 명시하는 옵션. true로 설정하면 상위 설정 파일 찾기를 여기서 멈춘다.
   rules: {
     /**
@@ -360,6 +366,18 @@ module.exports = {
      * react-hooks/rules-of-hooks : react hooks 공식 문서에서 제공하는 규칙을 준수하도록 강제. {@link https://legacy.reactjs.org/docs/hooks-rules.html Roles of Hooks}
      */
     'react-hooks/rules-of-hooks': 'error',
+    /**
+     * Eslint-plugin-react-refresh rules
+     * {@link https://github.com/ArnaudBarre/eslint-plugin-react-refresh?tab=readme-ov-file#options}
+     *
+     * react-refresh/only-export-components : Don't warn when a constant (string, number, boolean, templateLiteral) is exported aside one or more components
+     */
+    'react-refresh/only-export-components': [
+      'warn',
+      {
+        allowConstantExport: true,
+      },
+    ],
     /**
      * Eslint-plugin-tailwindcss rules
      * {@link https://github.com/francoismassart/eslint-plugin-tailwindcss/tree/master/docs/rules}
