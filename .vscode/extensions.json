@@ -108,6 +108,7 @@
     "rangav.vscode-thunder-client",
     "styled-components.vscode-styled-components",
     "planbcoding.vscode-react-refactor",
-    "tomoki1207.pdf"
+    "tomoki1207.pdf",
+    "yoavbls.pretty-ts-errors"
   ]
 }
