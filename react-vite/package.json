@@ -8,7 +8,10 @@
     "build": "tsc && NODE_ENV=development vite build --mode development",
     "build:prod": "yarn lint && tsc && vite build",
     "lint": "eslint . && stylelint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "jest",
+    "test:update": "jest -u",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -67,8 +70,10 @@
     "stylelint-scss": "^6.2.1",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
-    "vite-plugin-dts": "^3.9.0"
+    "vite-plugin-dts": "^3.9.0",
+    "vite-tsconfig-paths": "^4.3.2"
   }
 }
