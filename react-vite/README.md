@@ -122,7 +122,7 @@ yarn add -D @types/lodash-es
 
 # Node.js for TypeScript
 
-yarn add -D @types/node ts-node
+yarn add -D @types/node ts-node ts-node-dev
 
 # PostCSS
 #
@@ -191,7 +191,7 @@ yarn add @tanstack/react-query @tanstack/react-query-devtools
 
 # Vite
 
-yarn add -D vite-plugin-dts
+yarn add -D vite-plugin-dts vite-tsconfig-paths
 ```
 
 <br>
