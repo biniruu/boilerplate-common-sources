@@ -6,20 +6,30 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 const isProduction = process.env.NODE_ENV === 'production'
 
 /**
- * https://vitejs.dev/config/
- *
- * dts > include : alternative to include option in tsconfig
+ * Documentation
+ * {@link https://vitejs.dev/config/}
  */
 export default defineConfig({
   build: {
     sourcemap: isProduction ? false : true,
   },
   plugins: [
+    /**
+     *
+     * exclude : alternative to exclude option in tsconfig when build project
+     * include : alternative to include option in tsconfig when build project
+     */
     dts({
       exclude: ['node_modules', 'dist', 'tests', 'coverage'],
       include: ['**/*.ts', '**/*.tsx'],
     }),
     react(),
+    /**
+     * vite-tsconfig-paths
+     * {@link https://www.npmjs.com/package/vite-tsconfig-paths}
+     *
+     * Give TypeScript's path mapping to dependencies such as eslint to resolve imports
+     */
     tsconfigPaths(),
   ],
 })
