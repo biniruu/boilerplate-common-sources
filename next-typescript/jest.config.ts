@@ -105,7 +105,8 @@ const jestConfig: JestConfigWithTsJest = {
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   moduleNameMapper: {
-    '@/(.*)': '<rootDir>/src/$1',
+    '@app/(.*)': 'app/$1',
+    '@components/(.*)': 'components/$1',
     '\\.(css|scss)$': 'identity-obj-proxy',
     'lodash-es': 'lodash', // resolve an error that import methods from lodash-es
   },
@@ -141,10 +142,10 @@ const jestConfig: JestConfigWithTsJest = {
   // restoreMocks: false,
 
   // The root directory that Jest should scan for tests and modules within
-  rootDir: './',
+  rootDir: 'src',
 
   // A list of paths to directories that Jest should use to search for files in
-  roots: ['<rootDir>/src/tests'],
+  roots: ['tests'],
 
   // Allows you to use a custom runner instead of Jest's default test runner
   // runner: "jest-runner",
@@ -153,7 +154,7 @@ const jestConfig: JestConfigWithTsJest = {
   // setupFiles: [],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+  setupFilesAfterEnv: ['../jest.setup.ts'],
 
   // The number of seconds after which a test is considered as slow and reported as such in the results.
   // slowTestThreshold: 5,
@@ -174,7 +175,7 @@ const jestConfig: JestConfigWithTsJest = {
   testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[tj]s?(x)'],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-  testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
+  testPathIgnorePatterns: ['node_modules/', '.next/'],
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
   // testRegex: [],
