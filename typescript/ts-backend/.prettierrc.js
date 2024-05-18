@@ -10,7 +10,6 @@
  * singleQuote : 따옴표 사용 시 작은따옴표로 통일
  * tabWidth : 탭 키 간격으로 설정할 space 개수
  * trailingComma
- * vueIndentScriptAndStyle : vue 파일 내 script 태그와 style 태그에서 들여쓰기 반영
  */
 
 module.exports = {
@@ -22,5 +21,4 @@ module.exports = {
   singleQuote: true,
   tabWidth: 2,
   trailingComma: 'all',
-  vueIndentScriptAndStyle: true,
 }

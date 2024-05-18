@@ -4,7 +4,6 @@
  */
 
 import type { JestConfigWithTsJest } from 'ts-jest'
-import { defaults as tsjPreset } from 'ts-jest/presets'
 
 /**
  * @property {String[]} moduleDirectories - root directories of the files you will test
@@ -197,9 +196,8 @@ const jestConfig: JestConfigWithTsJest = {
   // A map from regular expressions to paths to transformers
   transform: {
     // '^.+\\.jsx$': 'babel-jest',
-    // '^.+\\.(ts|tsx)$': 'ts-jest',
+    '^.+\\.(ts|tsx)$': 'ts-jest',
     // '^.+\\.vue$': 'vue-jest',
-    ...tsjPreset.transform,
   },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
