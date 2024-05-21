@@ -9,6 +9,10 @@ TypeScript 프로젝트 환경 설정을 빠르게 할 수 있도록 도와주�
 이곳에 있는 명령어를 사용해 패키지를 설치하세요.
 
 ```bash
+# Axios
+
+yarn add axios
+
 # ESLint
 
 yarn add -D eslint eslint-plugin-import

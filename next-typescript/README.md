@@ -43,11 +43,13 @@ To use global configurations of those libraries, remove comments from `app/layou
 이곳에 있는 명령어를 사용해 패키지를 설치하세요.
 
 ```bash
-# NextAuth.js
-#
-# need to use NextAuth.js under v5, add 'next-auth' instead
+# Axios
 
-yarn add next-auth@beta
+yarn add axios
+
+# ESLint
+
+yarn add -D @typescript-eslint/eslint-plugin
 
 # ESLint for Jest
 
@@ -71,39 +73,35 @@ yarn add -D @tanstack/eslint-plugin-query
 
 yarn add -D eslint-plugin-tailwindcss
 
-# ESLint for TypeScript
-
-yarn add -D @typescript-eslint/eslint-plugin
-
 # Jest
 #
 # 💁🏻 If you have added 'jest', you don't need to add these packages: jest-resolve and jest-resolve-dependencies.
 
-yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event jest jest-environment-jsdom jest-watch-typeahead jsdom
+yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event @types/jest jest jest-environment-jsdom jest-watch-typeahead jsdom ts-jest
 
 # Jest for CSS module
 
 yarn add -D @types/identity-obj-proxy identity-obj-proxy
 
-# Jest for Next.js
+# Jest for React.js
 
 yarn add -D @testing-library/react @testing-library/react-hooks react-test-renderer
-
-# Jest for Next.js with TypeScript
-
 yarn add -D @types/react-test-renderer
-
-# Jest for TypeScript
-
-yarn add -D @types/jest ts-jest
 
 # Lodash
 
 yarn add lodash-es
-
-# Lodash for TypeScript
-
 yarn add -D @types/lodash-es
+
+# Mock Service Worker
+
+yarn add -D msw
+
+# NextAuth.js
+#
+# need to use NextAuth.js under v5, add 'next-auth' instead
+
+yarn add next-auth@beta
 
 # PostCSS
 #
@@ -124,9 +122,18 @@ yarn add -D @tailwindcss/nesting
 
 yarn add -D prettier
 
-# Next.js
+# React.js
 
-yarn add react-hook-form react-refresh
+yarn add react-refresh
+
+# React Hook Form
+
+yarn add react-hook-form
+
+# React Infinite Scroller
+
+yarn add react-infinite-scroller
+yarn add -D @types/react-infinite-scroller
 
 # Recoil
 
@@ -139,9 +146,6 @@ yarn add -D sass sass-loader
 # Styled-components
 
 yarn add styled-components
-
-# Styled-components for TypeScript
-
 yarn add -D @types/styled-components
 
 # Stylelint
@@ -160,6 +164,14 @@ yarn add swr
 
 yarn add @tanstack/query-core @tanstack/react-query
 yarn add -D @tanstack/react-query-devtools
+
+# TypeScript
+
+yarn add tslib
+
+# TypeScript for Node.js
+
+yarn add -D @types/node ts-node
 
 # Webpack
 
