@@ -41,11 +41,7 @@ yarn add axios
 
 # Bcrypt.js
 
-yarn add bcryptjs
-
-# Bcrypt.js for TypeScript
-
-yarn add -D @types/bcryptjs
+yarn add @types/bcryptjs bcryptjs
 
 # Dotenv
 
@@ -53,7 +49,7 @@ yarn add dotenv dotenv-expand env-cmd
 
 # ESLint
 
-yarn add -D eslint-plugin-import
+yarn add -D @typescript-eslint/eslint-plugin eslint-import-resolver-typescript eslint-plugin-import
 
 # Eslint for GraphQL
 
@@ -81,10 +77,6 @@ yarn add -D eslint-plugin-tailwindcss
 
 yarn add -D @tanstack/eslint-plugin-query
 
-# ESLint for TypeScript
-
-yarn add -D @typescript-eslint/eslint-plugin eslint-import-resolver-typescript
-
 # GraphQL
 
 yarn add dataloader graphql graphql-scalars reflect-metadata type-graphql
@@ -98,7 +90,7 @@ yarn add @apollo/client
 #
 # 💁🏻 If you have added 'jest', you don't need to add these packages: jest-resolve and jest-resolve-dependencies.
 
-yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event jest jest-environment-jsdom jest-watch-typeahead jsdom
+yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event @types/jest jest jest-environment-jsdom jest-watch-typeahead jsdom ts-jest
 
 # Jest for CSS module
 
@@ -108,19 +100,11 @@ yarn add -D @types/identity-obj-proxy identity-obj-proxy
 
 yarn add -D @testing-library/react @testing-library/react-hooks
 
-# Jest for TypeScript
-
-yarn add -D @types/jest ts-jest
-
 # Lodash
 
-yarn add lodash-es
+yarn add @types/lodash-es lodash-es
 
-# Lodash for TypeScript
-
-yarn add -D @types/lodash-es
-
-# Node.js for TypeScript
+# Node.js
 
 yarn add -D @types/node ts-node ts-node-dev
 
@@ -137,20 +121,12 @@ yarn add -D @tailwindcss/nesting
 
 # Prettier
 
-yarn add -D prettier
-
-# Prettier for TypeScript
-
-yarn add -D @types/prettier
+yarn add -D @types/prettier prettier
 
 # React
 
 yarn add react-hook-form react-router-dom
-yarn add -D react-test-renderer
-
-# React for Typescript
-
-yarn add -D @types/react-test-renderer
+yarn add -D @types/react-test-renderer react-test-renderer
 
 # Recoil
 

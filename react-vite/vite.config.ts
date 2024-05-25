@@ -20,8 +20,8 @@ export default defineConfig({
      * include : alternative to include option in tsconfig when build project
      */
     dts({
-      exclude: ['node_modules', 'dist', 'tests', 'coverage'],
-      include: ['**/*.ts', '**/*.tsx'],
+      exclude: ['./node_modules', './dist', './tests', './coverage'],
+      include: ['./src/**/*.ts', './src/**/*.tsx'],
     }),
     react(),
     /**

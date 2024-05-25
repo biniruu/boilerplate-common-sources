@@ -103,7 +103,14 @@
     // "skipDefaultLibCheck": true, // Skip type checking .d.ts files that are included with TypeScript.
     "skipLibCheck": true // Skip type checking all .d.ts files.
   },
-  "exclude": ["node_modules", "dist", "coverage"],
-  "include": ["**/*.ts", "**/*.config.ts", "jest.setup.ts", "**/*.tsx", "**/tests", "dist/types/**/*.ts"],
+  "exclude": ["./node_modules", "./dist", "./coverage"],
+  "include": [
+    "**/*.ts",
+    "./*.config.ts",
+    "./jest.setup.ts",
+    "./src/**/*.tsx",
+    "./tests/**/?(*.)+(spec|test).[tj]s?(x)",
+    "./dist/types/**/*.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
