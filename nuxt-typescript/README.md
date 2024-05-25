@@ -56,6 +56,9 @@ yarn add -D dotenv-expand
 yarn add -D eslint eslint-plugin-import eslint-plugin-jest
 
 # ESLint for Jest
+#
+# 💁🏻‍♀️ eslint-plugin-jest를 설치하지 않는다면 아래 패키지는 별도로 설치해야 해요.
+# @typescript-eslint/types @typescript-eslint/typescript-estree @typescript-eslint/utils
 
 yarn add -D eslint-plugin-jest eslint-plugin-jest-dom eslint-plugin-testing-library
 
@@ -82,16 +85,13 @@ yarn add -D eslint-plugin-jsx-a11y
 # Jest
 #
 # 💁🏻 If you have added 'jest', you don't need to add these packages: jest-resolve and jest-resolve-dependencies.
+# 💁🏻‍♂️ I recommend adding @types/jest even if it is not a TypeScript project because of its IntelliSense.
 
-yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event jest jest-environment-jsdom jsdom
+yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event @types/jest jest jest-environment-jsdom jest-watch-typeahead jsdom ts-jest
 
 # Jest for CSS module
 
 yarn add -D @types/identity-obj-proxy identity-obj-proxy
-
-# Jest for TypeScript
-
-yarn add -D @types/jest jest-watch-typeahead ts-jest
 
 # Jest for Vue.js
 
@@ -99,11 +99,7 @@ yarn add -D @testing-library/vue @vue/vue3-jest
 
 # Lodash
 
-yarn add -D lodash-es
-
-# Lodash for TypeScript
-
-yarn add -D @types/lodash-es
+yarn add -D @types/lodash-es lodash-es
 
 # PostCSS
 #
@@ -138,11 +134,11 @@ yarn add -D tailwindcss
 
 # TypeScript
 
-yarn add -D typescript vue-tsc
+yarn add -D typescript
 
 # Vue.js
 
-yarn add -D volar-service-vetur
+yarn add -D volar-service-vetur vue-tsc
 ```
 
 <br>

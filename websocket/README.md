@@ -13,44 +13,34 @@
 ```bash
 # ESLint
 
-yarn add -D eslint eslint-plugin-import
+yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-import-resolver-typescript eslint-plugin-import
 
 # ESLint for Jest
-
-yarn add -D eslint-plugin-jest eslint-plugin-jest-dom
-
-# ESLint for TypeScript
 #
 # 💁🏻‍♀️ eslint-plugin-jest를 설치하지 않는다면 아래 패키지는 별도로 설치해야 해요.
 # @typescript-eslint/types @typescript-eslint/typescript-estree @typescript-eslint/utils
 
-yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript
+yarn add -D eslint-plugin-jest eslint-plugin-jest-dom
 
 # Jest
 #
 # 💁🏻 If you have added 'jest', you don't need to add these packages: jest-resolve and jest-resolve-dependencies.
+# 💁🏻‍♂️ I recommend adding @types/jest even if it is not a TypeScript project because of its IntelliSense.
 
-yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event jest jest-environment-jsdom jsdom
+yarn add -D @types/jest @testing-library/dom @testing-library/jest-dom @testing-library/user-event jest jest-environment-jsdom jsdom ts-jest
 
 # Jest for CSS module
 
 yarn add -D @types/identity-obj-proxy identity-obj-proxy
 
-# Jest for TypeScript
-
-yarn add -D @types/jest ts-jest
-
 # Lodash
 
 yarn add lodash lodash-es
-
-# Lodash for TypeScript
-
 yarn add -D @types/lodash-es
 
-# Node.js for TypeScript
+# Node.js
 
-yarn add -D @types/node
+yarn add -D @types/node tsconfig-paths ts-node ts-node-dev
 
 # Nodemon
 
@@ -63,8 +53,4 @@ yarn add -D prettier
 # TypeScript
 
 yarn add -D typescript
-
-# Ts-node
-
-yarn add -D tsconfig-paths ts-node ts-node-dev
 ```

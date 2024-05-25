@@ -12,25 +12,18 @@ Express + TypeScript 풀스택 프로젝트 환경 설정을 빠르게 할 수 �
 # EJS
 
 yarn add ejs
-
-# EJS for TypeScript
-
 yarn add -D @types/ejs
 
 # ESLint
 
-yarn add -D eslint eslint-plugin-import
+yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-import-resolver-typescript eslint-plugin-import
 
 # ESLint for Jest
-
-yarn add -D eslint-plugin-jest eslint-plugin-jest-dom
-
-# ESLint for TypeScript
 #
 # 💁🏻‍♀️ eslint-plugin-jest를 설치하지 않는다면 아래 패키지는 별도로 설치해야 해요.
 # @typescript-eslint/types @typescript-eslint/typescript-estree @typescript-eslint/utils
 
-yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript
+yarn add -D eslint-plugin-jest eslint-plugin-jest-dom
 
 # ESLint for Webpack
 
@@ -39,9 +32,6 @@ yarn add -D eslint-webpack-plugin
 # Express
 
 yarn add body-parser cors express
-
-# Express for TypeScript
-
 yarn add -D @types/body-parser @types/cors @types/express
 
 # GraphQL
@@ -53,27 +43,20 @@ yarn add @apollo/server graphql reflect-metadata
 # 💁🏻 If you have added 'jest', you don't need to add these packages: jest-resolve and jest-resolve-dependencies.
 # 💁🏻‍♂️ I recommend adding @types/jest even if it is not a TypeScript project because of its IntelliSense.
 
-yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event jest jest-environment-jsdom jsdom
-
-# Jest for TypeScript
-
-yarn add -D @types/jest ts-jest
+yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event @types/jest jest jest-environment-jsdom jsdom ts-jest
 
 # Lodash
 
 yarn add lodash lodash-es
-
-# Lodash for TypeScript
-
 yarn add -D @types/lodash-es
 
 # Mongoose
 
 yarn add mongoose
 
-# Node.js for TypeScript
+# Node.js
 
-yarn add -D @types/node
+yarn add -D @types/node tsconfig-paths ts-node ts-node-dev
 
 # Nodemon
 
@@ -109,9 +92,6 @@ yarn add -D sass sass-loader
 # Styled-components
 
 yarn add styled-components
-
-# Styled-components for TypeScript
-
 yarn add -D @types/styled-components
 
 # Stylelint
@@ -126,19 +106,11 @@ yarn add -D stylelint-config-standard-scss stylelint-scss
 
 yarn add tailwindcss
 
-# Ts-node
-
-yarn add -D tsconfig-paths ts-node ts-node-dev
-
 # TypeScript
 
 yarn add -D typescript
 
 # Webpack
 
-yarn add -D source-map-loader style-loader webpack
-
-# Webpack for TypeScript
-
-yarn add -D @types/webpack ts-loader
+yarn add -D @types/webpack source-map-loader style-loader ts-loader webpack
 ```

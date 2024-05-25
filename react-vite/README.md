@@ -41,7 +41,8 @@ yarn add axios
 
 # Bcrypt.js
 
-yarn add @types/bcryptjs bcryptjs
+yarn add bcryptjs
+yarn add -D @types/bcryptjs
 
 # Dotenv
 
@@ -56,6 +57,9 @@ yarn add -D @typescript-eslint/eslint-plugin eslint-import-resolver-typescript e
 yarn add -D @graphql-eslint/eslint-plugin
 
 # ESLint for Jest
+#
+# 💁🏻‍♀️ eslint-plugin-jest를 설치하지 않는다면 아래 패키지는 별도로 설치해야 해요.
+# @typescript-eslint/types @typescript-eslint/typescript-estree @typescript-eslint/utils
 
 yarn add -D eslint-plugin-jest eslint-plugin-jest-dom eslint-plugin-testing-library jest-resolve
 
@@ -89,6 +93,7 @@ yarn add @apollo/client
 # Jest
 #
 # 💁🏻 If you have added 'jest', you don't need to add these packages: jest-resolve and jest-resolve-dependencies.
+# 💁🏻‍♂️ I recommend adding @types/jest even if it is not a TypeScript project because of its IntelliSense.
 
 yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event @types/jest jest jest-environment-jsdom jest-watch-typeahead jsdom ts-jest
 
@@ -102,7 +107,12 @@ yarn add -D @testing-library/react @testing-library/react-hooks
 
 # Lodash
 
-yarn add @types/lodash-es lodash-es
+yarn add lodash-es
+yarn add -D @types/lodash-es
+
+# Mongoose
+
+yarn add mongoose
 
 # Node.js
 

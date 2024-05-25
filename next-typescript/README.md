@@ -52,6 +52,9 @@ yarn add axios
 yarn add -D @typescript-eslint/eslint-plugin
 
 # ESLint for Jest
+#
+# 💁🏻‍♀️ eslint-plugin-jest를 설치하지 않는다면 아래 패키지는 별도로 설치해야 해요.
+# @typescript-eslint/types @typescript-eslint/typescript-estree @typescript-eslint/utils
 
 yarn add -D eslint-plugin-jest eslint-plugin-jest-dom eslint-plugin-testing-library
 
@@ -76,6 +79,7 @@ yarn add -D eslint-plugin-tailwindcss
 # Jest
 #
 # 💁🏻 If you have added 'jest', you don't need to add these packages: jest-resolve and jest-resolve-dependencies.
+# 💁🏻‍♂️ I recommend adding @types/jest even if it is not a TypeScript project because of its IntelliSense.
 
 yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/user-event @types/jest jest jest-environment-jsdom jest-watch-typeahead jsdom ts-jest
 
@@ -85,8 +89,7 @@ yarn add -D @types/identity-obj-proxy identity-obj-proxy
 
 # Jest for React.js
 
-yarn add -D @testing-library/react @testing-library/react-hooks react-test-renderer
-yarn add -D @types/react-test-renderer
+yarn add -D @testing-library/react @testing-library/react-hooks @types/react-test-renderer react-test-renderer
 
 # Lodash
 
@@ -102,6 +105,10 @@ yarn add -D msw
 # need to use NextAuth.js under v5, add 'next-auth' instead
 
 yarn add next-auth@beta
+
+# Node.js
+
+yarn add -D @types/node ts-node
 
 # PostCSS
 #
@@ -168,10 +175,6 @@ yarn add -D @tanstack/react-query-devtools
 # TypeScript
 
 yarn add tslib
-
-# TypeScript for Node.js
-
-yarn add -D @types/node ts-node
 
 # Webpack
 
