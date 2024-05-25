@@ -90,6 +90,10 @@ yarn add -D @graphql-codegen/cli
 
 yarn add @apollo/client
 
+# Immer
+
+yarn add immer use-immer
+
 # Jest
 #
 # 💁🏻 If you have added 'jest', you don't need to add these packages: jest-resolve and jest-resolve-dependencies.
@@ -104,6 +108,11 @@ yarn add -D @types/identity-obj-proxy identity-obj-proxy
 # Jest for React.js
 
 yarn add -D @testing-library/react @testing-library/react-hooks
+
+# Koa
+
+yarn add @koa/router koa
+yarn add -D @types/koa @types/koa__router
 
 # Lodash
 

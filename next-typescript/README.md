@@ -76,6 +76,10 @@ yarn add -D @tanstack/eslint-plugin-query
 
 yarn add -D eslint-plugin-tailwindcss
 
+# Immer
+
+yarn add immer use-immer
+
 # Jest
 #
 # 💁🏻 If you have added 'jest', you don't need to add these packages: jest-resolve and jest-resolve-dependencies.
