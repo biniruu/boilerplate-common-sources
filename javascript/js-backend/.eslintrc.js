@@ -86,7 +86,7 @@ module.exports = {
     'no-nested-ternary': 'warn',
     'no-new-object': 'warn',
     'no-undef': 'error',
-    'no-underscore-dangle': 'error',
+    'no-underscore-dangle': ['warn', { allowAfterThis: true }],
     'no-unused-vars': [
       'error',
       {
