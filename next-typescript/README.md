@@ -95,6 +95,10 @@ yarn add -D @types/identity-obj-proxy identity-obj-proxy
 
 yarn add -D @testing-library/react @testing-library/react-hooks @types/react-test-renderer react-test-renderer
 
+# Joi
+
+yarn add joi
+
 # Lodash
 
 yarn add lodash-es
