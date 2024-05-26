@@ -109,6 +109,10 @@ yarn add -D @types/identity-obj-proxy identity-obj-proxy
 
 yarn add -D @testing-library/react @testing-library/react-hooks
 
+# Joi
+
+yarn add joi
+
 # Koa
 
 yarn add @koa/router koa
