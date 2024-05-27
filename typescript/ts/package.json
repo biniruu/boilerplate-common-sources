@@ -11,7 +11,7 @@
     "update-packages": "yarn upgrade --latest && yarn sync-package-version",
     "start": "yarn compile & nodemon",
     "lint": "eslint . && stylelint .",
-    "compile": "npx tsc -w",
+    "compile": "rm -r dist ; npx tsc --project tsconfig.build.json",
     "test": "jest",
     "test:watch": "jest --watch"
   },

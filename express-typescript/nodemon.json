@@ -3,8 +3,11 @@
     "NODE_ENV": "development"
   },
   "exec": "ts-node ./src/index.ts",
-  "ext": "ts,json",
+  "execMap": {
+    "ts": "ts-node"
+  },
+  "ext": "ts",
   "ignore": [".git", ".github", ".idea", ".vscode", "node_modules"],
   "verbose": true,
-  "watch": ["./src"]
+  "watch": ["src"]
 }

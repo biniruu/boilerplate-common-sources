@@ -1,14 +1,8 @@
 {
   "compilerOptions": {
-    /* Editor Support */
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
     // "declaration": true, // Generate .d.ts files from TypeScript and JavaScript files in your project.
     "sourceMap": false // Create source map files for emitted JavaScript files.
   },
   "extends": "./tsconfig.default.json",
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"]
+  "include": ["client/src/**/*.ts", "server/src/**/*.ts"]
 }

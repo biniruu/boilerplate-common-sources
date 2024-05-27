@@ -10,7 +10,7 @@
     "update-packages": "yarn upgrade --latest && yarn sync-package-version",
     "start": "yarn compile & nodemon",
     "lint": "eslint . && stylelint .",
-    "compile": "npx tsc -w",
+    "compile": "npx tsc",
     "test": "jest",
     "test:watch": "jest --watch"
   },

@@ -2,8 +2,9 @@
   "env": {
     "NODE_ENV": "development"
   },
+  "exec": "ts-node src/index.ts",
   "execMap": {
-    "ts": "ts-node --esm"
+    "ts": "ts-node"
   },
   "ext": "ts",
   "ignore": ["**/dist/", "**/mode_modules/", "**/*.cjs", "**/*.json", ".gitignore", ".eslintignore", ".prettierignore"],
