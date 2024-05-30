@@ -210,6 +210,7 @@ module.exports = {
       'error',
       {
         args: 'all',
+        argsIgnorePattern: '^_[2-9]?$',
       },
     ],
     '@typescript-eslint/no-var-requires': 'off',

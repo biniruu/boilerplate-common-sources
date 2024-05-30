@@ -72,6 +72,7 @@ module.exports = {
       'error',
       {
         args: 'all',
+        argsIgnorePattern: '^_[2-9]?$',
       },
     ],
     'no-useless-escape': 'warn',
