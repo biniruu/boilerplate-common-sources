@@ -48,7 +48,6 @@ module.exports = {
      * no-array-constructor : Array() 생성자에 배열 리터럴 생성법을 사용해서 배열 생성 금지
      * no-console : 콘솔 사용 금지
      * no-debugger : debugger 사용 금지
-     * no-duplicate-imports : 동일한 모듈에서 import를 여러 번 할 경우 모든 import를 inline으로 작성하도록 강제. eslint-plugin-import > import/no-duplicates의 prefer-inline 값이 true인 경우에는 off로 설정할 것
      * no-inner-declarations : nested block에서 변수 또는 함수 선언 금지
      * no-nested-ternary : 중첩 삼항 연산자 금지
      * no-new-object : new Object로 객체 생성 금지
@@ -81,7 +80,6 @@ module.exports = {
       },
     ],
     'no-debugger': process.env.NODE_ENV === 'development' ? 'warn' : 'error',
-    'no-duplicate-imports': 'off',
     'no-inner-declarations': 'warn',
     'no-nested-ternary': 'warn',
     'no-new-object': 'warn',
@@ -118,7 +116,6 @@ module.exports = {
      *
      * newline-after-import : import 다음에 한 줄 띄기
      * no-anonymous-default-export : 익명 default export 금지
-     * no-duplicates : enforce all imports to be inline or top-level when importing multiple times from the same module.
      * no-unresolved : import한 파일/모듈이 unresolved 되는 일이 없도록 방지
      * order : import 자동 정렬
      * order > alphabetize : Make sure it is always set as the default. If not, it can cause conflicts with prettier.
@@ -133,12 +130,6 @@ module.exports = {
         allowObject: true,
       },
     ],
-    // 'import/no-duplicates': [
-    //   'error',
-    //   {
-    //     'prefer-inline': true,
-    //   },
-    // ], // to be enabled if 'consistent-type-specifier-style' is 'prefer-inline'
     'import/no-unresolved': 'off',
     'import/order': [
       'warn',
