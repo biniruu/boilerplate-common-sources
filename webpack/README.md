@@ -105,7 +105,7 @@ yarn add -D tsconfig-paths ts-node ts-node-dev
 
 # Webpack
 
-yarn add -D source-map-loader style-loader html-webpack-plugin mini-css-extract-plugin
+yarn add -D @swc/html source-map-loader style-loader html-minimizer-webpack-plugin html-webpack-plugin mini-css-extract-plugin
 
 # Webpack for TypeScript
 
