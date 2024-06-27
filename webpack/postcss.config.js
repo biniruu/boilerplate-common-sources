@@ -26,6 +26,6 @@ module.exports = {
         'nesting-rules': false, // ensure this value as false when using @tailwindcss/nesting
       },
     },
-    ...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {}), // invoking CSS minification in production environment
+    cssnano: { preset: 'default' }, // invoking CSS minification in production environment
   },
 }

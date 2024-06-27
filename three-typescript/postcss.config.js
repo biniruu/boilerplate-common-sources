@@ -34,6 +34,6 @@ module.exports = {
       },
     },
     tailwindcss: {}, // for using tailwindcss
-    ...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {}), // invoking CSS minification in production environment
+    cssnano: { preset: 'default' }, // invoking CSS minification in production environment
   },
 }
