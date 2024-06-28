@@ -19,14 +19,12 @@ module.exports = {
    * {@link https://typescript-eslint.io/blog/announcing-typescript-eslint-v6/#user-facing-breaking-changes}
    * plugin:import/recommended : eslint-plugin-import 추천 rule set
    * plugin:import/typescript : eslint-plugin-import 플러그인
-   * plugin:tailwindcss/recommended : Rules enforcing best practices and consistency using Tailwind CSS
    */
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended-type-checked',
     'plugin:import/recommended',
     'plugin:import/typescript',
-    'plugin:tailwindcss/recommended',
   ],
   overrides: [
     {
@@ -35,15 +33,13 @@ module.exports = {
        *
        * plugin:jest/recommended : recommended eslint-plugin-jest rules
        * plugin:jest-dom/recommended : recommended jest-dom rules
-       * plugin:testing-library/react : eslint-plugin-testing-library rules or preset
        */
-      extends: ['plugin:jest/recommended', 'plugin:jest-dom/recommended', 'plugin:testing-library/react'],
+      extends: ['plugin:jest/recommended', 'plugin:jest-dom/recommended'],
       files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
       rules: {
         /**
          * [eslint-plugin-jest]{@link https://github.com/jest-community/eslint-plugin-jest#rules}
          * [eslint-plugin-jest-dom]{@link https://www.npmjs.com/package/eslint-plugin-jest-dom#supported-rules}
-         * [eslint-plugin-testing-library]{@link https://www.npmjs.com/package/eslint-plugin-testing-library#supported-rules}
          */
       },
     },
@@ -246,13 +242,6 @@ module.exports = {
         'newlines-between': 'always',
       },
     ],
-    /**
-     * Eslint-plugin-tailwindcss rules
-     * {@link https://github.com/francoismassart/eslint-plugin-tailwindcss/tree/master/docs/rules}
-     *
-     * tailwindcss/classnames-order : className 프로퍼티에 추가한 클래스명 정렬
-     */
-    // 'tailwindcss/classnames-order': 'off',
   },
   settings: {
     /**
