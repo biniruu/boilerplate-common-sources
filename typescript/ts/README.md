@@ -15,14 +15,14 @@ yarn add axios
 
 # ESLint
 
-yarn add -D eslint eslint-plugin-import
+yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-import-resolver-typescript eslint-plugin-import
 
 # ESLint for Jest
 #
 # 💁🏻‍♀️ eslint-plugin-jest를 설치하지 않는다면 아래 패키지는 별도로 설치해야 해요.
 # @typescript-eslint/types @typescript-eslint/typescript-estree @typescript-eslint/utils
 
-yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript eslint-plugin-jest eslint-plugin-jest-dom
+yarn add -D eslint-plugin-jest eslint-plugin-jest-dom
 
 # ESLint for Tailwind CSS
 

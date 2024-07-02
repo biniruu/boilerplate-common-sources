@@ -144,7 +144,7 @@ yarn add -D @tailwindcss/nesting
 
 # Prettier
 
-yarn add -D @types/prettier prettier
+yarn add -D prettier
 
 # React
 

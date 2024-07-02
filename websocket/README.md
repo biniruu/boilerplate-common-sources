@@ -50,6 +50,10 @@ yarn add -D nodemon
 
 yarn add -D prettier
 
+# Socket.io
+
+yarn add socket.io socket.io-client
+
 # TypeScript
 
 yarn add -D typescript
