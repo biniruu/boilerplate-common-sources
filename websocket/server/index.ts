@@ -5,12 +5,7 @@ import { fileURLToPath } from 'node:url'
 import express from 'express'
 import { Server } from 'socket.io'
 
-import {
-  type ClientToServerEvents,
-  type InterServerEvents,
-  type ServerToClientEvents,
-  type SocketData,
-} from '../types/socket'
+import type { ClientToServerEvents, InterServerEvents, ServerToClientEvents, SocketData } from '../types/socket'
 
 const app = express()
 const server = createServer(app)
