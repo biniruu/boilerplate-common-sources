@@ -10,6 +10,7 @@ import eslint from '@eslint/js';
 import importPlugin, { configs as eslintPluginImportConfigs } from 'eslint-plugin-import';
 import eslintPluginJest from 'eslint-plugin-jest';
 import eslintPluginJestDom from 'eslint-plugin-jest-dom';
+import ESLintWebpackPlugin from 'eslint-webpack-plugin';
 import globals from 'globals';
 import jest from 'jest/package.json' assert { type: 'json' };
 import tslint from 'typescript-eslint';
@@ -56,6 +57,7 @@ export default tslint.config(
       },
     },
     plugins: {
+      eslintWebpackPlugin: new ESLintWebpackPlugin({ configType: 'flat' }),
       import: fixupPluginRules(importPlugin),
     },
     rules: {
