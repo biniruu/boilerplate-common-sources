@@ -1,9 +1,6 @@
 // TODO: Remove the 'globals' package if it has been removed and the error 'TypeError: Key "languageOptions": Key "globals": Global "AudioWorkletGlobalScope " has leading or trailing whitespace.' does not occur. The error occurs in package versions 13.12.0 and earlier. See https://github.com/sindresorhus/globals/pull/184
 
-/* eslint-disable import/namespace, no-underscore-dangle */
-import path from 'path';
-import { fileURLToPath } from 'url';
-
+/* eslint-disable import/namespace */
 import { fixupConfigRules, fixupPluginRules } from '@eslint/compat';
 import { FlatCompat } from '@eslint/eslintrc';
 import eslint from '@eslint/js';
@@ -15,11 +12,7 @@ import globals from 'globals';
 import jest from 'jest/package.json' assert { type: 'json' };
 import tslint from 'typescript-eslint';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const flatCompat = new FlatCompat({
-  baseDirectory: __dirname,
-});
+const flatCompat = new FlatCompat();
 
 /**
  * About tslint.config() helper
