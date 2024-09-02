@@ -11,14 +11,22 @@
 ```bash
 # ESLint
 
-yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-import-resolver-typescript eslint-plugin-import
+yarn add -D @eslint/js eslint eslint-plugin-import globals
 
 # ESLint for Jest
+
+yarn add -D eslint-plugin-jest eslint-plugin-jest-dom
+
+# ESLint for troubleshooting
+
+yarn add -D @eslint/compat
+
+# ESLint for TypeScript
 #
 # 💁🏻‍♀️ eslint-plugin-jest를 설치하지 않는다면 아래 패키지는 별도로 설치해야 해요.
 # @typescript-eslint/types @typescript-eslint/typescript-estree @typescript-eslint/utils
 
-yarn add -D eslint-plugin-jest eslint-plugin-jest-dom
+yarn add -D  eslint-import-resolver-typescript typescript-eslint
 
 # ESLint for Webpack
 
@@ -27,7 +35,10 @@ yarn add -D eslint-webpack-plugin
 # Jest
 #
 # 💁🏻 If you have added 'jest', you don't need to add these packages: jest-resolve and jest-resolve-dependencies.
-# 💁🏻‍♂️ I recommend adding @types/jest even if it is not a TypeScript project because of its IntelliSense.
+
+yarn add -D jest jest-environment-jsdom jsdom
+
+# Jest for TypeScript
 
 yarn add -D @types/jest jest ts-jest
 

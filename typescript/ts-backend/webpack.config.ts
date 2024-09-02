@@ -3,18 +3,18 @@
  * {@link https://github.com/webpack/webpack-cli}
  */
 
-import path from 'path'
+import path from 'path';
 
-import HtmlWebpackPlugin from 'html-webpack-plugin'
-import type { Configuration as WebpackConfiguration } from 'webpack'
-import type { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-server'
-import WorkboxWebpackPlugin from 'workbox-webpack-plugin'
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import type { Configuration as WebpackConfiguration } from 'webpack';
+import type { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-server';
+import WorkboxWebpackPlugin from 'workbox-webpack-plugin';
 
 interface Configuration extends WebpackConfiguration {
-  devServer?: WebpackDevServerConfiguration
+  devServer?: WebpackDevServerConfiguration;
 }
 
-const isProduction = process.env.NODE_ENV === 'production'
+const isProduction = process.env.NODE_ENV === 'production';
 
 const config: Configuration = {
   devServer: {
@@ -53,14 +53,14 @@ const config: Configuration = {
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js'],
   },
-}
+};
 
 const result = () => {
   if (isProduction) {
-    config.plugins?.push(new WorkboxWebpackPlugin.GenerateSW())
+    config.plugins?.push(new WorkboxWebpackPlugin.GenerateSW());
   }
 
-  return config
-}
+  return config;
+};
 
-export default result
+export default result;
