@@ -37,6 +37,7 @@ export default tslint.config(
      * This option is depending on 'typescript-eslint'. See the following link for the default eslint configuration: {@link https://eslint.org/docs/latest/use/configure/configuration-files#using-a-shareable-configuration-package}
      *
      * eslint.configs.recommended : recommended eslint rule set
+     * eslintPluginImportConfigs.recommended : recommended eslint-plugin-import rule set {@link https://github.com/import-js/eslint-plugin-import/issues/2556#issuecomment-2267581659}
      */
     extends: [
       eslint.configs.recommended,
@@ -56,6 +57,12 @@ export default tslint.config(
         ...globals.jest,
       },
     },
+    /**
+     * Plugins
+     *
+     * eslintWebpackPlugin : eslint-webpack-plugin {@link https://github.com/webpack-contrib/eslint-webpack-plugin?tab=readme-ov-file#eslint-webpack-plugin}
+     * import : eslint-plugin-import {@link https://github.com/import-js/eslint-plugin-import#config---flat-eslintconfigjs}, {@link https://github.com/import-js/eslint-plugin-import/issues/2556#issuecomment-2272395246}
+     */
     plugins: {
       eslintWebpackPlugin: new ESLintWebpackPlugin({ configType: 'flat' }),
       import: fixupPluginRules(importPlugin),
@@ -101,7 +108,6 @@ export default tslint.config(
       ],
       'no-debugger': process.env.NODE_ENV === 'development' ? 'warn' : 'error',
       'no-duplicate-imports': 'off',
-      // 'no-inner-declarations': 'warn', // deprecated {@link https://eslint.org/docs/latest/use/migrate-to-9.0.0https://eslint.org/docs/latest/use/migrate-to-9.0.0#-eslintrecommended-has-been-updated}
       'no-nested-ternary': 'warn',
       'no-new-object': 'warn',
       'no-undef': 'error',
@@ -141,12 +147,6 @@ export default tslint.config(
           allowObject: true,
         },
       ],
-      // 'import/no-duplicates': [
-      //   'error',
-      //   {
-      //     'prefer-inline': true,
-      //   },
-      // ], // to be enabled if 'consistent-type-specifier-style' is 'prefer-inline'
       'import/no-unresolved': 'off',
       'import/order': [
         'warn',
@@ -168,9 +168,6 @@ export default tslint.config(
        * resolver.node.extensions : require more granular extension definitions. jsx를 import할 때 import/no-unresolved 에러가 발생하지 않도록 함
        */
       'import/resolver': {
-        // node: {
-        //   extensions: ['*.js', '*.jsx', '*.ts', '*.tsx'],
-        // },
         typescript: true,
         node: true,
       },
@@ -266,14 +263,6 @@ export default tslint.config(
       '@typescript-eslint/no-var-requires': 'off',
       '@typescript-eslint/restrict-plus-operands': 'warn',
       '@typescript-eslint/restrict-template-expressions': 'warn',
-      // '@typescript-eslint/space-before-function-paren': [
-      //   'warn',
-      //   {
-      //     anonymous: 'always',
-      //     named: 'never',
-      //     asyncArrow: 'always',
-      //   },
-      // ], // deprecated {@link https://typescript-eslint.io/rules/space-before-function-paren}
     },
   },
   {
